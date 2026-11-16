@@ -72,9 +72,9 @@ var sidebarNews = [
 ];
 
 var sidebarChrono = [
-  {id: "18", text: "6 августа 1945 года - огненный ядерный смерч поглотил японский город Хиросима", url: "index_t_game_s_gameplay_ss_chronology.html#18"},
-  {id: "20", text: "9 августа 1945 года 11:02 - на запланированной высоте 500 м над окраиной Нагасаки происходит взрыв", url: "index_t_game_s_gameplay_ss_chronology.html#20"},
-  {id: "21", text: "26 декабря 1945 года - Впервые на нашем Евразийском континенте заработал \"атомный котел\".", url: "index_t_game_s_gameplay_ss_chronology.html#21"},
+ {id: "21", text: "26 декабря 1945 года - Впервые на нашем Евразийском континенте заработал \"атомный котел\".", url: "index_t_game_s_gameplay_ss_chronology.html#21"},
+ {id: "20", text: "9 августа 1945 года 11:02 - на запланированной высоте 500 м над окраиной Нагасаки происходит взрыв", url: "index_t_game_s_gameplay_ss_chronology.html#20"},
+ {id: "18", text: "6 августа 1945 года - огненный ядерный смерч поглотил японский город Хиросима", url: "index_t_game_s_gameplay_ss_chronology.html#18"},
 ];
 
 var sidebarContest = [
