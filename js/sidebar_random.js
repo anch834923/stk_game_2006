@@ -155,7 +155,6 @@ function showRandomSidebarBlock() {
   var isChronoPage = (info.t === 'game' && info.s === 'gameplay' && info.ss === 'chronology');
   var isContestStory = (info.t === 'community' && info.s === 'contest' && info.ss === 'story');
   var isContest = (info.t === 'community' && info.s === 'contest');
-  var isCommunity = (info.t === 'community' && info.'?' === 'rnd=[rand]');
   var isDownloadsMobile = (info.t === 'downloads' && info.s === 'mobile');
 
   if (isContestStory) {
@@ -172,11 +171,6 @@ function showRandomSidebarBlock() {
   }
 
   if (isContest) {
-    showContestBlock(container);
-    return 'contest';
-  }
-  
-    if (isCommunity) {
     showContestBlock(container);
     return 'contest';
   }
