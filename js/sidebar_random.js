@@ -199,11 +199,9 @@ function showChronologyBlock(container) {
   var html = '<table width="156" cellspacing="0" cellpadding="0" border="0" background="images/_contest/h_bottom_back.jpg">';
   html += '<tr><td><img src="images/d_line_top.gif" alt="" width="156" height="30" border="0"></td></tr>';
   html += '<tr><td><img src="images/_dot.gif" width="1" height="5" border="0"></td></tr>';
-  html += '<tr><td>';
-  var available = sidebarChrono.slice();
-  for (var k = 0; k < 3 && available.length > 0; k++) {
-    var idx = Math.floor(Math.random() * available.length);
-    var item = available.splice(idx, 1)[0];
+  html += '<tr><td>';									
+  for (var k = 0; k < 3 && k < sidebarChrono.length; k++) {												   
+    var item = sidebarChrono[k];
     html += '<table width="156" cellspacing="0" cellpadding="0" border="0">';
     html += '<tr>';
     html += '<td style="padding-left:24;" valign="top"><img src="images/_game/as_chrono.gif" alt="" width="12" height="12" border="0">&nbsp;</td>';
@@ -302,11 +300,9 @@ function showNewsBannerBlock(container, bannerType) {
   }
   html += '</td></tr>';
   // 3 новости по порядку массива sidebarNews
-  if (window.sidebarNews && sidebarNews.length > 0) {
-    var available = sidebarNews.slice();
-    for (var k = 0; k < 3 && available.length > 0; k++) {
-      var idx = Math.floor(Math.random() * available.length);
-      var item = available.splice(idx, 1)[0];
+  if (window.sidebarNews && sidebarNews.length > 0) {									
+    for (var k = 0; k < 3 && k < sidebarNews.length; k++) {													 
+      var item = sidebarNews[k];
       html += '<tr>';
       if (k === 0) {
         html += '<td><img src="images/_dot.gif" width="28" height="1" border="0"></td>';
