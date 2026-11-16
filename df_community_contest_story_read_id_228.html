@@ -1,0 +1,293 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Паутина - Анатолий Кириенко ака Erty</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_228.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Паутина</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Анатолий Кириенко ака Erty</b><br>Дата: <b>04/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>570</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>2</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P>Где – то впереди постоянно капала вода. Звук разбивающихся о бетонный пол капель и наши приглушенные дыхания были единственными звуками в этом коридоре. Тихий шепот, который раздался впереди, не повторился.</P>
+<P>Негромко пискнула крыса, перебегая нам дорогу. Крысы еще до взрыва облюбовали канализацию, и, как во многих городах, успешно пользовались ею для перемещения.</P>
+<P>Город вверху уже давно был полуразрушен, и подземные коммуникации зачастую давали возможность значительно сократить путь или добраться в нужное место, что на поверхности было бы невозможным через аномалии. В то же время эти катакомбы были любимым местом обитания карликов, и зачастую было не известно, что опаснее – эти белесые твари или аномалии Зоны. Но, как ни крути, к нашей цели по-другому не добраться, поэтому пришлось покупать карту и идти на риск.</P>
+<P>- Ну что, двинули дальше? – голос Сергея несколько раз отразился от стен и полетел вперед – эхо в Зоне иногда вытворяло такие штуки.</P>
+<P>- Двинули, - и мой ответ понесся вдогонку за словами Сергея.</P>
+<P>Сергей шел впереди, контролируя дорогу и стены, я же следил за потолком и время от времени оглядывался назад. Напряжение которое всегда чувствуешь в Зоне, здесь было невпример сильнее. Все время казалось, что за тобой кто-то наблюдает, фиксируя и оценивая каждое движение в ожидании удобного момента.</P>
+<P>Стекающая вода превращалась в ручей, покрытый рыжей маслянистой пленкой. Канализационные решетки, время от времени появляющиеся в потолке и дававшие хоть немного света, исчезли. Впереди была глухая темнота.</P>
+<P>Дальше придется идти только полагаясь на технику. Я надел очки ночного виденья или “ночник”, как окрестили его сталкеры, и мир превратился в красно-черную картинку. Очки у нас были только одни, так что мы с Серегой поменялись местами.</P>
+<P>Мы шли, подгоняемый плеском воды и тихим звуком своих шагов. Вокруг воняло какой – то гнилью, мочой и затхлым воздухом.</P>
+<P>Где-то через полчаса отрывать ноги от земли стало все тяжелее. Ручей, прекратил свое течение, и вода, застыв, превратилась в некое подобие смолы. </P>
+<P>- Аномалий, похоже, рядом нет, - я взглянул на датчики. - Но, может, все-таки вернемся и попробуем пройти верхом?</P>
+<P>- Не дури, мы уже прошли не меньше чем две трети пути. – Сергей ковырнул носком ботинка густую жижу. – Эта дрянь вроде бы не опасна. А в случае чего… - он похлопал огнемет, выменянный нами накануне. – Дайте мне монстра и я сделаю из него жаркое.</P>
+<P>На его лице, выглядевшем в ”ночнике” как застывшая маска, отразилась ухмылка.</P>
+<P>- Ok. Судя по карте, метров через десять будет последняя развилка, а дальше мы по прямому коридору доберемся до шахты, где сможем подняться наверх.</P>
+<P>Внезапно все приборы будто сошли с ума. Взвизгнул датчик движения, как будто на нас двигалась огромная живая масса. Визор ночного виденья забился помехами. Сергей заорал и открыл огонь по тому пути, где мы только что прошли. Чьи – то руки толкнули меня в спину и я падая открыл огонь в ту сторону, и скорое почувствовал, чем услышал что попал. Что – то тяжелое, мягкое и вонючее навалилось мне на ноги, так что я стрелял теперь почти в упор. Кто – то попытался схватить меня за голову, но только оторвал капюшон комбинезона и содрал ночник. Ослепленный ярким светом огнемета я вслепую дал очередь в ту сторону.  Сергей стоял в окружении ярких факелов, который были когда – то карликами и поливал все вокруг себя жидким огнем. Непонятно по какой причине, обычно осторожные, они набросились на нас скопом, полагаясь только на грубую силу.</P>
+<P>Запах горелого мяса усилился, и догорающие желто-коричневые трупы внезапно поднялись в воздух. Карлики, обычно способные управлять на расстоянии только небольшими предметами, сплотившись, стали метать в нас эти головешки. Две или три попали прямо в Сергея и он с криком боли упал.</P>
+<P>- Серега, - заорал я, и отбросив пустой автомат, вытащил гранатомет открыл огонь по толпе грязно белых недоростков. </P>
+<P>Несколькими глухими взрывами толпу разметало в стороны. Ошметки тел разлетелись, веером забрызгав стены и нас, чем-то черным. Огнемет почти погас, и темнота отступала теперь только под вспышками взрывов. </P>
+<P>- Ну ты как, живой? – крикнул я Сергею.</P>
+<P>- Да вроде ничего, только ребро, по-моему, сломано, - он с трудом поднялся.</P>
+<P>- Идти сможешь? – я сменил гранатомет на автомат и стал поливать белесых тварей очередями.</P>
+<P>- Да вроде смогу, только рюкзак нести тяжело.</P>
+<P>- Давая сюда, - я взвали себе на каждое плечо по ноше. – Давай быстрее, пока они еще раз не ринулись.</P>
+<P>Я, как мог, побежал вперед, с трудом выдирая ноги из загустевшей воды, пристально всматриваясь в темноту, а Серега еще несколько раз зарядил по коридору и последовал за мной.</P>
+<P>- Чего это они в кучу собрались? – Сергей направил огнемет вперед, освещая нам дорогу.</P>
+<P>Дыхание, превратившись на холодном воздухе в пар, заклубилось в проходе.</P>
+<P>- А черт его знает. Ты как?</P>
+<P>- Ничего, - он потрогал бок и сморщился, - жить будем, не помрем.</P>
+<P>Вскоре впереди забрезжил свет – выход оказался там, где должен был быть. Мы прибавили ходу. </P>
+<P>Сергей снял с пояса гайку и, осторожно приблизившись к свету, подбросил ее вверх и сразу же отскочил. Она, как и положено по законам физики, невредимая, упала обратно. Я сбросил наши вещи на пол и осторожно заглянул наверх. На меня, сквозь прутья решетки смотрело голубое небо. Такое яркое после темноты, что даже глаза заслезились.</P>
+<P>- Вроде чисто. Давай поднимайся сперва ты, а потом я груз вытащу.</P>
+<P>Сергей схватился за поржавевшие скобы и полез наверх, я, с оружием наизготовку, остался караулить снизу.</P>
+<P>Из шахты упала рука. Обычная человеческая рука, аккуратно отсеченная у локтя. Какое – то время я стоял, тупо уставившись на нее, пока до меня не дошло, что это рука Сергея. Раздался хрип. Упала еще одна рука и тело Сергея разрезанное по диагонали. Тело билось в конвульсиях, поливая пол кровью. </P>
+<P>Все как-то замедлилось. Один за другим, из шахты стали появляться прозрачные волокна, складываясь в поблескивавшую на солнце паутину. Она разрасталась, становилась гуще и поползла по полу к человеческим останкам, рассекая их на мелкие куски. Подобралась к нашим вещам и тоже прошла сквозь них как по маслу. А я стоял и смотрел на это как завороженный.</P>
+<P>Наконец подал сигнал детектор аномалий и вывел меня из ступора. </P>
+<P>Руки сами собой взяли гранатомет и в шахте раздались взрывы. Я стоял, не замечая осколков, что разлетались раз за разом во все стороны. Мне было все равно. Важным было только одно – эта гадость убила Серегу! </P>
+<P>Стены шахты дрогнули. Сверку посыпались все большие куски и она рухнула внутрь коридора. Паутина же всего лишь на мгновение остановилась, а потом продолжила движение.</P>
+<P>Несколько раз щелкнуло пустое оружие. Схватив первое, что подвернулось под руки, я снова нажал на курок. Горящий напалм оказался этому не по нутру. Волокна стали рваться и скручиваться. Почему-то запахло горелыми волосами.</P>
+<P>Злость захлестнула меня как волна, и я стоял поливая все огнем, пока на мне самом не стала тлеть одежа. Прекратив пальбу я отошел подальше и грохнулся на пол.</P>
+<P>Выход наружу завален – придется возвращаться назад…</P>
+<P>Эх, Серега, не видать тебе теперь собственного дома на берегу речки…</P>
+<P>Жизнь редко бывает прекрасна, но смерть уродлива всегда…</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="36.75" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.25 (28)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Kirienko_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

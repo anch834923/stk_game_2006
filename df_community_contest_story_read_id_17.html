@@ -1,0 +1,312 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Холодный ветер Зоны - Забула Сергей aka Zabber</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_17.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Холодный ветер Зоны</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Забула Сергей aka Zabber</b><br>Дата: <b>26/11/2002</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>986</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>7</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<p>...Холодный ветер... Снова только этот ветер... Пронизывающий до костей, убивающий,
+  ветер Зоны. В моей голове нет мыслей. Их уносит этим ветром. А впрочем, нет. 
+  Мысль есть. Одна, но настырная и обжигающая, как сто тридцать четвертый в руках 
+  спецназа.</p><p>
+  Спецназ... В голове из недр памяти всплывает жуткая, ужасающая картина. Это произошло 
+  несколько месяцев назад. Кончались патроны, и я спешил к торговцу. Побираясь 
+  сквозь почерневшие, обожженные кусты, мне приходилось одновременно следить за 
+  детектором. Говорили, что кто-то из &quot;Долга&quot; на спор должен был продержаться 
+  в Зоне без детектора всего час. На кону стоял новенький FN-2000, так что соблазн 
+  был велик. Этого парня искали долго. Очень долго. Заключение опытных сталкеров 
+  было простым. Мясорубка. Разрядника у бедняги с собой не было...</p><p>
+  Но я отвлекся от сути. Мокрые листья хлестали по шлему. Добыча за день была 
+  невелика. Контейнер не особо тяготил плечи. Несколько артефактов не тянули даже 
+  на сотню. Я рассчитывал добраться до места назначения до темноты. Вдруг детектор 
+  движения уловил сильный сигнал метрах в пятидесяти от меня. Для крыс сигнал 
+  был слишком силен. Как впрочем и для карликов. Быстрое падение на землю спасло 
+  мне жизнь потому, что через мгновение заросли позади меня превратились в зеленую 
+  кашу. На том месте, где только что стоял я прошли несколько десятков пуль, разрывая 
+  воздух на молекулы. Я присмотрелся повнимательней и в кровавом тумане различил 
+  страшную картину. Несколько солдат, спина к спине отстреливались от все наступающих 
+  зомби.</p><p>
+  Видимо, ими управляли неплохие телепаты, так как с оружием зомби были явно на 
+  &quot;ты&quot;.</p><p>
+  От грохота стволов закладывало уши. Один из солдат присел на одно колено, прицелился, 
+  хлопок - одним получеловеком стало меньше. Еще выстрел. Без одной ноги даже 
+  зомби не могут ходить. Еще. И опять точно. Но и самое хорошее оружие имеет неприятное 
+  свойство требовать перезарядки. Солдат успел вынуть пустой магазин и вставить 
+  полный, но это оказались последние действия в его жизни. Очередь из калаша снесла 
+  ему половину головы. Спецов осталось двое. Увидев гибель товарища они озверели. 
+  Я никогда в своей жизни не видел, чтобы сражались так. Но иногда качество не 
+  может противостоять количеству. И вскоре второй солдат пал жертвой пули противника. 
+  Несколько тварей обошли его и зашли сзади. Едва успев развернуться, он успел 
+  положить двоих, но третий выстрелил в солдата в упор. Спец упал. Оставался один 
+  солдат. Прижавшись спиной к дереву, он поливал зомби шквальным огнем. Только 
+  сейчас (на самом деле прошло не более 2-3 минут) до меня дошла мысль попытаться 
+  вытащить парня. Несколько гранат из подствольника могли решить проблему, но, 
+  как я уже говорил, с патронами у меня была напряженка. Зарядив мой предпоследний 
+  магазин, я присел на одно колено и открыл огонь на поражение. Солдат, увидев 
+  меня краем глаза, обернулся, и это стоило ему жизни. В его тело вошли несколько 
+  десятков пуль, и я понял, что навряд ли смогу здесь чем нибудь помочь. Мне пришлось 
+  отступать. Впрочем, отступать - это громко сказано. Я бежал. Причем на кону 
+  этого кросса стояла моя шкура. Мне удалось сбежать оттуда. Но эту сцену я запомнил 
+  на всю жизнь.</p><p>
+  И снова этот ветер... Настроение совсем никуда, хотя повод для радости определенно 
+  был. Почти килограмм студня, собранный сегодня. Пусть он опасен для здоровья. 
+  Само нахождение в Зоне опасно для него. Зато студень прекрасно продается. Этот 
+  проклятый однорукий хотел обмануть меня, но заглянув в дуло моего FN HP-SA, 
+  почему-то передумал. На обратном пути видел несколько контроллеров вдалеке. 
+  Мне повезло. Ушел незамеченным. Опять обжигает та же мысль. О дальнейшей судьбе. 
+  Когда много ходишь один, невольно думаешь о ней. У меня она довольна туманна. 
+  Надежда лишь на ноги, глаза и верный автомат. Но я не жалуюсь. Каждый должен 
+  заниматься делом, предназначенным ему Богом. Мое предначертание быть Сталкером. 
+  И я рад...</p>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.57" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.51 (61)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/zabula_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+</body>
+</html>

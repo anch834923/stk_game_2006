@@ -1,0 +1,278 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Война - Охлопков Иван Александрович</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_110.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Война</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Охлопков Иван Александрович</b><br>Дата: <b>25/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>864</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>16</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p><P ALIGN="JUSTIFY">Шёл&nbsp;2008&nbsp;год. Был летний день, датчики на&nbsp;приборах показывали отсутствие аномалий, а&nbsp;учёные утверждали о&nbsp;спаде аномальной активности. Из&nbsp;пункта А&nbsp;в&nbsp;пункт В&nbsp;ехала Нива груженая оборудованием. В&nbsp;салоне авто находились четыре сталкера, которые входили в&nbsp;один клан. Дорога была сухая, вдоль неё&nbsp;стояли тополя, а&nbsp;за&nbsp;тополями виднелись заросшие поля аномальной растительностью.</P>
+
+<P ALIGN="JUSTIFY"><nobr>Где-то</nobr> на&nbsp;половине дороги связь с&nbsp;выше упомянутой машиной прервалась. Члены клана &#132;Свобода&#147; думали, что либо появилась новая тварь, которая может остановить машину и&nbsp;расправится со&nbsp;сталкерами, либо контролёр&nbsp;загипнотизировал их,&nbsp;либо появилась новая аномалия. Что&nbsp;бы не&nbsp;зачернить репутацию клана главы решают послать экспедицию для выяснения загадочного исчезновения <nobr>4-х</nobr> сталкеров, но&nbsp;Зона решила по&nbsp;своему&nbsp;&#151; резко возросла аномальная активность. И&nbsp;экспедицию пришлось отложить.</P>
+
+<P ALIGN="JUSTIFY">Чрез два дня, после относительного понижения аномальной активности, экспедиция отправилась на&nbsp;поиски пропавших безвести сталкеров. Экспедиция вернулась в&nbsp;тот&nbsp;же день на&nbsp;базу. Отыскав место проис-шествия они увидели разорванную машину и&nbsp;неподалеку несколько сожжённых и&nbsp;обкусанных трупов. Экспедиторы пришли к&nbsp;выводу, что машина разорвана не&nbsp;аномалиями, а&nbsp;при помощи людей, то&nbsp;есть она была уничтожена точным попаданием с&nbsp;базуки, к&nbsp;тому&nbsp;же оборудование было почти все уничтожены, а&nbsp;то,&nbsp;что уцелело было не&nbsp;тронутым следовательно, атаковал не&nbsp;одиночный сталкер.</P>
+
+<P ALIGN="JUSTIFY">Поняв всю серьёзность ситуации главы клана &#132;Свобода&#147; решают улучшить оборону конвоев, и&nbsp;через своих доверенных лиц узнать у&nbsp;одиноких сталкеров и&nbsp;всех, кто что то&nbsp;знает или слышал о&nbsp;случившемся.</P>
+
+<P ALIGN="JUSTIFY">На&nbsp;пятый день по&nbsp;рации от&nbsp;конвоя приходит сообщение:</P>
+
+<P ALIGN="JUSTIFY">&#151; Шшш&#133;База, база. Это Коготь. Шшш&#133;(Слышен взрыв)На&nbsp;нас напали. Шшш&#133;Передаю координаты&#133;</P>
+
+<P ALIGN="JUSTIFY">(Слышен свист пуль и&nbsp;удары их&nbsp;по&nbsp;асфальту и&nbsp;металлу) Шшш&#133;Я&nbsp;не&nbsp;хочу умирать!(Связь оборвана)</P>
+
+<P ALIGN="JUSTIFY">После сообщения на&nbsp;место нападения были отправлены все ближайшие сталкеры. Прибывши, первый сталкер не&nbsp;увидел ни&nbsp;чего кроме горящих и&nbsp;окровавленных тел своих собратьев.</P>
+
+<P ALIGN="JUSTIFY">Но&nbsp;в&nbsp;момент нападения поблизости проходил один сталкер, и&nbsp;услышав взрывы и&nbsp;звук автоматных очередей, решил посмотреть, что происходит. Когда все вызванные сталкеры стали хоронить тела <nobr>погиб-ших</nobr>, то&nbsp;сталкер подощёл&nbsp;к&nbsp;ним и&nbsp;пообещал, что расскажет кто убил членов клана за&nbsp;небольшую сумму денег. Договорившись сталкер рассказал, что нападавшие были из&nbsp;клана &#132;Удар&#147;, т.к. он&nbsp;увидел на&nbsp;их&nbsp;экипировке идентификационный знак этого клана.</P>
+
+<P ALIGN="JUSTIFY">Рассказав информацию старейшинам, они принимают решение во&nbsp;что&nbsp;бы то&nbsp;ни&nbsp;стало отомстить клану &#132;Удар&#147; за&nbsp;смерть членов клана. Были использованы все резервы клана на&nbsp;покупку оружия, техники, снаряжения и&nbsp;оборудования. В&nbsp;связи с&nbsp;резким опустошением казны клана на&nbsp;плечи сталкеров клана упала обязанность добывать максимальное количество артефактов и&nbsp;трофеев. Нападения на&nbsp;блокпосты участились, поэтому власти стали внимательно следить за&nbsp;происходящим и&nbsp;подбрасывать силы к&nbsp;блокпостам.</P>
+
+<P ALIGN="JUSTIFY">Прошёл&nbsp;месяц. Клан &#132;Свобода&#147; набрал себе новых сталкеров, а&nbsp;также он&nbsp;тайно заключил военные союзы с&nbsp;другими кланами. &#132;Свобода&#147; был готов к&nbsp;войне с&nbsp;кланом &#132;Удар&#147;. Но&nbsp;он&nbsp;тоже не&nbsp;дремал, у&nbsp;них в&nbsp;клане были шпионы, которые знали обо всех делах клана &#132;Свобода&#147;. Первоначальной целью клана было захват и&nbsp;контроль всей зоны. &#132;Удар&#147; также подписал военные договоры с&nbsp;другими кланами. Т.к. у&nbsp;него численность сталкеров превышала численность сталкеров &#132;Свободы&#147;, то&nbsp;победа казалась в&nbsp;руках у&nbsp;клана &#132;Удар&#147;.</P>
+
+<P ALIGN="JUSTIFY">Но&nbsp;у&nbsp;зоны свои законы! Группа из&nbsp;40&nbsp;сталкеров-ветеранов &#132;Удара&#147; шла по&nbsp;наводке на&nbsp;базу &#132;Свободы&#147;, но&nbsp;попала в&nbsp;самый большой выброс. Никто из&nbsp;сталкеров не&nbsp;смог выжить. Это происшествие изменило ход войны. Каждая из&nbsp;сторон выбрала диверсионно-оседлую тактику ведения войны.</P>
+
+<P ALIGN="JUSTIFY">Через полтора месяца войны в&nbsp;зоне наступил хаос. Почти каждый сталкер сощёл&nbsp;с&nbsp;ума. Одни воевали со&nbsp;всеми, другие меняли сторону за&nbsp;которую сражаются ежеминутно. В&nbsp;этот хаос решили вмешаться власти и&nbsp;послали 500 Американских спецназовцев. Но&nbsp;Зоне всё&nbsp;равно кого убивать. Спецназ постигла таже учесть, что и&nbsp;сталкеров. Твари зоны также решили поучаствовать т.к. почти все мёртвые тела были заминированы, да&nbsp;и&nbsp;пуля дура.</P>
+
+<P ALIGN="JUSTIFY">На&nbsp;втором месяце войны земля Зоны содроглась и&nbsp;из&nbsp;эпицентра вырвался неизвестный ранее газ, который за&nbsp;считанные часы накрыла всю зону. Никто не&nbsp;знает, что произошло с&nbsp;находящимися в&nbsp;Зоне людьми&nbsp;&#151; все они пропали безвести.</P>
+
+<P ALIGN="JUSTIFY">Выгоду получили только торговцы и&nbsp;исследователи. Некоторое время в&nbsp;Зону боялись входить но&nbsp;желающих заработать денег и&nbsp;повысить адреналин в&nbsp;крови не&nbsp;уменьшалось. Потому снова стали появляться сталкеры и&nbsp;жизнь опять предвещала <nobr>что-то</nobr> новое и&nbsp;необычное!!!</P></p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="20.86" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 2.98 (66)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/holodov_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

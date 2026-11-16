@@ -1,0 +1,269 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - В ожидании смерти - Morfius</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_317.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">В ожидании смерти</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Morfius</b><br>Дата: <b>24/05/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>1145</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>12</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+</FONT><P>Утро 2010-го года. Стоял непроглядный туман. Но многие учёные в лагерях уже были заняты исследованиями. Эти исследования были свя-заны с самой великой катастрофой XX, начала XXI-го века – взрывом на ЧАЭС.<FONT FACE="Arial"> </FONT>Началась эта катастрофа с первого взрыва четвёртого атомного энергоблока на электростанции 26 апреля 1986 г. Авария эта, как говорят многие научные источники, не была случайностью. Одна из версий гласила, что взрыв произошёл из-за испытаний 25-26 апреля на ЧАЭС. Суть была в том, чтобы увидеть допустимые нормы мощности станции. И при сбое в испытаниях произошёл непредсказуемый взрыв. Вторая версия заключалась в том, что этот взрыв произошел из-за диверсии армии США. Штаты хотели продолжить “Холодную войну” в тайне от СССР. То есть выбрали тот день, когда происходили испытания на электростанции, чтобы сделать это незаметно и без следов. Третья причи-на, по словам “компетентных органов”, была такова: “…общей причиной аварии явилась низкая культура работников АЭС. Речь идёт не о квали-фикации, а о культуре работы, внутренней дисциплине и чувства ответственности” (документ №29 от 7 мая 1986г.) и “Взрыв произошёл вследствие ряда грубых нарушений правил работы, технологии и несоб-людения режима безопасности при работе реактора 4-го блока АЭС” (документ №31 от 11 мая 1986 г.).</P>
+<P>Второй “этап” этой катастрофы произошёл 12 апреля 2006 года в 14:33. Чернобыльская зона осветилась ярчайшим, нестерпимым светом. На серебряном от света небе испарялись облака. После мгновения полной тишины, пришел грохот и землетрясение. Люди падали на землю, зажимая кровоточащие глаза и уши. Сияние появилось над огромной территорией. Кто мог, тот бежал, спасая свою жизнь. Со стороны это выглядело, как будто запасы похороненного ядерного топлива взлетели на воздух, разорвав на куски АЭС и окрестности.</P>
+<B><FONT FACE="Arial"><P>Глава 2</P>
+</B></FONT><P>Собиралась группа учёных для исследования огромного чёрного кристалла внутри взорванного реактора. Четыре лучших учёных-исследователей согласились пойти на это. Многие не соглашались идти прямо к центру станции потому, что их лагерь находился в лесу, в трёх километрах от руин Чернобыльской АЭС. Все хорошо знали, что на территории 30 км возле атомной станции происходят аномальные явления, которые постоянно меняют своё местонахождение. Их практически невозможно увидеть, особенно в большой туман, их абсолютно услышать, но их местонахождение можно определить с помощью простейшего детектора аномалий. При выявлении аномалии он начинает пищать. И, исходя из всех этих факторов, туда лежит путь очень сложный. Эти четыре учёных отправляются на ЧАЭС вместе с двумя хорошо экипированными военными сталкерами. У этих двух сталкеров есть связь с лагерем и с ближайшим блокпостом. Решено было идти пешком, так как непроглядный туман и опасность попасть в аномальную зону мешало свободному передвижению по Зоне. </P>
+<P>Поступила информация о населении слепых псов при входе в северную часть АЭС. Эту информацию передал один из группы сталк-еров “Свобода”. И поэтому им придется обходить эту часть, что усложня-ет поход к центру станции.</P>
+<P>Все шестеро уже отправились на исследование. Пока что никаких аномалий не наблюдалось. Впереди показались четверо красных огоньков, подойдя поближе, сталкеры смогли разглядеть по контурам, что эти огоньки были двумя карликами. Нужно было переждать спокойно и не выдать себя, так как если бы карлики заметили сталкеров, они бы поставили на сталкеров ловушки.</P>
+<P>Переждав, группа двинулась дальше. Им предстояло пройти ещё не более полукилометра до самой станции. Но, подходя уже к станции, они решили отдохнуть после этого похода, и присели возле одного дерева. Набравшись сил, они вдруг услышали стук определителя аномалий. Заметно было, как будто маленький вихрь пронёсся в трёх метрах от людей. Шестеро человек, что есть сил, побежали от аномальной зоны. Они и не заметили, как оказались уже прямо возле южной стороны</P>
+<P>ЧАЭС. </P>
+<I><FONT FACE="Arial"><P>Глава 3</I> </FONT>Найти вход не представляло особой сложности, так как эти люди уже были опытные в этом деле. Учёным приходилось уже ходить на исследование грунта, некоторых предметов и т.д. несколько месяцев назад. Но им никогда не приходилось исследовать чёрный кристалл.</P>
+<P>Пройдя добрый десяток тёмных коридоров, почти полностью разрушенных после второй аварии на Чернобыльской АЭС, исследователи очутились в комнате без единого лучика света. Военные сталкеры включили фонарики и попытались разглядеть то помещение, в котором они находятся. Это было огромное помещение с полуразрушен-ыми стенами и обвалившимся потолком. По всему полу были разбросаны ржавые металлические детали, болты, шурупы, сваи и прочие “желе-яки”. Осветив центр этой комнаты, учёные заметили невероятных размеров чёрный кристалл. Подойдя поближе, они попытались установить с помощью счётчика Гейгера уровень радиации этого объекта, но прибор буквально зашкаливало от такой дозы излучения радиации исходящей от кристалла, хорошо, что они были в специальных костюмах от радиации. И они не смогли установить радиационный фон.</P>
+<P>С виду он был похож на негранёный алмаз выходящий из-под земли. Чем ближе они подходили к нему, тем была большей температура. Была установлена температура кристалла на отметке 60°C. Им удалось взять кусочек этого кристалла на пробу. Теперь они сделали свою основную миссию, и осталось только вернуться обратно в лагерь.</P>
+<B><FONT FACE="Arial"><P>Глава 4</P>
+</B></FONT><P>Но не тут-то было. В спешке, не осмотрев комнату полностью, они не заметили множество нор внизу стен. Из этих нор начали проса-чиваться множество крыс, среди которых были крысиные волки. Не сообразив что случилось, военные сталкеры открыли огонь на поражение по крысам из АК-47. Некоторые крысы испугались и убежали, некоторых было перестреляно, но большая часть крыс перешла в агрессивное состояние и начала атаковать агрессоров. В этой схватке погиб один военный сталкер и один из учёных. Все остальные ринулись к выходу. В состоянии страха и защиты своей жизни они добежали уже до выхода из станции. Им нужно было добежать до забора, ограничивающего ЧАЭС, но у самого забора из-за большого шума, издаваемого крысами, их заметили слепые псы. Перелезши через забор, оставшийся военный сталкер на бегу начал вызывать по рации подкрепление. Ему сказали, что подкрепление прибудет через три минуты к ним. Но этим четырём людям нужно было ещё выжить эти три минуты. </P>
+<P>Один учёный уже очень устал и, поскользнувшись, сломал себе ногу. За ним уже не было смысла возвращаться, это означало для этого учёного одно – смерть. Он был уже в ожидании смерти.</P>
+<P>Их осталось всего лишь трое. Военный сталкер и двое учёных. Они добрались уже до леса. И вдруг они услышали звук приближающегося вертолёта. Через некоторое время он уже парил над исследователями и спускал канатную лестницу. Это был армейский вертолёт. Все трое залезли в вертолёт и полетели к базе. То, зачем эти люди рисковали своими жизнями, было при них – горячий кристалл из чёрного, словно смола, материала.</P>
+<P>Приземлившись на базе возле, лагеря они, не медля, начали исследования этого загадочного чёрного кристалла. И попутно отправили кусочек кристалла на экспертизу в Киев.</P>
+<P>Возможно, потом была раскрыта тайна этого чёрного кристалла, но мы этого пока что не узнаем, потому, что после этого происшествия их исследовательский лагерь исчез… </P>
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="45.22" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 6.46 (192)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Morfius_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

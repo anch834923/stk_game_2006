@@ -1,0 +1,694 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="rus">
+	<meta http-equiv="Keywords" content="game, games, stalker, s.t.a.l.k.e.r., oblivion lost, software, development">
+	<link rel="stylesheet" href="css/style.css">
+	<title>S.T.A.L.K.E.R. - Community: Конкурсы </title>
+<script language="VBScript">
+<!--
+Sub lighting_FSCommand(ByVal command, ByVal args)
+  call lighting_DoFSCommand(command, args)
+end sub
+-->
+</script>
+
+<script language=javascript>
+//if(!top.contents){
+//top.
+parent.document.title='S.T.A.L.K.E.R. - Community: Конкурсы';
+//}
+
+/*------------------For Flash Menu----------------------*/
+var id=3;
+var id_sound=2-1;
+var brNav,brIE = false;
+if (navigator.appName.indexOf("Microsoft") != -1) {
+	brIE = true;
+	} else {
+	brNav = true;
+}
+
+function menu_DoFSCommand(command, args) {
+	if ( command == "init" ) {
+    	if (document.menu != null ) {
+	    	document.menu.GotoFrame(id);
+    	}
+	}
+}
+
+function dSend() {
+	if (brIE) {document.menu.GotoFrame(id);}
+	if(brIE ? parent.frames.music : parent.frames[0]){
+		document.lighting.GotoFrame(id_sound+1);
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(id_sound+2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(id_sound+2);
+		}
+	} else {
+		document.lighting.GotoFrame(1);
+	}
+}
+/*______________________________________________________*/
+
+var time=1794819066*1000;
+   
+function lighting_DoFSCommand(comm, arg){
+if(parent.music){
+	if (comm == "no_sound"){
+		document.cookie = "sound=1;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(2);
+		}
+	}
+	if (comm == "sound"){
+		document.cookie = "sound=2;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(3);
+		} else {
+			parent.frames[0].document.music.GotoFrame(3);
+		}
+	}
+}
+}
+</script>
+<script language="JavaScript">
+<!--
+function rnd_win(){
+   var randscript = -1;
+   var howMany =10000;
+   while (randscript <= 0 || randscript > howMany || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+1));
+   }
+   return randscript;
+}
+
+
+function screen_view (url)
+{
+var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+function screen_view_big (url)
+{
+ var  v_screens=  rnd_win(); 
+ var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+
+function wallpaper_view (url, res)
+{
+	if (res) { var x_res = res;	} else { var x_res = 800; }
+	 var  v_screens=  rnd_win(); 
+	var y_res = x_res*0.75;
+    window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+-->
+</script></head>
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+<tr>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+    <td rowspan="2" width="900">
+
+<table cellspacing="0" cellpadding="0" border="0" width="900" height="100%">
+<tr>
+    <td valign="top" height="99"><img src="images/top_left_back.jpg" width="90" height="99" border="0"></td>
+    <td valign="top" height="99">
+<!--Main Header-->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="logo2" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/logo2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED menu=false src="swf/logo2.swf"
+	 quality=high bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="logo2" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="lighting" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/lighting.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/lighting.swf"
+	 quality=high menu=false bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="lighting" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="22" id="news_display" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/news_display.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/news_display.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="22" NAME="news_display" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+                      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="438" height="22" id="menu">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+<param name="movie" value="menu_rus.swf"><PARAM NAME=menu VALUE=false>
+                          <param name="quality" value="high"><param name="bgcolor" value="#000000">
+                          <embed src="menu_rus.swf" menu="false" bgcolor="#000000" width="438" height="22" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="menu" allowscriptaccess="always" wmode="opaque"></embed></object></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+<!--End Main Header-->
+	</td>
+    <td valign="top" height="99"><img src="images/top_right_back.jpg" width="90" height="99" border="0"></td>
+</tr>
+<tr>
+    <td valign="bottom" height="95%"><img src="images/left_back_line.jpg" width="90" height="420" border="0"></td>
+    <td valign="top">
+<table cellspacing="0" cellpadding="0" border="0" height="100%">
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+                                                        <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+
+<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
+	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
+-->
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="385" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="26" height="20" border="0"></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="25" border="0"></td>
+    <td align="right" class="m_head">Community</td>
+    <td></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="19" border="0"></td>
+    <td align="right" class="m_nav"><font color='#ffffff' class='subnav'>Конкурсы</font> | <a href='index_t_community_s_links.html' title='Ссылки'><font color='#CBCBCB'  class='subnav'>Ссылки</font></a> | <a href='http://www.gsc-game.com/russian/main.php?t=community&s=forums&s_game_type=xr&lang=ru' target='_blank' title='Форум'><font color='#CBCBCB'  class='subnav'>Форум</font></a></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/header_line.gif" width="416" height="16" border="0"></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
+    <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr><td><!--Main Text-->
+<!--<span class="newsT"><b>Support | Feedback Form</b></span>
+
+<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_contest.gif" width="503" height="39" border="0" alt=""></p>
+<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
+<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
+-->
+<script language="JavaScript">
+<!--
+ var howMany =6;
+ var Min=1;
+
+function rndnumber(){
+   var randscript = -1
+   while (randscript < Min || randscript > (howMany+Min) || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+Min));
+   }
+   return randscript
+}
+var Max=rndnumber();
+var ImgH="0";
+if(Max<10) ImgH="0"+Max+"";
+else ImgH = Max;
+Cod ="<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"6\" border=\"0\"></td></tr>";
+Cod =Cod +"<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\" valign=\"top\">";
+Cod =Cod +"<img src=\"images/_dot.gif\" width=\"20\" height=\"27\" border=\"0\"><span class=\"myHeader\"></span></td></tr>";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"14\" border=\"0\"></td></tr>";
+Cod =Cod +"</table>";
+//-->
+</script>
+<script language="JavaScript">document.write(Cod)</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><p><b><a href="index_t_community_s_contest_ss_story.html" class="myLink">Истории Зоны</a> | <a href="index_t_community_s_contest_ss_conditions.html" class="myLink">Условия Литературного Конкурса</a> | <a href="index_t_community_s_contest_ss_monsters.html" class="myLink">Результаты &quot;Бала Монстров&quot;</a></b><br><img src="images/_dot.gif" width="1" height="7" border="0" alt=""></p></td></tr></table>
+
+<script language="JavaScript">
+<!--
+ var maxLen=1000;
+
+ function checkLen(form)
+ {
+   str = form.coments.value;
+   len = str.length;
+   if ( len > maxLen ) form.coments.value = str.substring(0,maxLen);
+   len.value = (maxLen - form.coments.value.length);
+   form.coments.focus();
+ } 
+//-->
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3">Наследие</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д Rad-X</b><br>Дата: <b>21/01/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>6269</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>559</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...он вспомнил уроки физики: "Когда мыльный пузырь лопается, то, если замедленно смотреть на этот процесс, в месте будущего разрыва цвет переходит в фиолетовый, а потом в черный, ну, а потом пузырь лопается. Значит ли это, что человек, подошедший близко к этой аномалии лопается, как пузырь?...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.97" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.71&nbsp;(2007)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_35.html" target="_blank">читать</a> | <a href="download/contest/Drakon89_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+
+<!--Comment-->
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!--EndComment-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><br/><p>Прием комментариев окончен.</p></td></tr>
+<tr><td class="myH4"><br/>Комментарии:<br/>
+<img src="images/_contest/dev.gif" alt="" border="0" height="5" width="490"></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>DS_Denton</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Очень часто бывает, что автор сам не понимает, что он хотел сказать в том или ином своём произведении. И любое настоящее произведение должно заставить заудматься, иначе оно - не творение, а халтура, развлекаловка. 
+Библия учит жизни, Чёрный Квадрат учит тому, что мир нельзя воспринимать субъективно, однобоко, а 5-ая симфония Бетховена учит ценить настоящую музыку. Я ответил на ваши вопросы, надеюсь. 
+Понимаете, в том то и дело, что мне-то все эти рецепты жизни не нужны, просто без них рассказ выглядит пусто, вот и всё.  А насчёт идеологических материалов ЦК КПСС - зачем мне читать ложь? Успехов, до свидания. </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Acid Burn</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 DS_Denton. Я прошу прощения за то, что вмешиваюсь в Ваш с Александром разговор, но не могу этого не сделать. У меня вопрос к DS_Denton возник преинтереснейший: а Вы всегда, когда читаете чьи-то поизведения, пишите письма их авторам, с просьбой уточнить, что это, собственно, они хотели сказать в том или ином своем творении?
+Далее. Вы говорите, что рассказ должен чему-то учить, должен заставлять задуматься. Согласна. Но... Чему конкретно учит Библия, Черный Квадрат Малевича, 5-я симфония Бетховена? Любое творческое произведение есть отображение восприятия мира автором. А это уже само по себе чему-то учит.
+А если Вы хотите получить &quot;готовые рецепты&quot; как жить, что делать, чем дышать и как думать, читайте материалы идеалогического отдела ЦК КПСС.     
+С уважением, Acid Burn.  
+ 
+ </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>DS_Denton</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Ну вот вы всё и объяснили. Похвально, ничего не скажешь, сюжетец есть. Но мысли я всё равно не уловил. Для чего этот рассказ, что он хочет доказать читателю? Что нужно избегать ошибок? Что нужно отдавать долги? Ведь рассказ должен учить чему-то, заставить задуматься. И несмотря на подробные объяснения, я всё равно воспринимаю рассказ, как развлекательный и не несущий в себе идейной нагрузки (я имею ввиду не несущей мысль - а под идеей рассказа я понимаю именно мысль, которую автор хотел донести до читателя). И не сочтите за глупость. Успехов, до свидания! </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Старшиий скорее всего недоговаривает и знает несколько больше. Уж
+больно он любит делать намеки, словно его распирает от какой-то тайны.
+В этом ключе и название рассказа хорошо укладывается в логику.
+Наследие как протяженность Зоны во времени, и как продолжение сыном
+дела отца (а он теперь этим тока и будет заниматься - у него выбора
+нет), и как возвращение долгов (в его понимании) страшим -
+младшему. 
+Вот теперь надеюсь все стало более понятно. Обидно, что я должен выкладывать сюда объяснения. Надеюсь исправленная версия, будет более понятна...
+С надеждой,
+Я!
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>В Наследии все время дается понять, что причина появления Зоны -
+некорректное вмешательство людей то ли в будущем, то ли совместно и в
+будущем и в настоящем. Видимо, современные военные знают много больше,
+чем это известно другим, причем по каким-то причинам они не разглашают
+сведения. Может быть именно с их художеств началась катастрофа под
+названием &quot;Зона&quot;, а люди будущего пытаются ее исправить здесь, в
+зародыше.
+Тогда отец младшего, скорее всего, либо визитер из будущего, либо
+тесно с ними связан. Это было бы логично: заброс человека, внедрение
+его в жизнь этого мира, сталкерство, военное сталкерство (цель все
+ближе), и как апофеоз нахождение причин. Естественно его принимают как
+врага военные (то ли по недоразумению, то ли преследуя цели), но перед
+смертью он успевает отправить инфу в будущее, откуда начинают
+прибывать корректировщики.
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>(Вот частичные ответы на вопросы. Большое спасибо одному человеку...)
+Предваряя могущие возникнуть вопросы сразу скажу свою точку зрения на
+взимоотношениях автор-читатель.
+Очень часто автор задумывает одно, а получается несколько более
+другое. Иногда многие читатели видят в одном и том же тексты разные
+мысли, идеи, настроения. Т.е. сочетание автор-читатель требует не
+только хорошего автора, но и подготовленного читателя, причем эта пара
+людей в своих отношениях обычно уникальна. 
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>DS_Denton</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Александр, я не собираюсь разгадывать загадки. Сейчас я бы посоветовал вам объяснить наконец основную мысль Наследия. </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Все может быть... Мысль она и является фундаментом того, что я написал... В Наследии ясно дается понять, что возникновение Зоны, это... И, задумайтесь о название... Оно имеет двоякое, и даже троякое значение...
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>DS_Denton</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Важно уметь отличить идею от мысли. Какую мысль вы хотели донести Наследием до читателя? А Конференцией? А Решить За Всех? Не идею, а мысль! Все они связаны, быть может, одной идеей, одним сюжетом, но мысль - есть ли? 
+Ещё я думаю, что если мне не удалось найти там идею, то возможно самый обычный читатель её не найдёт и вовсе (хотя смотря что понимать под идеей - возможно мы с вами по разному смотрим на одни и те же вещи). </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Сказать честно, я сейчас даже не знаю как реагировать. В каждом моем рассказе есть Идея. Там все написано между строк. Это все часть одной большой истории... Сказать честно, я даже немного обижен, так как сам ненавижу без идейные рассказы. Хотя, наверное это вина того, что мой опыт еще не достаточно высок, чтобы намеками и набросками, кануть идею... Надеюсь, новое Наследие избежит этого. И еще, попробуй все таки отыскать идею в Наследии... Если не получится, то я кину ее сюда... До свидание. Спасибо за успехи... </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>DS_Denton</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Я вас, Александр, никогда не обвинял, я вас, с позволения сказать, крити-ковал. 
+Итак, что я могу посоветовать вам в вашем творчестве? В первую очередь, вы должны добавить в рассказы свои какую-нибудь идею. Пока что за сюжетной линией идейной я не заметил. А без идеи рассказ превращается в сами знаете что - в развлекаловку. И подавляющее большинство рассказов на этом сайте, да и в жанре фантастики - это развелкаловка. Описывание приключений, так сказать. По этому продвигайтесь в этом русле, мой вам совет, делайте свои рассказы идейными.
+Успехов, до свидания! </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 DS_Denton. В конструктивном русле, без обвинений, я согласен. Учиться никогда не поздно, так же как всему и не выучиться.
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>DS_Denton</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Один человек на этом сайте назвал наши с вами отношнеия, Александр, учительско-учненические. Продолжим уроки или вы считаете, что выучились всему уже?</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Грю</b><br>Дата: <b>17/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Вы меня простите но это тема уже высосана из пальца, Игорб базар ни о чем, Жмурик за такие комментарии ты точно жмуриком станешь, у меня все, иль кто то будет говорить что Я не прав</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>16/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>To Игорь: У Вас у самого позиция просто супер. И Вы при этом умудряетесь в кого-то тыкать пальцем по поводу непризнания ошибок? Вы сами крутитесь как ежик на сковородке, как дело доходит до понимания того, что сказанное не согласуется с реалиями. И начинается подтягивание всего за уши к тому, чего хочется. Во всяком случае Вашей ВЗВЕШЕННОЙ позиции я что-то не приметил. А для того чтобы лить на голову собеседника вежливый кал - помойка не нужна и ума много не надо. Прочтите мои три последних поста - и Вы сами в этом убедитесь. :-))</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>16/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>To DS_Denton: Прочитал часть твоих комментариев. Знаешь в чем твоя проблема? У тебя пальцы на клаве не помещаются. Если я щас скажу, что в основной свое массе ты пишешь чушь и начну вокруг этой темы песни танцевать - мы с тобой выйдем на равный тон разговора. Но я не буду этого делать, т.к. уважаю чужое мнение, хотя и терпеть ненавижу некоторые тональности вещания. Так вот, игра со словами огромным количеством читателей вообще не воспринимается. Как в анике про сынка дауна и папу, который объясняет ему что-то, а тот спрашивает: &quot;А ты с кем щас разговаривал?&quot;. Стиль написания - зависит от читательской аудитории. Да и вообще затронутая тема (да и большинство остальных пузырей тут) настолько спорны, что тут - это вообще фиг обсудишь. А писать: НАЧАЛО, СЕРЕДИНА, 2 СЕРЕДИНА...и т.д. лично меня ломает. </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>16/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Значить так, уважаемые господа наезжальщики. Или наездуны? :-)
+Было ж сказано, у Rad-X   Наследие - вообще первый текст. Который не понять было как писать и как оформлять и ваще просто страшно. Он уже 30 раз и 3 раза покаялся за все эти ошибки и прочее. Че с одним и тем же пристаете? Переписал он его уже без ошибок и тож об этом говорил. Обвинение в читерстве - весчь серьезная и одновременно - бессмысленная. Щас посмотрим в ТОП и напишем десять 10 обвинений в читерстве. Такой подход практикуете? Рассказ старый - потому и народу дофига читало. А поскольку народ в основном читает то, что в ТОПе висит, то каждый день в ТОПе - добавляет читателей. Че странного? Остальные накаты с пальцами, вообще без слез читать невозможно. Самоуверенности у отдельных недовольных - мрак сколько. Парни, мож хватит писюнами меряться? Займитесь делом - напишите рассказ. А там посмотрим кто тут лучше пишет. Примите участие в обсуждении Наследия на форуме, а то здесь и размахнуться с аргументами негде. 8-)</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Александр Д. Rad-X</b><br>Дата: <b>16/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Я умею признавать свои ошибки, просто не вовремя подошла граница конца комментария.:)  Да, мне обидно осознавать, что вы все читаете мой текст, в котором много ошибок, и его до сих пор не заменили на нормальный.              И обидно когда строят свои мнения и выводы не по интересности и смыслу, а по орфографии. Я, не выражаюсь грубо. Я вас не обозвал, не оскорбил (если да, то прошу прошение). А комментарии все, и на все рассказы я часто перечитываю и делаю много выводов, поэтому я  пишу дальше и посылаю выправленные версии... Вот, в общем, то и все. Каждый остался при своем, и все же...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Янка</b><br>Дата: <b>16/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 Игорь. А у вас, уважаемый, мужества хватает признать СВОЮ неправоту? Хочу, кстати, напомнить, что великие люди писАли с ошибками, но от этого в них величия меньше не становилось... </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Игорь</b><br>Дата: <b>16/05/2003</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>О каких нечистотах вы говорите? Мы с вами разве на помойке встретились? О том, что ваша речь груба, я не хотел говорить. Наверное, судья имеет право. Не хватает у вас мужества признать свою неправоту. Вам будет трудно в жизни. Попробуйте перечитать все (свои рассказы и комментарии DS_Dentonа в том числе) как бы со стороны, без эмоций. Все что хотел, я сказал. Всего доброго и надеюсь на лучшее.
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+				
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a href="index_t_community_s_contest_ss_rating_id_35_c_index_11.html" class="nw_link">&laquo; Предыдущих 20 комментариев</a> | 	  <a href="index_t_community_s_contest_ss_rating_id_35_c_index_13.html" class="nw_link">Следующих 20 комментариев &raquo;</a><br>&nbsp;</td>
+  </tr>
+
+</table> <!--End Main Text <table></table>--></td></tr>
+<tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
+</table></td><td width="100" valign="top">
+
+<!--Hot Elements--><!--dinamic menu-->
+<!--end dinamic menu-->
+
+<div id="sidebar_hot_block"></div>
+<div id="sidebar_screen"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_game.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_graphics.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_tech.gif" alt="" width="114" height="130" border="0"></td></tr>
+</table><!--End Hot Elements--></td>
+    <td width="22"><img src="images/_dot.gif" width="21" height="1" border="0"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
+</tr>
+<tr>
+	<td height="45" class="copyr" align="center"><a href="../&s=contest.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | Community | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
+src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
+�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
+Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">36&nbsp;&nbsp;202</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
+</tr>
+<tr><td height="2"><img src="images/_dot.gif" width="1" height="6" border="0"></td></tr>
+</table>
+
+	</td>
+    <td valign="bottom" height="90%"><img src="images/right_back_line.jpg" width="90" height="420" border="0"></td>
+</tr>
+</table>
+
+</td>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+</tr>
+</table>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+

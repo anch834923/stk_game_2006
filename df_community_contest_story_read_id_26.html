@@ -1,0 +1,394 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Слепой Пес - Ян Олешковский aka Mad_dog[SW]</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_26.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Слепой Пес</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Ян Олешковский aka Mad_dog[SW]</b><br>Дата: <b>13/12/2002</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>1874</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>54</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+
+<body>
+<p><i>&quot;Собака читает стихи.<br>
+Ветер разносит окрест.<br>
+Такова поговорка&quot;.</i></p>
+<p><b>&quot;Я&quot;</b></p>
+<p>Я вижу все и всегда. Даже когда сплю, потому, что я не умею смыкать век. Их нет
+у меня. Нет, и никогда не было. Тот кто будет пожирать мою плоть, когда я умру,
+не найдет и глаз. Таких вкусных глаз, из-за которых часто дрались кобели после
+удачной охоты, и которые, однажды, я принес для Самой-Хитрой из лощины, где трава
+обжигает лапы. Я отдал ей вынутое из черепа &quot;высокого&quot; лакомство за то, что она
+одарила меня своим первым Запахом Безумия.</p>
+<p><b>&quot;Стая, которой больше нет&quot;</b></p>
+<p>Я не знаю кто мы. Я не помню, откуда мы пришли. Я знаю лишь то, что умею связно
+мыслить. И мои щенки тоже умеют. А Старая-Не-Могущая-Больше-Щениться, которая
+была вожаком - не умела. От того и погибла, когда зачем-то решила повести стаю
+на охоту за мясом &quot;Крадущего Разум&quot;. Не умели думать и те, кто ушел с ней. Никто
+из них не вернулся. Остались только мы: я, Самая-Хитрая и наши щенки.</p>
+<p><b>&quot;Моя семья&quot;</b></p>
+<p>Они ждут меня в норе, которую Самая-Хитрая выкопала незадолго до того, как запретить
+мне обнюхивать себя. Помню, как я долго размахивал хвостом, припадал на передние
+лапы и даже ложился на спину, но она так и не пустила меня в свое новое жилище.
+А недавно - во время, когда солнце не мешает видеть звезды, из логова послышался
+писк. Сначала я удивился. Потом испугался, что туда проникли &quot;голохвостые&quot;, зарычал
+и стал всматриваться сквозь землю. Но рычал я напрасно: пищали вовсе не &quot;голохвостые&quot;!
+Пищали щенки. Их было столько, сколько останется лап, если одну поджать. Потом
+я почувствовал, что Самая-Хитрая очень устала и хочет пищу. Я пометил камень
+и ушел за добычей.</p>
+<p><b>&quot;Добыча&quot;</b></p>
+<p>Обычно я охочусь на &quot;голохвостых&quot;. Когда их мало. Когда их много – они пытаются
+охотиться на меня. Глупые. Ведь я знаю, как убить всю их стаю! Это просто. Когда
+стая &quot;голохвостых&quot; нападает, то их вожак бежит впереди и ведет их. Надо успеть
+схватить его за загривок, но не убивать сразу, а бежать к ближайшему Месту, разрывающему
+в клочья или к луже густой воды, и бросить его туда. Можно обежать вокруг любого
+смертельного Места и ждать на другой его стороне. Вся стая последует кратким
+путем за запахом и писком вожака. Задние &quot;голохвостые&quot; затолкают передних в Место,
+а потом вбегут туда сами. Лучше всего, если поблизости окажется тяжелое Место:
+оно само втянет стаю &quot;голохвостых&quot;, и они потекут туда, как ручей. Те, кто случайно
+останется в живых – и есть моя добыча. Поймать одного из них не составляет большого
+труда, но немедленно пожирать добычу - нельзя, потому, что потом очень болит
+брюхо. Если сожрать нескольких &quot;голохвостых&quot; сразу, то можно не дожить до возвращения
+в логово. Поэтому, после того, как я поймаю и убью нескольких &quot;голохвостых&quot;,
+то всегда несу их за хвосты к ближайшему Месту, которое мерцает, и кладу их на
+мертвую траву. Надо выждать, пока пройдет время, достаточное для полного вылизывания,
+и вынуть пищу: она готова и безопасна, хоть и сильно светится. Иногда в траве
+можно найти &quot;падающих&quot;. Если они сидят на земле живые, то не позволяют подойти
+к себе и немедленно взлетают. Но &quot;падающие&quot; тоже глупы, потому, что не могут
+видеть струящихся, разрывающих в клочья, тяжелых или мерцающих Мест и, попадая
+в них, падают замертво. Мясо их вкуснее, чем у &quot;голохвостых&quot;. Одно плохо: &quot;падающих&quot;
+нужно долго ощипывать и чихать при этом. Я не люблю чихать: от сотрясения головы
+внутри нее что-то болит, и мое зрение ненадолго мутнеет. Иногда приходится жрать
+падаль. Изредка можно найти мертвого &quot;высокого&quot;. У &quot;высоких&quot; несколько шкур,
+которые несъедобны и поэтому их туши трудно свежевать. Нужно быть аккуратным
+и не спешить, чтобы не сломать клыки. Я никогда не нападаю на &quot;высоких&quot;, даже
+когда они спят, потому, что видел, как быстро они убивают. Даже один &quot;высокий&quot;
+способен зарезать всю нашу стаю, причем, не подходя к ней близко. Но некоторые
+из Наших пытались охотиться на &quot;высоких&quot;, что очень глупо и опасно. И хотя иногда
+им это удавалось, я все равно не могу назвать &quot;высоких&quot; добычей. Они - скорее
+охотники. Очень умные, смелые и опасные охотники.</p>
+<p><b>&quot;Высокие&quot;</b></p>
+<p>Но охотники они странные. Странные, потому что никогда не пожирают убитую добычу.
+Часто они вообще не нападают первыми, но изредка ловят кого-нибудь живьем и уносят.
+Я заметил, что если не демонстрировать &quot;высокому&quot; своей агрессии, то он успокаивается
+и уходит, не показывая своей спины. Впрочем, &quot;высокие&quot; вообще никогда не поворачиваются
+к нам спиной и очень не любят, когда мы просто стоим вокруг их лежки и наблюдаем
+за ними. Тогда они могут начать свою охоту без предупреждения и быстро убить
+всех Наших. Несколько лун назад, в стаю (когда она еще была) попросился старый
+&quot;хромой&quot;. Его родную стаю &quot;высокие&quot; перебили лишь потому, что логово было вблизи
+тропы, по которой часто ходили &quot;высокие&quot;. Вообще трудно догадаться, зачем приходят
+они в наши места. Иногда они совершают очень необдуманные поступки. Некоторые
+брали густую воду, которая убивает все живое. Другие не могли распознать смертельные
+Места, в которые нельзя входить, и их падаль так и лежит там, никем не съеденная.
+Но самое странное в их поведении это то, что при встрече они без причины и внезапно
+нападают друг на друга. Я бы еще понял, если бы они грызлись из-за суки или пищи,
+но они убивают друг друга просто так! Кстати, &quot;медленные высокие&quot; есть и в стае
+&quot;Крадущего Разум&quot;. Причем, если Наших он может лишь ослепить на время (и то не
+всех, а только старых или больных, причем на близком расстоянии), то у &quot;высоких&quot;
+он отбирает разум полностью и издалека. Сегодня я знаю о &quot;высоких&quot; уже больше.
+Потому, что вчера познакомился с одним из них.</p>
+<p><b>&quot;Вчера&quot;</b></p>
+<p>Я стоял на холме и издали смотрел, как огромная стая &quot;голохвостых&quot; охотилась
+на &quot;высоких&quot;. Временное логово &quot;высоких&quot; появилось здесь две луны назад. Видимо,
+все они принадлежали одной стае, потому, что не нападали друг на друга. Когда
+пришли &quot;голохвостые&quot;, никто из &quot;высоких&quot; не ожидал этого и не стал ловить вожака.
+Похоже, что они вообще не знали, что его необходимо ловить. Погибли все &quot;высокие&quot;,
+кроме одного. Во время охоты он вскарабкался на длинный блестящий шест, зачем-то
+поставленный &quot;высокими&quot; посреди своей стоянки, и не спускался оттуда, пока все
+&quot;голохвостые&quot; не насытились и не ушли. Потом он слез и встал рядом с шестом,
+не выпуская его из лап. Я подошел поближе. Не потому, что хотел подобрать оставшиеся
+куски пищи, (все знают, что после охоты &quot;голохвостых&quot; ничего не остается) а потому,
+что мне стало любопытно. И когда я подошел совсем близко к тому месту, где стоял
+живой &quot;высокий&quot;, то понял, что могу знать его мысли и чувства. Ему было очень
+страшно. Страшно и одиноко. Стало ясно, что он был молод, неопытен и не представлял
+опасности для меня. Я понюхал воздух, вышел из-за камня, и мы встретились.</p>
+<p><b>&quot;Встреча&quot;</b></p>
+<p>Когда он увидел меня, то почему-то успокоился и сел. Это было странно: &quot;высокий&quot;
+сразу перестал бояться и больше не трясся. Я почувствовал в его голове образ:
+там был щенок &quot;высокого&quot;, который играл с одним из Наших. Они возились в траве
+и отнимали друг у друга палку. Потом я увидел, как они едят какую-то добычу и
+&quot;высокий&quot; делится ею. А Наш лижет ему морду, выпрашивая еще еды. И тогда мой
+хвост сам собою зашевелился. И &quot;высокий&quot; произнес звук. А я, услышав, запомнил
+этот звук навсегда. Потому, что этот звук был &quot;ТУШЕНКА&quot;. И &quot;высокий&quot; дал мне
+ее много! Настолько много, что впервые я обожрался, и едва мог ходить. И мы оба
+поняли, что никогда не будем охотиться друг на друга. Когда я набил брюхо, так,
+что кружилась голова и подгибались лапы, то ушел к норе, чтобы срыгнуть ТУШЕНКУ
+Самой-Хитрой. По пути мне хотелось громко выть, чтобы &quot;Высокий&quot; слышал меня и
+не боялся ждать. Я выл и чувствовал, что он больше не боится, а просто ждет.</p>
+<p><b>&quot;Он вернется&quot;!</b></p>
+<p>Сегодня &quot;Высокий&quot; ушел. Я провожал его, вовремя показывая Места, куда нельзя
+входить. Он понимал меня и не входил. Я вел его в обход Места, где был запах
+стаи &quot;Крадущего Разум&quot;. Он доверчиво шел по моему следу, не сворачивая. Когда
+я настораживал уши – он тоже замирал и садился. Несколько раз мы останавливались
+и жрали немного ТУШЕНКИ. Я брал ее прямо из его лап. Брал аккуратно - так, чтобы
+случайно не прикусить их. И было тепло и приятно в брюхе. И в голове &quot;Высокого&quot;
+тоже было спокойно. Он теперь не издавал запаха страха, которым обычно пахнет
+добыча, когда ее гонишь или выслеживаешь. И когда мы пришли туда, где живет большая
+стая &quot;высоких&quot;, он стал желать, чтобы я возвращался к своему логову. И мы расстались.
+Но я чувствовал, что он хочет вернуться. Теперь я твердо знаю, что он вернется.
+И тогда мы будем снова ходить по траве и иногда жрать ТУШЕНКУ.</p>
+<p><b>&quot;Пробуждение&quot;</b></p>
+<p>Когда я добрался до логова, то понял, что очень устал. Устал от пути и от необычной
+сытости. Из норы доносился прелестный запах Самой-Быстрой и сопение спящих щенков.
+Меня тоже начало клонить в сон, и я уснул. И мне открылись образы. Много образов.
+Я видел себя, вместе с другими Нашими и &quot;высокими&quot; в одной стае. И мы вместе
+загоняли большого, опасного зверя. Потом я видел слепого &quot;высокого&quot; с тонкой
+палочкой в лапах, которого нужно было медленно вести, оберегая от опасности.
+Другой образ принес мне боль и тоску: я раскапывал обрушившуюся нору, в которой
+был заживо погребен &quot;высокий&quot;. И я нюхал землю, скулил и снова копал окровавленными
+лапами до изнеможения. В другой жизни я сидел и ждал, истекая слюной.… Ждал,
+когда, &quot;самка высокого&quot; закончит доить большого рогатого зверя и поделится со
+мной молоком. А рогатый зверь - тоже был в нашей стае, и я всегда охранял его….
+Я был во всех местах сразу, и везде &quot;Мой Высокий&quot; был рядом. Потом я проснулся,
+и понял, что так было всегда. И ничто на свете не может изменить заведенного
+порядка вещей, даже это кошмарное место, где я живу, и которое по какой-то дикой
+прихоти одарило меня разумом, отняв за это ХОЗЯИНА.</p>
+<p><b>Но СОБАКА проснулась и возвратила ХОЗЯИНА себе!</b></p>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.27" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.61 (417)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/mad_dog_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Пустышка - Dimm0n</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_98.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Пустышка</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Dimm0n</b><br>Дата: <b>01/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>808</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>7</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p class="copyr"><b>Часть I</b></p>
+
+<p>&#151; И&nbsp;что&nbsp;же в&nbsp;ней особенного?</p>
+<p>&#151; Не&nbsp;знаю.&nbsp;&#151; ответил Сергей</p>
+<p>&#151; Ну&nbsp;ладно, мы&nbsp;друзья уже 2&nbsp;года, <nobr>дай-ка</nobr> мне на&nbsp;неё&nbsp;поглядеть.</p>
+<p>Сергей, порывшись в&nbsp;сумке, вынул из&nbsp;неё&nbsp;небольшую пирамиду красного цвета.</p>
+
+<p>Торговец повертел её&nbsp;в&nbsp;руках. </p>
+<p>&#151; В&nbsp;<nobr>общем-то</nobr> я&nbsp;не&nbsp;вижу в&nbsp;ней ничего необычного. Где ты&nbsp;её&nbsp;взял, говоришь? </p>
+<p>&#151; Далеко. Я&nbsp;зашёл&nbsp;почти в&nbsp;самое сердце.</p>
+<p>&#151; Там, думаю, просто так вещи не&nbsp;валяются.</p>
+<p>&#151; Значит договорились?</p>
+<p>&#151; Да.</p>
+<p>Они ,обменявшись деньгами и&nbsp;пирамидкой, <nobr>по-дружески</nobr> попрощались и&nbsp;торговец положил пирамидку в&nbsp;свой ржавй сейф, а&nbsp;Сергей вышел на&nbsp;улицу. Там было <nobr>по-осеннему</nobr> темно, хотя было всего два часа дня. Серые свинцовые тучикак будто раздавливали землю. Самым логичным решением для него, имеющего на&nbsp;руках некоторую сумму денег, было&nbsp;бы пойти в&nbsp;бар, что он&nbsp;и&nbsp;сделал. В&nbsp;баре все встретели его с&nbsp;криками и&nbsp;возгласами&nbsp;&#151; <nobr>наконец-то</nobr> такой бывалый и&nbsp;знаменитый сталкер вернулся. Его все на&nbsp;перебой спрашивали о&nbsp;том, где он&nbsp;был, что нашёл,&nbsp;а&nbsp;он&nbsp;всё&nbsp;повторял и&nbsp;повторял одну и&nbsp;ту&nbsp;же историю и&nbsp;его все угощали и&nbsp;угощали бесплатной выпивкой. Но&nbsp;Сергей не&nbsp;был рад ни&nbsp;уважению, ни&nbsp;почестям. В&nbsp;своём&nbsp;последнем путешествии в&nbsp;ЗОНУ он&nbsp;потерял друга и&nbsp;напарника, которого убил волк. Сам Сергей зашёл&nbsp;на&nbsp;этот раз очень далеко в&nbsp;ЗОНУ. За&nbsp;последние два года это было самым плохим его походом. После того, как он&nbsp;потерял напарника он&nbsp;забрёл&nbsp;в&nbsp;странное разрушенное здание, предназначение которого он&nbsp;так и&nbsp;не&nbsp;смог определить. Там, на&nbsp;грязном бетонном полу, покрытом мусором, ломанными досками и&nbsp;битым шифером, лежала правильной формы небольшая красная пирамидка. Как только Сергей взял её,&nbsp;сверху раздался ужасный скрип, отвалилась опорная железобетонная конструкция, здание начало рушиться. Он&nbsp;еле унёс&nbsp;оттуда ноги. С&nbsp;тех пор, как сталкер вернулся, пирамидка не&nbsp;проявляла каких-либопаранормальных свойств, тем не&nbsp;менее он&nbsp;продал её&nbsp;своему другу, как и&nbsp;все когда -либо найденные артефакты.</p>
+
+<p>После прослушивания истории бывалго сталкера, все в&nbsp;баре переключились на&nbsp;байки о&nbsp;сверхмощном артефакте, существующем в&nbsp;зоне.</p>
+
+<p>Уже поздно вечером Сергей возвратился в&nbsp;свой сарай, где он&nbsp;жил. Там он&nbsp;заснул.</p>
+
+<p class="copyr"><b>Часть II</b></p>
+
+<p>На&nbsp;утро его разбудили крики на&nbsp;улице. Сергей вышел из&nbsp;сарая, в&nbsp;лицо ему ударило яркое солнце. На&nbsp;улице была суматоха&nbsp;&#151; бегали люди, стоял гвалт голосов. </p>
+<p>&#151; Что случилось?&nbsp;&#151; спросил Сергей у&nbsp;одного знакомого завсегдатая бара.</p>
+<p>&#151; Он&nbsp;мёртв. </p>
+<p>&#151; Кто?</p>
+<p>&#151; Тот, кому ты&nbsp;продал свою пирамиду, Санёк.</p>
+<p>&#151; Но&#133; как это произошло?&nbsp;&#151; спросил Сергей уже на&nbsp;бегу к&nbsp;дому торговца.</p>
+<p>&#151; Ещё&nbsp;не&nbsp;знаю.</p>
+<p>Подбежав к&nbsp;дому, они увидели кучку народа, толпившегося возле двери. Растолкав всех, Сергей вошёл&nbsp;в&nbsp;дом. Доктор, сидевший внутри, очевидно с&nbsp;похмелья, уже успел констатировать смерть от&nbsp;пулевого ранения. Сергей присел над телом&nbsp;&#151; да,&nbsp;это был Александр. Ещё&nbsp;один друг погиб&#133; Но&nbsp;кто его убил?</p>
+<p>&#151; Когда это произошло?&nbsp;&#151; спросил он&nbsp;у&nbsp;стоящего рядом человека.</p>
+<p>&#151; Сегодня ночью, вроде ничего не&nbsp;похищено.</p>
+<p>Сергей встал на&nbsp;ноги и&nbsp;огляделся. В&nbsp;доме Сани , как обычно, царил беспорядок. На&nbsp;многчисленных столах лежало всякое барахло. Вдруг он&nbsp;увидел сейф, тот самый ржавый сейф, но&nbsp;открытый. В&nbsp;нём&nbsp;не&nbsp;было пирамидки.</p>
+
+<p>&#171;Неужели успел продать!&#187;&nbsp;&#151; пронеслось у&nbsp;Сергея в&nbsp;голове,&nbsp;&#151; &#171;Нет. Он&nbsp;бы сказал&#187;</p>
+
+<p>Выйдя на&nbsp;улицу, ему всё&nbsp;показалось темнее, солнце уже не&nbsp;светило так ярко, трава казалась ещё&nbsp;более засохшей. Теперь он&nbsp;был уверен, что всё&nbsp;<nobr>из-за</nobr> этой пирамидки&#133; этого Артефакта. &#171;Может, его особенность в&nbsp;том, что всё&nbsp;вокруг рушится, всё,&nbsp;от&nbsp;надежд но&nbsp;железобетонных свай? Нет!&#187; Сергей пообещал самому себе отомстить.</p>
+
+<p class="copyr"><b>Часть III</b></p>
+
+<p>Прошло около 3&nbsp;дней после убийства. Однажды ночью случайно возвращаясь из&nbsp;бара тёмным переулком он&nbsp;увидел&#133; красную пирамиду. Один человек в&nbsp;грязном и&nbsp;потёртом пальто передал её&nbsp;другому. Увидев Сергея они бросились бежать. </p>
+
+<p>Раздалось два выстрела.</p>
+<p>Сергей вернулся к&nbsp;себе в&nbsp;сарай. Немного повертев в&nbsp;руках пирамидку, он&nbsp;поставил её&nbsp;на&nbsp;стол, а&nbsp;сам упал на&nbsp;стул.</p>
+<p>&#171;Странно. <nobr>Из-за</nobr> этой пирамидки погибли черыре человека&#133; Я&nbsp;сам застрелил двоих.</p>
+
+<p>Парадоксально, что человек может сделать <nobr>из-за</nobr> <nobr>какого-то</nobr> артефакта&#133; И&nbsp;всё&nbsp;это <nobr>из-за</nobr> этой пирамидки&#133; <nobr>из-за</nobr> пирамидки&#133;"</p>
+<p>Вдруг Сергея охватила такая злость, что он&nbsp;схватил первое, что попалось ему подруку и&nbsp;</p>
+
+<p>ударил этим пирамиду. Этим первым оказался топор&#133;</p>
+
+<p>Сергей был бывалым сталкером. За&nbsp;те&nbsp;2&nbsp;года он&nbsp;привык ждать от&nbsp;ЗОНЫ чего угодно. Он&nbsp;ожидал, что <nobr>что-то</nobr> произойдёт,&nbsp;что пирамидка зажжётся ярким пламенем, взлетит и&nbsp;даст сдачи, что, на&nbsp;худой конец, она окажется из&nbsp;сверхпрочного и&nbsp;сверхлёгкого металла, но&nbsp;этого он&nbsp;не&nbsp;ожидал&#133; Острый топор вонзился в&nbsp;древесину и&nbsp;расколол пирамидку на&nbsp;две неравные части, одна из&nbsp;которых улетела в&nbsp;противоположенный угол сарая. </p>
+<p>Пирамидка оказалась обычным куском древесины, покрытым красной краской. Пустышка. Всё&nbsp;<nobr>из-за</nobr> ничего. </p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.5" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.50 (78)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Dimm0n_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,1015 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс -  - Толик</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_294.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3"></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Толик</b><br>Дата: <b>26/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>323</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>1</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<p>Плоть отступать не собиралась, точнее их было
+три, плоти. Плоть, это такие маленькие, трусливые но очень подлые, стоит <span
+class=GramE>повернутся</span> к ним спиной и ты в этом убедишься с полна. На
+что им этот артефакт сдался? Вот я его продам, а плоть? Никогда ещё плоть не
+вела себя так нагло, но <span class=GramE>может это объяснялось</span> тем, что
+у меня остался один патрон в пистолете. Был ещё нож, но для <span class=SpellE>сталкера</span>
+им я не очень хорошо владею. Ножевой бой не сильная моя сторона, нечасто
+приходилось пускать его в ход. Зачем строить из себя супермена? Когда можно
+легко срезать очередью пару-тройку тварей. Артефакт был обычный, гравитационный.
+Но плоть стояла насмерть, впрочем, как и я. Тогда я ещё не понимал всей
+серьёзности своей ситуации, в которой оказался. Вернуться из зоны с пустыми
+руками плохая примета, вот что меня заботило. Не доходило, что лучше вернутся с
+пустыми руками, чем в виде зомби. Мне было интересно, чем вызвано странное
+поведение плоти. Из-за кустов вышли слепые псы, вышли и зашли. Вот уж новость
+те наоборот, всегда ведут себя крайне нагло. Но над ними никто не имеет
+ментального контроля, а плоть вроде как считается в подчинении у Хозяина. Была
+такая байка про хозяина, якобы ходит по зоне фантом в виде старика. Ох уж этот
+хозяин, никто его не видел, но все знают, что он есть. Прямо, как про суслика.
+Ты его не видишь, а он есть. С чего это вообще я про него вспомнил, глупость,
+какая. Хозяин, старик, фантом. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Пришлось отступать с одним
+патроном, чёртовы стервятники, если б не...<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                                                                      
+</span><span style='mso-spacerun:yes'>      </span></span></b><b><span
+style='font-size:14.0pt'>***<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span></span></b><b><span style='font-size:12.0pt'>Дело
+было так. Я как раз в один дом, решил заглянуть, деревянный. Недалеко у дороги,
+почти в лесу стоит.<span style='mso-spacerun:yes'>  </span>С постоянной
+периодичностью я обнаруживал там всякие артефакты. И тогда решил заглянуть, раз
+мимо проезжал, но там ничего не оказалось. Оружия с собой никакого не взял
+кроме Макарова. Выхожу из дома, смотрю трое орлов, около моей «Нивы» трутся.
+Один уже за руль сел. У остальных по <span class=SpellE>калашу</span> в руках.
+Я через забор перелетел, и в лес. Они за мной, пока бежал почти всю обойму
+отстрелял по ним, кроме одного патрона как потом выяснилось. Скорее всего,
+убили бы, <span style='mso-spacerun:yes'> </span>если б не товар в машине. Вот
+крысы, за товар побоялись, они только и могут, что<span
+style='mso-spacerun:yes'>  </span>одиночек отоваривать. Я целую неделю в зоне
+лазил. Полную машину артефактов насобирал. Пару раз чуть не убили, в результате
+чего мой <span class=SpellE>спецкостюм</span> пришёл в непригодность. Я конечно
+человек не <span class=SpellE><span class=GramE>стрёмный</span></span>, и нервы
+у меня крепкие. Но оказаться в зоне одному, без оружия (Макаров с одним патроном
+и нож не в счёт), без <span class=SpellE>спецкастюма</span>, без специальных
+приборов, без машины. Практически без всего. Чем питаться, тоже было неизвестно.
+Всё осталось в машине. И надо же мне было почти в самый центр зоны забраться. Вот
+так всё и случилось, хуже этого могла быть только смерть. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'>                                                         
+</span><span style='mso-spacerun:yes'>                                 </span></span></b><b><span
+style='font-size:14.0pt'>***<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Сев на камень, я вытащил Макаров и думал, что
+мне с ним делать. Точнее с одним патроном, что остался в обойме. Застрелится
+что ли? И зона видно, отреагировала на мои помыслы. <span class=GramE>Наверное</span>
+случившегося со мной ей показалось мало. Между тем из-за спины кто-то поспешно
+шёл, это был лысый зомби, он пёр в мою сторону, как танк. Я вскочил с камня. И
+надо же, поскользнулся, стал падать. При падении, я успел таки, извернутся, и
+всадить ему пулю в лоб. В рукопашную зомби одолеть сложно. Я тут же вскочил,
+вытащил нож и отрезал голову. <span class=GramE>Зомби</span> после того как
+пройдут инкубационный период очень живучие. Расчленением я занимался<span
+style='mso-spacerun:yes'>  </span>впервые. Всегда <span class=GramE>входивши</span>
+в зону, я был при полной амуниции, и с напарником. Славка мой верный и
+единственный друг, напарник, месяц назад вышел в зону и больше его никто не
+видел. Я всё боялся увидеть его лицо в очередном убитом зомби.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Я тогда заболел, и с ним не пошёл. Потом я
+сильно об этом жалел. Первый день в зоне было неуютно, но на второй я освоился.
+Кроме того, что отрезал голову, я ещё его хорошо потыкал в сердце, в печень.
+Другие <span class=SpellE>сталкеры</span>, которые мне об этом рассказывали,
+говорили, что в зоне это нормально, и ни кто за ненормального или маньяка тебя
+не посчитает. То были <span class=SpellE>сталкеры</span> первой волны, неизнеженные,
+с ножами, со всякого <span style='mso-spacerun:yes'> </span>рода дубинами, изредка
+с пистолетами, без <span class=SpellE>спецкостюмов</span>. Ничего не знающие
+про аномалии и ловушки, поджидавшие их, они покоряли зону. Это не то, что мы
+обвешанные с ног до головы оружием, в <span class=SpellE>спецкостюмах</span>,
+на машинах. Чего только в зону не тащили: пистолеты, автоматы, гранаты этим уже
+никого не удивишь. Тяжёлые пулемёты, гранатометы, базуки, огнемёты. Базуки,
+тяжёлые пулемёты против милитаристов, и их тяжёлой техники. Против всяких там
+вертолётов и БТРов. Вот это проблема <span class=GramE>сегодняшних</span> <span
+class=SpellE>сталкеров</span>: военные. Да и между собой бывает, разборки
+устраиваем. Ходят слухи про некую <span class=SpellE>зоновскую</span>
+спецслужбу. Про ловушки и всякие аномалии я молчу. Так что если первые <span
+class=SpellE>сталкеры</span> противостояли исключительно зоне и её
+порождениям... То у нас проблем добавилось.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Поблизости находился контролёр, констатировал
+я в голове. - Ну, где ты <span class=GramE>гад</span>? Крикнул я в ярости.
+Контролёры не особо сильны в рукопашной, но есть риск, что он призовёт
+остальных подопечных, или того хуже, подчинит себе. Вот поэтому-то я и паниковал,
+началось головокружение. Вокруг меня было много деревьев, и я быстро осмотрел
+их. На одном из них сидел контролёр, его уродская <span class=GramE>рожа</span>
+испуганно смотрела на меня. Боялся ли он или играл роль <span class=GramE>испуганного</span>?
+Контролёры умны, он сделает вид что боится, а сам наведёт пятёрку зомби. Из
+последних сил, сохраняя рассудок, я влез на дерево, он начал забираться выше.
+Схватив его за ногу, попытался сбросить его вниз. Но это было не так легко. Казалось
+ещё секунду, мой мозг не выдержит и борьба с моей стороны будет окончена. Он
+вцепился мёртвой хваткой в дерево, а я вытащил нож и всадил ему в лодыжку,
+потом ещё куда-то в ногу. После первого удара мне сразу же<span
+style='mso-spacerun:yes'>  </span>стало легче. Удары с моей стороны посыпались
+градом, с ног я перешел на корпус, <span style='mso-spacerun:yes'> </span>всё
+это <span style='mso-spacerun:yes'> </span>сопровождалось его возгласами. После
+очередного удара, он свалился мёртвый на землю. Спустившись, я вытер нож о траву
+и вставил в кобуру на поясе. С начало зомби расчленил, теперь контролёр получил
+не меньше пятнадцати ударов. Я превращаюсь в мясника, подумал я полушутя. Но
+лучше быть мясником, чем мясом. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>Я набрал камней в карман, за место гаек и
+пошёл. Шёл я и думал о зоне, о её происхождении. С начало был Чернобыль, через
+двадцать с лишним лет вспышка и Чернобыль стал зоной. Гипотезы ходили всякие
+насчет возникновения зоны. Одни говорили, что нас посетил инопланетный разум,
+то есть инопланетяне. Другие говорили что это, правительственный, секретный
+проект. Были и такие, которые считали, что возникновение зоны это катаклизм,
+такой <span class=GramE>же</span> как землетрясение, цунами, наводнение. Они же
+считали, что скоро может появится новая зона. По моему так на одну планету
+хватит одной зоны. Ещё ходят слухи, что зона растёт, но официального
+подтверждения этому нет. Слухи разнятся: одни говорят, что зона выросла на один
+квадратный километр, другие, что на десять. Есть и такие, которые говорят, что
+на целых двадцать. Но это конечно слишком. Идя по тропинке и весь погрязший в
+мыслях, я <span class=GramE>пнул</span> жестяную банку. С начало она летела
+прямо, а потом вдруг взмыла <span class=GramE>в верх</span>. Понятно,
+комариная<span style='mso-spacerun:yes'>  </span>плешь. Чуть не набрёл, вместо
+банки вверх полетел бы я.<span style='mso-spacerun:yes'>  </span>Место как
+место, только деревья поломанные, сваленные, вырванные с корнем. И ещё вроде
+крыса расплющенная, её было не узнать, по размеру догадался. Так значит,
+сначала комариная плешь, а сразу за ней мясорубка. Две аномалии рядом, редкое
+явление. Плешь недавно появилась, похоже. Начало темнеть, а из одежды на мне
+было: рубашка сверху <span class=SpellE>битловка</span>, брезентовые штаны,
+кожаные ботинки. Начало октября ещё не очень холодно, тут в зоне не холода надо
+боятся... Невдалеке послышался шум мотора, ехала машина, Шум становился всё
+ближе и ближе.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Я увидел машину, это была
+волга. Белая волга с чёрной полоской на боку. И её хозяина я тоже знал,<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>это был Прохор. Я
+закричал: - Прохор, стой, подожди!<span style='mso-spacerun:yes'> 
+</span>Засвистев, я побежал к машине. И тут что-то изменилось, время ускорило
+свой бег, в десятки раз. Чем быстрей я старался бежать, тем быстрее летело
+время. Я <span class=GramE>видел</span> как стремительно полетели облака на
+небе, как быстро переместилось солнце.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Что-то очень быстро
+пробежало около меня, что я не рассмотрел. Вокруг меня всё двигалось с
+ненормальной скоростью.<span style='mso-spacerun:yes'>  </span><span
+class=GramE>И</span> конечно же уехала машина, что было для меня важней всего. <span
+class=GramE>По моему</span> прошло не больше минуты прежде чем меня отпустило.
+После, этого я очень долго и сильно матерился. Спасение было так близко. Между
+тем солнце стало заходить за горизонт. А я всё думал, что это было? Временная
+ловушка, что ли. О таком я ещё не разу не слышал. Но от этого знания мне легче
+не стало.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>     </span></span><span style='font-size:14.0pt'>2.</span><span
+style='font-size:12.0pt'> <span
+style='mso-spacerun:yes'>                                     </span><span
+style='mso-spacerun:yes'> </span></span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>Вечер пришёл для меня быстро, ночью в зоне мне
+не было страшно никогда. Правда, с оговоркой, тогда я <span
+style='mso-spacerun:yes'> </span>был на машине либо без машины, но с напарником
+и со всякого рода поборами фиксирующими аномалии, конечно <span class=GramE>же</span>
+с оружием. Сейчас дело другое. Тут же встал вопрос о том разводит</span>ь </b><b><span
+style='font-size:12.0pt'>костер или нет</span>.<span style='mso-spacerun:yes'> 
+</span></b><b><span style='font-size:12.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Костёр я<span
+style='mso-spacerun:yes'>  </span>всё же развёл, гасится нечего, хуже не будет,
+подумал я.<span style='mso-spacerun:yes'>  </span>И тут спокойно я впервые
+оценил свои возможности, выходило так, что в зоне мне край <span class=SpellE>палюбому</span>.<span
+style='mso-spacerun:yes'>  </span>Всё бы отдал сейчас, чтобы живым остаться мелькнула
+мысль. - Неужели? Спросил голос<span style='mso-spacerun:yes'>  </span>за спиной.
+Я повернулся, но никого, странно. Я пошёл в кусты по маленькому. И вдруг, какое
+счастье, в кустах труп <span class=SpellE>сталкера</span>. В этом, конечно,
+ничего хорошего нет, но ведь у него наверняка есть оружие. Подойдя к костру, я
+взял горящую ветку, и осмотрел труп. Он был белый как мука. Кровосос, мелькнуло
+в голове. Однозначно. В руках мертвый <span class=SpellE>сталкер</span> сжимал
+двустволку, его лицо исказилось в предсмертной гримасе ужаса. Мм да незавидная
+смерть. Втыкая свои хоботки, кровосос медленно сосёт кровь. <span
+style='mso-spacerun:yes'> </span>Ты всё это видишь, но сделать ничего не
+можешь, по себе знаю. Потерев рубцы на шее, мне стало не по себе. Тогда мне
+чудом повезло,<span style='mso-spacerun:yes'>  </span>учёный с военным отбили
+меня у этого <span class=GramE>гада</span>. Мёртвый парень, скорее всего, был
+новичком. Судя по его амуниции. <span style='mso-spacerun:yes'> </span>Кроме
+двустволки у него ещё была фляга с водой и <span
+style='mso-spacerun:yes'> </span>маленькая баночка с энергетическими пилюлями.
+Проблема питания частично была решена. Взяв всё это добро, двустволку и восемь
+патронов к ней, я пошёл из рощи, к зданиям.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>С двустволкой в руках я
+почувствовал себя намного уверенней. В пятиэтажке я нашёл комнату на третьем
+этаже, которая как ни странно имела задвижку. Так можно было в ней закрыться.
+Ещё там был железный стул, которым я подпёр дверь, стол и железная кровать. Устроившись
+напротив разбитого окна, я стал ждать. Луна выглянула из-за туч, и стало светлей.
+Месяц святил прямо в разбитое окно. Даже читать можно, подумал я. Я сидел и
+смотрел на месяц. С обрезом прямо как в первый раз вспомнилось мне…<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                                                                          
+</span></span></b><b><span style='font-size:14.0pt'>***<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>Сжимая двустволку, я вошёл в зону. Если быть
+точным, то вполз на брюхе мимо вышки. При том ещё ночью в тайне. <span
+class=GramE>Проработав с полгода в баре</span>,<span style='mso-spacerun:yes'> 
+</span>в <span class=SpellE>сталкерском</span> поселении. Наслушавшись их
+рассказов, я решил, что напарник мне не нужен. И решил выйти в разведку, так
+сказать, посмотреть, что да как. <span style='mso-spacerun:yes'> </span><span
+class=GramE>Придурок</span>, думаю я сейчас. Преодолев с километр, что
+считалось для меня подвигом. Примотав<span style='mso-spacerun:yes'> 
+</span>фонарь к обрезу с низу, я двинулся к <span class=GramE>ближайшей</span>
+пятиэтажке. По карте мне оставалось, до неё с километр.<span
+style='mso-spacerun:yes'>  </span>Первый кому я пустил кровь, это были зомби,
+при виде его я с начало растерялся. Но потом направил дула в живот, и ударил
+двойным. Каково было моё потрясение, когда я начал уходить, а он начал
+вставать. Я ещё раз выстрелил, <span class=GramE>двойным</span> в голову, и
+поспешно ретировался с поля битвы.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Но не успел я перезарядить
+двустволку, как что-то вцепилось мне в ногу, двустволка выпала из рук на землю.
+<span class=GramE>Фонарь</span> примотанный к дулу, осветил мне ногу. Это была
+крыса, где-то невдалеке послышались выстрелы. Ножом я снял её с ноги, выстрелы
+стали приближаться. Тут мне надо было бы пойти обратно<span
+style='mso-spacerun:yes'>  </span>и промыть рану. Ничего такого с собой я не
+брал, чем можно было бы обработать рану. Но нет, я поднял двустволку, и
+продолжил свою отчаянную и безрассудную вылазку. Кидая вперёд камни и освещая
+путь, я дошёл до пятиэтажки. Я вошёл, осветил подъезд и был пойман кровососом,
+его хоботки впились мне в шею. Не знаю, откуда он взялся, из воздуха появился
+что ли? <span class=GramE>Я</span> молча на него смотрел но сделать ничего не
+мог. Меня парализовало. Вдруг кто-то вошёл в дом. Я услышал:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Андрей! Быстро сюда.
+Кровосос парня душит. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Выстрелы прозвучали почти
+вплотную. Я видел, как языки пламени вырываются из ствола. После этого я мог
+двинуть рукой. Кровь текла по шее. Рядом валялся мёртвый кровосос. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Парень, ты в порядке?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Да, - только и смог
+выдавить я.<span style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Как звать то?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Толик. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- А меня Андрей. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Мне вас не видно,- сказал
+честно я.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Точно, вот мы <span
+class=GramE>дураки</span>. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Отключи свой прибор, я
+включаю фонарь, - произнёс другой голос.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Хорошо.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Зажглись фонари. Свет
+ударил прямо в лицо. Сразу с двух сторон, стой <span class=GramE>которой</span>
+стреляли и с противоположной. Один из фонарей осветил другого. На меня смотрел
+мужик с автоматом. В форме Армейского спецназа. Увидев мой страх, армеец меня
+успокоил:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Я тут как охранник. <span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Чей?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Мой, - послышался голос
+справа. И представился: - Научный сотрудник, Сергей. И протянул мне руку.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Анатолий. Во второй раз
+я повторил своё имя, и протянул руку навстречу. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Ты парень я вижу ещё
+новичок, сказал спецназовец. – Не советую я тебе этим промышлять, а то ведь оно
+как, сегодня я тебя спас, а завтра во время облавы убить придется. О, у тебя
+внизу вся нога в крови. Серёга я считаю раны надо обработать, шею в особенности.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Доставай аптечку. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Сейчас.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Пока они Сергей
+обрабатывал мне раны, я стоял и отмазывался перед спецназовцем:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Да я вообще сюда зашёл
+как турист, первый раз в зоне. Думал, пойду, посмотрю, что да как.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Посмотрел? - зло прорычал
+Сергей. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Все вы так говорите, - ответил
+Андрей. – А тебе я ещё раз говорю, <span class=SpellE>Толян</span>, не
+испытывай судьбу. Первый раз говоришь? Хорошо. И пусть это будет первый и
+последний твой раз.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- <span class=GramE>Хорош
+ему мораль читать</span>, я уже закончил. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Там было то, что ты
+искал? Спросил армеец, - в его голосе чувствовалось напряжённость. Видно он не
+хотел спрашивать это при мне.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Нет, придётся ещё кое-куда
+заглянуть. Но сначала парня обратно отведём.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Ладно, доведём.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Я поднял винтовку. И мы
+пошли назад в поселение. Армейский Спецназ, думал я. Гроза <span class=SpellE>сталкеров</span>,
+<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>так про них говорили. <span
+class=SpellE>Сталкеры</span> их не любили. Я столько всего наслушался плохого о
+них, хотя.<span style='mso-spacerun:yes'>  </span>У них <span
+style='mso-spacerun:yes'> </span>наверно о <span class=SpellE>сталкерах</span>
+мнение не лучше. Что тут поделаешь, мы по разные стороны баррикад. Хотя если
+подумать. Не будь этих двоих, врятли я был бы ещё жив. Когда до поселения
+осталось метров триста. Они сказали, что дальше не пойдут. Я не <span
+class=GramE>нашёлся</span> что ответить кроме как сказать: <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Спасибо вам.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Армеец промолчал. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Пожалуйста, - ответил
+легкомысленно Сергей <span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Они развернулись и пошли в
+зону. Больше я так их и не встречал. Даже лиц толком не запомнил. Я, конечно,
+стал самым, что ни наесть настоящим <span class=SpellE>сталкером</span>. Но в
+зону в одиночку больше не ходил, вплоть до этого раз. <span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>                                                                
+</span><span style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>                      </span></span></b><b><span
+style='font-size:14.0pt'>***<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Да мне тогда повезло, думал я. А тому парню,
+что валяется в кустах мёртвый, нет. Надеюсь, его двустволка сослужит мне хорошую
+службу.<span style='mso-spacerun:yes'>  </span>Мой взгляд стал блуждать по
+комнате. И тут я заметил тетрадь на столе. Содержание тетрадки оказалось очень
+интересным, если не сказать странным. Хотя в зоне всё странно, здесь надо
+поменьше удивляться. Ведь удивление это чувство своего рода, а чувства в свою
+очередь мешают выживанию в одиночку. Холодный рассудок, уверенность в себе,
+решительность <span style='mso-spacerun:yes'> </span>и быстрая оценка ситуации,
+вот что способствуют выживанию. Рассуждал меланхолично я. А тетрадь была
+следующего содержания, на пожелтевшем листе было написано: «Путник, раз уж ты
+здесь…». Под светом луны я начал читать.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'>  </span></span><span style='font-size:14.0pt'>3. <span
+style='mso-spacerun:yes'>                          </span><span
+style='mso-spacerun:yes'>                           </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'><span
+style='mso-spacerun:yes'> </span></span></b><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>   </span>« Путник, раз уж ты здесь внемли моим
+словам. Вы называющие себя <span class=SpellE>сталкерами</span>, как крысы всё
+тащите из зоны,<span style='mso-spacerun:yes'>  </span>оставляя кровавый след
+позади себя. Но при этом каждый хочет, вернутся назад живым. В зону вас никто
+не звал. Вы воры, что грабят дом по сто раз на год. Вы убиваете мои творения,
+моих детей. Когда ни будь, вы все за это расплатитесь. Но. Сегодня твоя
+очередь. И ничто тебя не уже не спасёт, путник. Или…»<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span></span></b><b><span style='font-size:12.0pt'>Бред,
+полный. И что значит это «Или…», подумал я и оторвал взгляд от тетрадки. От
+неожиданности, я чуть не выронил двустволку. У окна стоял старик, опираясь на
+палку, он смотрел на меня. Пауза была не более секунды. Потом я резко направил
+на него свой обрез и выстрелил дуплетом. Дробь пролетела как бы сквозь него. Не
+долго думая, я вскочил и кинулся на него с ножом. Кто бы он ни был, и как бы он
+здесь ни оказался, ничего хорошего это не предвещало. Там где должна была быть
+грудь старика, мой нож не встретил ничего. В какие-то сотые доли секунды он
+испарился. Из-за спины послышался голос:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>- Можешь не стараться, мне от этого ни жарко,
+ни холодно. У меня к тебе предложение, деловоё.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>- Давай. Ответил я, а сам думал, как бы от
+него свалить. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>- Ты наверно сейчас думаешь, как от меня
+сдёрнуть? Не занимай мозги ненужными мыслями, а лучше выгляни в окно. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>   </span>Так я и поступил. От того, что я там увидел,
+у меня всё похолодело. От потрясения, двустволка выпала из моих рук на пол. Всё
+кончено, мелькнула мысль. Эта же мысль мелькнула, у любого из людей. Не включая
+граждан <span class=GramE>дебилов</span>, конечно. Среди <span class=SpellE>сталкеров</span>,
+я <span class=GramE>таких</span> не встречал. Но тогда мне было не до смеха. В
+окне я увидел следующую картину: зомби не меньше двадцати, контролёры
+контролирующие их. Крысы, их было море, они сновали туда и сюда у ног других
+монстров. Дополняли всё это: маленькие, мерзкие карлики. Они злобно наблюдали
+за мной. А в подтверждение их намерений на уровне окна зависло пару кирпичей. <span
+class=GramE>Такого</span> количество монстров разом не видел ни один <span
+class=SpellE>сталкер</span>. Надо было что-то делать. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Ты говорил о каком-то
+деле? - спросил я. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Да, но сначала, как ты думаешь,
+кто я? - прищурившись, спросил старец. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Хозяин, фантом? Опять
+мне вспомнился этот фантом-хозяин.<span style='mso-spacerun:yes'>  </span>- Но
+если ты хозяин, где остальные твои творения: слепые псы, например?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Они не мои, все мои под
+окном. На тебя, между прочим, и этого хватит, или ты не согласен?<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Я думал ты тут всем
+заправляешь, - недоверчиво ответил я.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Мм да, проблема нынешних
+<span class=SpellE>сталкеров</span> в том, что они слишком много думают. Думать
+надо меньше, соображать больше. А вообще…<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Да ты я вижу остряк, к тому же, - перебил я
+его.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Не острей тебя, языкатый <span class=SpellE>сталкер</span>
+в зоне, это нонсенс. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Это я от волнения,- парировал я старца. - А
+вообще я тогда ничего не понимаю, если ты не контролируешь плоть. То почему она
+так странно себя вела. Откуда появилась эта странная ловушка, временная так я
+её окрестил. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Вопросы, вопросы. Я не знаю, и ни могу дать
+тебе ответ. Ты был на моей территории. Эта часть зоны, принадлежит мне. А засек
+я тебя, когда ты ныл у костра.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Не ныл я. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Да не в буквальном смысле, твоё ментальное
+поле излучало отчаяние. Скажи ещё, что это было не так. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>Ответить мне было нечего, он попал прямо в
+точку. Это был странный диалог. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Старец продолжил:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>- Предложение следующее, пойди в «<span
+class=GramE>гиблый</span> сектор» и достань то, что мне требуется.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Я чуть не рассмеялся. <span
+class=GramE>Гиблый</span> сектор – говорящее название. Простое и незатейливое.
+Редко кто вообще добирался до его границ. <span
+style='mso-spacerun:yes'> </span>Не говоря уже о том, чтобы вернутся оттуда
+живым. Исключением не буду и я, так мне казалось.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- Нет, я на это не пойду. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>- А разве <span
+style='mso-spacerun:yes'> </span>у тебя есть выбор?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt'><span
+style='mso-spacerun:yes'>     </span>4. <span
+style='mso-spacerun:yes'>                                                 </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:261.0pt'><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Через полчаса мы выступили, вся <span
+class=GramE>орава</span> что было под окном возле подъезда сопровождала нас,
+позади, идя на почтительном расстоянии. Месяц затянуло облаками, стало, как
+назло темно. Хрустальный шар, за этим я шёл на смерть. Бесплотный старик шёл
+впереди, и распалялся, какие возможности откроет ему этот шар: <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Я обрету ментальный
+контроль, над всей <span style='mso-spacerun:yes'> </span>зоной и её
+порождениями. А может даже, кто знает, над людьми. Зона будет расти, а вместе с
+ней моё влияние.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>От его разговоров мне
+становилось плохо. Моими руками он хочет прибрать зону к себе. Ещё меня мучила
+одна догадка. Я решил спросить его:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Я наверно у тебя уже не
+первый, кого ты снарядил в этот поход. Так ведь? <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Старик осёкся. – Не
+первый. И надеюсь, что последний. Если ты мне поможешь, я тебя отблагодарю. <span
+class=GramE>Старик</span> пытаясь перевести тему разговора продолжил:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Ты будешь обладать такой
+силой, я тебя такими способностями наделю. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Хорошо если не убьёшь,
+так скольких парней ты уже загубил таким образом?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Если тебе нужны факты,
+ты уже двадцать первый. <span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Славку рыжего ты?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Рыжий такой и здоровый?
+Да я, а что?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Ничего, - сказал я,
+подавляя свой гнев. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Он <span class=GramE>по хорошему</span>
+не хотел, стал геройски пробиваться через мой кордон ну и…<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Дальше мы шли молча. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Среди <span class=SpellE>сталкеров</span>
+много <span class=GramE>сволочей</span> и подонков. Но Славка таким не был. То
+что рассказал про него фантом, скорее <span class=GramE>всего</span> было
+правдой. Очень было похоже на него. Он выбрал смерть, нежели работать на <span
+class=SpellE>нелюдя</span>. В отличие от меня, мелькнула горькая мысль. Фантом распинался
+про то, что собирается меня улучшить. А останусь ли я после этого человеком? Послышался
+звук вертолёта где-то позади. Я повернулся посмотреть. Смотреть было на что.
+Вертолёт стал <span class=GramE>удалятся</span>, его уже не было слышно. Только
+мигающие точки в небе. И вдруг от земли оторвалось две светящиеся точки, и
+полетели по направлению вертолёта. Одна пролетела дальше, а вот вторая. Видать
+удар ракеты пришёлся в топливный бак.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Вертолёт полыхнул и пошёл
+резко на снижение. Место падения, видно не было. В ночи всё это выглядело особо
+эффектно. Наверное «Игла»: переносной зенитно-ракетный комплекс. А сбили,
+скорее всего, <span class=SpellE>Свободники</span>, есть такая фракция. Они
+немного отморозки, но с другой стороны милитаристам тоже иногда <span
+class=GramE>взбучку</span> надо дать. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>К утру мы <span class=SpellE>датопали</span>,
+до «<span class=GramE>Гиблого</span> сектора». Фантом заявил, что дальше ему и
+его своре нельзя. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>- Если ты что-то задумал,
+скажи лучше сейчас, умрёшь быстро и без мучений. Сказал фантом.- И ещё, будь
+осторожен, шар по своим свойствам не крепче обычного хрустального шара. Да вот
+ещё что, без моей помощи он тебя сильнее не сделает, ты сам в этом убедишься.</span></b><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p><span style='mso-spacerun:yes'>     </span><span style='font-size:14.0pt'>5.
+<span style='mso-spacerun:yes'>                                  </span></span><b><span
+style='font-size:14.0pt;font-family:Arial'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Да конечно я буду осторожен. Со злостью думал
+я. А ещё я думал, что если найду, этот чёртов шар, его вообще больше никто
+никогда не увидит. И за Славку он ответит. Власти ему захотелось! Будет, тебе и
+власть, и шар хрустальный, и кофе с какао. Патронов оставалось мало, два в
+двустволке и шесть в запасе. Мощь так называемого «хозяина зоны» люди явно
+преувеличили. А вот если у него будет шар, баланс и без того очень шаткий,
+нарушится. <span style='mso-spacerun:yes'> </span>Увлечённый этими мыслями я
+чуть второй раз не угодил в ловушку, это был студень. Студень, комариная плешь,
+мясорубка, туман. Как мне всё это надоело, вечно в напряжении. Не пройти, ни
+проехать спокойно. Вся жизнь на стрёме. А сейчас без приборов, без всего. Зона.
+Хорошо бы выбиться в генералы, и ядерную боеголовку на неё скинуть. Наверно,
+как только она появилась, так и хотели сделать. А потом видать зациклило на
+технологиях.<span style='mso-spacerun:yes'>  </span>Пробираться было сложно.
+Постоянно приходилось собирать материал, чтобы <span class=GramE>было</span>
+что кидать вперёд. Одна только комариная плешь, двадцать раз попалась. По пути
+я встретил большую часть аномалий, известных мне. <span
+style='mso-spacerun:yes'>   </span>Это, не включая тех, которых я не видел. Но
+мне везло.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Как мне объяснил фантом,
+посреди леса стоит дом двух этажный, жёлтого цвета. Остальные здания поблизости
+будут разрушены. Их там будет штук пять-шесть не более. В подвале этого дома,
+находится лабиринт. Там в лабиринте шар и лежит. Как всё просто на словах. <span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Слева послышался рык,<span
+style='mso-spacerun:yes'>  </span>я увидел как, что-то метнулось в мою сторону.
+Перекатившись вправо, я выстрелил на вскидку.<span style='mso-spacerun:yes'> 
+</span>Выстрел пришёлся практически в упор, в голову. Обезглавленное тело,
+постояв секунду, завалилось на бок. Минус два патрона, констатировал я. Обычно
+они стаями ходят. Но видать, для них, это тоже был необычный сектор. Хотел я,
+было уходить. И тут кусты зашевелились снова. Насчёт слепых псов я ошибся, из
+кустов пожаловали ещё двое. Я направил<span style='mso-spacerun:yes'> 
+</span>на них оружие. Эх автомат бы сейчас, очередью срезал и дело с концом. Автомата
+не было, надо было что-то делать. Придётся ножом, подумал я обречённо. Одно
+неверное движение, и пасть врага сомкнётся на моей шее. Риск был велик, но
+ничего другого я придумать не мог. Нож я взял в правую, двустволку переложил <span
+class=GramE>в</span> левую и стал ждать. Первый пёс прыгнул на меня, надёжным
+дуплетом я выстрелил ему в тело. В туже секунду двустволка была откинута. Прыгнул
+второй. Передними лапами он ударил мне в грудь, я повалился на спину, когда он
+уже был готов, вгрызся мне в шею, я ударил ножом. Удар<span
+style='mso-spacerun:yes'>  </span>в подбородок, проникающий до мозга. Обхватив
+за шею пса левой рукой, я вогнал нож ещё дальше. Какое-то время он дергался в
+конвульсиях, а потом замер. Повернув голову, я заметил, что первый пёс ещё жив
+и силится встать. Мой выстрел пришёлся ему грудь. Медлить было нельзя. Сбросив
+с себя мёртвую тушу второго, я встал. Подбежал к первому, и что есть мочи
+врезал ботинком по голове. Потом ещё и ещё. Тварь застыла. Гадать <span
+class=GramE>от</span> том: откинулся он или нет, я не стал. В дело пошёл нож. <span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span>Впереди меня ждала ещё одна радость. Туман. Проверять
+какого рода это был туман, мне не хотелось.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>В зоне туман бывает двух
+видов: обычный и тот, который разъедает кожу. Без <span class=SpellE>спецкостюма</span><span
+style='mso-spacerun:yes'>  </span>через него не пройти. Пришлось обходить. На
+почтительном расстоянии я стал обходить туман, благо, что у меня хорошее
+чувство расстояние, и я хорошо ориентируюсь в лесу. Это не врождённые навыки,
+их я выработал в детстве,<span style='mso-spacerun:yes'>  </span>в долгих
+походах. И в зоне они мне очень помогали. Туман пришлось обходить долго. Когда <span
+class=GramE>он</span> наконец кончился, солнце выглянуло из-за туч и стало,
+клонится за горизонт. Лес был довольно редкий, и шёл под уклон. В низине
+виднелось здание, подойдя ближе, я был слегка <span class=GramE>ошарашен</span>.
+Здание, что описывал фантом, не было жёлтого цвета. Оно было из чистого золота,
+по крайне мере так оно выглядело. Муляж, иллюзия, мелькнула мысль. Здание имело
+всего шесть окон, три на первом и три на втором этаже. Нормальной двери видно
+не было. А может это другое здание? Мало ли в <span class=GramE>гиблом</span>
+секторе аномалий. Всё окончательно утвердилось, когда я завидел разрушенные
+здания, неподалеку. Делать было нечего, я влез в среднее окно. Сжимая в руках
+двустволку, я обследовал<span style='mso-spacerun:yes'>  </span>дом. Лестницы
+на второй этаж обнаружено не было. Зато была лестница вниз. В подвал, в
+лабиринт.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><span
+style='mso-spacerun:yes'>  </span>Войдя в лабиринт, я почувствовал панику.
+Стены его местами казались металлическими, местами каменными. Слышались
+постоянные шорохи, какое-то движение за спиной. Постоянно мелькали какие-то
+тени, но лабиринт казался мёртвым. Всё усугублялось ещё тем, что лабиринт
+пребывал в полутьме. Иногда приходилось пробираться<span
+style='mso-spacerun:yes'>  </span>на ощупь, надеясь на свою удачу. После часа
+ходьбы я потерял направление. Сев на пол я решил передохнуть и подкрепится.
+Съев две энергетические пилюли и запив их водой, я стал отдыхать. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>И не заметил, как заснул.
+Засыпал я в освещённой части лабиринта, свет казалось, лился из потолка.
+Проснулся же я в полной темноте. Я встал и побрёл в темноте в поисках шара. Сил
+на злость уже не оставалось. Как ни странно после недолгих блужданий<span
+style='mso-spacerun:yes'>  </span>впереди я завидел свет. Надежда вернулась ко
+мне, и я побежал на свет. Вбежав, я осмотрелся, это была комната с тремя
+окнами. За окном начинался рассвет, начал идти дождь. Облезлая краска жёлтого
+цвета, <span class=GramE>провод</span> торчащий из потолка, пожелтевшие газеты
+валялись в углу. Я развернулся посмотреть, откуда я вышел, но за спиной была
+оббитая<span style='mso-spacerun:yes'>  </span>штукатурка. Одной странностью
+больше. В центре комнаты стоял пьедестал не более полуметра. На нём и восседал
+хрустальный шар. На вид, это был обычный хрустальный шар, помещающийся в руках.
+Но, взяв его в руки, я увидел свечение жёлтого цвета, исходившее как бы изнутри
+него. Выглянув в окно, я увидел знакомый<span style='mso-spacerun:yes'> 
+</span>вид. Слева из окна виднелись разрушенные здания. Да это было тоже здание,
+в которое я вошёл. Скинув с окна шар, я спрыгнул следом. Позолота исчезла, дом стал
+жёлтого цвета. И <span class=GramE>всё таки</span> мне повезло, что целый и
+невредимый дошёл до шара. Меня могли сто раз убить, покалечить. Я мог случайно
+напороться на мясорубку. Упасть в яму, до краёв наполненную <span class=SpellE>ведьминым</span>
+студнем, что при моей амуниции означало смерть. Много чего ещё могло <span
+class=GramE>случится</span>. Но вопреки всему я дошёл. А может, меня вели?
+Мелькнула запоздалая мысль. Но сказать однозначно я не мог. Про зону вообще
+ничего нельзя сказать однозначно. Можно было попытаться выбраться из зоны и
+сдать шар кому-нибудь из людей, тому, кто больше даст. Но фантом так просто
+меня не оставит, это раз. И дойду ли я живым? Лучше не рисковать. Прервав свои
+размышления, я запустил в стену дома хрустальный шар. Разбился он, как обычный
+хрустальный шар. Подойдя <span style='mso-spacerun:yes'> </span>поближе, я
+осмотрел осколки. Свечение больше не исходило из него, он был мёртв. Именно не
+разбит или сломан, а мёртв. У меня было ощущение, что шар живой. Кидая шар, я
+понял что, в этой истории не обошлось без настоящего «Хозяина зоны». А главный
+хозяин зоны, это<span style='mso-spacerun:yes'>  </span>сама Зона. И если кто<span
+style='mso-spacerun:yes'>  </span>пытается нарушить её неписаные законы, ничего
+хорошего ему не светит. И если кто-то вдруг решит запустить ракету, с ядерной
+боеголовкой на борту. Я не удивлюсь тому, что ракета достигнув предела зоны,
+вопреки программам, заложенным в неё, развернётся и полетит туда, откуда её
+запустили. Дождь незаметно перешёл в ливень. Я стоял, сжимая в руках двустволку,
+и наблюдал за рассветом. С этим было покончено, но осталась ещё одна проблема.
+Проблема привычная для <span class=SpellE>сталкера</span>, остаться в живых…<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'><span
+style='mso-spacerun:yes'> </span></span></b><b><span lang=EN-US
+style='font-size:12.0pt;mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'>                                                               
+</span><span
+style='mso-spacerun:yes'>                                                                                          </span></span></b><b><span
+style='font-size:12.0pt'>Автор:</span></b><b><span style='font-size:12.0pt;
+mso-ansi-language:EN-US'> </span></b><span lang=EN-US style='font-size:16.0pt;
+mso-ansi-language:EN-US'>t</span><span style='font-size:16.0pt'>0</span><span
+class=SpellE><span lang=EN-US style='font-size:16.0pt;mso-ansi-language:EN-US'>lian</span></span><span
+lang=EN-US style='font-size:16.0pt;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt'><span
+style='mso-spacerun:yes'> </span></span><span style='font-size:12.0pt'><o:p></o:p></span></p>
+
+</div>
+
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="31.5" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.50 (8)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Tolik_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

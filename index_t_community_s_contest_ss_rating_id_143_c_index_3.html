@@ -1,0 +1,664 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="rus">
+	<meta http-equiv="Keywords" content="game, games, stalker, s.t.a.l.k.e.r., oblivion lost, software, development">
+	<link rel="stylesheet" href="css/style.css">
+	<title>S.T.A.L.K.E.R. - Community: Конкурсы </title>
+<script language="VBScript">
+<!--
+Sub lighting_FSCommand(ByVal command, ByVal args)
+  call lighting_DoFSCommand(command, args)
+end sub
+-->
+</script>
+
+<script language=javascript>
+//if(!top.contents){
+//top.
+parent.document.title='S.T.A.L.K.E.R. - Community: Конкурсы';
+//}
+
+/*------------------For Flash Menu----------------------*/
+var id=3;
+var id_sound=2-1;
+var brNav,brIE = false;
+if (navigator.appName.indexOf("Microsoft") != -1) {
+	brIE = true;
+	} else {
+	brNav = true;
+}
+
+function menu_DoFSCommand(command, args) {
+	if ( command == "init" ) {
+    	if (document.menu != null ) {
+	    	document.menu.GotoFrame(id);
+    	}
+	}
+}
+
+function dSend() {
+	if (brIE) {document.menu.GotoFrame(id);}
+	if(brIE ? parent.frames.music : parent.frames[0]){
+		document.lighting.GotoFrame(id_sound+1);
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(id_sound+2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(id_sound+2);
+		}
+	} else {
+		document.lighting.GotoFrame(1);
+	}
+}
+/*______________________________________________________*/
+
+var time=1794818981*1000;
+   
+function lighting_DoFSCommand(comm, arg){
+if(parent.music){
+	if (comm == "no_sound"){
+		document.cookie = "sound=1;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(2);
+		}
+	}
+	if (comm == "sound"){
+		document.cookie = "sound=2;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(3);
+		} else {
+			parent.frames[0].document.music.GotoFrame(3);
+		}
+	}
+}
+}
+</script>
+<script language="JavaScript">
+<!--
+function rnd_win(){
+   var randscript = -1;
+   var howMany =10000;
+   while (randscript <= 0 || randscript > howMany || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+1));
+   }
+   return randscript;
+}
+
+
+function screen_view (url)
+{
+var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+function screen_view_big (url)
+{
+ var  v_screens=  rnd_win(); 
+ var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+
+function wallpaper_view (url, res)
+{
+	if (res) { var x_res = res;	} else { var x_res = 800; }
+	 var  v_screens=  rnd_win(); 
+	var y_res = x_res*0.75;
+    window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+-->
+</script></head>
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+<tr>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+    <td rowspan="2" width="900">
+
+<table cellspacing="0" cellpadding="0" border="0" width="900" height="100%">
+<tr>
+    <td valign="top" height="99"><img src="images/top_left_back.jpg" width="90" height="99" border="0"></td>
+    <td valign="top" height="99">
+<!--Main Header-->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="logo2" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/logo2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED menu=false src="swf/logo2.swf"
+	 quality=high bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="logo2" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="lighting" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/lighting.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/lighting.swf"
+	 quality=high menu=false bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="lighting" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="22" id="news_display" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/news_display.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/news_display.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="22" NAME="news_display" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+                      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="438" height="22" id="menu">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+<param name="movie" value="menu_rus.swf"><PARAM NAME=menu VALUE=false>
+                          <param name="quality" value="high"><param name="bgcolor" value="#000000">
+                          <embed src="menu_rus.swf" menu="false" bgcolor="#000000" width="438" height="22" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="menu" allowscriptaccess="always" wmode="opaque"></embed></object></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+<!--End Main Header-->
+	</td>
+    <td valign="top" height="99"><img src="images/top_right_back.jpg" width="90" height="99" border="0"></td>
+</tr>
+<tr>
+    <td valign="bottom" height="95%"><img src="images/left_back_line.jpg" width="90" height="420" border="0"></td>
+    <td valign="top">
+<table cellspacing="0" cellpadding="0" border="0" height="100%">
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+                                                        <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+
+<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
+	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
+-->
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="385" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="26" height="20" border="0"></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="25" border="0"></td>
+    <td align="right" class="m_head">Community</td>
+    <td></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="19" border="0"></td>
+    <td align="right" class="m_nav"><font color='#ffffff' class='subnav'>Конкурсы</font> | <a href='index_t_community_s_links.html' title='Ссылки'><font color='#CBCBCB'  class='subnav'>Ссылки</font></a> | <a href='http://www.gsc-game.com/russian/main.php?t=community&s=forums&s_game_type=xr&lang=ru' target='_blank' title='Форум'><font color='#CBCBCB'  class='subnav'>Форум</font></a></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/header_line.gif" width="416" height="16" border="0"></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
+    <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr><td><!--Main Text-->
+<!--<span class="newsT"><b>Support | Feedback Form</b></span>
+
+<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_contest.gif" width="503" height="39" border="0" alt=""></p>
+<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
+<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
+-->
+<script language="JavaScript">
+<!--
+ var howMany =6;
+ var Min=1;
+
+function rndnumber(){
+   var randscript = -1
+   while (randscript < Min || randscript > (howMany+Min) || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+Min));
+   }
+   return randscript
+}
+var Max=rndnumber();
+var ImgH="0";
+if(Max<10) ImgH="0"+Max+"";
+else ImgH = Max;
+Cod ="<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"6\" border=\"0\"></td></tr>";
+Cod =Cod +"<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\" valign=\"top\">";
+Cod =Cod +"<img src=\"images/_dot.gif\" width=\"20\" height=\"27\" border=\"0\"><span class=\"myHeader\"></span></td></tr>";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"14\" border=\"0\"></td></tr>";
+Cod =Cod +"</table>";
+//-->
+</script>
+<script language="JavaScript">document.write(Cod)</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><p><b><a href="index_t_community_s_contest_ss_story.html" class="myLink">Истории Зоны</a> | <a href="index_t_community_s_contest_ss_conditions.html" class="myLink">Условия Литературного Конкурса</a> | <a href="index_t_community_s_contest_ss_monsters.html" class="myLink">Результаты &quot;Бала Монстров&quot;</a></b><br><img src="images/_dot.gif" width="1" height="7" border="0" alt=""></p></td></tr></table>
+
+<script language="JavaScript">
+<!--
+ var maxLen=1000;
+
+ function checkLen(form)
+ {
+   str = form.coments.value;
+   len = str.length;
+   if ( len > maxLen ) form.coments.value = str.substring(0,maxLen);
+   len.value = (maxLen - form.coments.value.length);
+   form.coments.focus();
+ } 
+//-->
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3">Клык и Караул</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk  Александр Д Rad-X</b><br>Дата: <b>09/06/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>4872</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>309</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Он подошел вплотную, насколько позволяло ограждение веранды, и уставился на меня тяжелым взглядом из-под густых бровей. В моей голове автоматически запустилась работа по анализу внешнего вида пришельца...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="40.6" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.80&nbsp;(1410)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_143.html" target="_blank">читать</a> | <a href="download/contest/Rad-X_05.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+
+<!--Comment-->
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!--EndComment-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><br/><p>Прием комментариев окончен.</p></td></tr>
+<tr><td class="myH4"><br/>Комментарии:<br/>
+<img src="images/_contest/dev.gif" alt="" border="0" height="5" width="490"></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>05/05/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 Spirit of war. Я не согласен насчет &quot;кривого языка&quot; и готов оспорить все приведенные примеры. Но не буду. Ввиду того, что написано именно так и мне это очевидно, а убеждать в чем-то кого-то уже давно не хочется. Рассказ - уже не рассказ, а продолжение первой части (которая и была по сути единственным рассказом). Сократить втрое не смогу, т.к. вижу необходимость практически каждого абзаца. Т.е. этим всем хочу сказать, что текст писался осмысленно, а не просто от балды да абы как. Тот факт, что читать пришлось через силу, уже говорит, что Вам это все &quot;не покатило&quot;, а значит и что-либо обсуждать тут бесполезно. Почитайте рассказы других авторов - может и найдете что-то по душе. Я прочел около двух сотен здешних рассказов и мне тоже многие не нравятся. На вкус и цвет...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Spirit of war</b><br>Дата: <b>05/05/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Я честно пытался прочесть этот рассказ. Но не смог. Мой нежный организм не выдержал.
+
+Во-первых, рассказ СЛИШКОМ длинный, его без всякого ущерба можно было сократить втрое.
+
+И во-вторых, ужасно кривой язык. Приведу пару примеров из самого начала:
+&quot;Тонкие перьевые облака&quot; - перистые, а не перьевые.
+&quot;...поселилась у него под кепкой от безделья.&quot; - кепка от безделья, это артефакт такой?
+&quot;я чихнул, но внимания на меня не обратили&quot; - почему &quot;обратилИ&quot;, они, ведь, только вдвоём?
+
+Закругляюсь, потому как боюсь не уложиться в &quot;до 1000 знаков&quot;.
+Короче, авторам нужно ещё работать и работать, а читателям, поставившим это рассказ на первое место, нужно больше читать хороших книжек.</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>kopetc</b><br>Дата: <b>04/05/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Mnogo-li u Ezhika mozga? Kak u ezhika...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>02/05/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 ЁЖИК. Во-первых, нас двое авторов. :-) Во-вторых, это уже совсем серьезный комплимент. ;-) Нас много в чем обвиняли, но такое - впервые. Объяснить сможете? Поверьте, плиз, что мы не пытались никому испортить впечатление от чего бы то ни было. Игра вряд ли будет иметь что-то общее с нашей серией рассказов о Клыке. Так что смените гнев на милость, забудьте Клыка и почитайте другие рассказы. Может интерес вернется. :-) </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>ЁЖИК</b><br>Дата: <b>02/05/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>АВТОР СВОИМ РАССКАЗОМ УМЕНЬШИЛ ИНТЕРЕС К ИГРЕ 
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Xripaty</b><br>Дата: <b>14/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Охренеть! Это ваще реально, перечитьтаь все рассказы?! </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>14/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Да, про Чернобыль и летающих крокодилов - это тот же автор. И в том тексте я прямо указал, что текст не мой. К сожалению, по моей ошибке, ушел на конкурс черновик рассказа. Что касается отношения к своим героям, то это просто ускоренный принцип всестороннего узнавания человека/объекта. Оно так и в жизни бывает: сначала объект нам кажется &quot;плохим&quot;, потом мы понимаем, что в этой среде и этих условиях он другим быть и не может, а потом бывает и хорошими чувствами проникаемся. Это как бы общий принцип понимания того, что не бывает ничего, заслуживающего эмоциональной оценки. Это существует как более-менее объективная реальность и наши чувства только отражение нашей же беспокойной сути. </td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Юстас</b><br>Дата: <b>13/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Ну прямо сочинение по литературе в девятом классе! :)</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>kopetc</b><br>Дата: <b>12/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>A &amp;#168;Pochemu v Chern. ne let. krokodily&amp;#168; (pervyi rasskaz pro Bronenosetc) tozhe ne tvoe? Naschet togo, chto v proizvedenii kazhdyi vidit svoe- eto pravda. Esli vidit chel chto-to pro sebya, emu bolshe nravitsya. No Klyki vovse ne nashe (chitatelei) &amp;#168;proizvedenie&amp;#168;, hotya ih i chitala kucha naroda. My zhe ne avtory, a potrebiteli. Proizvedenie- est vyrazhenie avtora. Takzhe, eto rasskaz i o samom avtore, ego vzglyade na zhizn i opisannye sobytiya. (nu naprimer ya zametil, chto ko vsem personazham ty otnosishsya s uvazheniem. V &amp;#168;Kl. i posl.b.&amp;#168; s uvazheniem skazano pro upertogo i zlobnogo Rvacha, chto on takoi ogromnyi stvol taskal. Dazhe proklyatyi Marchenko v itoge poluchil obyasnenie svoei zhestokosti. I umirayshii maroder v &amp;#168;Ishode&amp;#168; srazu zarezal stalkera. i proch.)</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>08/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Скажу по секрету: Макс - не мое произведение. Я к нему отношение имею только в том смысле, что рассказ мне понравился, а автор попросил меня опубликовать его под моим именем.  Я даже написал об этом в предисловии, но перед публикацией редакторы его почему-то вырезали. Поэтому Макс - это не улучшение стиля по сравнению с клыками. Это просто другой (очень неплохой) автор, который не хочет ввязываться в бесконечные дрязги, наезды и читерские войны. Что касается Клыков - тут каждый видит свое, каждому нравится тоже что-то свое. В личной переписке, да и тут, в комментах, мне иногда давали такие трактовки событий и персонажей, что я и сам удивлялся. Когда текст читает хотябы несколько людей - это уже коллективное произведение, существующее в разных ипостасях в голове каждого читателя. В этом смысле клыки уже оторваны от меня как от автора. Я теперь тоже только читатель. :-)</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>kopetc</b><br>Дата: <b>08/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 rvcool  kakoe zhe eto takoe super preimuschestvo imeet Max pered legendarnymi &quot;Klykami&quot;??</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>RVCool</b><br>Дата: <b>07/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Привет! &quot;Макс&quot; понравился на много больше &quot;Клыков&quot;. коментарии оставил.</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Cоколов Александр aka St@lkerogen</b><br>Дата: <b>05/04/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Холод, привет!! Пишу тебе письмецо...Написал рассказ вот только боюсь, что редактировать его надо, а я плохо это умею. Если тебя незатруднит, то помоги пожалуйста ели время будет. Заранее пасибо!!!</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>30/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 $okol-ice aka St@lkerogen  Ссылка мертва. Зайди на форуме в &quot;Критику рассказов&quot;-&quot;Holoduk наносит ответный удар&quot; и оставь там внятную рабочую ссылку. Тада все будет. А так я походил, поискал, но нашел только &quot;Холодные дни в аду&quot;, в то время как ты просил откритиковать другой рассказ. Или я что-то недопонял?</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>$okol-ice aka St@lkerogen</b><br>Дата: <b>29/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Здраствуй HoloDUk!!! Покритикуй пожалуйста мой рассказ, с нетерпением жду http://www.stalker-fan.narod.ru/fan25.ht</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>29/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 Копец. Да, но не так жестко. Полностью знак равенства ставить нельзя (Прыщ говорит, что не может внятно объяснить, а шрамы - с рождения). Но связь несомненна и про капитана можно сказать то же самое. Кроме того, в корректированной слегка версии первого рассказа, изначальныефамилии капитана и Прыща изменены так, чтобы еще больше эту связь подчеркивать (докладываю шепотом, что эта же связь имеется и со второй частью &quot;Решить за всех&quot;, хотя кроме этой мелочи да появления там зверя из числа тех, с кем боролся Клык, ничего общего у них нет).</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>kopetc</b><br>Дата: <b>28/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Nu, eti oboroty ne koryavye, a ochen dazhe simpatichnye. Vot oborot &quot;raskinula svoi schypaltca&quot;, &quot;rasstavila svoi paltcy&quot; i tp. deistvitelno nemnogo rezhut sluh tk. slishkom chasto vstrechaytsya. A pro Pryscha eto pravda, ili eto ya v anomaliyah peregrelsya?
+2 Yustas: ne perezhivai! Pro Pryscha eto ne printcipialno v rasskaze. Ty nichego ne poteryal.</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>28/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>2 Юстас. Не получается отправить на этот адрес. Может неверно пишу. Засылай пустое письмо на um2003(собака)mail.ru и я вышлю ответом. 2 Копец Согласен, обороты имеют место быть. И вообще часто встречаются &quot;фирменные&quot; же корявости. Рвач не поумнел (всегда был не дурак), а проникся определенным отношением к Клыку после того, что он увидел в третьей части. Сток больше не выступает постоянно как командир т.к. опять же в третьей части стало известно о высокой должности Рвача в клане раньше плюс они и не были в обычной ходке. А когда принималось решение - он по-прежнему командовал (в 3 части они были в положении, когда требовалась жесткая рука, а обычно в квадах никого так не строят, все на понимании). Вообще расписывал короче, т.к. это не суть важно и всегда помнилось, что народ был недоволен большими объемами.</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Юстас</b><br>Дата: <b>28/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>koptcu строгий выговор. Зачем было рассказывать фабулу четвёртой части?!
+
+Что-то на сайте RVCool нет последней части... Как и первых. Не хочется превращать обсуждение в стол заказов, но мой e-mail - &lt;com974 at mail dot ru&gt;...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>kopetc</b><br>Дата: <b>27/03/2004</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>Prochital Ishod. klassno!
+Opisaniya prirody- vashi &quot;marochnye&quot;.  S pervoi pary predlozhenii poshlo napryazhenie,a potom s mesta v karyer. Zahvatyvayshe. Zametil harakternye dlya vas opisatelnye oboroty: &quot;Kopetc kak pamyatnik samomu sebe&quot;, a ranshe bylo &quot;belyi enot kak chuchelo sobstvennogo vida&quot;(Kl. i Kar.). (Ili kak eshe vashe &quot;4 stalkerskie dushi otpravilis v stalkerskii rai&quot;(Kl., Pr. i Kap.) i &quot;sobaki otpravlyalis v sobachii rai kolonnoi po 3 ili 4&quot;(Kl. i Kar.). Nu eto tak, k slovu...
+Chto stranno- poumnel Rvach, i Stok ne pokazan kak komandir(ne to, chto v Kl. i posl.bitv). Mozgi zakipeli vot ot chego: Prysch-eto Marchenko!!? A Klyk-Kapitan, chtoli? Da vy, rebyata v anomaliyah peregrelis!
+  Ot menya, konechno, otdelnoe spasibo!</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+				
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+	<td><a href="index_t_community_s_contest_ss_rating_id_143_c_index_2.html" class="nw_link">&laquo; Предыдущих 20 комментариев</a> | 	  <a href="index_t_community_s_contest_ss_rating_id_143_c_index_4.html" class="nw_link">Следующих 20 комментариев &raquo;</a><br>&nbsp;</td>
+  </tr>
+
+</table> <!--End Main Text <table></table>--></td></tr>
+<tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
+</table></td><td width="100" valign="top">
+
+<!--Hot Elements--><!--dinamic menu-->
+<!--end dinamic menu-->
+
+<div id="sidebar_hot_block"></div>
+<div id="sidebar_screen"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_game.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_graphics.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_tech.gif" alt="" width="114" height="130" border="0"></td></tr>
+</table><!--End Hot Elements--></td>
+    <td width="22"><img src="images/_dot.gif" width="21" height="1" border="0"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
+</tr>
+<tr>
+	<td height="45" class="copyr" align="center"><a href="../&s=contest.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | Community | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
+src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
+�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
+Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">43&nbsp;&nbsp;315</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
+</tr>
+<tr><td height="2"><img src="images/_dot.gif" width="1" height="6" border="0"></td></tr>
+</table>
+
+	</td>
+    <td valign="bottom" height="90%"><img src="images/right_back_line.jpg" width="90" height="420" border="0"></td>
+</tr>
+</table>
+
+</td>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+</tr>
+</table>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+

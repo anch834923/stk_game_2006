@@ -1,0 +1,289 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Поединок - Бережанский Андрей</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_108.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Поединок</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Бережанский Андрей</b><br>Дата: <b>23/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>731</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p align="right"><i>Истоки победы, как и&nbsp;поражения,<br>
+следует искать в&nbsp;наших сердцах.</i></p>
+
+<p>Я&nbsp;повернул за&nbsp;угол и&nbsp;словно натолкнулся на&nbsp;твердую прозрачную стену, выбившую из&nbsp;моей груди весь воздух до&nbsp;последнего глотка. Сквозь красные разводы перед глазами я&nbsp;увидел холодные серые глаза Ивана. Нет! Он&nbsp;же погиб&#133; Я&nbsp;сам видел, как его поглотила толпа зомби, гнавшаяся за&nbsp;нами. Он&nbsp;тогда споткнулся&nbsp;&#151; и&nbsp;все, его повалили на&nbsp;землю. Я&nbsp;не&nbsp;остановился, чтобы ему помочь. Что я&nbsp;мог один сделать, почти безоружный, против десятка врагов. Тупых, безоружных, но&nbsp;все&nbsp;же сильных врагов? Ничего. Я&nbsp;ничем не&nbsp;мог ему помочь. Это я&nbsp;себе твердил раз за&nbsp;разом вот уже три с&nbsp;половиной месяца. И&nbsp;все впустую. <nobr>Какой-то</nobr> голос внутри меня нашептывал, что я&nbsp;мог хотя&nbsp;бы попытаться сразится с&nbsp;зомби&nbsp;&#151; у&nbsp;меня&nbsp;же был отличный охотничий нож. Разумом я&nbsp;понимал, что подобное геройство закончилось&nbsp;бы для меня смертью, но&nbsp;вот сердце кричало, что нужно было попробовать. Или это моя совесть кричала, извиваясь от&nbsp;болезненной раны моего предательства. Не&nbsp;знаю. Знаю только, что случись подобное снова, я&nbsp;бы не&nbsp;убежал. Не&nbsp;убежал&nbsp;бы! Лучше смерть, чем подобные муки. </p>
+
+<p>Смерть. Похоже, я&nbsp;ее&nbsp;таки дозвался. Все это время мне безумно везло, как везет многим, над кем она уже простерла свои длани. Я&nbsp;брал самые трудные заказы, от&nbsp;которых отказывались все здравомыслящие сталкеры, и&nbsp;выполнял их,&nbsp;неизменно возвращаясь из&nbsp;Зоны без единой царапины.</p>
+
+<p>Последние дни жизни. Яркие, наполненные событиями и&nbsp;чувствами. И&nbsp;долгие бессонные ночи, когда призрачный голос Ивана звучал в&nbsp;моем воспаленном воображении. И&nbsp;неровный, болезненный сон под самое утро, полный самых разнообразных кошмаров, но&nbsp;до&nbsp;ужаса постоянный своим завершением.</p>
+
+<p>Глаза Ивана. Умоляющие о&nbsp;помощи глаза друга и&nbsp;его протянутые ко&nbsp;мне руки. И&nbsp;крик, исторгающийся из&nbsp;груди моего мокрого от&nbsp;холодного пота тела, замотанного в&nbsp;скомканные простыни. А&nbsp;потом ожидание утра, заполненное безуспешными попытками прекратить прокручивать события того дня.</p>
+
+<p> Я&nbsp;тогда убежал. Страх придал мне сил, он&nbsp;же <nobr>каким-то</nobr> чудом указал мне безопасный путь к&nbsp;ближайшему блокпосту, он&nbsp;же не&nbsp;давал <nobr>какое-то</nobr> время думать о&nbsp;случившемся. А&nbsp;потом он&nbsp;исчез, оставив после себя в&nbsp;душе одну выгоревшую пустоту.</p>
+
+<p><nobr>Какая-то</nobr> часть меня понимала, что я&nbsp;ищу смерти, безумно рискуя и&nbsp;пытаясь таким глупым способом искупить свою вину, искупить в&nbsp;своих глазах. Никто не&nbsp;обвинял меня в&nbsp;смерти напарника, никто, кроме меня. Я&nbsp;сам был себе самым страшным мучителем, но&nbsp;понимание этого не&nbsp;могло мне помочь. Это могло&nbsp;бы сделать время, но&nbsp;<nobr>его-то</nobr> как раз у&nbsp;меня и&nbsp;не&nbsp;было. Зона не&nbsp;любит, когда к&nbsp;ней относятся так пренебрежительно, когда ей&nbsp;бросают столь открытый вызов. Она может не&nbsp;заметить несколько таких дерзких выходок, она может даже пару раз помочь храбрецу. Со&nbsp;мной так и&nbsp;было, только сегодня мой кредит закончился. Я&nbsp;встретился с&nbsp;кредитором&#133;</p>
+
+<p>Пронзительные неживые глаза Ивана, затягивающие в&nbsp;себя, заставляющие блекнуть краски мира, надвигались на&nbsp;меня. Они впивались глубоко внутрь моей сущности, раздирая ее&nbsp;на&nbsp;части своей поразительной силой&#133;</p>
+
+<p>Как&nbsp;же я&nbsp;раньше не&nbsp;понял? Зомби не&nbsp;убили Ивана. Нет! Они всего-навсего поймали его по&nbsp;приказу контролера. А&nbsp;потом контролер сделал из&nbsp;моего друга подобного себе. Теперь я&nbsp;понимал это, теперь я&nbsp;знал, что не&nbsp;сошел с&nbsp;ума, когда на&nbsp;следующий день после того памятного события мне привиделся вдалеке силуэт Ивана. Я&nbsp;тогда вернулся на&nbsp;место трагедии чтобы похоронить останки напарника, но&nbsp;ничего не&nbsp;нашел. Лишь силуэт вдалеке увидел. Именно после того случая со&nbsp;мной начали твориться все эти странные вещи.</p>
+
+<p>Я&nbsp;искал. Неосознанно, но&nbsp;я&nbsp;искал встречи с&nbsp;Иваном. Именно поэтому я&nbsp;облазил почти всю Зону, проводя в&nbsp;ней почти по&nbsp;пятнадцать часов в&nbsp;сутки. И&nbsp;вот эта встреча состоялась&#133;</p>
+
+<p>Слова, которые я&nbsp;хотел сказать погибшему другу так и&nbsp;не&nbsp;сорвались с&nbsp;моего языка. Даже из&nbsp;памяти они стерлись. Я&nbsp;больше не&nbsp;хотел просить прощения. Не&nbsp;хотел. Оно было ненужно. Я&nbsp;был невиновен. Теперь я&nbsp;это понимал. Вот только поздно уже было для этого понимания. Поздно. В&nbsp;мои глаза смотрел контролер. Да&nbsp;что там глаза! Его взгляд пронизывал всего меня, заглядывал в&nbsp;мой разум, перебирал мои мысли. И&nbsp;я&nbsp;ничего не&nbsp;мог сделать.</p>
+
+<p>Иван. Да&nbsp;что&nbsp;же это такое!? Почему с&nbsp;ним приключилась такая напасть? Лучше уж&nbsp;быть растерзанным на&nbsp;мелкие ошметки, чем стать таким. </p>
+
+<p>Всего меня заполнило чувство жалости к&nbsp;бывшему другу. Не&nbsp;к&nbsp;себе, к&nbsp;нему. Со&nbsp;своей смертью я&nbsp;<nobr>как-то</nobr> за&nbsp;последние месяцы примирился. Странно все это было, дико, но&nbsp;я&nbsp;не&nbsp;боялся умирать. Совсем не&nbsp;боялся, даже немного хотел этого. А&nbsp;вот за&nbsp;Ивана мне было обидно. Не&nbsp;заслужил он&nbsp;такой участи. Не&nbsp;заслужил! Стать контролером&nbsp;&#151; это самой худшее, что могло случиться с&nbsp;человеком в&nbsp;Зоне. Все остальное, включая смерть,&nbsp;&#151; ничто по&nbsp;сравнению с&nbsp;этим.</p>
+
+<p>Чувство жалости, перемешанное с&nbsp;состраданием, заполнило всего меня, окутав сознание мягким пологом сопереживания. И&nbsp;черная бездна забвения, в&nbsp;которую я&nbsp;проваливался все больше и&nbsp;больше, отступила. В&nbsp;<nobr>какой-то</nobr> миг мне показалось, что я&nbsp;призрачной тенью вишу в&nbsp;бескрайнем космосе, растянутый между двумя галактиками, а&nbsp;возле меня есть еще <nobr>кто-то</nobr>. И&nbsp;он&nbsp;был не&nbsp;один. Их&nbsp;было двое. Почти возле меня был Иван, добрый друг. Он&nbsp;излучал теплоту и&nbsp;дружелюбие, и&nbsp;он&nbsp;не&nbsp;винил меня в&nbsp;том, что с&nbsp;ним случилось. Печаль, светлая печаль, была в&nbsp;нем, она&nbsp;же была во&nbsp;мне. Она отгоняла от&nbsp;нас черноту, объединяя своей могучей силой. А&nbsp;дальше, на&nbsp;пределе моего чувствования, зависла темная монолитная сущность. Она нависала над всем миром, грозя раздавить его. Но&nbsp;сейчас она словно заснула, не&nbsp;в&nbsp;силах помешать объединенной воле двух человек. </p>
+
+<p>Казалось, прошла вечность, и&nbsp;вдруг я&nbsp;снова начал видеть мир вокруг&#133;</p>
+
+<p>В&nbsp;глазах стоящего передо мной контролера больше не&nbsp;было холода, они как будто оттаяли. Совсем немного, но&nbsp;по&nbsp;сравнению с&nbsp;пронизывающим холодом, что излучался ими совсем недавно, это было очень заметно. Губы Ивана шевелились, но&nbsp;я&nbsp;все никак не&nbsp;мог понять, что он&nbsp;говорит. Я&nbsp;попробовал читать по&nbsp;губам.</p>
+
+<p>&#151; Убей меня,&nbsp;&#151; наконец смог разобрать я.&nbsp;&#151; Контроллер во&nbsp;мне <nobr>вот-вот</nobr> снова возьмет верх. Ты&nbsp;ничем не&nbsp;сможешь мне помочь. Поверь мне&#133;</p>
+
+<p>Он&nbsp;повторял эту фразу раз за&nbsp;разом, все неразборчивее шевеля губами. Он&nbsp;был прав. Похоже, контролер в&nbsp;нем был слишком силен.</p>
+
+<p>&#151; Хорошо,&nbsp;&#151; прошептал я&nbsp;и&nbsp;нажал на&nbsp;курок висевшего на&nbsp;моей груди автомата, все это время нацеленного на&nbsp;Ивана. Сквозь застлавшие мои глаза слезы я&nbsp;увидел, как в&nbsp;груди друга одна за&nbsp;другой появляются рваные кровавые дыры. Я&nbsp;видел, как медленно, словно в&nbsp;замедленной съемке, его тело опускается на&nbsp;землю. Теперь уже мертвое, просто мертвое. Как и&nbsp;должно быть.</p>
+
+<p>Я&nbsp;стоял над мертвым другом и&nbsp;гадал, не&nbsp;привиделась&nbsp;ли мне в&nbsp;глазах Ивана радость в&nbsp;тот момент, когда первая пуля толкнула его в&nbsp;объятья смерти, в&nbsp;объятья свободы. Он&nbsp;победил. Даже в&nbsp;смерти он&nbsp;сумел победить внедренного в&nbsp;его сознание контролера. Нет, не&nbsp;так! Мы&nbsp;победили. Победили в&nbsp;нашей последней битве, последней битве, в&nbsp;которой мы&nbsp;вместе сражались в&nbsp;этом мире. Дальше я&nbsp;буду сражаться один, но&nbsp;тень Ивана больше не&nbsp;будет мучить меня. Я&nbsp;знал это, знал потому, что я&nbsp;<nobr>наконец-то</nobr> сумел простить себя.</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.08" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.44 (45)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/berezansky_03.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

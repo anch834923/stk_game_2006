@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="rus">
+	<meta http-equiv="Keywords" content="game, games, stalker, s.t.a.l.k.e.r., oblivion lost, software, development">
+	<link rel="stylesheet" href="css/style.css">
+	<title>S.T.A.L.K.E.R. - Об Игре: Описание </title>
+<script language="VBScript">
+<!--
+Sub lighting_FSCommand(ByVal command, ByVal args)
+  call lighting_DoFSCommand(command, args)
+end sub
+-->
+</script>
+
+<script language=javascript>
+//if(!top.contents){
+//top.
+parent.document.title='S.T.A.L.K.E.R. - Об Игре: Описание';
+//}
+
+/*------------------For Flash Menu----------------------*/
+var id=2;
+var id_sound=2-1;
+var brNav,brIE = false;
+if (navigator.appName.indexOf("Microsoft") != -1) {
+	brIE = true;
+	} else {
+	brNav = true;
+}
+
+function menu_DoFSCommand(command, args) {
+	if ( command == "init" ) {
+    	if (document.menu != null ) {
+	    	document.menu.GotoFrame(id);
+    	}
+	}
+}
+
+function dSend() {
+	if (brIE) {document.menu.GotoFrame(id);}
+	if(brIE ? parent.frames.music : parent.frames[0]){
+		document.lighting.GotoFrame(id_sound+1);
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(id_sound+2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(id_sound+2);
+		}
+	} else {
+		document.lighting.GotoFrame(1);
+	}
+}
+/*______________________________________________________*/
+
+var time=1794818166*1000;
+   
+function lighting_DoFSCommand(comm, arg){
+if(parent.music){
+	if (comm == "no_sound"){
+		document.cookie = "sound=1;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(2);
+		}
+	}
+	if (comm == "sound"){
+		document.cookie = "sound=2;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(3);
+		} else {
+			parent.frames[0].document.music.GotoFrame(3);
+		}
+	}
+}
+}
+</script>
+<script language="JavaScript">
+<!--
+function rnd_win(){
+   var randscript = -1;
+   var howMany =10000;
+   while (randscript <= 0 || randscript > howMany || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+1));
+   }
+   return randscript;
+}
+
+
+function screen_view (url)
+{
+var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+function screen_view_big (url)
+{
+ var  v_screens=  rnd_win(); 
+ var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+
+function wallpaper_view (url, res)
+{
+	if (res) { var x_res = res;	} else { var x_res = 800; }
+	 var  v_screens=  rnd_win(); 
+	var y_res = x_res*0.75;
+    window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+-->
+</script></head>
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+<tr>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+    <td rowspan="2" width="900">
+
+<table cellspacing="0" cellpadding="0" border="0" width="900" height="100%">
+<tr>
+    <td valign="top" height="99"><img src="images/top_left_back.jpg" width="90" height="99" border="0"></td>
+    <td valign="top" height="99">
+<!--Main Header-->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="logo2" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/logo2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED menu=false src="swf/logo2.swf"
+	 quality=high bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="logo2" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="lighting" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/lighting.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/lighting.swf"
+	 quality=high menu=false bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="lighting" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="22" id="news_display" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/news_display.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/news_display.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="22" NAME="news_display" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+                      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="438" height="22" id="menu">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+<param name="movie" value="menu_rus.swf"><PARAM NAME=menu VALUE=false>
+                          <param name="quality" value="high"><param name="bgcolor" value="#000000">
+                          <embed src="menu_rus.swf" menu="false" bgcolor="#000000" width="438" height="22" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="menu" allowscriptaccess="always" wmode="opaque"></embed></object></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+<!--End Main Header-->
+	</td>
+    <td valign="top" height="99"><img src="images/top_right_back.jpg" width="90" height="99" border="0"></td>
+</tr>
+<tr>
+    <td valign="bottom" height="95%"><img src="images/left_back_line.jpg" width="90" height="420" border="0"></td>
+    <td valign="top">
+<table cellspacing="0" cellpadding="0" border="0" height="100%">
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+                                                        <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+
+<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
+	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
+-->
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="385" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="26" height="20" border="0"></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="25" border="0"></td>
+    <td align="right" class="m_head">Об Игре</td>
+    <td></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="19" border="0"></td>
+    <td align="right" class="m_nav"><a href='index_t_game_s_zone_stories.html' title='Истории Зоны'><font color='#CBCBCB'  class='subnav'>Истории Зоны</font></a> | <font color='#ffffff' class='subnav'>Описание</font> | <a href='index_t_game_s_creatures.html' title='Персонажи'><font color='#CBCBCB'  class='subnav'>Персонажи</font></a> | <a href='index_t_game_s_objects.html' title='Объекты'><font color='#CBCBCB'  class='subnav'>Объекты</font></a> | <a href='index_t_game_s_anomalies.html' title='Зона'><font color='#CBCBCB'  class='subnav'>Зона</font></a></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/header_line.gif" width="416" height="16" border="0"></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
+    <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr><td><!--Main Text-->
+<!--<span class="newsT"><b>Support | Feedback Form</b></span>
+
+<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_gameplay.gif" width="503" height="39" border="0" alt=""></p>
+<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
+<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
+-->
+<script language="JavaScript">
+<!--
+ var howMany =6;
+ var Min=1;
+
+function rndnumber(){
+   var randscript = -1
+   while (randscript < Min || randscript > (howMany+Min) || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+Min));
+   }
+   return randscript
+}
+var Max=rndnumber();
+var ImgH="0";
+if(Max<10) ImgH="0"+Max+"";
+else ImgH = Max;
+Cod ="<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"6\" border=\"0\"></td></tr>";
+Cod =Cod +"<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\" valign=\"top\">";
+Cod =Cod +"<img src=\"images/_dot.gif\" width=\"20\" height=\"27\" border=\"0\"><span class=\"myHeader\">Хронология</span></td></tr>";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"14\" border=\"0\"></td></tr>";
+Cod =Cod +"</table>";
+//-->
+</script>
+<script language="JavaScript">document.write(Cod)</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><p><b><a href="index_t_game_s_gameplay_ss_storyline.html" class="myLink">История</a> | <a href="index_t_game_s_gameplay_ss_gameplay.html" class="myLink">Описание</a> | <a href="index_t_game_s_gameplay_ss_features.html" class="myLink">Особенности игры</a> | <a href="index_t_game_s_gameplay_ss_articles.html" class="myLink">Общие статьи</a> | Хронология | <a href="index_t_game_s_gameplay_ss_faq.html" class="myLink">F.A.Q.</a></b><br><img src="images/_dot.gif" width="1" height="7" border="0" alt=""></p></td></tr></table><br>
+<table width="494" cellspacing="0" border="0" cellpadding="0">
+
+<tr>
+<td valign="top" width="73%">
+<a name="21"></a>
+<font class="myH3">26 декабря 1945 года</font><br>26 декабря 1945 года - Впервые на нашем Евразийском континенте заработал "атомный котел" - детище Курчатова и Доллежаля, советский уран-графитовый реактор Ф-1 в Москве. А в США президент-ковбой Гарри Труман в те дни уже вовсю размахивал ядерной "дубинкой для русских парней". После Потсдамской конференции Сталин поручает общее руководство советской ядерной программой Лаврентию Павловичу Берия - темпы работ возрастают, тысячи и тысячи людей мобилизуют на строительство, в СССР начинают как грибы расти новые промышленные и научные центры "специального назначения". Физические расчеты будущей бомбы команда Курчатова могла провести самостоятельно, идея обогащения урана и компоновки заряда были ясны. Серьезно экономить время и избегать неоптимальных инженерных решений помогает внешняя разведка...<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/f1.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="20"></a>
+<font class="myH3">9 августа 1945 года</font><br>9 августа 1945 года - 3:47 утра: Бомбардировщик В-29, несущий в чреве плутониевый заряд "Фэтмэн" мощностью 20 кт, взлетел с авиабазы на о.Тиниан и взял курс на японский г.Кокура. Но над целью пилотов встречает непроглядная облачность и самолет идет к запасной цели - Нагасаки. Там тоже пасмурно, но топливо на исходе и пилоты сбрасывают "Фэтмэна" в первый же подходящий разрыв облаков. 11:02 - на запланированной высоте 500 м над окраиной Нагасаки происходит взрыв. 80 000 исключительно мирных жителей становятся жертвами в первые минуты. Слабой попыткой назвать это боевым применением, а не испытанием на людях было якобы имевшее место повреждение одного из военных заводов Мицубиси. Война же закончится только через месяц после этих бомбардировок, когда Красная Армия окончательно окружит и полностью разгромит самое многочисленное соединение японцев - миллионную Квантунскую сухопутную группировку...<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/fat man.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="18"></a>
+<font class="myH3">6 августа 1945 года</font><br>6 августа 1945 года - 9:16 утра - огненный ядерный смерч поглотил японский город Хиросима. Бомба "Литтл Бой" содержала заряд из высокообогащенного урана и имела мощность 15 кт и в считанные мгновения унесла жизни 141 000 человек. В Хиросиме не было военных баз или оборонных заводов, город не был значительным транспортным узлом. Хиросима была просто удобной, безопасной, стопроцентной мишенью с удобным рельефом и одно/двухэтажной застройкой. Не смутил американское командование и тот факт, что в черте города находился лагерь для американских военнопленных. 25000 янки входят в число погибших от первой в мире атомной бомбардировки. Результаты бомбардировки были оценены на отлично, но для оптимального выбора оружия для арсеналов США, необходимо было оценить на практике действие второго типа ядерных зарядов - плутониевого...<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/little boy.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="17"></a>
+<font class="myH3">16 июля 1945 года</font><br>16 июля 1945 года - В пустыне Алмогордо, США произведено первое в мире испытание ядерного заряда. Плутониевый заряд "Гэджет" мощностью 20 килотонн стал результатом Манхеттенского проекта, руководимого одаренным физиком и талантливым администратором Робертом Оппенгеймером. Оппенгеймер был учеником Резерфорда, до атомного проекта вел исключительно мирные и успешные исследования в области квантовой физики - например, в 1939 году совместно со Снайдером предсказал существование во Вселенной "черных дыр". После увиденного на полигоне в Алмогордо он осознал гибельность своего детища для всего человечества и стал активно бороться против милитаризации атомной энергии. В 1953 году, за активные антивоенные выступления и совместную с СССР поддержку мирных инициатив использования энергии атомного ядра, стал жертвой "охоты на ведьм", был публично очернен, обвинен в симпатиях к большевизму и снят со всех постов.<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/oppenheimer.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="16"></a>
+<font class="myH3">1942 год</font><br>1942 год - Флеров в своем письме с фронта руководству СССР обоснованно предупредил, что "союзники" и фашистская Германия активно ведут движение к созданию атомного боезаряда. По личному приказу Иосифа Сталина в Москве организуется "лаборатория №2" под руководством Игоря Васильевича Курчатова (будущий Курчатовский институт). О таланте Курчатова как ученого и организатора написано много замечательных книг, вот уж воистину - пример, достойный подражания. В 1942 году работы над атомной тематикой велись как на оборонных заводах, в три смены. И все же силы истекающей кровью страны не позволяли догнать США, на чью территорию не упала ни одна бомба - ведь большая часть европейской части СССР была оккупирована...<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/kurchatov.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="15"></a>
+<font class="myH3">2 декабря 1942 года</font><br>В Чикаго, на обычном поле для гольфа, заработал возведенный командой Энрико Ферми первый в мире ядерный реактор. Замедлитель - сверхчистый графит, топливо - природный (необогащенный) уран, тепловая мощность 40 Ватт (принудительного охлаждения не было). Реактор был детищем научной мысли большого коллектива ученых-эмигрантов из Европы. Вскоре было запущено еще 3 реактора в городке Гэндорф, штат Вашингтон. Количество плутония в загруженных урановых стержнях росло с каждым мгновением. В это же время, по чертежам ученых Великобритании, в США строились газодиффузионные заводы для обогащения урана. Великобритания не могла позволить себе собственную ядерную программу, хотя большинство инженерных решений принадлежало именно жителям воюющего Альбиона. А ученые-ядерщики СССР до 1942 года в общем строю воюют с фашизмом, в минуты передышки между боями царапая формулы огрызками карандашей на обрывках газет...<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/fermi.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="14"></a>
+<font class="myH3">1941 год</font><br>Американец Гленн Сиборг при облучении нейтронами урана-238 получил плутоний-239. В природе плутоний встречается в ничтожно малых количествах в урановой руде. У плутония-239 также обнаруживают свойства делится при поглощении нейтронов, по "полезным" ядерно-физическим свойствам он превосходит уран-235, но чтобы получить достаточное количество ценного материала необходимо построить реактор. Плутоний будет накапливаться в урановом топливе во время работы реактора, по химическим свойствам он сильно отличается от урана и может быть выделен дешевыми химическими методами. Зачем? Ответ уже в начале сороковых был очевиден - для получения супероружия с громадным выделением энергии за несколько миллисекунд.<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/seaborg.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="13"></a>
+<font class="myH3">1940 год</font><br>Под руководством советского физика Георгия Николаевича Флерова было открыто спонтанное деление урана-238 (знаменитые ночные эксперименты на станции метро "Динамо").<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/flerov.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="12"></a>
+<font class="myH3">1939 год</font><br>Советские физики Яков Борисович Зельдович и Юлий Борисович Харитон в результате расчетов достоверно показали, что цепная самоподдерживающаяся реакция деления возможна при использовании урана-235. Их результаты послужили отправной точкой для повсеместного начала работ по созданию устройств для осуществления описанной реакции - ядерных реакторов. Но непреодолимой казалась проблема выделения урана-235 из урановой руды - на 100'000 атомов урана приходится только 714 атомов ценного изотопа "235", остальное - казавшийся тогда бесполезным уран-238. Химические свойства всех изотопов урана идентичны - значит отделять зерна от плевел придется как-то иначе...<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/zeldovich.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td colspan="3" width="1"><img src="../stk_game_2006/images/_game/chronology/line.gif" alt="" width="494" height="19" border="0"></td></tr><tr>
+<td valign="top" width="73%">
+<a name="11"></a>
+<font class="myH3">1938 год</font><br>Австрийка Лиза Мейтнер предположила, что нейтрон при поглощении ураном вызывает нестабильность ядра и оно делится на два осколка. Последующие опыты немецких физиков и их зарубежных коллег подтвердили это. При делении урана образуется два осколка и, кроме того, испускается несколько гамма-квантов, вылетает 2-3 нейтрона и выделяется огромное (по ядерным меркам) количество энергии. Осколки деления - радиоактивные изотопы известных элементов с разным периодом полураспада, существует около 30 возможных пар осколков.<br><br></td>
+<td valign="top">
+<img src="../stk_game_2006/images/_game/chronology/meintner.jpg" alt="" border="0" align="right"></td></tr>
+<tr><td>
+
+<font class="">1</font>  <a href="?t=game&s=gameplay&ss=chronology&page=2">2</a>  <a href="?t=game&s=gameplay&ss=chronology&page=2">следующие 10 событий</a>
+</td></tr>
+</table><!--<b class="mySubHeader">����������� ����</b><br>
+��� �������� ����������� ����:
+<ul>
+  <li>�������� �������� ������������
+  <li>���������� ���� ������ � ����������� �� ����������: �������������� ������, ������������ ������, ���������, ���������, ������ ��� ��������
+  <li>�������� ������
+  <li>������������ �������� � �� ������: ������������ �����, ���������, ���������
+  <li>������� � ����� ������������ ����������
+  <li>��������� ��������� � ����� ������� � ���������� ����
+  <li>����� 30 ����� ������
+  <li>�������� �������, �����������, �������������
+  <li>���������� ��������
+  <li>��������� �������, �������, ����������
+  <li>���������� ����
+</ul>
+<br><img src="images/_dot.gif" alt="" width="15" height="1" border="0"><br>
+<a href="index_t_engine.html"><img src="images/_features.jpg" width="499" height="65" border="0" alt=""></a>
+-->
+<!--End Main Text <table></table>--></td></tr>
+<tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
+</table></td><td width="100" valign="top">
+
+<!--Hot Elements--><!--dinamic menu-->
+
+<table cellspacing="0" cellpadding="0" border="0" width="156">
+<tr>
+    <td><img src="../stk_game_2006/images/d_line_top.gif" alt="" width="156" height="30" border="0"></td>
+</tr>
+<tr><td>
+<table cellspacing="0" cellpadding="0" border="0" height=""  width="156"
+style="background-image: url(../stk_game_2006/images/d_back.gif); background-repeat: repeat-y; ">
+<tr>
+    <td height="10" style="padding-right:20" width="156" align="right" class='subnav'>
+	
+	<a href='index_t_game_s_zone_stories.html' title='Истории Зоны' class='din_menu_link_g'><b>Истории Зоны</b></a><br><font class='din_menu_g'>Описание</font><br><img src="../stk_game_2006/images/d_line_menu.gif" alt="" width="98" height="9" border="0"><br><div>
+	<a href="index_t_game_s_gameplay_ss_storyline.html" class="din_menu_link">История</a><br><a href="index_t_game_s_gameplay_ss_gameplay.html" class="din_menu_link">Описание</a><br><a href="index_t_game_s_gameplay_ss_features.html" class="din_menu_link">Особенности игры</a><br><a href="index_t_game_s_gameplay_ss_articles.html" class="din_menu_link">Общие статьи</a><br><font class="din_menu">Хронология</font><br><a href="index_t_game_s_gameplay_ss_faq.html" class="din_menu_link">F.A.Q.</a><br>	</div><img src="../stk_game_2006/images/d_line_menu.gif" alt="" width="98" height="11" border="0"><br><a href='index_t_game_s_creatures.html' title='Персонажи' class='din_menu_link_g'><b>Персонажи</b></a><br><a href='index_t_game_s_objects.html' title='Объекты' class='din_menu_link_g'><b>Объекты</b></a><br><a href='index_t_game_s_anomalies.html' title='Зона' class='din_menu_link_g'><b>Зона</b></a><br>	
+	</td>
+</tr>
+</table>
+
+</td></tr>
+<tr>
+    <td><img src="../stk_game_2006/images/d_line_bottom.gif" alt="" width="156" height="27" border="0"></td>
+</tr>
+</table>
+<!--end dinamic menu-->
+
+<div id="sidebar_hot_block"></div>
+<div id="sidebar_screen"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_game.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_graphics.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_tech.gif" alt="" width="114" height="130" border="0"></td></tr>
+</table><!--End Hot Elements--></td>
+    <td width="22"><img src="images/_dot.gif" width="21" height="1" border="0"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
+</tr>
+<tr>
+	<td height="45" class="copyr" align="center"><a href="../&s=gameplay&ss=chronology.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | Об Игре | <a href="index_t_community.html" class="bottomMenu">Community</a> | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
+src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
+�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
+Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">171&nbsp;&nbsp;19674</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
+</tr>
+<tr><td height="2"><img src="images/_dot.gif" width="1" height="6" border="0"></td></tr>
+</table>
+
+	</td>
+    <td valign="bottom" height="90%"><img src="images/right_back_line.jpg" width="90" height="420" border="0"></td>
+</tr>
+</table>
+
+</td>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+</tr>
+</table>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+

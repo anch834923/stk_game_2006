@@ -1,0 +1,267 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Лесгафтовцы - Витя Стулхубеев</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_307.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Лесгафтовцы</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Витя Стулхубеев</b><br>Дата: <b>26/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>521</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>10</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+</FONT><P>&#9;…</B><FONT FACE="Times New Roman CYR">Тогда была наша смена</FONT>. <FONT FACE="Times New Roman CYR">Мы с друзьями работали грузчиками на чернобыльской АЭС. Мы выбрали такую работу не потому, что ни на что другое мы были негодны, просто время было такое, сложное… Утечка мозгов</FONT> <FONT FACE="Times New Roman CYR">заграницу</FONT>, <FONT FACE="Times New Roman CYR">разруха, научно-технический прогресс в сочетании с регрессом в культуре и духовных ценностях людей…</P>
+</FONT><P>&#9;<FONT FACE="Times New Roman CYR">Помню, грузили мы какие-то коробки. Никто не знал что там внутри, только догадывались, что, как всегда, оружие. Тогда это была секретная зона</FONT>, <FONT FACE="Times New Roman CYR">проводились эксперименты по психотропному воздействию на людей. Естественно, все охранялось…</P>
+</FONT><P>&#9;<FONT FACE="Times New Roman CYR">Потом произошло ужасное… Меня спасло мое любопытство. Я решил посмотреть содержимое одной коробки. Там в каких-то капсулах лежали зеленые шары</FONT>. <FONT FACE="Times New Roman CYR">Мне это сразу не понравилось. Посмотрев по сторонам, и убедившись, что начальства не было на месте</FONT>, <FONT FACE="Times New Roman CYR">я подозвал друзей. Мы втроем оценили ситуацию, решили не совать нос не в свое дело и продолжать грузить. Правда запаслись костюмами химической защиты, противогазами и автоинектором… Тут водитель автопогрузчика неловко взял поддон с ящиками и они с огромной высоты рухнули на землю. Это и послужило началом главной экологической катастрофы человечества…</P>
+</FONT><P>&#9;<FONT FACE="Times New Roman CYR">Что же было с нами</FONT>? <FONT FACE="Times New Roman CYR">Мне тяжело</FONT> <FONT FACE="Times New Roman CYR">вспоминать об этом. Так как Дима был ближе всего к коробкам, он первый рухнул на землю и стал биться в конвульсиях. Мы с Борей нацепили противогазы и бросились к другу. Сделав Диме укол в сердце из автоинектора, я взвалил его на плечи и потащил наружу… На улице уже била тревога сотни работников валялись с признаками удушия. Сев в машину</FONT>, <FONT FACE="Times New Roman CYR">мы уехали…</P>
+</FONT><P>&#9;<FONT FACE="Times New Roman CYR">Неконтролируемый реактор перегрелся и произошел взрыв.</FONT> <FONT FACE="Times New Roman CYR">Это произошло 12 апреля 2006 года. Ярчайшая вспыышка света смела напрочь границы осязаемого. Взрывная волна неумолимо настигала все живое, превращая в кровоточащие куски мяса. К вечеру того же дня вся зона была погружена в тишину, смертельную тишину…</P>
+<P>&#9;Прошло несколько лет и образовавшаяся зона уже не была смертельно опасна, поэтому наша троица и отправилась в путь... Хотели узнать что же все это было, что за зеленые шары, да и ностальгия по некогда родному месту немного давала о себе знать... Уже тогда было много сталкеров-одиночек, посетивщих зону, мы поговорили с ними... Это были ужасные истории: мертвые города, радиационный фон, множество диких и мутированных животных... С голыми руками вылазка в зону могла оказаться для нас фатальной, поэтому мы взяли в Димкиной лаборатории костюмы химической защиты и купили на черном рынке оружия, насколько хватило деннег... </P>
+<P>&#9;Из нас троих я и Боря служили в ВДВ, в одной части... Я, пластичный и быстрый, меткий стрелок часто использовался в ночных военных </FONT>stealth-<FONT FACE="Times New Roman CYR">операциях</FONT> <FONT FACE="Times New Roman CYR">в Чечне... Борян же крупный и сильный специализировался по "рукопашке", тяжелым станковым пулеметам и ПЗРК "Стрела-2"(естественно, такое оружие мы не могли купить и ограничились двумя </FONT>A<FONT FACE="Times New Roman CYR">КМ-74 с подствольниками и тремя "Макаровыми"). Хоть Дима и не служил(после аварии у него обострилась астма), поддерживал отменную физическую форму и мог уложить кого угодно...</P>
+<P>&#9;Итак, мы отправились в путь... Зона была оцеплена солдатами, контрактными, неопытными, поэтому проникнуть в зону не составило нам труда... Дальше начались неприятности...Так как радиация очень хорошо проникает в почву и расстения, а травку в Чернобыле не косил никто, все дороги заросли "грязными" цветочками... Приходилось постоянно быть начеку... Когда уже смеркалось мы доршли до полуразрушенного дома и устроили ночлег... Договорились дежурить по очереди. Развели костер(ночью было очень холодно),</FONT> <FONT FACE="Times New Roman CYR">поели "завтрак туриста" и пару "бомж-пакетов"... Друзья спали, а я сидел с калашом и думал о своей бывшей девушке,  на глазах у меня навернулись слезы. Я достал из рюкзака канистру со спиртом и выпил...Стало немного легче... Потом пошел за дровами и подкинул их в огонь. В кустах послышался какой-то шорох, так как костер тушить уже было поздно я решил разбудить друзей... Мы заняли позиции и стали ждать... Раздался стон, я соглулся и медленно шел к кустам, там оказался раненый сталкер. Мы быстро дотащили его до дома, перевязали, налили немного спирта и положили спать... На утро у нас завязался разговор, оказалось, что плоть(местный мутированый зверь) чуть не откусила голову Тимуру во время сна... Этот рассказ заставил нас быть еще осторожнее...</P>
+<P>&#9;История Тимура оказалась очень жалкой, в первый раз он пошел с другом, который погиб, друга разорвала невидимая аномалия. Наш новый знакомый продавал диковинные предметы, цены немалой(артефакты), торговцам... Так и жил... За спасение жизни обещал познакомить нас с другими сталкерами и помочь нам в пути... </P>
+<P>&#9;Мы затушили костер по-пионерски и пошли за Тимой. Он повел нас самой короткой дорогой к центру зоны, проходя мимо бара сталкеров на вокзальной станции, Тимур что-то прокричал... Из бара вышло 5 человек и мы познакомились... В баре мы напились пива, день был потерян... Пошел "пьяный базар" и онин из уважаемых всеми сталкеров проговорился, что как раз в том цеху, где мы работали есть комната, исполняющая желания и переносящая во времени... Естественно, нам тогда было не до этого... На следующий день мы поели, собрали котомки и отправились в путь... Но не тут-то было... С криками в бар ворвалась группа военных, все сталкеры разбежались по укрытиям... Началась перестрелка, эти две минуты показались для нас вечностью. Правда, мы отразили атаку на наше будущее убежище без потерь!</P>
+<P>&#9;Путь следовал к саркофагу. Тимур то и дело кидал болты-проверял местность на наличие аномалий. Тут он кинул болт и он резко подлетел вверх...Он кинул болт в другую сторону, болт опять отклонился. Мы оказались в ловушке. У меня в глазах все потемнело, стало черно-белым, сам я чуствовал себя кантуженым... Тимур приказал нам лечь... Подул очень сильный ветер, пошел дождь со снегом, ударила молния было темно, хотя вовсю светило солнце, было так, словно все времена года наступили одновременно... Страх окутал всех... Произошла красная вспышка и надолго ослепила нас... Сознание покинуло наши головы... Произошел выброс...Все в зоне изменилось...</P>
+<P>&#9;Очнувшись, мы оказались на самом краю крыши дома культуры в Припяти... Тимур начал плести какую-то чушь, что зона нас пропустила потому что мы хорошие и добрые(а во время выброса зона уничтожает все живое, всех кто не успел спрятаться в укрытие), все-таки странный он какой-то был...</P>
+<P>&#9;Мы нашли неразрушенную хрущевку, проверили ее, чужих не обнаружили... Сели внутри, начали есть и пить спирт... Колдырями мы были еще теми, не пил только Тимур и нам запрещал, говорил что зона накажет нас, но мы его не слушали... Вспомнили былое: как ездили на дачу, навели там шороху, как ходили в ДЮСШ "Красный треугольныик", занимались футболом, как бегали к девочкам... В итоге все закончилось сном...</P>
+<P>&#9;Утром мы встали с больной головой. Тимур повел нас дальше, проклиная, что согласился помочь таким расгильдяям:)) Мы пришли в "Мертвый лес". Так как через него передвигаться было очень опасно, все взяли оружие в руки и пошли... Боря подскользнулся и упал. Тогда в его лице можно было прочитать недоумение-тряслась земля...Огромная стая монстров бежала к нам-кабаны, слепые псы, крысы и что-то неизвестное... Я стрельнул из подствольника, но только маленькая часть псов подлетела и разлетелась на куски мяса... Тимур достал бутылку с зажигательной смесью и кинул как можно дальше. Это было что-то! Животные сгорели заживо, а оставшуюся часть их  мы без особого труда расстреляли...</P>
+<P>&#9;...300 метров до реактора, Тима заставил всех выпить спирта, это снижало воздействие радиации, мы были только за!!!:)) Кидая гайки, мы медленно, но верно передвигались к цели. Наш цех был прямо по курсу, забравшисьв окно, мы осмотрелись. Видели кости неудачников, почти добравшихся до места, видели те самые коробки, которые мы грузили, они заросли какой-то ржавчиной... Эта ржавчина, в итоге, оказалась аномалией, так что действия наши должны были быть выверенными и аккуратными... Мы прошли в кабинет зав. цехом, начали рыться в столе... Оказалось, что эти шарики были самым прогрессивным химическо-бактериологическим оружием в мире... Мы попросили Тимура провести нас в комнату исполнения желаний и переноса во времени...переноса в 12 апреля 2006 года, в день аварии...мы решили изменить настоящие...На втором этаже, в комнате отдыха, и было это, ..... словно облитое водой зеркало... Наш проводник сказал, что обратно еще никто не возвращался... Наша троица шагнула внутрь...</P>
+<P>&#9;</P>
+<P>&#9;</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="37.66" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.38 (50)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Stulhubeev_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

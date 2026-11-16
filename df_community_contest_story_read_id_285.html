@@ -1,0 +1,284 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Что за разговор без пива - Spirit of war</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_285.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Что за разговор без пива</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Spirit of war</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>327</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+</B><P ALIGN="JUSTIFY">Не хотите, ребята, угостить пивом старого сталкера? Не хотите? Ну ладно. А хоть подсесть к вам можно? все места, вон, заняты. И на том спасибо.</P>
+<P ALIGN="JUSTIFY">Я гляжу, вы тут люди новые, необжитые. По чём догадался? Так ведь я тут всех знаю. Чего тогда к вам подсел, когда кругом все знакомые? Чудак человек! Чтоб познакомиться, ясное дело! </P>
+<P ALIGN="JUSTIFY">Меня люди Баяном зовут. Нет, не музыкант – истории всякие рассказывать люблю. А вас как звать?</P>
+<P ALIGN="JUSTIFY">Горыныч, Колун… Ай-ай, как скверно. Вы ведь, ребята, в ЗОНУ ещё ни разу не ходили. И не делайте такие лица, знаю, что не ходили. Так вот, пока вы там не были, называться прозвищами не имеете права. Их ещё нужно заслужить. А вы как думали? Здесь вам не ясли и не детский сад.</P>
+<P ALIGN="JUSTIFY">Чего ты сказал? Запомни, сынок, лучше тебе не ссориться ни с кем в этом заведении. Во-первых, с тобой здесь перестанут торговать, и тебе за спичками в город придётся ездить. А во-вторых, в ЗОНЕ случается всякое, и когда твоей заднице будет нужна помощь, мимо тебя могут просто пройти. Нет, в спину стрелять не станут, сталкеры мараться не любят.</P>
+<P ALIGN="JUSTIFY">Да не нужны мне твои извинения, их на хлеб не намажешь и в стакан не нальёшь. Пиво? От пива не откажусь. Я ведь люблю поговорить, да только с пересохшим горлом никакого удовольствия.</P>
+<P ALIGN="JUSTIFY">Кстати, вы ж ещё не представились.</P>
+<P ALIGN="JUSTIFY">Саша, Слава. Другое дело, нормальные человеческие имена, и нечего их стыдиться. Обычно три-четыре ходки хватает, чтоб прозвище заработать. И если к вам здесь подойдёт какой-нибудь сталкер и намекнёт, что неплохо бы вам проставиться, мой вам совет – не жадничайте. Это значит, что вы, ребята, уже созрели, чтоб получить взрослые имена.</P>
+<P ALIGN="JUSTIFY">За что, вообще, клички получают? Так, первым делом запомни: клички – у собак, а у людей – прозвища. Это тебе без разницы, а нежную сталкерскую душу обидеть – раз плюнуть, и задобрить потом никакого пива не напасёшься.</P>
+<P ALIGN="JUSTIFY">О! А вот и пиво! Спасибо-спасибо… М-м-м… Красота!</P>
+<P ALIGN="JUSTIFY">Да, так о чём это мы? За что прозвища даются? Ну, так это по-разному. Вон того усатого дядьку видите? Ага, в тёмных очках. В очках он неспроста, он в темноте видит не хуже совы. За это и прозвали Сычом.</P>
+<P ALIGN="JUSTIFY">Не может быть, говоришь? У меня однажды два пальца откусила тварь, которой тоже не может быть.</P>
+<P ALIGN="JUSTIFY">Так он по молодости да по глупости попёрся в ЗОНУ в одиночку. А там как раз вспышка активности случилась. Сычу крупно повезло, что его бессознательного подобрала группа Комиссара. А когда он в себя пришёл, оказалось, что теперь он цвета не может различать, зато к свету стал раз в двадцать чувствительнее. Вот и приходится ему днём в очках тёмных ходить.</P>
+<P ALIGN="JUSTIFY">Тот, что рядом? Это Миша. Нет, не имя – прозвище. Потому, что однажды медведя в здешних лесах добыл. Где он в ЗОНЕ медведя нашёл, понятия не имею. Но факт. Шкура теперь у него дома заместо ковра. А знаешь, сколько стоит чучело набить? То-то.</P>
+<P ALIGN="JUSTIFY">Толстяк? Центнером зовут. И ещё совет: не называй его толстым, он этого не любит, называй лучше тяжёлым. Вот с Центнером я вам особенно не советую ссориться, он раньше боксёром был, супертяжем. Да-да, тот самый. Нет, чемпионом так и не стал, в том бою ему голову и повредили. Доктора сказали, что если не хочешь паралитиком стать – бросай бокс. Ну, он и бросил.</P>
+<P ALIGN="JUSTIFY">Что? Ну да, кто-то вроде экскурсовода, а ещё справочная и историк. Кончай смеяться! У меня, между прочим, самая полная летопись ЗОНЫ, даже у военных такой нет. Военные ходят патрулями, да и то нечасто, а сталкеры постоянно в ЗОНЕ. А ещё у меня карта имеется… Нет, нельзя. Во-первых, за деньги, а во-вторых, только когда пойму, что вы за люди.</P>
+<P ALIGN="JUSTIFY">Чуткие, отзывчивые… Ой! Ха-ха! Насмешил! Чуткие, отзывчивые… Какие ещё чуткие и отзывчивые, когда не замечаете, что у меня пиво кончилось?</P>
+<P ALIGN="JUSTIFY">Так-то лучше.</P>
+<P ALIGN="JUSTIFY">Чего говоришь? Какой в ЗОНЕ самый опасный монстр? Не поверите – самый частый вопрос. Как вам сказать… Некоторые, как только харю карлика на горизонте заприметят, так сразу - руки в ноги. И, кстати, правильно делают. Собаки эти слепые похлещё оголодавших волков. Да что там собаки, крысы могут человека за минуту так обглодать, что и костей не останётся.</P>
+<P ALIGN="JUSTIFY">Но всё это, ребята, фигня. Самый опасный монстр – человек. Самый опасный, самый хитрый, самый жестокий. Мутанты ведь себе подобных не убивают. А вот люди – запросто. В ЗОНЕ законы не действуют. Армейские, к примеру, имеют право стрелять во всё что движется, а уж монстряк это или сталкер – дело десятое. Да и сами сталкеры разными бывают. Есть одна группировка, “Грех”, само название за себя говорит. Отморозки ещё те. Не советую вам с ними дело иметь – ни к чему хорошему не приведёт. Есть ещё несколько совсем мелких группок, которые обычным мародёрством занимаются. Сами они себя называют “тёмными сталкерами” или “волками”. К тому же уголовники частенько встречаются. Здесь-то их никто искать не будет.</P>
+<P ALIGN="JUSTIFY">Телепатия? Правда-правда. Я тоже так раньше хмыкал, пока сюда не попал. Да пожалуйста, не верь, так даже лучше. Во что не веришь, от того защищён. Нет, не полностью конечно, но карлик тебя зомбаком не сделает. Контроллер? А контроллер запросто. Защититься можно. Ведро на голове носить, чтоб от микроволнового излучения экранировать. А если серьёзно, - глаза на затылке, оптический прицел и удача. По-другому? У военных, вроде, какие-то детекторы есть, правда достать пока не получилось. У нас свои детекторы.</P>
+<P ALIGN="JUSTIFY">Вон того парня видите? Замученный такой, сонный. Супчик кушает. Ага. Так вот, он такой детектор. Малдером зовут. Почему? Да потому, что всем доказывает, будто в ЗОНЕ НЛО разбился. Знаете, чего он такой замученный? Он сразу с четырьмя группами ходит, как детектор всяческой нечисти. Это ты у меня спрашиваешь? Понятия не имею, говорит – просто чувствует.</P>
+<P ALIGN="JUSTIFY">Но Малдер ещё молодой, неопытный, а вот Ведьмак – он могучий телепат. Нет, мысли не читает, но с контроллером может серьёзно поспорить. Как-то раз контроллер поимел целый блокпост. Ходили такие солдатики с мутными глазами, стреляли по ком не попадя. Так Ведьмак того контроллера заглушил. Обыкновенно. Как радиопередачи глушат. Ну а военные как очухались, так сами контроллера и замокрили. Такая вот история.</P>
+<P ALIGN="JUSTIFY">Нет, тут его нет, он в ЗОНЕ сейчас, вместе с Комиссаром. Из-за чего Комиссар? Он сюда приехал с угадай каким пистолетом? С “Маузером”! В прошлом году столетний юбилей справляли. Да не Комиссара – “Маузера”. Ну! замечательный пистолет, с деревянной кобурой-прикладом, именной. Его деду, в гражданскую ещё, сам Будённый подарил. Нет, сейчас Комиссар с “Маузером” не ходит, - с патронами проблема, тепереча таких не делают.</P>
+<P ALIGN="JUSTIFY">Ой, а пиво почему не пьётся? Неужто кончилось?..</P>
+<P ALIGN="JUSTIFY">Люблю людей, которые намёки понимают.</P>
+<P ALIGN="JUSTIFY">Я пьяный? Слушай, я так и обидеться могу. Когда я буду пьяный, вы сразу поймёте. Я начну рассказывать байки про чёрного сталкера и травить анекдоты о семейной жизни карликов. А хрен его знает, может и нету, но ведь как-то они размножаются.</P>
+<P ALIGN="JUSTIFY">Когда я последний раз в ЗОНУ ходил? Да уж года полтора будет. Я своё уже отходил. А чего ты думаешь я хромаю? Так, ради прикола? Знаешь, есть такая хрень с винтами, что вместо гипса ставят? Ага, так вот я с такой два месяца провалялся на койке. Что произошло? Да ничего особенного, кран башенный на меня упал.</P>
+<P ALIGN="JUSTIFY">Я никогда не вру, бывает, правда, шутки шучу. Но это чистая правда. Мне просто повезло, эта железяка меня крепко приложила, но, слава Богу, не придавила, а то б я сейчас с вами не разговаривал. Да у кого угодно спросите! Тоже мне - скептики!</P>
+<P ALIGN="JUSTIFY">Вы, ребята, привыкайте к бредовым историям, здесь вы их наслушаетесь и насмотритесь. И сами поучаствуете. Это ведь ЗОНА. А если вы люди впечатлительные и вам дорог ваш спокойный сон, то лучше садитесь в рейсовый автобус и езжайте в родные края. Тут спокойно поспать можно только в деревянном ящике или крысином желудке. Зато это единственное место на Земле, где могут нарушаться любые законы физики, биологии и здравого смысла. ЗОНА научит вас смотреть на мир по-иному. Главное, чтоб вы были к этому готовы. А то многие отправляются отсюда прямиком в психушку. Так что решать вам. Помните только, что обратной дороги не будет. ЗОНА – это наркотик, один раз попробуешь – и бросить уже не сможешь. Тебе станет интересно, что произойдёт в ЗОНЕ завтра, послезавтра, через неделю, через год… И всё, ты уже на игле и слезть не можешь. Как я, например.</P>
+<P ALIGN="JUSTIFY">Э-эх, ну да ладно, мне пора уже, потому как пиво подошло к концу. Спасибо за компанию и за угощеньице, не поминайте лихом. Может, мы с вами ещё пивка попьём, только это зависит уже не от меня, а от вас. Только от вас. Так что всё, ребята, счастливо.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Spirit of war&#9;&#9;&#9;&#9;&#9;&#9;&#9;6.11-29.12.2003</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.2" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.60 (30)</b></font></td><td align="right"><font color="#6D6D6D"><a href="_down_contest.php?id=285&link=Spirit of war_2.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

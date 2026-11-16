@@ -1,0 +1,284 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс -  - Дмитрий Воскобаев</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_296.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3"></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Дмитрий Воскобаев</b><br>Дата: <b>26/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>386</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+
+<FONT SIZE=4><P>…И снова день…С утра встал, опустил башку в таз с холодной водой, выпил 2 таблетки спазмолгина, оделся, отскоблил грязь с ботинок (зачем это делаю, все равно все кости и так давно никакие, даже без дозиметра знаю- через лет пять на каляске выходить в свет буду, байки детишкам рассказывать как полчища тварей валил с одной обоймы, как друзей вытаскивал после очередного выброса…блин, чего только в башку с просоня не лезет). Так начиналось новое рабочее утро…</P>
+<P>Сегодня план осмотреть старую водонапорную башню и котельню. Хоть место не чистое и не всякий сталкер  в здравом уме туда сунется, но деньги для новой плащ-палатки с просвинцованой резиной нужны – старая с прошлого раза слишком большую дозу приняла, с такой походишь недельку и скопытишься тихонько. Если верить Андрею на котельню давненько никто не заходил, говорят слишком там много ловушек вокруг появилось после последних двух выбросов, что и увеличивает шанс найти что нибудь стоящее и дорогое. Какая же все таки дрянная привычка сталкинг.</P>
+
+<P>Вот и начало зоны. Патрулю и границе бабки всегда лишние не вредят, солдатики стоят себе, иногда “напрягаются” валить пару тройку тупых волкокрысов, случайно забредших из любопытства к вышкам, командиры в 5 утра дрыхнут беспробудно, а ребяткам деньги на телок нужны пока хрен не отвалился, так что сталкеру всегда проход открыт, если у того есть че на лапу дать.</P>
+
+<P>Вот и запрятанная в кустах нива, даже ключи болтаются в стартере, возле машины валяется пару трупиков крыс, разорванных ловушкой возле бампера – Андрей знает как прятать машину. И почему всех тварей зоны так привлекают человеческие постройки, машины и образ жизни. Может это остаточный рефлекс прошлого счастливого обитания, когда не надо было заботится о выживании и еде , которую всегда можно было найти на мусорках, обновляющиеся каждый день недоеденными остатками, тряпками и паралоном для гнезд и логовов. Люди давали больше чем думали, но теперь их здесь нет и никогда не будет.</P>
+<P>                                           *   *   *</P>
+<P>Проехав пол часа по пустующей деревне и въехав в город, Игорь повел машину к заброшенной котельной и башне. Попадавшиеся ему на встречу стаи крыс стремглав куда-то спешили не замечая машины, а некоторые вообще прыгали под колеса. Это слегка насторожило его – животные обычно очень осторожны и всегда заботились о выживании, но сейчас они вели себя как будто чувствовали свой рок, как он стремительно приближается нагоняя их все быстрее и быстрее.</P>
+
+<P>Решив что сегодня он надолго здесь не задержится, Игорь остановил машину на пустыре, взял винтовку и закрыв машину пошел к котельной. Путь составлял от силы 500 метров, но тут расслабляться нельзя и он это прекрасно знал. Сколько товарищей остались здесь пропав без вести, еще  больше погибло на его глазах от неосторожного шага или из-за крадущегося зверя. Он сам потерял 3 пальца на правой ноге и это было по сравнению со шкалой повреждений в зоне легкой царапиной. </P>
+<P>Напряженно и тихо, постоянно оглядываясь, пригибая голову  и подкидывая гайки перед собой сталкер все ближе и ближе подходил к заветному ржавому эллипсоиду, и торчавшей возле него черной кирпичной трубе. </P>
+
+<P>&nbsp;</P>
+<P>“Сегодня должен быть мой день, сегодня я выйду победителем, а ты проиграешь…” - повторял про себя Игорь, вытирая со лба проступавшую испарину. Он не мог обзывать зону, ненавидеть ее, любить, он просто уважал ее и считал подарком судьбы- судьба преподнесла ему наилучшее испытание самого себя.</P>
+
+<P>Странно что никакой живности не встретилось, даже ворон не видно…Что за день, одни странности, и солнце светит так радостно и ярко, как будто обнимает теплом город и тело как свое любимое дитя -  крепко и ласково. </P>
+
+<P>Осторожно пробрался к забору, ко входу – ни одной ловушки…Такого везения у сталкера не должно быть по всем правилам. Что то подсказывало что нужно вернутся, дать чесу и затаится, но человек заглушил мысль, инстинкт самосохранения давно отбрасывался – если боятся, ничего не получишь и сдохнешь как слепая собака от холода и язвы.</P>
+
+<P>Дверь со скрипом отвалилась – петли заржавели и превратились в рыжую труху. Здание котельной было черным и “промасленным”. Два этажа соединялись ржавой лестницей с погнутыми ступеньками. </P>
+
+<P>Обыскав с помощью детекторов и счетчиков первый этаж, Игорь медленно поднялся держась за шаткие перила на верх. И тут он застыл от ужаса и “холода” - перед ним в трех метрах от правой стены стояло существо, отдаленно напоминающее человеческого мертвеца и жабу одновременно: сине зеленая кожа блестела на свету тысячами искорок, раздувающаяся по бокам шея выдавала фиолетовые вены, по которым бежала темными струйками кровь. Никогда он не видел ничего подобного за все 10 лет вылазок в зону. Вот будет о чем рассказать вечером ребятам в кабаке если “это” не зарубает его в течении 15 секунд.</P>
+<P>Сталкер медленно потянулся к затвору чтобы перезарядить винтовку. Существо стояло недвижимо,   спокойно смотря за действиями человека большими синими глазами. </P>
+<P>“Еще немного и все будет решено” - подумал Игорь наводя винтовку чтобы попасть промеж глаз твари. Красный лучик скользнул по искристому телу и сталкер уже был готов нажать на курок, как вдруг существо резко присело  на  пол, напрягло все мышцы , раздуло шейные мешки и открыло рот. Через момент сталкер лежал на боку под лестницей без винтовки и с ужасной резью в ушах. Первой мыслью, проскользившей в оглушенном мозгу была “беги пока жив..”. </P>
+<P>Не уверенными движениями человек шатаясь побежал к дверному проему…</P>
+<P>С налета правым плечом выбив дверь Игорь пробежал пару метров и застыл в шоке – он стоял на первом этаже котельной, впереди была лестница с погнутыми ступеньками, а по ней медленно вниз спускалась тварь. И снова на месте дверного проема была  ржавая дверь. </P>
+<P>Сзади стоял котел, хотя мгновение назад был проход на первый этаж, который должен был быть выходом на улицу.</P>
+<P>Тварь заняла боевую позицию и готовилась к следующей атаке, как вдруг все затряслось, и яркий свет затмил утреннее солнце.</P>
+<P>“Выброс…”</P>
+
+<P>На этот раз зона расширилась ,покрыв территорию города и пол близлежащей деревни. Через 2 часа после выброса все успокоилось, стало тихим, и солнце продолжало тихо греть и ласкать теплом мертвый город… </P>
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="41.09" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.87 (15)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Vo_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

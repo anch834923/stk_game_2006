@@ -1,0 +1,789 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="rus">
+	<meta http-equiv="Keywords" content="game, games, stalker, s.t.a.l.k.e.r., oblivion lost, software, development">
+	<link rel="stylesheet" href="css/style.css">
+	<title>S.T.A.L.K.E.R. - Об Игре: Описание </title>
+<script language="VBScript">
+<!--
+Sub lighting_FSCommand(ByVal command, ByVal args)
+  call lighting_DoFSCommand(command, args)
+end sub
+-->
+</script>
+
+<script language=javascript>
+//if(!top.contents){
+//top.
+parent.document.title='S.T.A.L.K.E.R. - Об Игре: Описание';
+//}
+
+/*------------------For Flash Menu----------------------*/
+var id=2;
+var id_sound=2-1;
+var brNav,brIE = false;
+if (navigator.appName.indexOf("Microsoft") != -1) {
+	brIE = true;
+	} else {
+	brNav = true;
+}
+
+function menu_DoFSCommand(command, args) {
+	if ( command == "init" ) {
+    	if (document.menu != null ) {
+	    	document.menu.GotoFrame(id);
+    	}
+	}
+}
+
+function dSend() {
+	if (brIE) {document.menu.GotoFrame(id);}
+	if(brIE ? parent.frames.music : parent.frames[0]){
+		document.lighting.GotoFrame(id_sound+1);
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(id_sound+2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(id_sound+2);
+		}
+	} else {
+		document.lighting.GotoFrame(1);
+	}
+}
+/*______________________________________________________*/
+
+var time=1794818271*1000;
+   
+function lighting_DoFSCommand(comm, arg){
+if(parent.music){
+	if (comm == "no_sound"){
+		document.cookie = "sound=1;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(2);
+		}
+	}
+	if (comm == "sound"){
+		document.cookie = "sound=2;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(3);
+		} else {
+			parent.frames[0].document.music.GotoFrame(3);
+		}
+	}
+}
+}
+</script>
+<script language="JavaScript">
+<!--
+function rnd_win(){
+   var randscript = -1;
+   var howMany =10000;
+   while (randscript <= 0 || randscript > howMany || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+1));
+   }
+   return randscript;
+}
+
+
+function screen_view (url)
+{
+var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+function screen_view_big (url)
+{
+ var  v_screens=  rnd_win(); 
+ var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+
+function wallpaper_view (url, res)
+{
+	if (res) { var x_res = res;	} else { var x_res = 800; }
+	 var  v_screens=  rnd_win(); 
+	var y_res = x_res*0.75;
+    window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+-->
+</script></head>
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+<tr>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+    <td rowspan="2" width="900">
+
+<table cellspacing="0" cellpadding="0" border="0" width="900" height="100%">
+<tr>
+    <td valign="top" height="99"><img src="images/top_left_back.jpg" width="90" height="99" border="0"></td>
+    <td valign="top" height="99">
+<!--Main Header-->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="logo2" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/logo2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED menu=false src="swf/logo2.swf"
+	 quality=high bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="logo2" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="lighting" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/lighting.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/lighting.swf"
+	 quality=high menu=false bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="lighting" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="22" id="news_display" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/news_display.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/news_display.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="22" NAME="news_display" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+                      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="438" height="22" id="menu">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+<param name="movie" value="menu_rus.swf"><PARAM NAME=menu VALUE=false>
+                          <param name="quality" value="high"><param name="bgcolor" value="#000000">
+                          <embed src="menu_rus.swf" menu="false" bgcolor="#000000" width="438" height="22" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="menu" allowscriptaccess="always" wmode="opaque"></embed></object></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+<!--End Main Header-->
+	</td>
+    <td valign="top" height="99"><img src="images/top_right_back.jpg" width="90" height="99" border="0"></td>
+</tr>
+<tr>
+    <td valign="bottom" height="95%"><img src="images/left_back_line.jpg" width="90" height="420" border="0"></td>
+    <td valign="top">
+<table cellspacing="0" cellpadding="0" border="0" height="100%">
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+                                                        <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+
+<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
+	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
+-->
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="385" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="26" height="20" border="0"></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="25" border="0"></td>
+    <td align="right" class="m_head">Об Игре</td>
+    <td></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="19" border="0"></td>
+    <td align="right" class="m_nav"><a href='index_t_game_s_zone_stories.html' title='Истории Зоны'><font color='#CBCBCB'  class='subnav'>Истории Зоны</font></a> | <font color='#ffffff' class='subnav'>Описание</font> | <a href='index_t_game_s_creatures.html' title='Персонажи'><font color='#CBCBCB'  class='subnav'>Персонажи</font></a> | <a href='index_t_game_s_objects.html' title='Объекты'><font color='#CBCBCB'  class='subnav'>Объекты</font></a> | <a href='index_t_game_s_anomalies.html' title='Зона'><font color='#CBCBCB'  class='subnav'>Зона</font></a></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/header_line.gif" width="416" height="16" border="0"></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
+    <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr><td><!--Main Text-->
+<!--<span class="newsT"><b>Support | Feedback Form</b></span>
+
+<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_gameplay.gif" width="503" height="39" border="0" alt=""></p>
+<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
+<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
+-->
+<script language="JavaScript">
+<!--
+ var howMany =6;
+ var Min=1;
+
+function rndnumber(){
+   var randscript = -1
+   while (randscript < Min || randscript > (howMany+Min) || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+Min));
+   }
+   return randscript
+}
+var Max=rndnumber();
+var ImgH="0";
+if(Max<10) ImgH="0"+Max+"";
+else ImgH = Max;
+Cod ="<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"6\" border=\"0\"></td></tr>";
+Cod =Cod +"<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\" valign=\"top\">";
+Cod =Cod +"<img src=\"images/_dot.gif\" width=\"20\" height=\"27\" border=\"0\"><span class=\"myHeader\">F.A.Q.</span></td></tr>";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"14\" border=\"0\"></td></tr>";
+Cod =Cod +"</table>";
+//-->
+</script>
+<script language="JavaScript">document.write(Cod)</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><p><b><a href="index_t_game_s_gameplay_ss_storyline.html" class="myLink">История</a> | <a href="index_t_game_s_gameplay_ss_gameplay.html" class="myLink">Описание</a> | <a href="index_t_game_s_gameplay_ss_features.html" class="myLink">Особенности игры</a> | <a href="index_t_game_s_gameplay_ss_articles.html" class="myLink">Общие статьи</a> | <a href="index_t_game_s_gameplay_ss_chronology.html" class="myLink">Хронология</a> | F.A.Q.</b><br><img src="images/_dot.gif" width="1" height="7" border="0" alt=""></p></td></tr></table>	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+		<td>
+
+<p><a name="top"></a>
+
+<br><font color="#6D6D6D">30.12.2003</font><br>
+
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#62">Много ли будет оружия с глушителями и будут ли они частью модификации либо прям с оружием идти?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#63">Можно ли подкрадываться сзади, чтобы тихо убить(или тихо оглушить?) противника?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#64">Можно ли убирать трупы, чтобы их не нашли?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#65">Как создавалась поверхность земли Зоны? Мне интересна геодезическая сторона вопроса. Какие данные и материалы были использованы? Или обошлись видеосъёмкой?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#66">Снайперский прицел будет качаться?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#67">Вообще реально будет проходить никого не убивая(кроме монстров?), Убивая, но чтобы о тебе никто ничего не знал(я имею ввиду, что это ты тёмный сталкер, который всех убивает, а самого его никто ни разу не видел?)</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#68">Насколько будет интерактивен физический мир?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#69">Как то что nVIDIA является партнером, повлияет на производительность на картах ATI?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#70">Нужно ли будет сталкеру справлять нужду? :-)</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#71">Будет ли помимо обмундирования простая одежда, кроме джинсов и кожаной куртки? (например, спортивный костюм)</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#72">Будет ли в игре велосипед?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#73">Какая денежная еденица будет в сталкере?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#74">Насколько реальны будут цены? (сколько будет стоить АК-47?)</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#75">Смогу ли я убить сквозь стекло или дверь машины?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#76">При входе в здание будет загрузка, или "внутренность" здания касается улицы?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#77">Разработка пока укладывается в сроки?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#78">Старые надписи в зоне (знаки, таблички…) на каком языке будут?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#79">Чем будет вооружён МИ-24?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#80">Можно ли будет играть по модему?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#81">Сможет ли БТР плавать?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#82">Лица придуманы, или сделаны с реальных людей?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#83">Смогу ли я наложить свою фотку, как текстуру на лицо модели?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#84">Каким будет игровой процесс "S.T.A.L.K.E.R."?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#85">Что послужило вдохновением для создания игры?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#86">Насколько похожа будет Зона на реальную чернобыльскую зону?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#87">Откуда вы знаете, как выглядит Чернобыль в действительности?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#88">Будет ли в "S.T.A.L.K.E.R." нелинейный игровой дизайн?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#89">Если это игра FPS/RPG, почему тогда нельзя будет "прокачивать" навыки персонажа?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#90">А кто является врагом? Сколько видов противников планируется в игре?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#91">Можно ли будет модифицировать оружие?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#92">Смогут ли игроки управлять разными видами техники, и как обстоит дело с техникой в сетевой игре? Если среди техники предусматривается летающие аппараты (вертолет), будет реализована поддержка джойстика?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#93">Нужен ли сталкеру сон и отдых?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#94">Что означает "S.T.A.L.K.E.R."?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#95">Насколько большими будут открытые уровни и сам игровой мир?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#96">Можно ли пройти игру без единого выстрела? Смогут ли игроки выбирать свой стиль прохождения игры?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#97">Будет ли смена времен года или игра ограничивается 90 виртуальными днями и ночами? Если смены времен года не будет, то в каком сезоне будет проходить игра?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#98">Если игрок убивает какого-то сталкера (1 из 100), то будет ли респавн нового сталкера взамен убитого для поддержания количества?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#99">Будут ли сигареты и пиво? Если будут, то какой эффект они будут оказывать на сталкера?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#100">Будет ли возможность вести дневник?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#101">Какие мультплеерные режимы будут в игре?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#102">На что делается основной упор в "S.T.A.L.K.E.R", одиночную или сетевую игру?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#103">Сколько игроков смогут присоединиться к сетевой игре?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#104">Какие системные требования будут у игры?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#105">Вопрос связанный с ажиотажем вокруг использования демо "Сталкера" на презентации GeForce FX Сталкер показывают на презентациях GeForce FX. Игра выглядит невероятно детализированной. Означает ли это, что игра создается только для самого современного железа?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#106">Сколько часов понадобится обычному игроку для прохождения игры?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#107">Будут ли погодные эффекты, смена дня и ночи?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#108">Не могу переносить вида крови. Можно ли ее будет отключить вручную, или же выставить подходящий уровень в настройках?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#109">На некоторых скриншотах виден сталкер со спины. Значит ли это, что будет вид от 3-его лица?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#110">Какая музыка будет в "S.T.A.L.K.E.R."?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#111">Будет ли движок игры поддерживать моды и карты, подобно тому, как это реализовано в движках quake и unreal?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#112">Также любопытно было бы узнать что, как и где мы будем есть, т.е. питаться?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#113">На сайте написано, что контролер берет под контроль солдат. Может ли он брать под контроль игрока?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#114">А как насчёт AI врагов? Будет ли у них понятие морали и бегства с поля боя? А командные действия? А ошибаться, подобно живым людям, тоже будут?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#115">Будут ли монстры сражаться друг с другом?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#116">Если перебить всех мутантов на уровне, что будет, если через некоторое время я вернусь на уровень?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#117">Как будет реализован процесс сохранения игры, и будут ли предусмотрены различные уровни сложности?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#118">Как будет ограниченно игровое пространство? Будет ли оно ограниченно валом, бетонной стеной, страшной аномалией, невидимым барьером, или ещё каким-то замысловатым образом?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#119">Интересно узнать, как будут визуализироваться повреждения?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#120">Будет ли система поражения и отстрела конечностей как в SoF, т.е. расчленёнка?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#121">Как будем поправлять здоровье?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#122">Будет ли реализовано повреждение защитных костюмов(в следствии порезов и попаданий) и уменьшение их защитных свойств (химическая защита, радиационная защита и пр.)?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#123">Передвигаясь в автомобиле, смогу ли я сбить кого-либо?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#124">Как будет реализован переход с уровня на уровень?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#125">Будет ли радиация?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#126">Можно ли убить торговца?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#127">Будет ли в игре статистика или какой-нибудь рейтинг, например. "псих-убийца" или матерый волк и т.д.?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#128">Будут ли сгорать деревья?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#129">Сможем ли мы укрыться от погони?(в др. играх это не реализовано)</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#130">Воюют ли сталкерские группировки между собой?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#131">Сколько мы сможем обойтись без пищи и воды?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#132">Увидим ли мы сны?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#133">Будет ли у сталкер дом, не в зоне, где он сможет отдохнуть, вещи ненужные складировать. Будут ли там (в игре) населенные пункты - деревня какая нибудь?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#134">Можно ли будет сбить вертолёт с РПГ? А с пулемёта? Будут ли они попадать в аномалии?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#135">Как получить фирменный плакат сталкера?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#136">При помощи каких технологий реализовываются водные поверхности?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#137">Можно ли будет "откупится" от монстра бросив ему что-то, его интересующее, или он будет преследовать сталкера до конца (сталкера или монстра)?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#138">Можно будет за военных или за "Долг" играть или сталкер-игрок будет одиночка?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#139">Будет ли Motion Capture?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#140">А можно ли будет спрятаться, присев на корточки в высокой траве?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#141">Можно ли будет принимать "упор лёжа" и ползать по-пластунски?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#142">А будут простреливатся двери/ящики/тонкие стены?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#143">Реализована ли рукопашка? Может быть, можно хотя бы ногой пнуть или прикладом огреть?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#144">Можно ли будет набирать NPC в команду и отдавать им приказы?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#145">Можно ли как-либо противодействовать психической атаке или даже самому брать под контроль других существ?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#146">Хотелось бы иметь бинокль. Или даже фотоаппарат!</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#147">Можно ли залезть на дерево или перелезть через забор? Или забраться по плющу на заборе как по веревочной лестнице (что-то типа HeavyMetal 2)?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#148">Реально ли взорвать любую хотя-бы деревянную дверь в игре или расстрелять замок из автомата?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#149">Насколько разнообразен будет выбор боеприпасов к стрелковому оружию? Характеристики патронов (хотя бы в пропорции) похожи на реальные?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#150">Будут ли пули срезать листья, чтобы их обрывки брызгали в стороны, когда ты стреляешь по кустам или деревьям?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#151">Как переводится "Oblivion lost"?</a><br>
+
+<br><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"><br>
+
+<br><font color="#6D6D6D">12.03.2003</font><br>
+
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><!-- <img src="../stk_game_2006/images/_game/as_active.gif" alt="" width="18" height="18" border="0"> --><a href="index_t_game_s_gameplay_ss_faq.html#43">Будут ли аномалии влиять на траектории пуль?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#44">Также любопытно было бы узнать что, как и где мы будем есть, т.е. питаться?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#45">А можно ли убив птицу зажарить и съесть?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#46">На сайте написано, что контролер берет под контроль солдат. Может ли он брать под контроль игрока? Как будут себя вести солдаты под контролем?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#47">Будут ли раненные монстры прятаться и убегать?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#48">Будут ли монстры сражаться друг с другом?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#49">Если перебить всех мутантов на уровне, что будет, если через некоторое время я вернусь на уровень?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#50">Как будет реализован процесс сохранения игры, и будут ли предусмотрены различные уровни сложности?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#51">А теперь вопрос. Как будет ограниченно игровое пространство? Будет ли оно ограниченно валом, бетонной стеной, страшной аномалией, невидимым барьером, или ещё каким-то замысловатым образом?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#52">Как переводится "oblivion lost"?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#53">Интересно узнать, как будут визуализироваться повреждения?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#54">Будет ли система поражения и отстрела конечностей как в SoF?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#55">Как будем поправлять здоровье?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#56">Будет ли реализовано повреждение защитных костюмов(в следствии порезов и попаданий) и уменьшение их защитных свойств (хим. защита, рад. защита и пр.)?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#57">Передвигаясь в автомобиле, смогу ли я сбить кого-либо?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#58">Как будет реализован переход с уровня на уровень?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#59">Будет ли радиация?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#60">Можно ли убить торговца?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#61">Будет ли в игре статистика или какой-нибудь рейтинг например ,/ псих-убийца/ или / матерый волк/. и т.д.?</a><br>
+
+<br><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"><br>
+<br><font color="#6D6D6D">20.02.2003</font><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#1">Где можно узнать побольше о проекте "S.T.A.L.K.E.R."?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#3">Что послужило вдохновением для создания игры?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#7">Сколько планируется вариантов концовок?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#8">Если это игра FPS/RPG, почему тогда нельзя будет "прокачивать" навыки персонажа?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#9">А кто является врагом? Сколько видов противников планируется в игре?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#10">Какое будет оружие? Сколько будет видов оружия?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#11">Можно ли будет модифицировать оружие?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#12">Смогут ли игроки управлять разными видами техники, и как обстоит дело с техникой в сетевой игре?  Если среди техники предусматривается летающие аппараты (вертолет), будет реализована поддержка джойстика?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#13">Нужен ли сталкеру сон и отдых?  Будет ли сталкер нуждаться в пище?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#14">Что означает "S.T.A.L.K.E.R."?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#15">Насколько большими будут открытые уровни?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#16">Насколько большим является игровой мир?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#17">Можно ли пройти игру без единого выстрела?  Смогут ли игроки выбирать свой стиль прохождения игры?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#18">Будет ли возможность использовать рацию или это привилегия военных?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#19">Будет ли смена времен года или игра ограничивается 90 виртуальными днями и ночами? Если смены времен года не будет, то в каком сезоне будет проходить игра?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#20">Будет ли возможность управления летательными аппаратами/зондами?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#21">Если игрок убивает какого-то сталкера (1 из 100), то будет ли респавн нового сталкера взамен убитого для поддержания количества?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#22">Будут ли сигареты и пиво?  Если будут, то какой эффект они будут оказывать на сталкера?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#23">Будет ли возможность вести дневник?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#24">Какие правила участия в литературном конкурсе?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#25">Сколько продлится литературный конкурс?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#26">Можно ли присылать несколько рассказов на конкурс?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#27">Попадут ли истории с конкурса в игру?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#28">Будет ли мультиплеер? Какие мультплеерные режимы будут в игре?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#29">На что делается основной упор в "S.T.A.L.K.E.R", одиночную или сетевую игру?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#30">Сколько игроков смогут присоединиться к сетевой игре?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#32">Вопрос связанный с ажиотажем вокруг использования демо "Сталкера" на презентации GeForce FX</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#33">"Сталкер" показывают на презентациях GeForce FX. Игра выглядит невероятно детализированной. Означает ли это, что игра создается только для самого современного железа?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#34">На каких платформах выйдет игра?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#35">Когда намечен выход "S.T.A.L.K.E.R."? Известен ли издатель?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#37">Будут ли погодные эффекты, смена дня и ночи?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#38">Не могу переносить вида крови. Можно ли ее будет отключить вручную, или же выставить подходящий уровень в настройках?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#39">На каких языках будет выпущена игра?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#40">На некоторых скриншотах виден сталкер со спины. Значит ли это, что будет вид от 3-его лица?</a><br>
+<img src="images/_dot.gif" alt="" width="1" height="15" border="0"><a href="index_t_game_s_gameplay_ss_faq.html#41">Какая музыка будет в "S.T.A.L.K.E.R."?</a><br>
+
+
+
+</p>
+
+<p><a name="1"></a><img src="images/_dot.gif" alt="" width="1" height="15" border="0"><b class="myH31">В: Где можно узнать побольше о проекте "S.T.A.L.K.E.R."?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>На официальном сайте проекта <a href="http://www.stalker-game.com">www.stalker-game.com</a></p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="3"></a><b class="myH31">В: Что послужило вдохновением для создания игры?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Идея сделать игру на основе Чернобыльской Зоны отчуждения витала у нас давно. К тому же, большим вдохновением для разработки нашего проекта оказало творчество Стругацких. <br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Предыстория "S.T.A.L.K.E.R." выстроена, как гипотеза реальных событий произошедших в восьмидесятые годы прошлого века. Тогда в Чернобыле функционировала огромная антенна,  излучение которой было признано некоторыми специалистами, как психоактивное. На некоторых наших фотографиях, сделанных во время поездки в Чернобыль, конструкция антенны видна на горизонте. По неподтвержденным слухам, излучение было направлено на Западную Европу - проводился многолетний военный эксперимент по психотропному воздействию на психику людей. Это полудокументальные слухи и факты. Вокруг подобных экспериментов и вертится сюжет " S.T.A.L.K.E.R." - здесь есть место и теории заговора, и противостояние спецслужб. В нашей игре мы как бы додумываем то, что и в самом деле могло произойти.  Это история о пост-ядерном мире со своими законами и персонажами.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="7"></a><b class="myH31">В: Сколько планируется вариантов концовок?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Мы планируем более восьми кардинально различных финалов игры. Зависеть финал будет от того, как игрок проходит игру.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="8"></a><b class="myH31">В: Если это игра FPS/RPG, почему тогда нельзя будет "прокачивать" навыки персонажа?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Это ролевая игра без накапливающегося опыта Вашего персонажа, без изменяющихся характеристик и уровней. Мы хотим, чтобы игрок нарабатывал свое реальное мастерство, тем более что "S.T.A.L.K.E.R." - это FPS/RPG, здесь многое зависит от мастерства игрока. На наш взгляд, изменяющиеся характеристики, уровни и опыт персонажа уничтожат реалистичность, которую мы стараемся создать в "S.T.A.L.K.E.R.". В остальном же, это практически нормальная РПГ - игроки путешествуют по Зоне, собирают артефакты, оружие, открывают аномальные зоны, общаются и торгуют друг с другом. 
+Игрок развивается экономически. Как в "Элите". Мы зарабатываем деньги, покупаем новую аппаратуру, оружие. Благодаря этому для нас открываются новые части Зоны. То есть те, куда изначально с пистолетом и простым детектором не проберешься.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Что касается характеристик - опытный игрок и так будет действовать быстрее и разумнее, чем новичок.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Мы исходим из того, что игрок играет за сталкера - сформировавшегося, отлично подготовленного человека, живущего в зоне. Его можно сравнить с подготовленным солдатом, который должен выполнить задание. Солдата готовят до задания, а на задании все зависит от него самого. В процессе выполнения боевой задачи он не может кардинально улучшить свои навыки. Поэтому, в отличие от других игр, игрок, например, не начинает играть за персонажа у которого в руках дрожит автомат или он не может попасть мечом по крысе 9 из 10 раз, а на протяжении следующих 10 лет игрового времени становиться полубогом, попадая по птице в небе с закрытыми глазами и отклоняясь от пулеметной очереди. Классическая система скилов оправдана в играх с видом от третьего лица, когда от действий игрока ничего не зависит. Например Diablo. Игрок может только кликнуть на противника - дальше выбрасываются кости и просчитывается математика на основе скилов. В "S.T.A.L.K.E.R." растет мастерство игрока, а не абстрактные скилы модельки на экране. Если игрок освоил особенности оружия, знает слабые места противников, знает оборудование и аномалии Зоны, у него отличная реакция и меткость, и т.д. - он сам получает результат. Герой в игре - это и есть сам игрок. Все зависит только от него.
+Поэтому роста характеристик не будет. Может быть только их понижение при некоторых состояниях.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">И еще, на наш взгляд настоящая ролевая игра не обуславливается наличием растущих характеристик, опыта и уровней, которые являются всего лишь изящными геймплейными элементами, цель которых в поддержании интереса к игровому процессу. Опыт, умения и характеристики можно добавить к любой игре, но она не станет от этого ролевой. Ролевой она станет тогда, когда в игре есть взаимоотношения между персонажами, когда у игрока есть возможность выбрать себе роль в новом мире, которая будет зависеть от его действий и решений. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="9"></a><b class="myH31">В: А кто является врагом? Сколько видов противников планируется в игре?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>В игре планируется множество противников, начиная от солдат армии охраняющих границу Зоны и заканчивая жуткими мутированными существами, подчас обладающими сверхъестественными способностями, такими как телепатия и телекинез. Подземные карлики, телепатические контролеры, бесчувственные зомби, стаи слепых псов, орды крыс и еще многие твари, которых вы встретите только в игре ;). Контролеры будут брать под контроль солдат, сталкеров, они будут координировать действия зомби. Карлики и крысы наводнят подземные коммуникации, а слепые псы будут рыскать по пустырям и свалкам радиоактивного мусора.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="10"></a><b class="myH31">В: Какое будет оружие? Сколько будет видов оружия?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Мы планируем более 40 видов стрелкового, холодного и артефактного оружия. Оружие будет соответствовать временному отрезку от 70-х годов прошлого века,  до начала 21 века. Т.е. будут представлены, как хорошо проверенные временем автоматы Калашникова, так и модели оружия, которые только планируются для принятия на вооружение, например, штурмовая винтовка  FN 2000. Виды оружия (за исключением артефактного) достаточно традиционны для игр: ножи, пистолеты, дробовики, пистолеты-пулеметы, штурмовые винтовки, снайперские винтовки, пулеметы, гранаты, гранатометы и ПЗРК. Поскольку действия игры происходит на территории СНГ, в Украине, то и модели оружия, в основном, будут производства СССР/Россия. Хотя и лучшие западные "стволы" не будут обижены.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Всё оружие приближено по внешнему виду к реальным прототипам. Мы постараемся максимально точно передать параметры стрельбы оружия и сравнительную эффективность разных моделей. Хотя мы не ставим перед собой задачу получить на выходе виртуальный симулятор спецназа. Т.е какие-то условности при реализации оружия будут иметь место. Из интересных особенностей будет достаточно сильно проработанная физическая модель оружия, благодаря которой будут реализованы расчет пробиваемости разных поверхностей, взрывные волны, осколочные и направленные взрывы и другие вкусности. Со временем оружие будет изнашиваться.  
+ Каким будет артефактное оружие, игрокам придется узнавать по мере прохождения игры.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="11"></a><b class="myH31">В: Можно ли будет модифицировать оружие?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Большинство видов оружия можно будет модифицировать. Например, добавив глушитель, подствольный гранатомет или снайперский прицел. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="12"></a><b class="myH31">В: Смогут ли игроки управлять разными видами техники, и как обстоит дело с техникой в сетевой игре?  Если среди техники предусматривается летающие аппараты (вертолет), будет реализована поддержка джойстика?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>В Зоне игрок встретит большое количество разнообразной техники - легковые машины, грузовики, джипы, бронетранспортеры и вертолеты. Игрок сможет управлять почти любой техникой, кроме бронетранспортеров и вертолетов.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">В игре необходимо будет также заботиться о наличии горючего в автомобиле. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="13"></a><b class="myH31">В: Нужен ли сталкеру сон и отдых?  Будет ли сталкер нуждаться в пище?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Сталкер нуждается в отдыхе и пище. Без отдыха сталкер может потерять сознание, а без еды умереть от голода.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="14"></a><b class="myH31">В: Что означает "S.T.A.L.K.E.R."?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Вы узнаете это только в игре ;)</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="15"></a><b class="myH31">В: Насколько большими будут открытые уровни?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Некоторые уровни будут до пяти квадратных километров.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="16"></a><b class="myH31">В: Насколько большим является игровой мир?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Территория Зоны ориентировочно 30 квадратных километров.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="17"></a><b class="myH31">В: Можно ли пройти игру без единого выстрела?  Смогут ли игроки выбирать свой стиль прохождения игры?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Можно пройти игру не стреляя по человеческим персонажам, но вряд ли будет возможно пройти, ни разу не столкнувшись с мутантами. Вероятность встретить агрессивных мутантов слишком высока.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">От игрока будет зависеть, кем он станет. Станет ли он врагом номер один в Зоне, или благородным спасителем, а может сталкером невидимкой, слухи о котором будут будоражить исследователей Зоны. Огромные вариации экипировки, бесчисленные варианты поведения в сложных ситуациях, где от решения будут зависеть жизни персонажей игры, а также меняющийся мир, ожившие персонажи. Все эти возможности позволят игрокам выбрать свой собственный стиль прохождения игры, выбрать собственную жизнь в мире Зоны, не навязанную сценарием или скриптами.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="18"></a><b class="myH31">В: Будет ли возможность использовать рацию или это привилегия военных?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>По рации можно будет прослушивать переговоры солдат, военных сталкеров, подавать и принимать сигнал бедствия, слушать разнообразные аномальные шумы. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="19"></a><b class="myH31">В: Будет ли смена времен года или игра ограничивается 90 виртуальными днями и ночами? Если смены времен года не будет, то в каком сезоне будет проходить игра?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Смены времени года не будет. Игра будет проходить осенью.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="20"></a><b class="myH31">В: Будет ли возможность управления летательными аппаратами/зондами?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Нет. В первоначальной концепции это было, но мы от этого отказались (<a href="index_t_game_s_gameplay_ss_faq.html#12">см. выше</a>).</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="21"></a><b class="myH31">В: Если игрок убивает какого-то сталкера (1 из 100), то будет ли респавн нового сталкера взамен убитого для поддержания количества?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Нет, количество сталкеров в Зоне будет колебаться в зависимости от смертности и появления новичков.  В какой-то момент может быть 70 сталкеров, а в какой-то и 120. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="22"></a><b class="myH31">В: Будут ли сигареты и пиво?  Если будут, то какой эффект они будут оказывать на сталкера?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Сигареты возможно будут. Точно будет водка. Пиво под вопросом.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="23"></a><b class="myH31">В: Будет ли возможность вести дневник?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Вся информация автоматически записывается в дневник.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="24"></a><b class="myH31">В: Какие правила участия в литературном конкурсе?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Для участия в конкурсе надо написать историю о приключениях сталкеров в Чернобыльской Зоне отчуждения. Историю о событиях в мире, наполненном психическими и физическими опасностями, радиацией, аномальными явлениями, существами мутантами.<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Победители конкурса, написавшие десять лучших произведений, получат коробки с игрой и автографы разработчиков. Лучшие произведения будут размещены на диске с игрой. Авторы будут внесены в титры игры. Фрагменты Ваших рассказов станут частью Зоны, ее историями и легендами, войдя в оригинальную игру!!!<br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Все присланные произведения будут размещены на официальном сайте игры (<a href="index_t_community.html">www.stalker-game.com</a>), где и произойдет отбор победителей по результатам голосования на официальном сайте проекта "S.T.A.L.K.E.R." <br><img src="images/_dot.gif" alt="" width="1" height="12" border="0">Ваши рассказы присылайте на почтовый адрес: <a href="mailto:stalker@gsc-game.kiev.ua">stalker@gsc-game.kiev.ua</a></p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="25"></a><b class="myH31">В: Сколько продлится литературный конкурс?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Практически до конца разработки "S.T.A.L.K.E.R.". Мы сообщим о финале конкурса за несколько месяцев.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="26"></a><b class="myH31">В: Можно ли присылать несколько рассказов на конкурс?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Да, но одно но, если в десятку попадут оба рассказа, то победитель получит лишь один выигрыш, а второй выигрыш перейдет к одиннадцатому месту.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="27"></a><b class="myH31">В: Попадут ли истории с конкурса в игру?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Фрагменты историй войдут как бэкграунд основного сюжета, а практически все колоритные герои попадут в игру в виде уникальных персонажей со своими историями и особенностями характера. Когда игрок начнет игру, в Зону в случайном порядке попадет часть уникальных персонажей и игроку предстоит узнать, как сложится их жизнь в Зоне. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="28"></a><b class="myH31">В: Будет ли мультиплеер? Какие мультплеерные режимы будут в игре?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Мультиплеер будет. Планируются стандартные виды, такие как Deatmatch, Team Match и Cooperative, а в планах новые виды сетевых баталий (MutantsVSHumans).    </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="29"></a><b class="myH31">В: На что делается основной упор в "S.T.A.L.K.E.R", одиночную или сетевую игру?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Основное направление - одниочная игра, но не забываем и о сетевой.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="30"></a><b class="myH31">В: Сколько игроков смогут присоединиться к сетевой игре?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b> До 32 игроков.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="32"></a><b class="myH31">В: Вопрос связанный с ажиотажем вокруг использования демо "Сталкера" на презентации GeForce FX: на форуме проскользнула фраза о том, что на презентации в кадре бывало до 1 млн. полигонов, в то время, как на сайте заявлено "всего" 300 тыс. Значит ли это, что 300 тыс. - гарантированный минимум и в зависимости от конфигурации мы сможем получить у себя на компьютере более 300тыс.?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Если коротко, то вопрос обстоит так. Нужно разделять полигоны, которые приходятся на не упрощаемую геометрию и на геометрию, которая может быть упрощена. Например, к не упрощаемой геометрии относиться ландшафт уровня или стены внутренних помещений, оружие, которое держит игрок и т.д. Практически все остальные предметы и объекты на уровне имеют уровни детализации (LOD). Что означает, что с ростом расстояния до предмета, подставляется другая, более простая модель, но так как она стала дальше от Вас, Вы этого не замечаете. Объект из нескольких тысяч полигонов, на последнем уровне детализации может иметь всего несколько десятков полигонов, но вы этого не почувствуете, так этот объект уже находиться на горизонте, и виден почти как точка. Также существует группа объектов называемые details objects. Это трава, ветки, газеты и другие мелкие объекты, которыми покрыта поверхность уровня. Вся упрощаемая геометрия регулируется в зависимости от производительности вашего компьютера. Для Стакера минимальной видеокартой, чтобы можно было получить нормальное количество FPS, является GeForce 2. Для нее сумма полигонов не упрощаемой и упрощаемой геометрии (детализации) составляет в среднем 300 000 полигонов в кадре. Чем мощнее у Вас видеокарта, тем более детализированная у вас будет графика за счет роста дальности видимости, более детализированных LOD, большего количества details objects и т.д. В версии, которую показывала Nvidia настройки были выкручены на максимум. Например трава рисовалась в радиусе 200 метров с максимальной плотностью, был максимальный радиус видимости и т.д. В кадре было до 1 000 000 полигонов. Сейчас мы заканчиваем переход под DX 9.0. После этого на картах последнего поколения акселераторов таких как GeForce FX в Сталкере будет до 3 000 000 полигонов в кадре при нормальном FPS. Игровой мир будет очень детализированным :) 
+Гарантированный минимум 200 000 полигонов. Максимум 3 000 000.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p> 
+
+<p><a name="33"></a><b class="myH31">В: "Сталкер" показывают на презентациях GeForce FX. Игра выглядит невероятно детализированной. Означает ли это, что игра создается только для самого современного железа?<img src="images/_dot.gif" alt="" width="1" height="12" border="0">Если у меня более слабый компьютер мне не следует ждать игру?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>На презентации GeForce FX показывают версию с максимальными настройками и включенными фичами. Как говорилось Выше, Вы сможете установить в опциях оптимальное соотношение детализации и эффектов к производительности, под возможности своего компьютера. Так что игру стоит ждать всему у кого конфигурация компьютер выше заявленных минимальных требований.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="34"></a><b class="myH31">В: На каких платформах выйдет игра?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>В данный момент мы разрабатываем игру для PC. Но мы также обдумываем и версию на X-box. </p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="35"></a><b class="myH31">В: Когда намечен выход "S.T.A.L.K.E.R."? Известен ли издатель?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Игра планируется к выходу во второй половине 2003 года. На территории СНГ "S.T.A.L.K.E.R." будет издавать компания Руссобит-М, worldwide паблишером является компания THQ.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="37"></a><b class="myH31">В: Будут ли погодные эффекты, смена дня и ночи?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>В Зоне будет естественный ход времени, смена дня и ночи. Также будут и погодные эффекты, изменение тумана, землетрясения, ветер, дождь (все они уже реализованы).</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="38"></a><b class="myH31">В: Не могу переносить вида крови. Можно ли ее будет отключить вручную, или же выставить подходящий уровень в настройках?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Да, в опциях.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="39"></a><b class="myH31">В: На каких языках будет выпущена игра?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>С локализациями ситуация стандартная. Игра будет переведена на все основные языки - английский, русский, французский, итальянский, испанский, немецкий и корейский. В дальнейшем список локализаций может быть расширен.  Возможно, в целях придания дополнительного колорита Зоны, озвучка персонажей останется на русском, перевод будет в виде субтитров.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="40"></a><b class="myH31">В: На некоторых скриншотах виден сталкер со спины. Значит ли это, что будет вид от 3-его лица?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Нет, только вид от первого лица.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="41"></a><b class="myH31">В: Какая музыка будет в "S.T.A.L.K.E.R."?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Основная музыкальная тема "S.T.A.L.K.E.R." - дарк амбиент, это тягучая и жутковатая музыка. Вы можете послушать отрывок из музыкальной темы Сталкера на официальном сайте проекта: <a href="http://www.stalker-game.com">www.stalker-game.com</a>.</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></p>
+
+<p><a name="43"></a><b class="myH31">В: Будут ли аномалии влиять на траектории пуль?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Нет. Это слишком сложно, да к тому же не очень заметно.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="44"></a><b class="myH31">В: Также любопытно было бы узнать что, как и где мы будем есть, т.е. питаться?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Еду можно будет покупать у торговцев. Это будет разнообразные консервы (завтрак туриста, тушенка), буханки хлеба, сушеное мясо и т.д. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="45"></a><b class="myH31">В: А можно ли убив птицу зажарить и съесть?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>У игрока будет возможность есть мясо убитых животных ;) А вот зажарить мясо, скорее всего, не получится. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="46"></a><b class="myH31">В: На сайте написано, что контролер берет под контроль солдат. Может ли он брать под контроль игрока? Как будут себя вести солдаты под контролем?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>a. Контроллер может зомбировать любого незащищенного человека, нет разницы солдат это или сталкер, NPC или игрок.<br>
+<img src="images/_dot.gif" alt="" width="1" height="12" border="0">b. Зомбированные солдаты атакуют врага контролера, при этом они немного замедленны и хуже пользуются своим оружием.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="47"></a><b class="myH31">В: Будут ли раненные монстры прятаться и убегать?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Да будут. У всех персонажей есть характеристика "мораль", которая изменяется от того какое состояние у персонажа, сколько союзников и сколько врагов, и даже будет зависеть от того, какое оружие есть у врага.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="48"></a><b class="myH31">В: Будут ли монстры сражаться друг с другом?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Будут. Некоторые виды мутантов органически не переносят друг друга, и при любом удобном случае атакуют. Например, слепые псы ненавидят карликов. Также мутанты вполне могут кого-то боятся, или наоборот использовать в качестве пищи. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="49"></a><b class="myH31">В: Если перебить всех мутантов на уровне, что будет, если через некоторое время я вернусь на уровень?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Через некоторое случайное количество времени, мигрирующие стаи мутантов и мутанты одиночки, осядут на уровне, заняв привлекательные для себя территории.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="50"></a><b class="myH31">В: Как будет реализован процесс сохранения игры, и будут ли предусмотрены различные уровни сложности?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Мы планируем несколько уровней сложности. Отличия будут не только в сложности прохождения и опасности монстров - на самом легкой сложности будут не доступны некоторые варианты концовок игры, зато можно будет сохраниться почти в любом месте и в любое время, а NPC не будут пытаться решить финальную задачу вместо игрока. На высшей сложности мы задумываем оставить только автосэйв, который будет сохранять при выходе из игры, у торговца, при переходе с уровня на уровень и через определенные промежутки времени. Будет и режим "custom game", в котором можно будет настроить игру под себя.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="51"></a><b class="myH31">В: А теперь вопрос. Как будет ограниченно игровое пространство? Будет ли оно ограниченно валом, бетонной стеной, страшной аномалией, невидимым барьером, или ещё каким-то замысловатым образом?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Мы стараемся ограничивать наиболее естественными и "природными" барьерами, такими как водоемы, стены, металлическим завалами, крутыми склонами, блокпостами.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="52"></a><b class="myH31">В: Как переводится "oblivion lost"?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>"Потерянное забвение"
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="53"></a><b class="myH31">В: Интересно узнать, как будут визуализироваться повреждения?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>При тяжелых ранениях замедление перемещения игрока, тряска прицела, слабость. Различные графические эффекты ранений, такие как резкие встряски экрана, красный постпроцесс, раздваивание экрана…
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="54"></a><b class="myH31">В: Будет ли система поражения и отстрела конечностей как в SoF?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>a. Отстрел конечностей не планируется (однако это может измениться).<br>
+<img src="images/_dot.gif" alt="" width="1" height="12" border="0">b. Количество и тип полученных повреждений будет зависеть от того, куда пришелся удар - в голову, в конечности или в тело.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="55"></a><b class="myH31">В: Как будем поправлять здоровье?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Останавливать кровотечение (перебинтовывать раны) и восстанавливать состояние здоровье при помощи медикаментов. Серьезно усложнять поправления здоровья мы не будем, все должно идти легко. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="56"></a><b class="myH31">В: Будет ли реализовано повреждение защитных костюмов(в следствии порезов и попаданий) и уменьшение их защитных свойств (хим. защита, рад. защита и пр.)?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Почти все объекты экипировки игрока постепенно портится. Защитные костюмы повреждаются, хим.одежды рвутся, оружие и аппаратура выходит из строя. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="57"></a><b class="myH31">В: Передвигаясь в автомобиле, смогу ли я сбить кого-либо?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Обязательно.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="58"></a><b class="myH31">В: Как будет реализован переход с уровня на уровень?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Локации (уровни) соединены переходами, проходя через которые происходит загрузка следующего уровня. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="59"></a><b class="myH31">В: Будет ли радиация?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Да. А также лучевая болезнь, некоторые стадии которой будут уже неизлечимы. 
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="60"></a><b class="myH31">В: Можно ли убить торговца?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Нет, в игре не должно быть тупиковых ситуаций.
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+
+<p><a name="61"></a><b class="myH31">В: Будет ли в игре статистика или какой-нибудь рейтинг например ,/ псих-убийца/ или / матерый волк/. и т.д.?</b><br><img src="images/_dot.gif" alt="" width="1" height="12" border="0"><b class="myH31">О: </b>Будет рейтинг сталкеров. От рейтинга будет зависеть, как к вам относятся. Вполне возможно новичкам будут даваться клички.
+
+</p>
+
+<p><a href="index_t_game_s_gameplay_ss_faq.html#top">наверх</a></p>
+</td>
+      </tr>
+    </table>
+<!--<b class="mySubHeader">����������� ����</b><br>
+��� �������� ����������� ����:
+<ul>
+  <li>�������� �������� ������������
+  <li>���������� ���� ������ � ����������� �� ����������: �������������� ������, ������������ ������, ���������, ���������, ������ ��� ��������
+  <li>�������� ������
+  <li>������������ �������� � �� ������: ������������ �����, ���������, ���������
+  <li>������� � ����� ������������ ����������
+  <li>��������� ��������� � ����� ������� � ���������� ����
+  <li>����� 30 ����� ������
+  <li>�������� �������, �����������, �������������
+  <li>���������� ��������
+  <li>��������� �������, �������, ����������
+  <li>���������� ����
+</ul>
+<br><img src="images/_dot.gif" alt="" width="15" height="1" border="0"><br>
+<a href="index_t_engine.html"><img src="images/_features.jpg" width="499" height="65" border="0" alt=""></a>
+-->
+<!--End Main Text <table></table>--></td></tr>
+<tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
+</table></td><td width="100" valign="top">
+
+<!--Hot Elements--><!--dinamic menu-->
+
+<table cellspacing="0" cellpadding="0" border="0" width="156">
+<tr>
+    <td><img src="../stk_game_2006/images/d_line_top.gif" alt="" width="156" height="30" border="0"></td>
+</tr>
+<tr><td>
+<table cellspacing="0" cellpadding="0" border="0" height=""  width="156"
+style="background-image: url(../stk_game_2006/images/d_back.gif); background-repeat: repeat-y; ">
+<tr>
+    <td height="10" style="padding-right:20" width="156" align="right" class='subnav'>
+	
+	<a href='index_t_game_s_zone_stories.html' title='Истории Зоны' class='din_menu_link_g'><b>Истории Зоны</b></a><br><font class='din_menu_g'>Описание</font><br><img src="../stk_game_2006/images/d_line_menu.gif" alt="" width="98" height="9" border="0"><br><div>
+	<a href="index_t_game_s_gameplay_ss_storyline.html" class="din_menu_link">История</a><br><a href="index_t_game_s_gameplay_ss_gameplay.html" class="din_menu_link">Описание</a><br><a href="index_t_game_s_gameplay_ss_features.html" class="din_menu_link">Особенности игры</a><br><a href="index_t_game_s_gameplay_ss_articles.html" class="din_menu_link">Общие статьи</a><br><a href="index_t_game_s_gameplay_ss_chronology.html" class="din_menu_link">Хронология</a><br><font class="din_menu">F.A.Q.</font><br>	</div><img src="../stk_game_2006/images/d_line_menu.gif" alt="" width="98" height="11" border="0"><br><a href='index_t_game_s_creatures.html' title='Персонажи' class='din_menu_link_g'><b>Персонажи</b></a><br><a href='index_t_game_s_objects.html' title='Объекты' class='din_menu_link_g'><b>Объекты</b></a><br><a href='index_t_game_s_anomalies.html' title='Зона' class='din_menu_link_g'><b>Зона</b></a><br>	
+	</td>
+</tr>
+</table>
+
+</td></tr>
+<tr>
+    <td><img src="../stk_game_2006/images/d_line_bottom.gif" alt="" width="156" height="27" border="0"></td>
+</tr>
+</table>
+<!--end dinamic menu-->
+
+<div id="sidebar_hot_block"></div>
+<div id="sidebar_screen"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_game.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_graphics.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_tech.gif" alt="" width="114" height="130" border="0"></td></tr>
+</table><!--End Hot Elements--></td>
+    <td width="22"><img src="images/_dot.gif" width="21" height="1" border="0"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
+</tr>
+<tr>
+	<td height="45" class="copyr" align="center"><a href="../&s=gameplay&ss=faq.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | Об Игре | <a href="index_t_community.html" class="bottomMenu">Community</a> | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
+src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
+�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
+Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">2001&nbsp;&nbsp;39758</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
+</tr>
+<tr><td height="2"><img src="images/_dot.gif" width="1" height="6" border="0"></td></tr>
+</table>
+
+	</td>
+    <td valign="bottom" height="90%"><img src="images/right_back_line.jpg" width="90" height="420" border="0"></td>
+</tr>
+</table>
+
+</td>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+</tr>
+</table>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+

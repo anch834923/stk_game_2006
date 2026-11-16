@@ -1,0 +1,266 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Первый день новой Эры - Corpse</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_185.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Первый день новой Эры</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Corpse</b><br>Дата: <b>08/10/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>523</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>1</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P ALIGN="JUSTIFY" class="copyr">12&nbsp;апреля 2006&nbsp;года. 9.15</P>
+<P ALIGN="JUSTIFY">Он&nbsp;пробрался сквозь заросли, колючей проволокой опутавшей подход к&nbsp;городу, словно сама природа, ужаснувшаяся последствиям насилия над ней, попыталась скрыть свою исковерканную плоть. Сквозь надломанные куски асфальта свались вверх к&nbsp;солнцу острые как копья растения.</P>
+<P ALIGN="JUSTIFY">Герман взглянул на&nbsp;карту. Он&nbsp;находился на&nbsp;южной окраине Чистогаловки&nbsp;&#151; городка, заброшенного еще после Первой катастрофы. До&nbsp;Станции было несколько часов пути.</P>
+<P ALIGN="JUSTIFY">Городок был южными воротами в&nbsp;Припять, и&nbsp;выбитыми глазницами окон, провалинами дверей и&nbsp;траурной симфонией тишины словно предупреждал, на&nbsp;что идет путник, решившийся потревожить вечную тишину мертвого города. Однако Герман, не&nbsp;раз бывавший в&nbsp;Зоне, и&nbsp;получивший в&nbsp;среде Сталкеров неформальное звание Опытного, знал как следует вести себя тут. Нужно идти по&nbsp;зловещим улицам с&nbsp;чувством Хозяина, Хозяина, вернувшегося в&nbsp;свой дом. Город должен почувствовать силу Сталкера, и&nbsp;тогда он&nbsp;перестанет быть ловушкой, свернет свою злость, спрячет с&nbsp;недовольным рычанием свою темноту в&nbsp;подвалах и&nbsp;темных закоулках.</P>
+<P ALIGN="JUSTIFY">Герману было уже 40,&nbsp;из&nbsp;них 20&nbsp;он&nbsp;отдал Зоне. Начав еще студентом исследовать леса вокруг Зоны, он&nbsp;внимательно изучал Рост Зоны. Именно так он&nbsp;называл процесс, начавшийся <nobr>где-то</nobr> 15&nbsp;лет назад. Однако в&nbsp;Университете никто и&nbsp;слышать не&nbsp;хотел его предостережения о&nbsp;Второй Аварии. Каменные лбы, выросшие в&nbsp;эпоху, когда не&nbsp;то&nbsp;что Зоны не&nbsp;было, сама атомная физика становилась на&nbsp;ноги, не&nbsp;хотели, да&nbsp;и&nbsp;не&nbsp;могли понять, что Зона не&nbsp;была мертвой. Она жила, но&nbsp;понятие жизни там было совсем иное&#133;</P>
+<P ALIGN="JUSTIFY">Герман закончил Университет, но&nbsp;ушел из&nbsp;науки, видя то&nbsp;что она <nobr>из-за</nobr> страха оказаться под контролем своего собственного детища лишь робко делает анализы и&nbsp;замеры в&nbsp;Зоне, опасаясь остановить ее&nbsp;рост. Но&nbsp;Герман знал, что Зону можно остановить. И&nbsp;он&nbsp;шел, готовый к&nbsp;очередной схватке с&nbsp;ней.</P>
+<P ALIGN="JUSTIFY">В&nbsp;его рюкзаке было несколько боекомплектов <nobr>АК-47</nobr> и&nbsp;пара гранат. На&nbsp;обратном пути он&nbsp;пройдет через Старые Соколы, где продаст часть собранных в&nbsp;Зоне боеприпасов старому пройдохе Дацюку, <nobr>42-летнему</nobr> торгашу, скупавшему оружие из&nbsp;Зоны у&nbsp;сталкеров и&nbsp;продававшему его местной мафии. Дацюк, пришедший 10&nbsp;лет назад неизвестно откуда в&nbsp;Зону, уже попал под ее&nbsp;контроль. Седые остатки волос, пасть гнилых зубов и&nbsp;кашель, ежеминутно вырывашийся из&nbsp;полуистлевших легких, выдавали в&nbsp;нем жертву Зоны. Он&nbsp;уже никогда не&nbsp;вернется обратно. Жить ему оставалось немного, и&nbsp;он&nbsp;знал это, добивая свой полумертвый организм различными спиртовыми соединениями, покупаемыми у&nbsp;проезжавших мимо армейских частей, и&nbsp;на&nbsp;несколько часов опьянявших его, вытаскивавших его изъеденный заразой мозг из&nbsp;ада Зоны.</P>
+<P ALIGN="JUSTIFY">Армия давно перестала отлавливать безумцев, поселившихся недалеко от&nbsp;Припяти. Потому что вне Зоны они вряд&nbsp;ли уже посмеют выйти, а&nbsp;выйдя, будут сразу выловлены и&nbsp;помещены в&nbsp;карцер, где проведут остаток своей жизни, изучаемые лабораторными яйцеголовыми словно подопытные крысы. Население Зоны знало это, и&nbsp;потому предпочитало сгореть в&nbsp;пламени станции, чем тлеть в&nbsp;лабораториях.</P>
+<P ALIGN="JUSTIFY">Герман не&nbsp;приходил сюда просто ради брошенного оружия, остатков механизмов, из&nbsp;которых местные умельцы собирали себе машины: от&nbsp;печи до&nbsp;трактора. Да&nbsp;и&nbsp;мрачная романтика Зоны была ему уже далека. Он&nbsp;искал следы Жизни. Он&nbsp;знал, что они <nobr>где-то</nobr> рядом, стоит только протянуть руку, и&#133;</P>
+<P ALIGN="JUSTIFY">Качели возле здания бывшего детского сада, ржавый автомобиль, аккуратно припаркованный возле тротуара&#133; Брошенная кукла. Все напоминало о&nbsp;том, что время не&nbsp;повернуть вспять. Человечество должно научиться жить с&nbsp;новыми правилами. Смириться с&nbsp;ними или погибнуть.</P>
+<P ALIGN="JUSTIFY">В&nbsp;последние несколько месяцев Герман стал наблюдать повышение активности Зоны. Процесс увеличения радоактивности, рост растений, цикл жизни насекомых стал короче, щел в&nbsp;геометрической прогрессии, причем фиксировалось все это в&nbsp;разных точках. Создавалось впечатление, что все 30&nbsp;километров Зоны стали одним гигантским реактором, набирающим обороты, выходящим из&nbsp;под контроля. Однако каков будет результат процесса? Неужели дремлющий вулкан <nobr>4-го</nobr> энергоблока вновь проснется? Кто или что вдохнет в&nbsp;него силы? Вопросы мучали Германа и&nbsp;гнали его вперед, на&nbsp;север, в&nbsp;Припять, где он&nbsp;свернет к&nbsp;Станции.</P>
+<P ALIGN="JUSTIFY">Герман насторожился. Он&nbsp;привык в&nbsp;тишине и&nbsp;пустоте Зоны, но&nbsp;тут было <nobr>что-то</nobr> не&nbsp;так&#133; Странное чувство. Внезапно радиометр разразился невыносимым писком, датчики, словно сойдя с&nbsp;ума, запестрели показаниями&#133; Воздух мгновенно стал <nobr>каким-то</nobr> ватным, наполнившись потоками излучаемых частиц и&nbsp;Герману в&nbsp;лицо ударил теплый, яркий ветер. В&nbsp;грудь ударила волна невыносимого света, и&nbsp;сталкер был отброшен на&nbsp;спину&#133;</P>
+<P ALIGN="JUSTIFY">&#171;Странно, если это Второй Взрыв, я&nbsp;должен бытьь уже мертв!&#187;,&nbsp;&#151; подумал Герман, лежа на&nbsp;битом стекле тротуара. Его обволакивала <nobr>какая-то</nobr> мягкая материя, проникавшая насквозь сквозь панцирь захитного скафандра, сливаясь с&nbsp;его клетками. Герман открыл глаза и&nbsp;увидел Это. Светящийся переливающийся шар, висящзий в&nbsp;воздухе метрах в&nbsp;десяти от&nbsp;сталкера, искрился и&nbsp;издавал <nobr>какой-то</nobr> натянутый звенящий звук. Герман не&nbsp;верил своим глазам. Он&nbsp;схватил фотокамеру и&nbsp;начал судорожно снимать объект. Однако чувство Сталкера металось в&nbsp;его груди, требуя бежать со&nbsp;всех ног, уйти как можно дальше от&nbsp;этого шара, излучавшего неиспытанную ранее тревогу.</P>
+<P ALIGN="JUSTIFY">Внезапно шар качнулся и&nbsp;стал вытягиваться в&nbsp;длину. Ошарашенный Герман вскочил и&nbsp;побежал прочь, назад, из&nbsp;Зоны. Отбежав за&nbsp;угол стоявшего возле дороги сарая, он&nbsp;осторожно выглянул <nobr>из-за</nobr> угла и&nbsp;тут увидел то,&nbsp;к&nbsp;чему шел всю свою жизнь&#133;</P>
+<P ALIGN="JUSTIFY">Из&nbsp;шара, выросшего до&nbsp;трех метров в&nbsp;диаметре, медленно вышло существо, издававшее шелест-треск, словно тысячи мелких клочков бумаги терлись друга. Существо медленно подняло голову и&nbsp;уставилось немигающим взглядом на&nbsp;Германа. Пасть твари открылась, и&nbsp;черный язык вывалился наружу&#133;</P>
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="31.5" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.50 (14)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Corpse_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

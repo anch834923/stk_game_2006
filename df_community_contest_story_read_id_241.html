@@ -1,0 +1,310 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Артефакт - TROLLeyBOSS</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_241.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Артефакт</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>TROLLeyBOSS</b><br>Дата: <b>18/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>539</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>2</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P ALIGN="CENTER">Часть1.</P>
+
+<P>Сижу значит как то утром, стаканы протираю, думаю,  клиентов нет конечно… Утро все таки. </P>
+<P>Я тогда еще в деревне жил, из города перебрался.  Деревня та была, просто дыра…. И чего спрашивается я туда пришол … Ну да торговать. А чем? Водкой что ли? А вот только ей считай и торговал.  Сталкеры появлялись  дай бог раз в месяц…. За три месяца как я там был, две “пустышки” продали, и все!  А что б у них  хоть что нибудь приличное выторговать… тьфу. Жил блин, исключительно за счет местных, они местные выпить любят. А у меня всегда выбор богатый, выпивки понятно дело.</P>
+<P> Думал я тогда – сидел бы сейчас в городе, торговал бы магнитолами… и жил бы себе припеваючи…. Так ведь нет! Я же легкой наживы хочу!</P>
+<P>Артефактов мне подавай! А артефакты где? На Зоне… А я где? В деревне…   Нда…</P>
+<P>Хотя конечно сталкер из меня как из Жигулевского - Варштайнер. Вон блин пузо отрастил. В неполные то 30 лет…. Ай! Провались эта зона с ее артефактами в бездну…  Все! Решено, вот завтра монатки соберу и валить отсюда, валить.  Это я тогда так думал.</P>
+<P>И точно помню. Дождь начался, сильный такой почти ливень.</P>
+<P>И тут значится мне в дверь стучат, так это, не вежливо.</P>
+<P>-Эй! Хозяин открой! Открой говорю, мокнуть неохота!</P>
+<P>Думаю,  кого там блин принесло…. 100 баксов даю, что не сталкер с артефактами…нет 200!</P>
+<P>-Сейчас открою, погоди путник….</P>
+<P>Подошол я значит к двери, открываю. Ну обрез ессно на готове.</P>
+<P>Смотрю. Стоит мужик., то ли военный то ли сталкер крутой, то ли непонякто кто.</P>
+<P>Но броня на нем полная,  в паре мест прада порвана, только шлем снят, оружие явно какое то не наше. И вообче как то очень круто выглядит. Ну думаю, ил грабить пришол, или торговать, зотя конечно может и выпить, а может обогется, черт их разберет.</P>
+<P>-Заходи –говрю- путник, если деньги есть то и выпьеш, согреешся.</P>
+<P>А мужик этот на меня так странно посмотрел, и нислова не говоря пошол к стойке.</P>
+<P>Ну я понятно дело за ним чуть ли не бегом. Подлетаю к стойке, и с такой милой улыбочкой типа “чего изволите?”  Спрашиваю.</P>
+<P>-Что путник хочеш? Налить чего? Может покушать?-</P>
+<P>-Значит хозяин, плесни 100 виски,  и 3 кубика льда, есть такое?-</P>
+<P>Ну я так, делаю вид что обиделся и говорю –Обижаеш путник, есть конечно! Тебе виски какое?-</P>
+<P>-Чивас есть?-</P>
+<P>-Есть, да недешево стоит.-</P>
+<P>-Наливай корчмарь, наливай о деньгах не беспокойся-</P>
+<P>ну я понятно дело наливаю как заказанно. И смотрю на него, выжидающе так.</P>
+<P>Он глоток сделал… и задумался о чем то.  Я так денег и не дождавшись, подумал, может еще чего возьмет… и стал снова стаканы протирать.</P>
+<P>Он с этим вискарем, минут 20 сидел. Уставился в одну точку и ни на что не реагирует.</P>
+<P>Вдруг смотрит на меня. И говрит спокойным таким голосом.</P>
+<P>-Слышал в этой деревне,  скупщик есть с зоны артефакты покупает.Не знаеш кто? –</P>
+<P>Ну думаю, вот он мой звездный! И говорю так же спокойно.</P>
+<P>-Слыхал, есть такой. Перед тобой и стоит.-</P>
+<P>Он в лице не изменился, только глаза прищурил.</P>
+<P>- Хм… не похож. Ну да ладно, есть у меня для тебя вещичка такая, “Глаз” я ее назвал</P>
+<P> Стоит не дешево, ее я первый нашол, но мне сейчас не до торговли. –</P>
+<P>Я аж обалдел, вот думаю повезло.. и не пустышку ведь, а артефакт принес!</P>
+<P>-Вот говорю, хорошо путник говори цену, меня кстати Пузом  зовут.-</P>
+<P>-Цен 1000 ему. А меня Злым люди прозвали.-</P>
+<P>Ну думаю… Злой.. имечко то… эт черт. И цена нехилая, как пол моей забегаловки. </P>
+<P>-А что эта вещичка твоя, делает то? Что ты за нее штукарь просиш?-</P>
+<P>Он значит выкладывает на стойку, хрень такую, вся круглая черная блестящая. И правда на глаз похожа, а посередине как раз в том месте где зрачок у глаза кружок красным светит.</P>
+<P>-“Глаз” этот - говорит –  Я на бывшем заводе в зоне нашол, там есть такой, на нем то ли тракторы, то ли еще какую технику делали. Так вот штука эта как я понял, аномалии отводит, то ли не видят,  то ли еще что, но я с этой штукой сквозь “пух” прошол и не заметил, догодался только тогда, как отшол от него метров на двадцать и оглянулся случайно… тогда то и понял. -  </P>
+<P>Я значит слушаю это все, и у меня аж испарина на лбу проступила…. Ни хрена себе, думаю. Он что псих что ли такую вещ продовать? И значит, в порыве чувств дурость и ляпнул.</P>
+<P>-А зачем тебе Злой эту вещь продавать то? Ведь ты же с ней озолотишся! Тебе аномалии не страшны, и вообче… - </P>
+<P>Он от этой штуки взгляд отвел, посмотрел на мея внимательно, и говорит.</P>
+<P>-А вот это уже не твое дело.-</P>
+<P>Тут я загорелся. Ну блин думаю… надо брать .. и плевать на все. Была у меня спец занчка, для сталкеров всю подчистую выгреб, все доходы поднял. Набрал 900. Говорю.</P>
+<P>-Мужик, есть тоько 900 больше не наберу пока, может чего из выпивки возьмеш? Или вон, бензина?-</P>
+<P>Он на меня смотрит, нетерпеливо так, и отвечает.</P>
+<P>-Так значит, хрен с тобой, давай  900  и пару бутылок Чиваса. Тогда договорились.-</P>
+<P>Я значит выгребаю быстро все на стол, последнии бутылки Чиваса ставлю. </P>
+<P>И говорю.</P>
+<P>-Можеш не считать ровно 900, и две Чиваса, как договаривались. –</P>
+<P>-Бери –говорит – “Глаз” и прощай Пузо.</P>
+<P>Быстро встает, и чуть ли не убегает. Даже дверь не закрыл.</P>
+<P>Тут  до меня две вещи дошли, и как молнией вдарили. Первая: я же ни хрена не убедился </P>
+<P>что  “Глаз” этот работает вообче! И вторая: он же за выпивку не расплатился!!</P>
+<P>Но деньги уже отдал и ели соврал, то ищи теперь этого Злого… </P>
+<P>Думаю.. а вдруг не обманул? А вдруг и правда, работает? Надо проверить. Хм. </P>
+<P>Есть тут в деревне дурачок один. На нем и проверим. Все равно родни у него нет, плакать никто не будет.</P>
+<P>Так я и решил. Время уже к двенадцати шло. Собрал я кое какие вещички. И пошол деревенского дурачка искать. Наверное сейчас лес валит, силы то у него немерянно, в отличии от мозгов.</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="35.49" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.07 (15)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/TROLLeyBOSS.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

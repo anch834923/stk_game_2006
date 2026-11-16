@@ -1,0 +1,344 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Лезвие бритвы - Черный юмор</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_40.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Лезвие бритвы</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Черный юмор</b><br>Дата: <b>28/01/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>1171</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>25</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td> <p class="copyr"><b>Часть I Периферия</b></p>
+<p>Было шесть часов утра. Вставало солнце, озаряя всю территорию своим пурпурным 
+светом. Смотреть на восток было невозможно, так как солнце ослепляло глаза. Свежий 
+чистый весенний воздух наполнял грудь, от чего появлялось ощущение безграничной 
+свободы. Стояла тишина. </p>
+<p>Возле КПП с разных сторон от дороги стояли два человека в военной форме с автоматами. У обоих были озадаченные лица, по которым иногда пробегало выражение беспокойства. 
+Это было вызвано тем, что вчера вечером начальство предупредило постовых о важном 
+грузе, который должен был прийти с минуты на минуту. Руководство распорядилось, 
+чтобы солдаты задавали как можно меньше вопросов группе сопровождения и старались 
+не задерживать колонну. </p>
+<p>Послышался отдалённый звук мотора. Армейцы пытались что-нибудь разглядеть вдали, 
+но дорога шла с востока, а солнце слепило глаза. По мере приближения звука двигателя, 
+на дороге показался клубок пыли, в котором еле различались грузовики. Постовые 
+судорожно схватили автоматы, их лица выражали недоумение: три грузовика, без номеров, 
+без охраны, без всего того, с чем обычно провозят важные грузы на АЭС, надвигались 
+на них. </p>
+<p>Когда машины были уже у шлагбаума, один из автоматчиков, переглянувшись со вторым, 
+направился к дверце стоявшего первым автомобиля. Когда он подошёл, открылась дверь, 
+и от туда спрыгнул человек среднего роста. На водителе была надета чёрная кожаная, 
+немного потёртая куртка и джинсы. Постовой узнал в нём своего родного брата.</p>
+<p>- Здорово, Сашек! - обратился армеец к водителю,- Давно не виделись. После того, 
+как ты перешёл работать в другое место, ну, то есть, на эту кампанию, мы стали 
+реже встречаться. </p>
+<p>- Да я и сам этому не рад.</p>
+<p>- Да ты что?(усмехнулся солдат) Я думал, тебе там неплохо платят.</p>
+<p>- Так-то оно так, только есть кое-какие неудобства. То меня не тревожат по целым 
+неделям, то поднимают среди ночи и просят подвезти груз к какой-нибудь станции. 
+Я хотел уйти, но после того, как мне сообщили о повышении зарплаты, у меня отпало 
+это желание. Что обо мне, сам-то как?</p>
+<p>- У меня скоро юбилей, не забыл? Всё-таки сорок лет. Придёшь поздравить старика?</p>
+<p>- Не вопрос, Макс. А сейчас о деле. Вот документы на груз, можешь проверить.</p>
+<p>Водитель передал Максу папку, из которой виднелись листки аккуратно сложенной 
+бумаги. Открыв папку, постовой начал всматриваться в страницу, на которой была 
+размещена таблица характеристики перевозимого груза. &quot;Что за чёрт,- подумал 
+армеец,- в графе &quot;Вещество&quot; указано &quot;Уран&quot;, но ни один из 
+грузовиков не напоминает контейнер, скорее они похожи на каталажки&quot;.</p>
+<p>- Что-то ты сегодня задержался,- подозрительно спросил он,- обычно ты никогда 
+не отстаёшь от графика.</p>
+<p>- Да, были проблемы с загрузкой. После того, как мы подъехали к платформе, водителей 
+попросили покинуть зону погрузки, предупредив о какой-то опасности, радиации, 
+-И шёпотом добавил, - Ты знаешь, мне почему-то показалось, что ничего опасного 
+там нет, просто фирма не хотела, чтобы мы знали, что везём.</p>
+<p>Во время разговора к ним подошёл второй постовой. Подождав, пока водитель закончит 
+говорить, он обратился к армейцу:</p>
+<p>- Товарищ лейтенант, начальство приказало не задерживать колонну.</p>
+<p>- Ладно, проезжай,- нехотя отдав папку брату, сказал Макс,- но не забудь прийти 
+ко мне на праздник.</p>
+<p>Через несколько минут вдали уже не было видно машин. 
+</p>
+<p class="copyr"><b>Часть II Крушение</b></p>
+<p> Сегодня, по привычке, я проснулся рано. С этого дня начинался мой отпуск. 
+  Предчувствуя наступление своего дня рождения, я был в хорошем расположении духа. 
+  Прокручивая в голове варианты проведения праздника, я остановился на том, чтобы 
+  отметить юбилей дома. Лениво натянув одежду, поплёлся в ванную принять душ. 
+  Позавтракав после душа, я уселся в кресло перед телевизором, не желая пропустить 
+  очередной выход любимой программы. Но, к моему сожалению, по каналу шли новости. 
+  Я не старался вникать в смысл слов, сказанных диктором, лишь достал программку. 
+  Просмотрев несколько раз газету и сверив часы, я понял, что мою любимую программу 
+  прервал срочный выпуск новостей. Посмотрев на экран, я узнал недавно охраняемый 
+  мною объект - Чернобыльскую АЭС. Сообщалось, что сегодня ночью на ней произошла 
+  утечка топлива, которая привела к взрыву на станции; радиационное облако поглотило 
+  под себя огромные территории, радиус поражения достигал пяти километров. Я похолодел 
+  от ужаса. Это была ужасная катастрофа. Трудно даже представить последствия этой 
+  трагедии. Мне вспомнилось, что брат должен был сегодня везти туда группу учёных. 
+  Надеюсь, он был далеко от этого места.</p>
+<p class="copyr"><b>Часть III Слухи</b></p>
+<p> Шёл последний день моего отпуска. Прошла неделя после моего дня рождения, 
+  который я встречал в одиночестве. Брата я не видел ни разу. </p>
+<p>  Следя за новостями, я узнал, что &quot;Зона&quot; (так называли территорию, 
+  где до сих пор была повышенная радиация) была оцеплена и охранялась военными. 
+  Через моих знакомых, которые служили в армии и охраняли зону, до меня дошли 
+  слухи, что вблизи эпицентра взрыва АЭС происходили странные вещи. Из всех отрядов, 
+  посылаемых вглубь зоны, не возвратился ни один. По всей территории были разбросаны 
+  трупы животных. Один из охранников утверждал, что стрелял в нарушителя, но тот 
+  безмолвно и непоколебимо, не дрогнув ни одним мускулом лица, продолжал надвигаться 
+  на него. Другой безумец говорил о каких-то ловушках, войдя в которые человека 
+  разрывало на куски. Он сам видел, как напарника за считанные секунды превратило 
+  в груду кровоточащего мяса. Или, якобы, есть такие места, где растения не отбрасывают 
+  тень, что также свидетельство явной угрозы. В общем, всякий бред.</p>
+<p>  Вдруг мои мысли прервал телефонный звонок. Когда я снял трубку, грубый мужской 
+  голос сообщил мне о том, что я должен явиться в часть для расторжения контракта. 
+  Повисла пауза. М-м, да, неожиданный поворот событий. Я уволен. </p>
+
+<p class="copyr"><b>Часть IV. Вторжение.</b></p>
+<p> Сказать то, что мне было обидно - значило вообще ничего не сказать. Моему 
+  разочарованию не было предела. Меня же могли поставить на другой объект, а они 
+  взяли и просто уволили…Еще и брат пропал. В жизни началась черная полоса.</p>
+<p>  Я сидел в баре и &quot;плакался&quot; своему другу. Он молча слушал, время от 
+  времени давая знаки бармену подносить еще выпивки. Скоро уже наши голоса и звон 
+  бокалов перекрывали все прочие звуки этого заведения. Я орал, что обязательно 
+  пройду в зону и сам разберусь, что там происходит. В последствии наши пьяные 
+  тела были вынесены на улицу охранниками.</p>
+<p>  Я не помню как добрался до дома и завалился в постель. </p>
+<p></p>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.92" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.56 (309)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/BlackHumor_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

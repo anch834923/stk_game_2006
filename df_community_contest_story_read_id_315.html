@@ -1,0 +1,272 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Кто такие СТАЛКЕРЫ? - Михаил Кирилин aka v3n0mX</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_315.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Кто такие СТАЛКЕРЫ?</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Михаил Кирилин aka v3n0mX</b><br>Дата: <b>24/05/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>763</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>4</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+</FONT><FONT FACE="Arial CYR" SIZE=2><P ALIGN="JUSTIFY">(небольшое руководство д-ра Валентина Пульмана )</P>
+<P ALIGN="JUSTIFY">Давно общественность мучает вопрос - что же за существа "сталкеры"? После проведения полевых испытаний и ряда исследований в Кэрригановых лабораториях, нам удалось выяснить много нового о них.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Итак, как известно, сталкеры - злобные обитатели зоны, ведут преимущественно кочевой образ жизни. При этом, они живут не в стаях или группах, а совершенно единоличным образом жизни - по одной штуке на километр. </P>
+<P ALIGN="JUSTIFY">Природа дала сталкеру строение указательного пальца в форме крючка, дабы удобней ковыряться в носу, почесывать зад и жать на курок автомата АК-74 со снайперским прицелом  или винтовки СВД с подствольным гранатометом. Сталкеров без оружия не бывает, они рождаются с пушками в руках. Так же в комплекте прилагается брезентовый плащ и свинцовые трусы.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Главное отличие сталкера от остальных обитателей зоны - это злобное и отрешенное выражение лица, хмурый взгляд. Сталкера трудно заметить, если он спрятался в болоте, зарылся в "ведьмином студне", или окопался в зарослях жгучего пуха. В этом ему помогает защитная окраска. В остальных случаях сталкера выдает любовь ко всему яркому и блестящему, особенно к шарам золотого цвета.</P>
+<P ALIGN="JUSTIFY">Сталкеры - очень чистоплотные создания. Если кто-то запачкает мозгами штык от шестиствольного "Вулкана", то тут же облизывает его и утирается рукавом, смачно отрыгивая. Или, на крайней случай, утираются гремучей салфеткой.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">По выходным сталкеры совершают массовые набеги из Зоны в ближайшие кабаки, где пропивают и проедают все, что натаскивают из Зон - от испуганных  пришельцев с планеты Омикрон-24 и киборгов с планеты Омикрон-25, до надувных женщин и своих спящих товарищей. Возвращаются назад в Зону с философскими минами на лицах, поскольку на похмел финансовых средств обычно не бывает. Сталкеры любят подраться. Если драться не с кем, то дерутся со стенкой, или с чем-нибудь, что на нее отдаленно похоже.</P>
+<P ALIGN="JUSTIFY">Но нельзя сказать, что сталкеры - существа тупые и ограниченные. Можно обратиться к любому из них, и вам вежливо объяснят, что это совсем не так.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Вне Зоны - сталкеры интеллигентные и общительные люди. Внутри же Зоны в них просыпаются первобытные инстинкты, которые ощутимо влияют на поведение сталкера. В конфликт с представитео\лями закона не вступают, отговариваясь: "Видишь, что ЗОНА с людьми делает?".</P>
+<P ALIGN="JUSTIFY">Если вы встретили в Зоне сталкера - пообещайте ему много ЩАСТЬЯ. Тогда он не будет вас сразу убивать, а сначала сядет и задумается суток эдак на пять, периодически вскакивая и бегая кругами подняв руки к небу.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Итак, наверное возникает вопрос - как же поймать сталкера? Ответ прост - никак. Сталкер, если захочет, придет сам, сожрет все из холодильника, вынесет телевизор с мрачным рыком "хабар", жену, с мрачным рыком "на исследования", сядет в машину с рыком "калоша" и укатит вдаль. А вас вообще пристрелит, потому что в Зоне закон один - или ты сталкер, или ты маздай.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">P.S. Во время исследований никто не пострадал, за исключением: др-ов Пальмана и Пыльмана (сданы в виде хабара конкурирующему НИИ)</P>
+<P ALIGN="JUSTIFY">3-х сталкеров, увлекающихся мимикрией (пропали без вести), рыжей собаки Шарик.</P>
+<P ALIGN="JUSTIFY"></P>
+</FONT><FONT FACE="Arial" SIZE=2><P ALIGN="JUSTIFY">by </FONT><FONT FACE="Arial CYR" 
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.69" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.67 (52)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Kirilin_2.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Психотропное оружие - AntiGen</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_232.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Психотропное оружие</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>AntiGen</b><br>Дата: <b>12/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>529</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>2</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P>…</P>
+<B><P>День 13</P>
+</B><P>Утро сегодня было просто прекрасным (если такие бывают в Зоне). И я понял, что случится что-то особенное. Приведя себя в порядок, я направился к торгашу. Нервный мужичок правой рукой поглаживал двустволку, а вот левая, оторванная до середины, просто висела. После недолгого разговора, во время которого торгаш постоянно срывался на нецензуршину, я получил новое задание и отправился к себе собираться. </P>
+<P>Пожитки мои были не очень велики, так как “на Зоне” я был всего вторую неделю. Проверил защитное снаряжение, затянул покрепче ремешки, плотно надел противогаз, почистил АК-47 и зарядил новенький Fort, а затем принялся изучать карту необходимого района. Но, к сожалению, (а удача не была моим коньком) искомый артефакт находился на плохо изученной территории где, как мне стало известно, через два дня произойдёт Выброс. Ну что ж… обещаемая сумма должна была покрыть все расходы и неудобства. И я поспешил так, как до места назначения была далеко, а быть застигнутым во время аномалии, мне не хотелось. </P>
+<P>Вроде бы, всё собрано и всё готово. Тогда в путь! Жаль только денег, хотя бы на Москвич, не было. Пришлось топать на своих двоих… Дорога была прямой и широкой, а по обочинам не было никаких углов или кустов, что не могло не радовать. До вечера все прошло благополучно, и уже к полуночи я устроился на привал, пройдя больше половины пути за день (такими темпами я вернусь домой до Выброса). Так прошли еще одни сутки.</P>
+<B><P>День 14</P>
+</B><P>Проснувшись в 5<SUP>00</SUP> (старая армейская привычка) я возобновил свой путь. Странно… второй день пути и ни одного существа. Ни мутантов, ни сталкеров, ни кого, только безжизненное небо и мертвый город. Зона никогда не была людным местом, но все-таки, куда же все подевались? Аномалий тоже не отмечалось. Всё это поражало во мне какое-то странное чувство, которое нельзя ни описать, ни понять. К вечеру я стал замечать еле уловимые краем глаза тени движения там, в провалах выбитых окон и темных подъездах, но стоило только повернуться и наваждение исчезало. Да-а-а… жутковато, но такова Зона.</P>
+<B><P>День 15</P>
+</B><P>…(здесь и далее записи идут очень неразборчиво)…</P>
+<P>…вот теперь мне становиться по настоящему страшно. И это чувство было каким-то другим, чем обычно. Я не привык бояться, но этот страх рождался во мне по чьей-то воле. Зона всегда была аномальной, но эта новая неизвестность сводила с ума. Я шел дальше и дальше, вглубь большого кладбища. Кладбища людских душ и жизней.</P>
+<P>Навалившаяся усталость сделал мои ноги свинцовыми, а движения заторможенными, но я знал, что единственный способ выжить – идти вперед. И я пошел дальше. Теперь я уже не думал о работе, о деньгах или чем-либо еще. Я думал только о том, как можно выйти из этого кошмара. Всё происходило так быстро, только позавчера я радовался жизни, а теперь … (страница разорвана)… как же здесь холодно! Я пишу всё это уже не для себя (я думаю, мой конец близок), а только хочу предупредить любого, кто это прочтет. Я хочу, чтобы он бежал отсюда, бежал куда-нибудь, но подальше от этого кошмара!…</P>
+<P>И вдруг ВСЁ стало на свои места. Страх ушел. Я огляделся по сторонам, ЧТО же, черт возьми, произошло??! Я только знаю, что смерть дала мне таймаут и это затишье перед бурей. Я побежал назад к городу, но спустя каких-то 5-10 минут случилось всё как я и думал. Нервный ступор сковал ноги резким параличом. Кажется, будто кто-то играет со мной, как с ненужной игрушкой. И этот кто-то весьма могуществен, что бы обладать столь сильным оружием. Я начинаю чувствовать, как мысли замедляются… (пятно крови) …страх переходит в УЖАС…</P>
+<P>Всё вокруг взорвалось тысячами осколков реальности. Дома плавились, деревья исчезали в Никуда, вокруг метались фантомы… </P>
+<P>&nbsp;</P>
+<B><P ALIGN="CENTER"> Протокол №185</P>
+</B><P ALIGN="CENTER">(Из отчёта спасательной группы)</P>
+<P>Вчера, в районе предполагаемого Выброса был найден сталкер AntiGen. Находясь в коматозном состоянии, он не подавал никаких признаков жизни. Его волосы поседели, кожа обесцветилась, с данным явлением эксперты столкнулись впервые и принялись его детально изучать. Сталкер находился в этом состоянии ещё два дня, но впоследствии его “удачно” смогли вернуть к жизни. Последствия пережитого, так и остались неизменными. Что же действительно произошло, не известно ни кому…</P>
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="36.61" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.23 (13)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/AntiGen.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

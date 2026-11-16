@@ -1,0 +1,325 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Посланник - Дмитрий Бирюков</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_97.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Посланник</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Дмитрий Бирюков</b><br>Дата: <b>01/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>681</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p align="right"><i>&#171;Посланник нисходит на&nbsp;Землю каждые 2000&nbsp;лет,<br>
+  чтобы помочь ее&nbsp;эволюции&#187;</i></p>
+
+<p class="copyr"><b>2006&nbsp;год, 12&nbsp;апреля, 14:27<br>
+  Штаб управления ПВО</b></p>
+
+<p>Завыла тревога. По&nbsp;корридорам бежали люди. Динамики оглашали о&nbsp;вторжении в&nbsp;вождушное пространство. </p>
+
+<p>&#151; Товарищ генерал! Наземными радарными службами зафиксиован неопознанный летающий объект в&nbsp;нашем воздушном пространстве примерно в&nbsp;пяти километрах над землёй.</p>
+
+<p>&#151; Неопознанный? Что за&nbsp;чёрт?&nbsp;НЛО?</p>
+
+<p>&#151; Не&nbsp;могу знать!</p>
+
+<p>В&nbsp;разговор вмешался ещё&nbsp;один человек :</p>
+
+<p>&#151; Товарищ генерал, это может быть самолёт&nbsp;разведчик.</p>
+
+<p>&#151; Чей?</p>
+
+<p>&#151; Не&nbsp;знаю.</p>
+
+<p>&#151; Тогда сбейте его!</p>
+
+<p>&#151; Но&nbsp;он&nbsp;совсем не&nbsp;похож на&nbsp;самолёт&nbsp;вообще. К&nbsp;тому&nbsp;же он&nbsp;проявляет никаких призднаков агрессии.&nbsp;&#151; запротестовал первый.</p>
+
+<p>&#151; Где&nbsp;же это видано, чтоб самолё<nobr>т-разведчик</nobr> обстреливал землю!? Сбить его!</p>
+
+<p>&#151; Так точно!</p>
+
+<p>Ракеты были запущены и&nbsp;навелись на&nbsp;цель&#133;</p>
+<p class="copyr"><b>2006&nbsp;год, 12&nbsp;апреля, 14:31<br>
+  Неопознанный леающий объект</b></p>
+
+<p>&#151; Мы&nbsp;не&nbsp;можем удержать корабль! Нам конец!</p>
+
+<p>&#151; Включите аварийную катапультацию!</p>
+
+<p>От&nbsp;корабля отделился небольшой объект. Сам корабль пролетев несколько десятков километров врезался в&nbsp;землю. Яркая вспышка озарила небо. После секунды тишины над землёй&nbsp;пронеслась волна жара, испепелявшего всё&nbsp;живое и&nbsp;за&nbsp;мнгновение испарявшая воду. После этого землю накрыло сокрушительной ударной волной&#133;</p>
+<p class="copyr"><b>2006&nbsp;год, 12&nbsp;апреля, 14:35<br>
+  Наровля, пятдесят три километра от&nbsp;падения летающего объекта.</b></p>
+
+<p>Он&nbsp;открыл глаза. Вокруг всё&nbsp;распывалось. Он&nbsp;лежал в&nbsp;огромной неразумной массе. Он&nbsp;поднялся, пошатнуся и&nbsp;снова упал. Ноги ужасно болели, всё&nbsp;тело жгло, создавалось впечатление, что были сломаны все кости. Он&nbsp;ухватился за&nbsp;ближайшую непоятную субстанцию, снова поднялся и&nbsp;огляделся. Вокруг всё&nbsp;расплывалось и&nbsp;сливалось в&nbsp;одну примитивную по&nbsp;разуму массу.</p>
+
+<p>&#171;Они нас сбили&#187;&nbsp;&#151; подумал он&nbsp;и&nbsp;усмехнулся.&nbsp;&#151; &#171;Значит, уже слишком поздно. А&nbsp;тогда было слишком рано&#133; Земля, наверное, уже обречена, её&nbsp;не&nbsp;спасти&#187;.</p>
+
+<p>Он&nbsp;сделал пару шагов и&nbsp;снова упал. Он&nbsp;умирал, жить оставалось недолго.</p>
+
+<p>&#171;Но&nbsp;может быть есть надежда? Может, ещё&nbsp;<nobr>что-то</nobr> можно сделать!&#187;&nbsp;&#151; думал он.&nbsp;&#151; &#171;но&nbsp;я&nbsp;один и&nbsp;мне осталось недолго&#133;"</p>
+
+<p>" Нет. Вряд&nbsp;ли. Человечество скоро вымрет, уничтожив себя своим&nbsp;же 
+  оружием. А&nbsp;мы&nbsp;провалили своё задание, в&nbsp;<nobr>общем-то</nobr> 
+  мы&nbsp;виноваты&#133; Хотя, всё&nbsp;бесполезно&#133; Они, наверное распнут 
+  второго посланника так&nbsp;же, как и&nbsp;первого. Эти существа заведомо были 
+  обречены&#187;. Его глаза закрывались, он&nbsp;умирал.</p>
+
+<p>" Какая бессмысленная смерть&#133; Здесь, на&nbsp;чужой планете, неизвестно зачем&#133;"</p>
+
+<p>Но&nbsp;вдруг он&nbsp;почуствовал разум. Чистый, светлый разум. Это был ребёнок, который испытывал страх и&nbsp;одновременно любопытство. Лежащий на&nbsp;земле приподнялся. Он&nbsp;видел чёткий образ разума ребёнка.</p>
+
+<p>&#171;Ты&nbsp;один из&nbsp;них. Такой&nbsp;же как и&nbsp;они, только маленький!&#187;&nbsp;&#151; подумал пришелец,&nbsp;&#151; &#171;Такой&nbsp;же, не&nbsp;способный ни&nbsp;на&nbsp;какие чувства&#133; Возможно, пришёл,&nbsp;чтобы добить меня&#133;"</p>
+<p>Жалость! Он&nbsp;почувстовал жалость и&nbsp;сочуствие по&nbsp;отношению к&nbsp;себе от&nbsp;ребёнка! </p>
+
+<p>" Ему жалко меня&#133; Не&nbsp;может быть&#187;. </p>
+
+<p>В&nbsp;его душе снова проснулась надежда на&nbsp;человечество.</p>
+
+<p>&#171;Может, всё-таки ещё&nbsp;не&nbsp;поздно!&#187;&nbsp;&#151; думал он.</p>
+
+<p>Он&nbsp;собрал последние силы. Его тело задрожало, затем расслабилось. Он&nbsp;передал Знания и&nbsp;умения стоявшему невдалеке шестилетнему ребёнку. </p>
+
+<p>&#171;Иди&#187;&nbsp;&#151; мысленно повелел пришелец.</p>
+
+<p>Ребёнок побежал прочь. На&nbsp;оломанной ветке, на&nbsp;которую наступил он,&nbsp;снова распустились листья&#133;</p>
+
+<p>Теперь этот ребёнок посланник, будущий спаситель человечества. Но&nbsp;не&nbsp;ждёт&nbsp;ли его такая&nbsp;же судьба, как и&nbsp;его предшественника? </p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="35.49" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.07 (29)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Birukov_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

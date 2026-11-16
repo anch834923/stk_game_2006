@@ -1,0 +1,305 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Почему в Чернобыле не летают крокодилы - Holoduk</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_194.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Почему в Чернобыле не летают крокодилы</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>24/10/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>583</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>19</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P><i>Этот текст принадлежит не мне. Он был найден в старом чемодане, на чердаке обветшавшей шестнадцатиэтажки, в которой уже давно никто не жил. Я просто привел в порядок разбросанные желтые листы, переписал в тот вид, в котором они могли бы стать всеобщим достоянием и решил предложить ознакомиться всем вам с этой небольшой историей. Истинный автор то ли пожелал остаться неизвестным, то ли имел веские причины не указывать своего имени – в любом случае он имел на это моральное право.</i></P>
+<B><P ALIGN="RIGHT">Holoduk</P>
+<P ALIGN="CENTER"></P>
+</B><P>Леся. Редкий гость на "Броненосце". В последнее время что-то уж слишком редкий. Точнее редкая. Редкой красоты девушка. А на первый взгляд и не скажешь. Но меня обмануть трудно, работа такая. Четвёртый год за стойкой что нибудь да значит.А уж тем более здесь, на "Броненосце", на окраине неведомого. Зоны.</P>
+<P>Зона притягивает к себе людей, как исполинский магнит. Или как куча дерьма - мух, кому что нравится.</P>
+<P>Кто-то говорит, что она мол живая и даже разумная. Кто-то - что Зона - порождение грехов Человечества и ад на Земле. Кто-то вообще начинает нести бред про эксперименты инопланетных засланцев. Не знаю.</P>
+<P>По моему, Зона не является ни живой, ни, тем более, разумной. Это место со своими законами и только. Альтернативная биосфера. Имеет природа право на другие законы? И тут всё, как и должно быть в любом праве: нарушил закон - умер. Вот так, просто и без лишних эмоций. А все эти чудеса, высшие разумы, вселенские заговоры - ну надо людям во что-то верить. И не мне их разубеждать. Тем более, что это - мои лучшие клиенты.</P>
+<P>Некоторые приезжают сюда из любопытства, некоторые - ради экзотики, но большинство - ради денег. И я в их числе.</P>
+<P>Обычно, первые и вторые уезжают отсюда и очень быстро. Третьи - по обстоятельствам. Мне повезло и я попал на "Броненосец".</P>
+<P>Наш "Броненосец". Нереальный, как и сама Зона. </P>
+<P>Несколько лет назад один знакомый (мой шеф, кстати) наткнулся недалеко от периметра на корабль. Настоящий корабль! Со следами воды на желтых от ржавчины бортах, настоящим фальшбортом, якорями и спасательными кругами. Не очень-то и большой, он в первые месяцы после находки, стал самой крупной сенсацией Зоны. Ну откуда здесь взяться кораблю?</P>
+<P>Знакомый имел права, как человек нашедший это. Скоро страсти улеглись – нашлись и другие заботы у местного начальства. А знакомый, заплатив положенную пошлину, задумался о дальнейшем владении этим чудом. Тогда ему и пришла в голову гениальная мысль. Они с мужиками подкопали его, выровняли посадку, отреставрировали. </P>
+<P>И устроили здесь настоящее злачное место. Два бара, Vip - терраса на верхней палубе, небольшой магазинчик в корме, склады в трюмах и даже что-то вроде гостиницы. Со временем, место полюбилось сталкерам, появилась и постоянная клиентура. А я тут барменом в ночную смену подрабатываю. </P>
+<P>Каких только историй не слышал!</P>
+<P>О чём это я? А, Леся! Моя тайная страсть. Моё незаконченное домашнее задание. Девушка-загадка. Сколько мужиков клялись, что заклеют её! Несчастные, они не знали на что идут. Она никому не давала шанса. А если человек упорствовал... </P>
+<P>Насмешливый ум и острый как бритва язык делали своё дело. Кстати, драться я бы с ней тоже не рискнул, так как можно было быстро с мечтами о потомстве расстаться.</P>
+<P>Такая вот девушка. А с виду и не скажешь. Коротко стриженая, в мешковатом "комке" и высоких ботинках, она скорей походила на мальчишку-подростка. Но глаза! </P>
+<P>Глаза выдавали настоящую хищницу - острые, живые и умные. Она конечно не единственная "сталкерша" в Зоне, но единственная, кто может на равных соперничать в этом деле с мужиками. Безо всяких скидок.</P>
+
+<P> Что не верите? Тогда я расскажу вам историю одну. Проиллюстрирую, так сказать, свои слова. Однажды мне посчастливилось записать одну её приватную беседу...(знаю-знаю, ну хобби у меня такое!).</P>
+<P class="copyr">***</P>
+<P>- Как же ты по Зоне с такой тяжестью таскаешься? Не качает на поворотах? (это Леся спрашивает)</P>
+<P>- Ничего. Своё добро шею не трёт. А в некоторых местах без этого оборудования шагу не ступишь, чтобы кони не кинуть.</P>
+<P>- Я же обхожусь.</P>
+<P>- Вот именно. Мне уже давно интересно, как это ты налегке по таким местам лазишь. Не колдунья часом?</P>
+<P>- Ведьма. И не часом, а временами. Темными и ночными! (Леся немного понизила голос)</P>
+<P>- Угу. То-то я заметил, тебя здешние мужики сторонятся. Что, кто-нибудь из них уже по болотам квакает?</P>
+<P>- Для этого им болото не требуется.</P>
+<P>- Ладно, ты мне скажи лучше, как ты сама по болотам-то ходишь?</P>
+<P>- Пешком. Иногда на четвереньках.</P>
+<P>- Нет, я серьёзно тебя спрашиваю. Мне твой отец наказал о тебе заботиться, а ты всё шутки шутишь.</P>
+<P>- И я серьёзно. На машине там не проехать. Тебя ведь приблуды мои интересуют? Так о них и спрашивай.</P>
+<P>- Считай, уже спросил.</P>
+<P>- Вот мой основной рабочий инструмент (Леся положила на стол что-то пластиковое)</P>
+<P>- Спиннинг???!!! На кой хрен, прости за выражение, тебе удочка в Зоне? Рыбачить что-ли?</P>
+<P>- Типичная мужская тупость. А если мозгами пошевелить?</P>
+<P>- Ну?</P>
+<P>- Не нукай. Глупое выражение лица тебе не идёт. Это моя УДАЧА.</P>
+<P>- Чего?</P>
+<P>- Универсальный Детектор Аномалий - Чёрный Аспид.</P>
+<P>- Ты случаем не бредишь? Дай лоб пощупаю.</P>
+<P>- Слушай лучше, догадливый дядя Саша. Я с помошью этой "удочки" нахожу аномалии. И не только. Обычные сталкеры используют гайки и камни. Особо догадливые - привязывают к ним ещё ленточку - чтоб лучше видно было. Военспецы, вроде тебя, таскают пудовые детекторы и сканеры. А я хожу со спиннингом. Один заброс и вуаля! Я знаю, что меня ждёт на следующих пятидесяти метрах. А ещё с его помощью отлично разряжается мясорубка. Да и за угол заглянуть можно.</P>
+<P>- Это ещё как?</P>
+<P>- Проще пареной репы. У меня есть миникамера и дисплейчик. Цепляю камеру на спиннинг, высовываю за угол. Если нужно, можно камеру забросить через стенку, или в окно и осмотреть помещение, не входя в него.</P>
+<P>- ХитрО! А ещё чего этот твой универсал умеет?</P>
+<P>- При некотором везении, можно вытащить артефакт прямо из аномалии. Только магнит или зацеп вместо грузика привязать.</P>
+<P>- Здорово! Нет слов. Ну ладно, с аномалиями, кажется, разобрались. А что ты будешь делать с местной живностью?</P>
+<P>- Есть и такая буква в этом слове. Мне отец кое-какое наследство оставил. И главное, научил как им пользоваться. Есть у меня мазь, "мечта диверсанта" называтся. Если этой мазилкой натереться, никакие наземные хищники тебе не страшны. Они скорей себя съедят.Таким образом, никакие собачки с крысоволками меня не трогают. Они со мной даже не дружат, такая я для них неприятная. Так что с неразумной фауной у меня заключён пакт о ненападении.</P>
+<P>- А флора? А разумные существа? От них тоже отмажешься? (Голос был с явным сарказмом)</P>
+<P>- Отмазываться - чисто мужская черта, не претендую.(Леся даже тона не переменила) С флорой и у других ребят проблем нет - только глаза разуть, да не лазить по самому бурелому. Обычно, растительный мир перестаёт напрягать уже после третьей ходки.Вот с разумными действительно, сплошные проблемы. Но я стараюсь с ними не связываться.Только если они сами мной не заинтересуются. Тогда я им предъявляю аргумент. Чего за аргумент? Ну, дядь Саш, ты даёшь! Кому ж как не тебе знать лучший аргумент в споре! Пушка, конечно. Облегченный "винторез". Отец его специально для меня сделал. Корпус - кевларовый. Легкий, как пушинка! Плюс спецоптика с целеопределением. Но тебя ведь такими вещами не удивишь, правда? Так вот, открою один секрет. Страшную тайну!Если намочить волосы, а потом надеть на голову резиновую шапочку для бассейна, то контроллеры и карлики тебя почти не "почувствуют"! Ну, может только на самом близком расстоянии. Это меня дед Пахомыч научил. </P>
+<P>- Это не тот, что тридцать лет и три года в запое?</P>
+<P>- У таких как он, кстати, и вам не мешает поучиться! Он в таких местах Зоны был, каких у вас и на картах-то нет. А что до запоев... Однажды он, будучи сильно нетрезв, вытащил из Зоны двух здоровенных детин. Рассказывал, что по трезвяку бы их низачто не потянул. Чем тебе не Илюша Муромец?</P>
+<P>- Ну хорошо. А со сталкерами местными у тебя какие отношения?</P>
+<P>- Хочешь, я скажу тебе, кто самый опасный зверь в Зоне? Не трудись. Человек. Только наш брат сможет, например, обменяться с тобой припасами, а потом выстелить в затылок, когда ты отвернёшься.</P>
+<P>Была со мной одна история...</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.64" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.52 (33)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Holoduk_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Блокпост - Olga</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_297.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Блокпост</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Olga</b><br>Дата: <b>26/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>459</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<B><U><P>Блокпост №14</P>
+</B></U><P>Молодой сталкер сидел на полу облкатившись на стену .Правая рука всё ещё сжимала макаров левую он уже не чувствовал совсем (<I>наверняка сломана</I> пронеслась мысль в его голове), слегка приподняв голову он решил осмотреться .В нескольких метрах от него лежал АК-47ой.Недалеко от автомата лежал ещё один сталкер запрокинув голову, дела у него были гораздо хуже чем у сидячего :всё его тело сейчас представляло собой одно большое кровавое месиво .Помещение в котором он находился было невелико ,на столе который стоял справа от него находилась радиостанция, слева была кровать и шкаф .Внезапно прямо перед ним в дверном проёме возник огромный монстр -очередное порождение Зоны, и несмотря на то что всё тело сталкера пронзала сильнейшая боль его рефлекс выработанный годами тренировок и десятками схваток из которых он всегда выходил победителем сработал моментально не прошло и секунды как он вскинул пистолет и послал первую пулю в сторону монстра. Что представляло собой тело мутанта он разобрать не смог так как зрение ещё не до конца прояснилось ,он видел только силуэт .Он успел сделать ещё два выстрела прежде чем чудовище приблизилось к нему и вплотную и внезапно он почувствовал адскую боль в области живота ему показалось что тысячи иголок пронзают каждую клетку его тела .В следующие мгновение весь мир померк.</P>
+<B><P>За день до этих событий</P>
+</B><P>Наступило очередное утро. Лето только кончилось, но уже успело довольно прилично похолодать. Температура упала почти моментально, но это было не столь важно, так как в Зоне случались вещи гораздо существеннее и опаснее, нежели обычное похолодание. Сталкер стоял возле небольшого домика, который они отвели себе под штаб, если конечно это можно было назвать штабом. Крыша давным-давно прохудилась, стены были облуплены, а дверь и вовсе отсутствовала. Он стоял наблюдая за тем как протекает жизнь в лагере :кто разговаривал, кто чистил оружие, кто просто отдыхал .Тут его окликнули:</P>
+<P>-Серёга, скорей иди сюда!</P>
+<P>Сергей вошёл в штаб: внутри дом выглядел не лучше чем снаружи, всё те же облупленные стены, прогнивший пол. В дальнем конце комнаты стоял стол с рацией, вокруг него столпились люди, подойдя поближе, он разглядел стоявших (их было пятеро). Это были их связист, лидер группы, Борис (сталкер который его позвал), Руслан, и какой-то новичок имя которого он даже не знал, все они пытались хоть что-нибудь услышать сквозь сплошной хрип издаваемый рацией. Он тоже подошёл поближе и прислушался, несмотря на помехи, слова были слышны довольно отчетливо:</P>
+<P>-Говорит блокпост 14 (фоном были слышны автоматные очереди и команды отдаваемые солдатам) просим помощи мы подверглись нападению со стороны мутантов, повторя...</P>
+<P>-Скажи координаты балбес!- раздался другой голос.</P>
+<P>-Да,да координаты... (усилившиеся помехи скрыли следующую фразу) повторяю нам нужна помощь (автоматные выстрелы раздавались всё ближе и вместо очередей уже звучал сплошной автоматический огонь).</P>
+<P>-Хорош базарить они уже здесь .-сказал второй голос.</P>
+<P>Прозвучало ещё несколько выстрелов раздался чей-то предсмертный крик (<I>радист </I>подумал Сергей) и наступила тишина.</P>
+<P>-Даа ну и дела там у них. -наконец прервал молчание Руслан.</P>
+<P>-Коля, Женя выйдите .-сказал Главный радисту и новичку не отрывая взгляда от рации.</P>
+<P>Они тут же поспешили убраться вон, когда они вышли лидер наконец перевёл взгляд на остальных.</P>
+<P>-Я хочу чтобы вы втроём отправились туда и узнали, что там произошло, четырнадцатый блокпост в одном дне пути отсюда, я там бывал пару раз, все связанное с маршрутом покажу и расскажу, вопросы есть?</P>
+<P>-Но почему мы ,трое, туда нужно туда нужно как минимум пять человек, а лучше даже семь. -захотел было возразить Борис.</P>
+<P>-Боря, ты знаешь сколько у нас осталось людей не считая вас троих?- спросил Главный.</P>
+<P>-Эээ, нет, но сегодня утром видел троих .- признался Борис.</P>
+<P>-Ещё вчера вечером было пятнадцать, сегодня утром осталось восемь.Трое стали сами по себе, четверо ушли в "Долг".Так какие могут быть семь человек!!!- взревел он.</P>
+<P>Трём сталкерам сейчас казалось, что сейчас перед ними стоит не тот вечно спокойный и доброжелательный командир с которым они прошли рука об руку множество опасных испытаний, а огромная начинённая порохом бочка готовая в любой момент взлететь на воздух.</P>
+<P>-Но тогда почему именно мы?- не уступал Борис.</P>
+<P>-Потому что вы лучшие каждый в своей сфере,- уже намного спокойнее сказал Главный,-ты отличный специалист в области лёгкого вооружения, разбираешься в тяжёлом, ты весьма неплохой проводник и медик, Руслан - незаменимый электронщик, а Сергей - бывший спецназовец да к тому же разбирающийся в мутантах и аномалиях. По-моему я ответил на твой вопрос.</P>
+<P>-Да, вполне.- Борис наконец успокоился.</P>
+<P>-Когда выходим?- осведомился Сергей.</P>
+<P>-Через час, вы с Русланом собирайте вещи, а я объясню Боре как туда дойти. -сказал главный.</P>
+<P>Сергей и Руслан выйдя из штаба принялись собирать вещи. Через десять минут вернулся Борис и ещё через десять все сборы были завершены.</P>
+<P>Не прошло и часа как три сталкера покинули лагерь и направились прямиком к 14ому блокпосту. По лесу они шли молча, Борис и Руслан шли с АК74ыми, но Сергей доверял только 47ому.Наступила ночь путники решили, что продолжать путь ночью бессмысленно и остановились на ночлег. Сергей запретил разводить огонь сославшись на то, что чувствует кого-то неподалёку. Поужинав вяленым мясом в полной темноте они определили кто и когда будет нести караул. Они начали готовиться ко</P>
+<P>сну, как Руслан наконец спросил:</P>
+<P>-Слушай ,Серый, я всё хотел спросить... как ты думаешь кто напал на блокпост?</P>
+<P>-Не знаю, на карликов это не похоже они никогда не покидают своих подземелий. Крысы, да нет не думаю.</P>
+<P>Слепые псы, нет 14 блокпост по слухам был довольно сильно укреплён, а если и они то их стая должна быть просто громадных размеров. Я думаю что атаковали зомби вкупе с несколькими контролёрами эти вполне могли учудить такое, но и их для такого мероприятия должно быть немало. Возможно был кто-то другой или появился какой-то новый более сильный и более агрессивный вид, ведь на такие крупные блокпосты, как например двадцать первый, тридцать второй и если верить рассказам четырнадцатый до этого ещё никто никогда не нападал, ну, а если кто-то осмеливался, то это были единичные случаи. Хотя что тут гадать завтра днём мы сами всё увидим, а сейчас нужно поспать, день сегодня был тяжёлый.</P>
+<P>-Да, пожалуй ты прав.</P>
+<P>Первым на посту стоял Борис, потом его сменил Сергей, а третьим был Руслан.</P>
+<P>Утром позавтракав они двинулись в путь, как и вчера они шли молча, примерно к часу дня они вышли к блокпосту. Сначала ничего необычного они не заметили, но подойдя поближе они стали разинув рты. То во что превратился четырнадцатый блокпост было трудно описать повсюду лежали тела мёртвых солдат, вокруг всё было усеяно гильзами, земля на которой лежали солдаты напоминала большой красный ковёр. Все тела были жутко изуродованы :у кого не хватало головы, у кого рыки, у кого других частей тела, лишь у тех кому сильно повезло все конечности были на месте. Три сталкера решили обойти территорию, чтобы проверить не остался ли кто живой. Недалеко от блокпоста они нашли Ми-24ый.Кабина раскурочена, экипаж мёртв, возле вертолёта лежали пятеро бойцов. Борис заметил, что Сергей находится в раздумии и решил спросить:</P>
+<P>-Ну, что ты об этом думаешь?- спросил он.</P>
+<P>-Спецназ… спецназовцев должно быть восемь, а их только пять.</P>
+<P>-Это почему же их должно быть восемь?</P>
+<P>-Я ведь сам служил, когда Зона только появилась, был стандарт: два пилота, восемь спецов. Не думаю, что они стали бы что-то менять, да и к тому же атака на крупный блокпост дело серьёзное.</P>
+<P>-Может трое выжили?</P>
+<P>-Может да, а может нет, у нас в данный момент другая задача. Боря.</P>
+<P>-Да?</P>
+<P>-Осмотри место, поищи гранат, ещё какого-нибудь хлама.</P>
+<P>-Ага.-сказал Боря и отправился на поиски.</P>
+<P>-Руслан. А ты найди где-нибудь рацию, надо с Главным связаться.</P>
+<P>-Понял.- сказал Руслан и побрёл к небольшому зданию с обвисшим жовто-блакытним украинским флагом.</P>
+<P>Гордость Батькивщины, снизу поле, сверху небо, а что так оно и есть Украина – бескрайний колхоз. Хмм а не обойти ли мне территорию может чего интересного найду.- думал Сергей.</P>
+<P>Блокпост захватывал довольно обширную территорию и представлял довольно серьёзную преграду для каждого кто решит сунуться на рожон: четыре здания обнесённые забором, три наблюдательных вышки, два пулемётных гнезда и примерно три десятка солдат, на данный момент мёртвых солдат. </P>
+<B><P>Продолжение следует…</P>
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="42" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 6.00 (27)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Fess_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

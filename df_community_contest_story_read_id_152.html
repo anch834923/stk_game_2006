@@ -1,0 +1,324 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Version 2.0 - Артюр М</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_152.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Version 2.0</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Артюр М</b><br>Дата: <b>10/06/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>905</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>5</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P ALIGN="JUSTIFY">Головы уродливых младенцев лопались, словно мыльные пузыри. Кровь неизвестной группы застилала сталкеру глаза. Адреналин, превративший его в&nbsp;безумно&nbsp;&#151; беспощадного берсеркера, упал вниз, когда вся поляна укрылась телами карликов&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер устало сплюнул&nbsp;&#151; тягучая нитка слюны лениво упала на&nbsp;землю&#133;</P>
+
+<P ALIGN="JUSTIFY">Он&nbsp;знал, что будет тяжело. Десятки смельчаков пропали на&nbsp;этой тропе. Как сказал&nbsp;бы один писатель о&nbsp;давней карте составленной Стервятником: &#132;Она не&nbsp;постарела, а&nbsp;скорее потеряла актуальность, как потеряли ее&nbsp;расклешенные штаны, трансцендентальная терапия и&nbsp;группа &#132;Fleetwood Mac&#147;. Зона меняется каждый день, час, минуту, мгновение. Впрочем, как и&nbsp;вся жизнь&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер направился дальше. Он&nbsp;был уже почти у&nbsp;цели. Двое юношей, или, как он&nbsp;их&nbsp;называл &#132;младших&#147;, заплатили своей жизнью, чтобы он&nbsp;дошел сюда. Они так и&nbsp;не&nbsp;узнали его имени. Их&nbsp;души попали в&nbsp;ад,&nbsp;так и&nbsp;думая, что его имя &#132;Старший&#147;&#133;</P>
+
+<P ALIGN="JUSTIFY">Его внимание привлекла странная вмятина в&nbsp;земле. Сталкер аккуратно бросил гайку и&nbsp;в&nbsp;тот&nbsp;же миг мир для него угас, словно угли&#133;</P>
+
+<P ALIGN="JUSTIFY">Он&nbsp;лежал, а&nbsp;возмущенное багровое небо яростно глядело на&nbsp;него. Он&nbsp;попытался приподняться, но&nbsp;что&nbsp;&#151; то&nbsp;грубо, нажав на&nbsp;сердце, придавило к&nbsp;земле. Могучие древние дубы окружали его. Холодный оникс их&nbsp;глаз сверлил его. Дубы не&nbsp;говорили, но&nbsp;он&nbsp;все равно слышал их.</P>
+<P ALIGN="JUSTIFY">&#151; Ну,&nbsp;и&nbsp;что нам делать с&nbsp;ним?&nbsp;&#151; спросил громадный дуб, с&nbsp;густой шевелюрой листьев.</P>
+<P ALIGN="JUSTIFY">&#151; Хоть он&nbsp;и&nbsp;выглядит жалко, как и&nbsp;всякий человек, но&nbsp;так далеко не&nbsp;заходил никто&#133;- начал дуб, похожий на&nbsp;Первого.</P>
+<P ALIGN="JUSTIFY">&#151; Никто, кроме старого жадного дурака Стермят&#133; Стярвят&#133;, или как его там,&nbsp;&#151; резко оборвал совсем зеленый дуб, с&nbsp;надменно распущенными кронами.</P>
+<P ALIGN="JUSTIFY">&#151; Но&nbsp;тогда и&nbsp;нас еще не&nbsp;было в&nbsp;Совете,&nbsp;&#151; холодно прошелестел Первый.</P>
+<P ALIGN="JUSTIFY">&#151; Я&nbsp;думаю, что надо с&nbsp;ним покончить прямо тут. На&nbsp;Совете, пока он&nbsp;не&nbsp;нашел Его,&nbsp;&#151; громко сказал иссохший дуб, от&nbsp;кроны которого остались только голые ветви.</P>
+<P ALIGN="JUSTIFY">&#151; Я&nbsp;согласен. Он&nbsp;убил столько детей Леса, что эта смерть станет для него подарком,&nbsp;&#151; взял слово Первый,&nbsp;&#151; но&nbsp;я&nbsp;думаю, что при сложившихся обстоятельствах, лучше будет, если мы&nbsp;позволим ему уйти. Пусть он&nbsp;продолжит свой путь. Грядущий, или как его там его называют&#133;</P>
+<P ALIGN="JUSTIFY">&#151; Идущий,&nbsp;&#151; тихо подсказал низкий дуб, густого коричневого цвета.</P>
+<P ALIGN="JUSTIFY">&#151; Точно. Так вот, я&nbsp;не&nbsp;хочу обесчестить наш Совет, убив это мерзкое создание. Идущий убьет его. Тем самым мы&nbsp;выгадаем еще немного времени.</P>
+<P ALIGN="JUSTIFY">&#151; Ну,&nbsp;а&nbsp;если он&nbsp;все&nbsp;&#151; таки доберется до&nbsp;Золотого духа, Его величества,&nbsp;&#151; спросил все тот&nbsp;же зеленый надменный дуб.</P>
+<P ALIGN="JUSTIFY">&#151; Этого не&nbsp;случится,&nbsp;&#151; по&nbsp;интонации было понятно, что Первый улыбается,&nbsp;&#151; мы&nbsp;заберем у&nbsp;него эту глупую огненную мотыгу&#133;</P>
+<P ALIGN="JUSTIFY">&#151; Автомат,&nbsp;&#151; снова подсказал коричневый.</P>
+<P ALIGN="JUSTIFY">&#151; Точно. А&nbsp;без &#133; <nobr>э-э</nobr> &#133; автомата эти существа выглядят еще более жалкими, чем всегда.</P>
+<P ALIGN="JUSTIFY">Зловещая тишина и&nbsp;Совет взорвался одобрительными выкриками в&nbsp;честь главного&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер проснулся. Голова болела, каждая ее&nbsp;часть ощущалась, словно отдельный осколок от&nbsp;разбившейся большой думающей вазы. Сталкер удивленно посмотрел на&nbsp;часы, показывавшие, что не&nbsp;прошло и&nbsp;минуты с&nbsp;момента потери сознания. Сталкер впервые столкнулся с&nbsp;аномалией такого типа. Но&nbsp;ему пришлось удивиться еще больше, когда он&nbsp;увидел, что место, где была аномалия, абсолютно чисто и&nbsp;высокая густая трава не&nbsp;отличается от&nbsp;других&#133;</P>
+
+<P ALIGN="JUSTIFY">Треснула ветка, затряслась земля. Стая больших слепых волков высыпала на&nbsp;поляну и,&nbsp;не&nbsp;чуя сталкера, быстро направилась дальше, совершенно не&nbsp;заинтересованная человеком. Сталкер потянулся за&nbsp;автоматом и&nbsp;не&nbsp;обнаружил его на&nbsp;месте. Пистолета тоже не&nbsp;было. Так это был не&nbsp;сон, не&nbsp;галлюцинация! Они действительно забрали у&nbsp;него оружие. Но&nbsp;тогда и&nbsp;тот ужасный Идущий тоже реальность! Сталкер испугался. Впервые, наверное, за&nbsp;все время, проведенное в&nbsp;Зоне.</P>
+
+<P ALIGN="JUSTIFY">Толпа зомби шла прямо на&nbsp;него. Одни падали, их&nbsp;топтали, и&nbsp;толпа шла дальше. Другие просто разлагались на&nbsp;ходу, сея свою вонючую плоть. Они шли, но&nbsp;не&nbsp;видели, не&nbsp;замечали его, или просто не&nbsp;могли&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкера вырвало, его рвало, пока десятки зомби не&nbsp;прошагали мимо. Он&nbsp;никогда не&nbsp;видел бесконтрольных живых мертвецов. Всегда рядом были&#133;</P>
+
+<P ALIGN="JUSTIFY">Три контроллера с&nbsp;опаской вышли на&nbsp;поляну. Они не&nbsp;соображали, что делают. Их&nbsp;и&nbsp;так не&nbsp;человеческие глаза остекленели, застыли зелено&nbsp;&#151; ядовитыми щелочками. Безгубые рты шептали: &#132;Идущий, идущий, идущ&#133;'</P>
+
+<P ALIGN="JUSTIFY">Сталкер побежал. Он&nbsp;поддался своему инстинкту. Мысли роились в&nbsp;голове, наталкиваясь друг на&nbsp;друга, и&nbsp;вопросы вместе с&nbsp;ними: &#132;Кто такой Идущий? Почему дети Леса!&#147; За&nbsp;спиной сталкера раздался хруст, деревья вырывались с&nbsp;корнями. И&nbsp;Идущий ответил сам: &#132;Потому что я&nbsp;сильнее дурака Пана, Совета и&nbsp;остальных&#147;&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер не&nbsp;заметил, как деревья стали реже встречаться, и&nbsp;он&nbsp;очутился у&nbsp;подножия высокого помоста, походившего на&nbsp;трон&#133;</P>
+
+<P ALIGN="JUSTIFY">Легенды о&nbsp;Золотом шаре описывали его <nobr>по-разному</nobr>. В&nbsp;одном варианте он&nbsp;был на&nbsp;дне глубокого котлована, как&nbsp;бы случайно забытый пришельцами. В&nbsp;других&nbsp;&#151; это комната, в&nbsp;которую ни&nbsp;один человек не&nbsp;достоин войти&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер, тяжело ступая, поднялся по&nbsp;ступенькам. Ему казалось, что каждая ступень отделяла его от&nbsp;здравого смысла и&nbsp;приближала безумие.</P>
+
+<P ALIGN="JUSTIFY">Он&nbsp;дотронулся до&nbsp;Золотого шара.</P>
+<P ALIGN="JUSTIFY">&#151; Кто ты?&nbsp;&#151; прозвучал вопрос у&nbsp;него в&nbsp;голове.</P>
+<P ALIGN="JUSTIFY">Сталкер не&nbsp;знал, что ответить. Он&nbsp;не&nbsp;помнил своего детства, родителей, имени&#133; Но&nbsp;он&nbsp;помнил двух парней, которые помогли дойти сюда&#133; Они звали его&#133;</P>
+<P ALIGN="JUSTIFY">&#151; Здравствуй, Старший,&nbsp;&#151; невыносимо яркий свет струился сквозь ладонь сталкера, так и&nbsp;оставшуюся на&nbsp;Шаре.</P>
+<P ALIGN="JUSTIFY">&#151; Кто вы?&nbsp;&#151; спросил ошеломленный Старший.</P>
+<P ALIGN="JUSTIFY">&#151; Я&nbsp;так, почти никто. Иногда бог, дух, полубог, палач. Иногда выше Совета, иногда совсем Никто. Так, просто желудь на&nbsp;ветке. Раньше я&nbsp;играл на&nbsp;дудочке и&nbsp;знал каждую травинку в&nbsp;этом Лесу. Теперь я&nbsp;заточен в&nbsp;тюрьму, но&nbsp;я&nbsp;&#151; хозяин&#133; А&nbsp;так, почти никто. Золотистый луч кометы и&nbsp;всё&#133;</P>
+<P ALIGN="JUSTIFY">&#151; Вы&nbsp;можете выполнять&#133;</P>
+<P ALIGN="JUSTIFY">&#151; Желания,&nbsp;&#151; подсказал Шар,&nbsp;&#151; да.&nbsp;Но,&nbsp;к&nbsp;сожалению, только чужие, а&nbsp;не&nbsp;собственные. При одном условии: не&nbsp;желать смерти, болезни или&nbsp;же других несчастий своим врагам. Да,&nbsp;и&nbsp;помни, что я&nbsp;точно знаю твое истинное желание. Так, что давай,&nbsp;&#151; азартно закончил он.</P>
+<P ALIGN="JUSTIFY">&#151; Кто такой Идущий?&nbsp;&#151; неуверенно спросил Сталкер.</P>
+<P ALIGN="JUSTIFY">Шар потускнел, приобрел багровый оттенок и&nbsp;недовольно ответил:</P>
+<P ALIGN="JUSTIFY">&#151; Ты&nbsp;же не&nbsp;этого хочешь! Ну&nbsp;ладно. Идущий&nbsp;&#151; это оживший миф, бывшая богиня, баба, возомнившая, что если она&nbsp;&#151; искусная охотница, то&nbsp;Лес принадлежит ей.</P>
+<P ALIGN="JUSTIFY">&#151; Я&nbsp;хочу ее&nbsp;смерти.</P>
+<P ALIGN="JUSTIFY">&#151; А&nbsp;это уже против правил.</P>
+<P ALIGN="JUSTIFY">&#151;Что такое S.T.A.L.K.E.R.?</P>
+<P ALIGN="JUSTIFY">Молчание.</P>
+<P ALIGN="JUSTIFY">&#151; Что поистине есть Зона?</P>
+<P ALIGN="JUSTIFY">Снова молчание.</P>
+<P ALIGN="JUSTIFY">&#151; Почему именно наша планета?</P>
+<P ALIGN="JUSTIFY">&#151; Ты&nbsp;же не&nbsp;этого хочешь. Я&nbsp;&#151; твоя истинная судьба, карма. И&nbsp;я&nbsp;знаю твои желания. Человек, ты&nbsp;хочешь&#133;</P>
+<P ALIGN="JUSTIFY">&#151; Миллион долларов,&nbsp;&#151; глухо закончил загипнотизированный сталкер.</P>
+<P ALIGN="JUSTIFY">&#151; Вот это уже лучше. Да&nbsp;будет так! Именем Великого Пана, золотых копыт его сиятельства, великолепной божественной его дудочки. Именем Великого Совета десяти дубов объявляю процесс завершенным. Да&nbsp;будет приговор приведен в&nbsp;действие&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер шел по&nbsp;тонкой нитке над пропастью. В&nbsp;руках он&nbsp;нес толстый доллар, походивший на&nbsp;уменьшенный кирпич зеленого цвета. Ноша мешала ему балансировать на&nbsp;нитке. Он&nbsp;уронил доллар. Тот падал и,&nbsp;ударившись о&nbsp;дно пропасти, разбился, как хрустальный, рассыпав почему&nbsp;&#151; то&nbsp;кровавые осколки, медленно с&nbsp;глухим стуком падавшие на&nbsp;землю&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер проснулся от&nbsp;стука в&nbsp;дверь. По&nbsp;всей квартире валялись зеленые однодолларовые бумажки&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер с&nbsp;опаской открыл дверь.</P>
+<P ALIGN="JUSTIFY">&#151; Доброе утро, господин Старший. Сегодня ночью поступило сообщение, что именно вы&nbsp;ограбили Новокиевский банк. Мы&nbsp;должны вас задержать. Вот ордер,&nbsp;&#151; весело сказал милиционер с&nbsp;козлиной бородкой&#133;</P>
+
+<P ALIGN="JUSTIFY">Сталкер быстро оделся и&nbsp;вышел в&nbsp;сопровождении четырех&#133;</P>
+
+<P ALIGN="JUSTIFY">Тот, который предъявил ордер, задержался на&nbsp;минуту. По&nbsp;&#151; козлиному проблеял и&nbsp;радостно зацокал копытцами по&nbsp;лестнице вниз&#133;</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="32.69" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.67 (39)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/ArturM_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

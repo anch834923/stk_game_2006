@@ -1,0 +1,271 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Мысли у столба, или контроль рождаемости - А Михед ака shurik_grek</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_164.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Мысли у столба, или контроль рождаемости</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>А Михед ака shurik_grek</b><br>Дата: <b>10/07/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>873</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>13</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><I><P ALIGN="JUSTIFY" class="copyr"><b>СТЕРВЯТНИК</b></P>
+<P ALIGN="JUSTIFY">Численность и&nbsp;причины ее&nbsp;изменения</I><B>.</B>Численность не&nbsp;установлена, но&nbsp;повсюду малочислен. Ослаблен инстинкт самосохранения.<br>
+<I>Основные лимитирующие факторы</I><B>.</B>Фактор беспокойства, нехватка пищи. Незаконная добыча.<br>
+<I>Особенности биологии и&nbsp;экологии</I><B>.</B>Птица среднего размера, с&nbsp;узким и&nbsp;длинным клювом. Питается в&nbsp;основном падалью, отбросами и&nbsp;экскрементами, а&nbsp;также мелкими млекопитающими и&nbsp;пресмыкающимися.</P>
+<I><FONT SIZE=4><P ALIGN="RIGHT">Дарвин Ч.&nbsp;Происхождение видов.</P>
+</I><P ALIGN="JUSTIFY">&#133;стэрво, стерва, падаль, падло, жадность, подлость, шакал, кал&#133; клювъ, кровъ, добавили&nbsp;бы в&nbsp;начале ХХ&nbsp;века&#133; Все это связано с&nbsp;нами, как ночной морской прилив с&nbsp;Луной. Крестным отцом, давшим нам имя, был один из&nbsp;первых сталкеров нашедших Золотой шар. Стервятник. Он&nbsp;использовал пару молодых сталкеров, словно обычные гайки, для того, чтобы добраться до&nbsp;Машины желаний, как иначе называли Золотой шар. Также и&nbsp;мы,&nbsp;вместе мы&nbsp;сила, вместе с&nbsp;нами ярость и&nbsp;слава&#133;</P>
+
+<P ALIGN="JUSTIFY">&#133;Зона, как страшная комната, а&nbsp;аномалии и&nbsp;существа&nbsp;&#151; мебель, интерьер, наконец, жители, если хотите! Но&nbsp;каждый день, а,&nbsp;вернее, ночь становится еще хуже&nbsp;&#151; Зона застревает во&nbsp;мраке. Не&nbsp;погружается, не&nbsp;утопает в&nbsp;темноте, а&nbsp;именно застревает во&nbsp;мраке. Багровые, словно свежие раны, тучи пронизываются белыми молниями и&nbsp;одеваются в&nbsp;яркие белесые балахоны ку&nbsp;&#151; клукс&nbsp;&#151; клана, а&nbsp;главный мизантроп, Луна, восходит на&nbsp;свой престол, верша судьбы людей, чернокожих в&nbsp;темноте ночи&#133;</P>
+
+<P ALIGN="JUSTIFY">&#133;и&nbsp;вот сейчас я&nbsp;стою, привязанный к&nbsp;дереву, думаю, боюсь и&nbsp;пытаюсь близорукими с&nbsp;детства глазами определить свое положение&#133; Прометей, елки&nbsp;&#151; иголки&#133; Мы&nbsp;хотели поживиться добром, но&nbsp;сталкер, сукин сын, учуял нас раньше. Меня он&nbsp;оставил в&nbsp;живых и,&nbsp;привязывая к&nbsp;дереву, все приговаривал: "Ну,&nbsp;стервятничек! Жил ты&nbsp;позорно, так и&nbsp;закончишь свою дорогу&#133;"</P>
+
+<P ALIGN="JUSTIFY">&#133;один известный поэт в&nbsp;детстве верил, что, если идти на&nbsp;запад, рано или поздно ты&nbsp;выйдешь к&nbsp;Столбам, подобно античным атлантам, подпирающим небеса. Теперь я&nbsp;знаю, что он&nbsp;нашел&nbsp;бы Позорные Столбы. И&nbsp;в&nbsp;наказание за&nbsp;это он&nbsp;стоял&nbsp;бы на&nbsp;коленях: шея и&nbsp;руки продеты в&nbsp;отверстия доски, словно готовые для гильотины. Мучительная кара длилась&nbsp;бы от&nbsp;часа, секунды для вечности, до&nbsp;самой вечности&#133;</P>
+
+<P ALIGN="JUSTIFY">&#133;я&nbsp;скорее похож на&nbsp;козла, забытого Богом&nbsp;&#151; пастухом, оставленный людьми&nbsp;&#151; сотабунщиками и&nbsp;теперь вынужденный пастись в&nbsp;самом центре Зоны&#133;</P>
+
+<P ALIGN="JUSTIFY">&#133;желтые глаза сверкнули в&nbsp;темноте, треснула ветка, быстрые шаги за&nbsp;спиной, уханье совы. Черт! В&nbsp;Зоне&nbsp;же одни вороны остались&#133; плач ребенка, вой волка&#133; мысли, как машины, застрявшие в&nbsp;пробке&#133; в&nbsp;глазах яркая вспышка; полная, как торговка рыбой, темнота, в&nbsp;нос левым хуком ударил резкий запах протухшей рыбы; лопнула пробка, погасла спичка&#133; чертов контроллер?&nbsp;&#151; контроль над моими мозгами&#133; Лу&nbsp;&#151; на?&#133;</P>
+
+<P ALIGN="JUSTIFY">&#133;спустя <nobr>какое-то</nobr> время, я&nbsp;снова смог соображать. Почему ни&nbsp;карлики, ни&nbsp;слепые волки, контроллер, наконец, не&nbsp;тронули меня? "Я&nbsp;просто почувствовал, что ты&nbsp;&#151; один из&nbsp;нас. Ты&nbsp;&#151; жертва, как и&nbsp;мы,&nbsp;вместе мы&nbsp;сила, вместе с&nbsp;нами ярость&#133;"</P>
+
+<P ALIGN="JUSTIFY">&#133;когда в&nbsp;младших классах мы&nbsp;учили деление, нам предлагали поразмыслить над недетским соотношением Я/Ты.&nbsp;А&nbsp;Ты&nbsp;никогда не&nbsp;думал о&nbsp;таком соотношении&nbsp;&#151; Жизнь/Душа? Если не&nbsp;принимать во&nbsp;внимание атеистические мысли об&nbsp;отсутствии Души и&nbsp;высказывания отдельных писателей о&nbsp;том, что Жизнь есть вынашивание смерти, то&nbsp;есть, конец Жизни есть роды смерти. Если не&nbsp;обращать внимания на&nbsp;все это, то&nbsp;Я&nbsp;думаю, что Душа и&nbsp;есть как&nbsp;бы оболочка или тело Жизни, того mobile, или, выражаясь на&nbsp;сленге сталкеров,&nbsp;&#151; батарейки, что заставляет человека существовать. Как известно, привидения&nbsp;&#151; Души мертвых, то&nbsp;есть, если продолжать думать в&nbsp;этом&nbsp;же духе, то&nbsp;мертвые, по&nbsp;&#151; своему Живы&#133; И&nbsp;отнюдь не&nbsp;зомби, а&nbsp;привидения получаются самыми Живыми среди них&#133;</P>
+
+<P ALIGN="JUSTIFY">&#133;я&nbsp;проснулся от&nbsp;холода. Усы покрылись инеем и&nbsp;стали бело&nbsp;&#151; пепельными&#133; После того, как я&nbsp;стряхнул иней, они все равно напоминали истлевшую сигарету &#133; Цепь, ухватившаяся пираньей, натерла лодыжку&#133; Свет, словно стесняясь, пробирался сквозь темную листву деревьев&#133; я&nbsp;испугался&#133;черт! я&nbsp;надеюсь, моя собственная Душа не&nbsp;рассеется, как привидение в&nbsp;утреннем свете&#133; не&nbsp;растворится во&nbsp;бликах враждебного утра&#133; я&nbsp;надеюсь, я&nbsp;не&nbsp;стану первым мужчиной, сознательно или не&nbsp;сознательно родившим собственную смерть&#133; давшим ей&nbsp;Жизнь&#133; я&nbsp;хочу Жить один раз&#133; Йа&#133;</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="29.68" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.24 (37)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/shurik_grek_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

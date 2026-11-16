@@ -1,0 +1,375 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - На пороге смерти - Константин Батраков</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_165.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">На пороге смерти</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Константин Батраков</b><br>Дата: <b>10/07/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>937</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>1</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P ALIGN="JUSTIFY">&#132;На&nbsp;кой черт меня сюда потянуло? Ведь мог спокойно окончить университет, найти хорошую работу, жену красавицу и&nbsp;жить как все нормальные люди. Так нет! Подавай тебе Зону! Геройствовать захотелось!? Да,&nbsp;захотелось славы. Только какая к&nbsp;черту слава в&nbsp;этом поганом мире?&nbsp;&#151; такие мысли пробегали у&nbsp;молодого, неопытного сталкера Кости, сидевшего с&nbsp;пробитым боком в&nbsp;подвале- Никогда не&nbsp;думал, что все закончиться именно так. Ух,&nbsp;больно! Все, видимо конец. Да,&nbsp;точно конец, в&nbsp;глазах темнеет. Прощай Зона, прощай&#147;.</P>
+<P ALIGN="JUSTIFY">&#132;Быстрее, мы&nbsp;тут раненого нашли! Добить? Не&nbsp;стоит, парень молодой совсем, да&nbsp;и&nbsp;прибыл он&nbsp;только сегодня. Отнесите его к&nbsp;вертушке и&nbsp;перебинтуйте. Эх,&nbsp;парень, держись, вся жизнь у&nbsp;тебя впереди&#147;.</P>
+<P ALIGN="JUSTIFY"></P>
+<B><P class="copyr">Новичек</P>
+</B><P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Наконец то,&nbsp;я&nbsp;и&nbsp;на&nbsp;месте. Вот она, эта знаменитая, полная опасности Зона. А&nbsp;я&nbsp;твой покоритель. <nobr>Да-да</nobr>, именно так оно и&nbsp;есть&nbsp;&#151; легкомысленно подумывал я&nbsp;и&nbsp;даже не&nbsp;догадывался, как&nbsp;же жестоко я&nbsp;ошибаюсь. Быстро выйдя из&nbsp;автобуса, я&nbsp;огляделся. Вот это свалка! Неужели тут жить можно? Ужас. На&nbsp;кой черт меня сюда потянуло? четырнадцать. Четырнадцатый раз я&nbsp;уже задаю себе этот вопрос, а&nbsp;ответа так и&nbsp;не&nbsp;видать. Ну&nbsp;и&nbsp;ладно, со&nbsp;временем ответ найдется.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Эй,&nbsp;парень!&nbsp;&#151; я&nbsp;оглянулся и&nbsp;вопросительно уставился на&nbsp;стоявшего сзади военного&nbsp;&#151; <nobr>да-да</nobr>, ты,&nbsp;<nobr>подойди-ка</nobr> сюда.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;не&nbsp;уверенно подошел к&nbsp;военному.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ты&nbsp;что такой молодой тут делаешь? Неужто в&nbsp;сталкеры решил податься, а?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;быстро кивнул головой.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ты&nbsp;что, немой что&nbsp;ли?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Д&#133; да&#133; Нет! Просто не&nbsp;по&nbsp;себе стало.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; <nobr>А-а-а</nobr>. Ясное дело. Ну&nbsp;парень, значит ты&nbsp;очередной покоритель простор Зоны, я&nbsp;так понимаю? Ага, по&nbsp;глазам вижу, так и&nbsp;есть. А&nbsp;теперь слушай совет: выкинь эту бредовую мысль из&nbsp;головы, тут не&nbsp;сталкеры покоряют Зону, а&nbsp;Зона покоряет их,&nbsp;понял?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Понял&nbsp;&#151; почти шепотом сказал я.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Да&nbsp;чего ты&nbsp;так испугался то!?&nbsp;&#151; улыбаясь спросил военный&nbsp;&#151; небоись, тут город, тут вобщем нечего бояться нечего. Вот в&nbsp;Зоне бояться стоит. Хотя нет, не&nbsp;стоит, иначе долго не&nbsp;проживешь. Ты&nbsp;что побелел то?&nbsp;<nobr>Да-а-а-а</nobr> брат&#133; Ладно, мне уже идти надо, заговорился я&nbsp;тут с&nbsp;тобой. Если что надо, обращайся. Найти меня по&nbsp;вечерам <nobr>во-о-он</nobr> в&nbsp;том баре можно. Все, пока.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;долго смотрел туда, куда показывал военный и&nbsp;никак не&nbsp;мог найти даже признака бара. Все что было в&nbsp;том направлении&nbsp;&#151; это полуразрушенный кирпичный дом. Точно свалка.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;пошел к&nbsp;зданию, в&nbsp;котором, как показал военный, находился бар. Подойдя поближе, я&nbsp;обнаружил открытую дверь ведущую вниз, видимо в&nbsp;подвал. На&nbsp;всякий случай достал ПМ,&nbsp;который перед отъездом стянул у&nbsp;отца. Держа пистолет наготове, я&nbsp;спускался по&nbsp;лестнице вниз. Когда ступеньки закончились, я&nbsp;прошел еще метров пять и&nbsp;уперся в&nbsp;дверь. Ну&nbsp;и&nbsp;темень&nbsp;же здесь! Я&nbsp;резко открыл дверь и&nbsp;ввалился внутрь. Действительно бар. Все вокруг молчали и&nbsp;удивленно смотрели на&nbsp;меня. Я&nbsp;испуганно спрятал оружие. Уже через секунду все вернулось в&nbsp;норму люди заговорили, каждый о&nbsp;своем.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Выпить надо, успокоиться, да&nbsp;и&nbsp;разузнать что тут к&nbsp;чему. Я&nbsp;спокойным шагом направился к&nbsp;барной стойке, ну&nbsp;или к&nbsp;<nobr>чему-то</nobr> отдаленно напоминавшему мне ее.&nbsp;Хороша стоечка. Мешки да&nbsp;кирпичи. Куда я&nbsp;попал? А&nbsp;ведь еще не&nbsp;поздно, могу домой вернуться. <nobr>Не-е-ет</nobr>. Стоит мне только представить что со&nbsp;мной родители сделают, как всякое желание возвращаться домой отпадает.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Эй,&nbsp;парень, ты&nbsp;что, глухой что&nbsp;ли? Тебе налить чего?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; <nobr>Да-да</nobr>. <nobr>Э-э-э</nobr>. Пивка&nbsp;бы. Балти&#133;</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ага, а&nbsp;Хайнекена не&nbsp;хочешь?&nbsp;&#151; рассмеялся бармен&nbsp;&#151; у&nbsp;нас тут только&#133; Без марки. Ну&nbsp;так будешь?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ну&nbsp;наливай. Сколько?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Тебе, парень, первая бесплатно. Я&nbsp;тебя тут раньше не&nbsp;видел, когда приехал, хех, счастье искать?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Да&nbsp;вот только что. Минут десять назад с&nbsp;автобуса сошел.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ясно. И&nbsp;много с&nbsp;тобой еще ребят приехало?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; <nobr>Э-э-э</nobr>&#133; Да&nbsp;нет, я&nbsp;один в&nbsp;автобусе и&nbsp;ехал.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Понятно&nbsp;&#151; протянул бармен.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Слушай, а&nbsp;как на&nbsp;территорию Зоны то&nbsp;попасть можно?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Не&nbsp;терпится в&nbsp;бой? Тут последнюю неделю военные <nobr>что-то</nobr> в&nbsp;Зону зачастили, а&nbsp;сталкерам запретили. Хотя они все равно ходят, реже конечно, но&nbsp;ходят. Особенно количество ходков в&nbsp;Зону сократилось после того как армейский спецназ расстрелял трех сталкеров. <nobr>У-у-у</nobr>, да&nbsp;я&nbsp;тебе кажется всю охоту идти отбил?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Да&nbsp;нет&#133; Уж&nbsp;раз приехал, то&nbsp;была не&nbsp;была&#133; Пойду.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Мой тебе совет: идешь впервые, подбейся к&nbsp;каким-нибудь опытным сталкерам, будешь их&nbsp;слушаться, точно не&nbsp;пропадешь.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Спасибо за&nbsp;совет. Ну&nbsp;ладно, я&nbsp;пойду, осмотрюсь.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ну&nbsp;давай, до&nbsp;встречи.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;вышел из&nbsp;помещения бара, быстро поднялся по&nbsp;лестнице и&nbsp;вышел на&nbsp;улицу. Тут на&nbsp;меня налетел тот самый военный. Он&nbsp;быстро извинился и&nbsp;побежал дальше. Я&nbsp;его было окликнул, но&nbsp;он&nbsp;не&nbsp;обернулся.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ну&nbsp;что Костя, куда теперь?&nbsp;&#151; тихо спросил я&nbsp;себя&nbsp;&#151; на&nbsp;Зону? Да,&nbsp;пора. Вот только как пройти на&nbsp;территорию Зоны? Ах&nbsp;черт, не&nbsp;узнал. Ладно, <nobr>как-нибудь</nobr> сам разберусь.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;решил просто прогуляться, посмотреть кто откуда идет. Таким образом, я&nbsp;надеялся найти лазейку, чтобы попасть в&nbsp;Зону. У&nbsp;большинства людей рюкзаки с&nbsp;собой немалые, надо&nbsp;бы и&nbsp;мне достать. Да&nbsp;и&nbsp;приборчики любопытные, должно быть очень полезные. Спросить&nbsp;бы надо где купить. Денег вроде немало, должно хватить.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Тут я&nbsp;заметил сталкера, который выходил из&nbsp;такого&nbsp;же полуразрушенного здания, как и&nbsp;местный бар. В&nbsp;руках у&nbsp;него был <nobr>какой-то</nobr> приборчик, на&nbsp;вид совсем новенький. Заглянем. Да,&nbsp;действительно, вот здесь закупиться и&nbsp;можно. Ух&nbsp;какой неприятный тип&#133;</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ну&nbsp;что парень, на&nbsp;меня таращиться будешь или что купить пришел?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Я&#133; Вобщем&#133; Да,&nbsp;купить&nbsp;бы хотел&#133;</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ясно, новичок. Что покупать естественно не&nbsp;знаешь, так?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;отрицательно покачал головой.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Для начала тебе надо детектор аномалий. У&nbsp;меня тут три штуки осталось. Не&nbsp;плохие, импортные, <nobr>откуда-то</nobr>&#133; А&nbsp;черт их&nbsp;знает откуда. Короче тысячу стоит.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Тысячу чего?&nbsp;&#151; спросил я.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Африканских тугриков! Естественно рублей.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ничего естественного&#133; Ладно, я&nbsp;беру.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;отсчитал тысячу и&nbsp;отдал деньги торговцу.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Да,&nbsp;и&nbsp;вот еще, карта местности, пригодиться. Отдам за&nbsp;пятьдесят.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Тоже возьму.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; А&nbsp;оружие какое?&nbsp;&#151; я&nbsp;ему показал свой ПМ&nbsp;&#151; патроны не&nbsp;нужны? А&nbsp;вообще я&nbsp;бы с&nbsp;небольшой доплатой тебе его на&nbsp;пушку покруче поменяю. Доплатишь рублей шестьсот и&nbsp;вот этот Браунинг твой.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Торговец указал на&nbsp;новенький пистолет лежавший на&nbsp;краю стола.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Шестисот нет&#133; Четыреста пятьдесят.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Эх&#133; Ну&nbsp;давай так. В&nbsp;комплект входит две запасные обоймы. А&nbsp;теперь вали отсюда. Эй!&nbsp;А&nbsp;ПМ&nbsp;то&nbsp;свой оставь! Все, до&nbsp;встречи.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Да.&nbsp;А&nbsp;как тут денег заработать?</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ученые платят за&nbsp;различную хрень с&nbsp;Зоны.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Ясно. Ну&nbsp;ладно, я&nbsp;пошел.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; <nobr>Иди-иди</nobr>&nbsp;&#151; усмехнулся торговец.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Выйдя на&nbsp;улицу, я&nbsp;точно знал что сейчас уже готов идти в&nbsp;Зону. Ах&nbsp;черт, а&nbsp;рюкзак то&nbsp;я&nbsp;не&nbsp;купил. <nobr>Ну-ка</nobr>&#133; Аппаратик какой компактный, в&nbsp;карман влез. Ладно, пока без рюкзака обойдусь.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Поблуждав по&nbsp;городу, я&nbsp;вскоре вызнал где можно пробраться в&nbsp;Зону. Перебравшись благодаря одному сержанту на&nbsp;территорию Зоны, я&nbsp;достал пистолет и&nbsp;чуть&nbsp;ли не&nbsp;побежал от&nbsp;радости.</P>
+<P ALIGN="JUSTIFY"></P>
+<B><P class="copyr">Зона</P>
+</B><P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">А&nbsp;я&nbsp;представлял зону совсем другой. Представлял жуткие, темные леса, где на&nbsp;деревьях не&nbsp;было ни&nbsp;одного листочка, абсолютно голую землю, а&nbsp;она вон какая&nbsp;&#151; цветет. Даже не&nbsp;вериться что здесь могут быть <nobr>какие-то</nobr> опасности, больше похоже на&nbsp;прогулку по&nbsp;лесу.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;весело шел вперед, пока моим глазам не&nbsp;представилась ужасная картина. Метрах в&nbsp;десяти от&nbsp;меня лежал труп человека. Жуткое, обезображенное тело, будто&nbsp;бы раздавленное. Я&nbsp;подошел еще поближе и&nbsp;тут мой детектор аномалий запищал как бешеный. Я&nbsp;быстро сообразил, что человека расплющила именно аномалия. Ну&nbsp;и&nbsp;гадость. Не&nbsp;хотелось&nbsp;бы погибнуть такой смертью.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Тут я&nbsp;обратил внимание на&nbsp;странный ящичек лежавший у&nbsp;моих ног. Простой свинцовый ящичек, размеров в&nbsp;сигаретную коробку.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&#151; Взять или не&nbsp;взять&nbsp;&#151; вот в&nbsp;чем вопрос&nbsp;&#151; протянул я&nbsp;&#151; Взять.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Я&nbsp;поднял ящичек, стряхнул с&nbsp;него грязь и&nbsp;положил в&nbsp;карман.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">После этой находки прыти у&nbsp;меня поубавилось. Шел и&nbsp;представлял себя лежавшим в&nbsp;лужи крови, да&nbsp;расплющенным. Через некоторое время я&nbsp;вышел к&nbsp;заброшенному заводу. И&nbsp;естественно любопытство берет верх над разумом. Я&nbsp;легко перепрыгнул через низенький кирпичный забор и&nbsp;направился к&nbsp;главному зданию комплекса.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Уже подходя ко&nbsp;входу в&nbsp;комплекс я&nbsp;услышал странный глухой звук. Я&nbsp;резко обернулся и&nbsp;почувствовал острую боль в&nbsp;левом боку. Боль была жуткой, несносной. Я&nbsp;упал на&nbsp;четвереньки и&nbsp;пополз ко&nbsp;входу в&nbsp;здание. Кувырком скатился по&nbsp;лестнице и&nbsp;оказался в&nbsp;подвальном помещении. Используя последние силы я&nbsp;сел к&nbsp;стенке&#133;</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="32.76" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.68 (41)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Batrakov_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

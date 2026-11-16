@@ -1,0 +1,286 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Человек, который должен вернуться - Алексей Леваков</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_127.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Человек, который должен вернуться</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Алексей Леваков</b><br>Дата: <b>23/05/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>926</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>12</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P>Сталкер собирал вещи. Медленно&nbsp;&#151; ему не&nbsp;куда было спешить. Зона&#133; Он&nbsp;боялся идти туда. Боялся, но&nbsp;уже привык к&nbsp;своему страху&nbsp;&#151; как к&nbsp;обязательому спутнику. Не&nbsp;бывает людей, лишённых страха полностью, иначе это уже не&nbsp;люди. А&nbsp;он&nbsp;был челвеком, в&nbsp;отличие от&nbsp;тех тварей, что теперь населяют окрестности бывшей Чернобыльской АЭС. Надо уметь победить страх. Тогда, возможно, ты&nbsp;вернёшься. Возможно&#133; &#171;Что&nbsp;ж, вроде всё&nbsp;собрал&#187;, подумал Сталкер. &#171;Можно отправляться&#133;" Передёрнул затвор автомата, повесил его на&nbsp;плечо и&nbsp;вышел из&nbsp;&#171;дома&#187;- так он&nbsp;называл свою землянку, временное убежище, остановку на&nbsp;пути к&nbsp;Зоне&#133; Небо было серым&nbsp;&#151; не&nbsp;таким, как бывает поздней осенью небо, плачущее дождём,&nbsp;а&nbsp;как будто&nbsp;бы выкрашенное в&nbsp;сплошной серый цвет, отдающий сталью&#133;</P>
+
+<P>Двигатель старенького 412 москвича всё&nbsp;никак не&nbsp;хотел заводиться, будто&nbsp;бы отказываясь ехать туда, откуда не&nbsp;всегда возвра- щаются. Наконец мотор заурчал. Сталкер положил походный рюкзак на&nbsp;заднее сиденье и&nbsp;вывел автомобиль на&nbsp;дорогу.</P>
+
+<P>Как будто&nbsp;бы не&nbsp;преддверие Зоны. Деревья, трава, листья&nbsp;&#151; всё&nbsp;обычное, настоящее, &#171;человеческое&#187;&nbsp;&#151; кажется едешь где нибудь под Уралом по&nbsp;просёлочной дороге. Но&nbsp;нет&nbsp;&#151; вот он,&nbsp;приметный маячок&nbsp;&#151; танк <nobr>Т-70</nobr>. Непонятно, каким чудом его занесло сюда. С&nbsp;виду танк, как танк&nbsp;&#151; настоящий, будто на&nbsp;учениях. Но&nbsp;подойди ближе и&nbsp;броня танка напомнит пемзу, или шоколад &#171;Виспа&#187;&nbsp;&#151; сплошные пузырьки по&nbsp;всему корпусу, как будто сталь вскипела изнутри&#133; Датчик аномалей (Сталкер называл его &#171;Датчик РазДваТри&#187;&nbsp;&#151; обычно именно столько секунд оставалось жить тому, кто услышал пищание этого прибора) опять молчит&nbsp;&#151; Сталкер чувствует <nobr>что-то</nobr>, но&nbsp;ведь он&nbsp;проезжает здесь не&nbsp;в&nbsp;первый раз, значит и&nbsp;волноваться не&nbsp;стоит, <nobr>по-крайней</nobr> мере пока&#133; &#171;Датчик аномалей, или аномальных явлений&nbsp;&#151; штука теоретически безошибочная, но&nbsp;не&nbsp;имеющая практической ценности без собственной интуиции. Только ты,&nbsp;ты&nbsp;сам, твоё тело, твой дух&nbsp;&#151; вот <nobr>по-настоящему</nobr> действующие инструменты&#187;&nbsp;&#151; так говорил его учитель и&nbsp;напарник, бывший учёный и&nbsp;мастер боевых искусств&#133;А&nbsp;с&nbsp;недавних пор&nbsp;&#151; и&nbsp;бывший человек. Он&nbsp;погиб очень быстро и&nbsp;без мучений, (а&nbsp;как&nbsp;же, если вам пробивает голову кусок металлического троса, вылетевший из&nbsp;ниоткуда) когда вытаскивал Сталкера и&nbsp;хабар из&nbsp;<nobr>3-го</nobr> реакторного блока.</P>
+
+<P>Тогда Сталкеру повезло&nbsp;&#151; инстинктивно он&nbsp;откатился в&nbsp;сторону, дал длинную очередь во&nbsp;тьму прохода и,&nbsp;подхватив часть хабара бросился бежать в&nbsp;сторону леса&#133;</P>
+
+<P>Лишь потом он&nbsp;вспомнит смутное свечение в&nbsp;той тьме, как будто два огонька еле теплились в&nbsp;глубине. А&nbsp;ещё&nbsp;жуткий страх, как будто даже и&nbsp;не&nbsp;собственный, как будто та&nbsp;тварь, что сидела там, умела манипулировать сознанием&#133;</P>
+
+<P>&#171;Стоят, сволочи, чтоб им&#133;!&#187; выругался Сталкер про себя, когда впереди показались очертания КПП. Там дежурили несколько солдат, наверное новеньких, потому что все были в&nbsp;полевых скафандрах и,&nbsp;что называется, &#171;в&nbsp;полном боевом&#187;. Командир&nbsp;же этих &#171;космических пехотинцев&#187; преспокойно дрых рядом с&nbsp;мешками с&nbsp;песком, положив голову на&nbsp;коробку патронов от&nbsp;крупнокалиберного пулемёта.&nbsp;Сталкер остановил машину у&nbsp;шлакбаума. &#171;Ваш пропуск, и&nbsp;цель посещения карантинной территории!&#187;, потребовал один из&nbsp;солдат. Голос его звучал глухо из&nbsp;под шлема, но&nbsp;Сталкер почувствовал нотки страха в&nbsp;голосе солдата. &#171;Что, боишься? Боишься Зоны? И&nbsp;правильно делаешь, только скафандр тебе не&nbsp;поможет!&#187;, подумал Сталкер. Он&nbsp;протянул пропуск&nbsp;&#151; &#171;Добронин Даниил Сергеевич, кафедра изучения аномальных явлений. Цель поездки&nbsp;&#151; изучение изменений гравитационных взаимодействий и&nbsp;квантово-волновых преобразований в&nbsp;сфокусированных нематериальных объектах!&#187; &#171;Всё&nbsp;впорядке, Даниил Сергеевич, можете проезжать!&#187; Сталкер сел в&nbsp;машину и&nbsp;неспеша поехал в&nbsp;сторону видневшейся вдалеке сортировочной станции. Зона.</P>
+
+<P>&#171;Я&nbsp;пройду тебя,</P>
+
+<P>Я&nbsp;найду себя,</P>
+
+<P>Я&nbsp;уйду живой,</P>
+
+<P>Не&nbsp;поймать меня&#133;"&nbsp;&#151; прошептал он&nbsp;давний гимн сталкеров&nbsp;&#151; никто уже и&nbsp;не&nbsp;помнит, кто придумал этот незамысловатый стишок. Говорят, это четверосишие не&nbsp;раз спасало жизнь самым отчаянным искателям приключений и&nbsp;хабара&nbsp;&#151; а&nbsp;сталкеры народ суеверный, так и&nbsp;повелось&nbsp;&#151; произносить его перед каждым походом в&nbsp;Зону.</P>
+
+<P>Машина давно осталась позади, он&nbsp;оставил её&nbsp;на&nbsp;обочине дороги. Дальше нельзя ехать, можно только идти&nbsp;&#151; иначе смерть. Может быть быстрая и&nbsp;безболезненная&nbsp;&#151; если попасть в&nbsp;&#171;комариную плешь&#187;, а&nbsp;может быть долгая и&nbsp;мучительная&nbsp;&#151; в&nbsp;&#171;мясорубке&#187;. Комариная плешь&nbsp;&#151; это участок земли, диаметром метров двадцать, почти неотличимый от&nbsp;окружающей местности. Вот только грави- тация на&nbsp;этом участке&nbsp;&#151; <nobr>30-40</nobr> g.&nbsp;Если ступишь туда&nbsp;&#151; превратишься в&nbsp;тонкий блин мяса, костей и&nbsp;крови, равномерно размазанный по&nbsp;поверхности. А&nbsp;мясорубка&nbsp;&#151; почти то&nbsp;же самое, только результирующий вектор направления гравитации имеет вероятностные, как&nbsp;бы размыте характеристики&nbsp;&#151; проще говоря &#171;низ&#187; приобретает направление всех сторон света, и&nbsp;тебя &#171;просто&#187; разрывает на&nbsp;куски- медленно&#133;</P>
+
+<P>Ты&nbsp;Сталкер. Тот кто идёт&nbsp;в&nbsp;Зону и&nbsp;возвращается, кто идёт&nbsp;по&nbsp;трупам людей, умерших неизвестной смертью, слушая хруст костей под своими ботинками. Тот кто способен убить не&nbsp;задумываясь, убить и&nbsp;людей&nbsp;&#151; патрульных, виновных только лишь в&nbsp;том, что они выполняют приказ, и&nbsp;нелюдей&nbsp;&#151; тех кто убъёт&nbsp;тебя, потому что ты&nbsp;&#151; человек&#133;</P>
+
+<P>У&nbsp;тебя нет души&nbsp;&#151; её&nbsp;давно поглотила Зона. И&nbsp;тем не&nbsp;менее, ты&nbsp;&#151; человек. Человек, который должен вернуться&#133;</P>
+
+<P>Зону всегда чувствуешь. Как будто в&nbsp;погожий летний день вдруг набегают тучи&nbsp;&#151; и&nbsp;вот солнце уже исчезло, растворилось в&nbsp;черноте&#133;</P>
+
+<P>Зона ждёт&nbsp;тебя. Она везде, она повсюду. Она всегда с&nbsp;тобой&#133; Даже когда ты&nbsp;заливаешь себя водкой, в&nbsp;надежде хоть на&nbsp;минуту забыться&nbsp;&#151; обернись&nbsp;&#151; она у&nbsp;тебя за&nbsp;спиной&#133;</P>
+
+<P>Ты&nbsp;всегда будешь помнить её,&nbsp;если останешься жив&nbsp;&#151; лес, который стоит зелёным и&nbsp;цветущим вот уже несколько лет, пустой, оглохший, безмолвный лес; чудовищную громаду АЭС&nbsp;&#151; угрюмую, уставившуюся в&nbsp;небо слепыми глазницами труб&#133;</P>
+
+<P>Нет, ты&nbsp;не&nbsp;забудешь её,&nbsp;Сталкер&#133;</P>
+
+<P>Никогда&#133;</P>
+
+<P>Ты&nbsp;лишь должен вернуться, ведь пока что ты&nbsp;человек&#133;</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.57" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.51 (206)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Levakov_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Торговец - Star'ый</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_208.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Торговец</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Star'ый</b><br>Дата: <b>11/11/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>537</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>1</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P ALIGN="JUSTIFY">День начинался как обычно – заправка и проверка работоспособности всех систем вертолета, загрузка товаром, заполнение всех этих идиотских форм и разрешений на вьезд-выезд-провоз груза. А проезжать то он и никуда не собирался – он летел, летел  в Зону. Снова.</P>
+<P ALIGN="JUSTIFY">Никто из сталкеров никогда не спрашивал у него, как и с кем, он договорился, сколько ему это стоило, и сколько будет продолжаться. Но каждое утро его вертолет получал необходимые разрешения и без лишних вопросов взмывал в небо. </P>
+<P ALIGN="JUSTIFY">- “Ларек” просит разрешения на взлет;</P>
+<P ALIGN="JUSTIFY">- добро “Ларек”, удачного дня;</P>
+<P ALIGN="JUSTIFY">- Спасибо, постараюсь, – торговец уже давно не верил в удачу.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">До границы Зоны было 46 минут летного времени. 46 минут воспоминаний.  46 минут ожиданий. 46 минут надежд. И осенний пейзаж за бортом не мог отвлечь Торговца от его мыслей.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">“Ларек” приземлился как всегда на небольшой поляне возле деревни Каменка. Это было уже в самой Зоне отчуждения. </P>
+<P ALIGN="JUSTIFY">Отчуждение – это слово его всегда завораживало. Иной раз торговец думал, что именно это слово привело его сюда. Отчуждение. Это так походило на него.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Каждый раз, подлетая к поляне, торговец всматривался в лес, выискивал взглядом своих покупателей. Сегодня, как и всегда он никого не увидел. Сталкеры всегда оставались скрытными. Отчужденными. И никто и никогда из сталкеров не появлялся  до того как хозяин “Ларька” полностью был готов принять покупателей. Ему всегда давали время расставить прилавки и разложить товар. Его никто и никогда не торопил. Его здесь уважали.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">- Здравствуй, Хромой. Услышал он голос. </P>
+<P ALIGN="JUSTIFY">- Здравствуй, Сталкер.</P>
+<P ALIGN="JUSTIFY">Каждый из сталкеров называл его по-своему, а он каждого сталкера называл просто – Сталкер.</P>
+<P ALIGN="JUSTIFY">Тот, кто назвал его Хромым вышел из-за кустов небывало большой смородины (когда-то здесь был, чей то огород) и подошел к прилавку.</P>
+<P ALIGN="JUSTIFY">Это был еще зеленый новичок. “Зеленый” в прямом смысле  - его первый защитный костюм еще не выцвел от радиации. Торговец знал про него почти все (впрочем, как и про каждого своего клиента). Точнее он знал про каждого все, что ему позволяли узнать. Остальное он узнавал по внешнему облику, кругам под глазами, покупаемому и продаваемому оборудованию.</P>
+<P ALIGN="JUSTIFY">-Покупка или продажа??</P>
+<P ALIGN="JUSTIFY">- И то  и другое – сказал сталкер улыбаясь. – У меня хороший улов. </P>
+<P ALIGN="JUSTIFY">С этими словами он поставил на стол банку с чем то бурым и шевелящимся. </P>
+<P ALIGN="JUSTIFY">-Сколько их здесь?</P>
+<P ALIGN="JUSTIFY">-16 штук. Не много, зато все как на подбор – “мужчины”, а здесь – “женщины”. С этими словами он достал вторую точно такую же банку, с точно таким же шевелящимся содержимым. </P>
+<P ALIGN="JUSTIFY">О том, что черви в Зоне начали размножаться половым способом было известно давно, но причину этой мутации ученые все еще не выяснили  и потому за червей из зоны платили.</P>
+<P ALIGN="JUSTIFY"> Для торговца причина любой мутации была одна  - Зона, но у ученых был свой мир, далекий от торговца, и деньги на червей ученые исправно вносили в бюджет своих проектов. Эти деньги были хоть и не большими, зато этим всегда можно было “прокормиться” сталкерам. Хотя не многие сталкеры за это брались и лишь только по крайней нужде или неопытности. Не потому что это была грязная работа (здесь в Зоне вообе нет ничего чистого), а лишь по причине “неинтересности” этого занятия.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Торговец быстро посчитал в уме сумму, которую дадут за червей, прибавил свои стандартные 25% и назвал её новичку. </P>
+<P ALIGN="JUSTIFY"> - Договорились, Хромой. А теперь покажи мне оружие. Новое оружие.</P>
+<P ALIGN="JUSTIFY">То, что новички увлекались различными новинками, торговца не удивляло. Он и сам ими, когда то увлекался. </P>
+<P ALIGN="JUSTIFY"> - Писхон, Раптер, модернизированные боеприпасы к АКМ'у и Абакану… - начал перечислять Торговец, но новичок его тут же остановил:  - Расскажи про Психон.</P>
+<P ALIGN="JUSTIFY"> - Психон – разработка российских ученых, позволяющая подавлять волю противника, - голос продавца звучал монотонно, как будто он читает инструкцию к кофемолке, - оружие новое, еще толком не изучено его действие на самого владельца оружия. В основе изобретения оружия – изучение людей подвергшихся нападению контролеров.</P>
+<P ALIGN="JUSTIFY">Это 3-тий опытный образец. К нему прилагается небольшая анкета, которую владелец должен заполнить после использования этого оружия. Две предыдущие анкеты  - мне еще никто не вернул. </P>
+<P ALIGN="JUSTIFY">Но новичок не почувствовал предупреждения в последней фразе.</P>
+<P ALIGN="JUSTIFY"> -Беру его, вот деньги, остальное в зачет – червями.</P>
+<P ALIGN="JUSTIFY">После того как они рассчитались друг с другом, новичок, улыбаясь, исчез все за тем же кустом смородины.</P>
+<P ALIGN="JUSTIFY">Торговец почувствовал, что он видит этого новичка в последний раз. “И пусть” - подумал про себя торговец. Совесть напомнила о себе лишь на доли секунды. Его самого никто и никогда не предупреждал ни о чем, даже когда он сам был начинающим сталкером. Важен опыт, собственный опыт. И учителем здесь может быть только одно – Зона. Правда, некоторые её уроки  выдерживают не многие.</P>
+<P ALIGN="JUSTIFY">  - А ты все такой же черствый,  Одноногий,  - зазвучал хриплый голос, как только новичок скрылся в кустах.</P>
+<P ALIGN="JUSTIFY"> -  В Зоне невозможно быть мягким, Сталкер. </P>
+<P ALIGN="JUSTIFY"> - Почему ты позволяешь этим юнцам покупать всякую глупость? </P>
+<P ALIGN="JUSTIFY"> - Это бизнес, и ты знаешь это Сталкер.</P>
+<P ALIGN="JUSTIFY">Владелец хриплого голоса вышел теперь на поляну. “Голос” не улыбался, Торговец уже и не помнил – улыбался ли этот Сталкер когда- нибудь вообще, хотя и числился в шутниках.</P>
+<P ALIGN="JUSTIFY"> Их можно было назвать друзьями. Как могут быть друзьями два отчужденных человека. Торговец и “хриплый голос” были знакомы уже давно, еще с тех времен, когда торговец сам был сталкером, и когда еще у него были обе ноги. </P>
+<P ALIGN="JUSTIFY">- Ты знаешь, я думал она у тебя отрастет, - показывая на обрубок ноги, сказал “голос”, - как у ящерицы хвост. </P>
+<P ALIGN="JUSTIFY">Этот сталкер точно помнил, что такое юмор, хотя у Зоны он был свой, особый. </P>
+<P ALIGN="JUSTIFY">- А ты помнишь, что такое нормальная ящерица???</P>
+<P ALIGN="JUSTIFY">- Даа… ты прав. И ящерицы здесь не те и радиация на зубах хрустит.</P>
+<P ALIGN="JUSTIFY">- Чего тебе, Сталкер?</P>
+<P ALIGN="JUSTIFY">- А вот ты скажи, Одноногий, почему ты вернулся в Зону после больницы??? – они давно уже не виделись, и сталкер видимо соскучился по общению.</P>
+<P ALIGN="JUSTIFY">- А здесь воздух – особенный.</P>
+<P ALIGN="JUSTIFY">- Это точно… Хотя вот что я подумал: ведь полез же ты туда – в то здание, за чем-то. Искал чего то и почти нашел. А ногу потерял и не смог идти дальше. И торговцем ты стал для того чтобы однажды тебе кто нибудь из сталкеров тебе принес “Это”. Вот скажи  -  прав я или нет??</P>
+<P ALIGN="JUSTIFY"> - Ты слишком много думаешь, Сталкер. Стареешь наверно. Не пора на покой?</P>
+<P ALIGN="JUSTIFY">- Нет не пора, я еще не нашел то что ищу.</P>
+<P ALIGN="JUSTIFY">- И что же это?</P>
+<P ALIGN="JUSTIFY">-  Девушку-мутантку, с тремя грудями, - сталкер как всегда отшучивался.</P>
+<P ALIGN="JUSTIFY">- Дак чего берешь? – торговец понял, что пора менять тему разговора.</P>
+<P ALIGN="JUSTIFY">- Водки мне и боеприпасов для “Калаша”.</P>
+<P ALIGN="JUSTIFY">- Вот это выбор профессионала.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">… День подходил к концу. Сталкеры брали еду, оружие, медикаменты. Сдавали животных на исследование, различные странные предметы, которые ученые прозвали артефактами. Сколько за них платить никто не знал, т.к. реальную рыночную стоимость они приобретали лишь после изучения. И тут торговцу приходилось полагаться на свой опыт, а он редко ошибался в таких предметах. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Пора уже было собираться и улетать. Но торговец медлил. Как медлил он уже вторую неделю. Он ждал. Ждал тот молодой голос, который его называл “Дед”. </P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY"> Этот мальчишка, появившись однажды в Зоне, почему-то сразу понравился торговцу. Что в нем было? Азарт? Любопытство? Везение? Торговец не знал. Наверно он просто видел в этом мальчишке себя. Себя таким, каким он был много, много лет назад.</P>
+<P ALIGN="JUSTIFY">Хотя он называл его “Дед”, торговец годился ему только в отцы - Зона делала свое дело. Да он мог бы быть его отцом. Мог бы, если бы не Зона…</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Уже темнело, когда вертолет с названьем “Ларек” поднялся в  воздух над Зоной, для того чтобы завтра снова быть на этом же месте. Снова, потому что его хозяин хочет еще раз услышать  - “Здорова, Дед!” </P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.36" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.48 (29)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Stariy.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

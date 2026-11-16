@@ -1,0 +1,275 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - За Любовь - Пурст</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_231.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">За Любовь</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Пурст</b><br>Дата: <b>11/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>551</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>5</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P>Теперь Копейкин знал лабиринт Зоны очень хорошо. Он знал, где скрываются смертоносные ловушки и опасные аномалии, научился различать, где притаилась комариная плешь или ведьмин студень, знал, чего можно ожидать от различных её обитателей. Он не был Сталкером. Два года назад он служил офицером на одном из блокпостов оцепления, но из-за досадного инцидента вынужден был порвать с армией и сейчас перебивался время от времени какой-нибудь халтуркой.   </P>
+<P>В душе он был романтиком, хотя его романтизм не был лишен своеобразия и местами переходил в экстрим.  Прекрасно было провести ночь со своей девушкой под открытым звездным небом, прислушиваясь к каждому шороху недалекого леса… Но если учесть, что это было небо Зоны, территория Зоны, то знание этого придавало остроту чувствам, незабываемость впечатлениям, и звезды здесь мерцали как-то по другому, по особенному, и воздух был како-то другой, будто бы состоял из адреналина. Одним словом здесь - это не то что там. </P>
+<P>С Любой он встречался уже без малого два года и к осени у них уже намечалась свадьба. Они познакомились два года назад, когда он был еще зеленым лейтенантом. Она бросила своего мужа, Сталкера, она не понимала этой идиотской Зоны, но вынуждена была с этим считаться. И считалась с этим, пока не встретила молодого офицера Александра Копейкина, подающего большие надежды…</P>
+<P>Копейкин очнулся от воспоминаний. Восток ужен начал алеть, когда проснулась Люба. Нужно было возвращаться домой. Парочка стала быстро собираться. Самый короткий путь лежал через заброшенный поселок Зоны Отчуждения. </P>
+<P>…Они уже миновали больше половины пути, как вдруг Александр почувствовал чье-то присутствие. Нет это не был какой-то монстр, порождение Зоны, это был человек. Кто-то следил за ними. </P>
+<P>- Не нравится мне здесь что-то, - сказала Люба. </P>
+<P>Парочка ускорила шаги. Вдруг чья-то тень метнулась к ним из полуразрушенного здания, которое было чуть впереди по их маршруту. Дорогу им преградил высокий парень, одетый в сталкерский комбез.  Они вынуждены были остановиться.</P>
+<P>Странно, где-то он видел этого парня. Копейкин начал пристально его изучать. Черные десантные берцы, пятнистый комбинезон высшей биологической защиты, инфравизор с минигарнитурой,  позволяющий сканировать окружающее пространство в рентгеновских, инфракрасных и ультрафиолетовых лучах в радиусе до нескольких сотен метров, а так же детектор биомассы - последний писк моды среди Сталкеров.  Под комбезом угадывалась атлетическая фигура. Серые глаза незнакомца пристально смотрели на Копейкина. </P>
+<P>Я изучал своего врага. Вот наши пути и пересеклись. Финал. А Любка… Кажется, она узнала меня. </P>
+<P>- эй, ты, придурок, - решил сострить Копейкин , - Что ты на нас пялишься? Никогда парня с девушкой не видел что ли в этой глуши?</P>
+<P>Мне надоели его гнусные приколы. Моя правая рука скользнула во внутренний карман-кобуру камуфляжа. Я выхватил черный ствол ТТ-М. М - значит "Модернизированный". Оружие страшное, оружие запрещенное. Обнаруженный в Зоне четыре года назад артефакт позволил создать устройство, позволяющее генерировать огромную разность гравитационных потенциалов. Пуля, выпущенная из такого оружия проходила сквозь любую броню, как раскаленный нож сквозь масло. Единственный недостаток такого оружия - малая дальнобойность, всего лишь несколько десятков метров. Разработка была, естественно, сверхсекретной, и между Сталкерами шла жесткая борьба за обладание такими образцами. </P>
+<P>Копейкин начал понимать, что вышел крутой облом. </P>
+<P>- Ты приговорен к Ликвидации! - тихо сказал я и передернул затвор, активируя встроенный генератор грави-поля. Я видел, как у Любы от ужаса округлились глаза. Реакция Копейкина была молниеносной. Страха не было. Он защищал свою Любовь. Александр сделал мгновенный выпад, целя мне своим кулаком с тяжелой серебряной печаткой точно в челюсть, в надежде вырубить меня. Реакция его была отличная. Для человека. Но не для Сталкера. Я уклонился от удара, одновременно рассчитал свои остальные действия, отвел его руку влево, отступил ровно на 8 сантиметров и, приставив ТТ к локтевому сгибу его правой руки, нажал на курок. Грохнул выстрел.</P>
+<P>-Черт, за что?! - зашипел Копейкин.</P>
+<P>- За Любовь! - был ответ. В конце концов он первый напал. Вторая и третья пули разбили коленные чашечки его правой и левой ног. </P>
+<P>Копейкин взвыл то боли. "Как во сне, в кошмаре. Я сейчас проснусь. Кошмар уйдет. Я не должен умирать. Ведь я люблю её." - такая мысль  пронеслась у него в голове. Но было поздно. Выстре-лы следовали один за другим. Гильзы с веселым звоном сыпались на старый бетон. Эхо гулко разносилось по заброшенному поселку.</P>
+<P>Любка с каким-то нечеловеческим воплем бросилась мне на шею. Я грубо отшвырнул её. Копейкин уже лежал на асфальте. Под ним медленно растекалось красное пятно. Внутри у него что-то булькало. Из простреленного легкого текла кровавая пена. Любка упала передо мной на колени.</P>
+<P>- Прошу тебя, не убивай его!!!</P>
+<P>Она просила меня… Просила совсем чуть-чуть, казалось бы та-кую малость - чтобы я не нажал на курок. В обойме остался по-следний патрон. Это так просто. Проще, чем изучать геометрию, проще, чем подтягиваться на перекладине. Проще, чем заниматься любовью. Убивать легко. Вначале нужно лишь убить жаласть к се-бе подобным. </P>
+<P>Нет, я не кровожадный убийца. Убийцы и маньяки - порожде-ние человеческого общества. Я - Сталкер,  порождение Зоны. Я вспомнил, как четыре года тому назад я добыл первый артефакт, с помощью которого военные разработали оружие нового поколения - гравитационное. Кто-то получил за эту разработку высокие на-грады, кто-то звездочки на погоны. Я же получил лишь пару сотен на свою кредитку. Да еще и шрам от штыка под левой лопаткой иногда напоминал об этом. Через два года моя жена Любовь Анд-реевна не выдержала и поставила вопрос ребром: или я или Зона. Выбирай, мол. Я выбрал второе, хотя знал, что впоследствии буду жалеть об этом выборе. И она ушла. Ушла к молоденькому лейте-нанту Александру Копейкину, служившему во внешнем оцеплении. Еще и года не прошло, как он получил свои звездочки. А вскоре произошел досадный инцидент - вертолет с высшим офицерским составом из-за неисправной системы навигации сбился с курса и попал в комариную плешь. Выживших не было. Быстро нашли стрелочников. Среди них был и он, Александр… </P>
+<P>И вот теперь мы встретились вновь. Все. Хватит воспоминаний, хватит распускать сопли.</P>
+<P>Точка лазерного прицела заплясала у Копейкина на лбу. Я плавно нажал на курок.  Бах. ТТ разрядился. Спите спокойно, това-рищи бывший лейтенант. Я отшвырнул сверхсекретную, но беспо-лезную теперь "игрушку". Взглянул на Любу - полуобморочное состояние. </P>
+<P>- Эх, Любка, Любка… Зачем ты так со мной поступила?</P>
+<P>Я чувствовал запах. Запах свежей крови. Скоро здесь будут крысы - тоже дети Зоны. Они тоже чувствуют это. </P>
+<P>Я развернулся и пошел прочь. Зона радостно приняла меня в свои объятия.</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.15" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.45 (91)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Purst.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

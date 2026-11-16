@@ -1,0 +1,253 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Былое - Gaj-Egor</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_289.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Былое</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Gaj-Egor</b><br>Дата: <b>26/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>260</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P>“На дворе  уже 2019 год, а я всё брожу по этой чертовой Зоне, да чтоб её.  Мне надоело так жить, убивать, убегать. Постоянный страх довел меня до депрессии. Водка – единственное средство заглушить  любой страх, забыть обо всём, и надеется на то, что пока я буду спать меня не сожрут крысы, не найдут зомби,  и мной не полакомятся слепые псы”. - эти мысли промелькнули в голове  Егора пока он отрывался на своём старом москвиче от   стай слепых псов. Егор точно знал, что до  ближайшего блокпоста надо было ехать ещё часа два. Но бензин был почти на нуле. Он решил  кинуть машину метров через двести, там добежать до ближайшего  заброшенного дома и попытаться скрыться. </P>
+<P>“Эх, Егор, Егор – мелькнуло у него в голове - что заставило тебя пойти в эту Зону. Денег здесь больших не заработать, славы не получить, а ведь ты был преуспевающим программистом. У тебя была семья: жена и дочь. Что с ними теперь? Живы ли они? Я не видел их  уже шесть лет, это проклятая Зона засосала меня. Я вспоминаю, у меня был шанс вернуться домой, но если бы я  вернулся, я бы обрёк на смерть  по крайней мере человек десять. В 2015 мы, я и ещё десять  сталкеров,  пытались прорваться через правительственный   блокпост. Кто-то рассказал нам, что блокпост плохо охраняют, и если бы мы прорвались, то путь домой был бы свободен. Мы рассчитывали на быстрый штурм, возьмём всех в плен и тихо уйдём, но у нас ничего не получилось. Нас просто подставили, это оказалась засада. Как только мы подошли Витёк  два вертолёта, которые сбрасывали десант.  У нас сдали нервы, и мы начали  палить. После беспорядочной минутной стрельбы  к нам спускалось уже около восьми трупов. Остальные десантники начали отстреливаться, кого-то из наших подстрелили. Вся наша группа собралась уходить, но вдруг появилась стая кукунов, мутантов выросших до гигантских размеров, судя по очертаниям, они раньше были кукушками, они прилетели на звуки выстрелов. Всё смешалось: мы стреляли в кукунов, они нападали на нас и на десантников, десантники хотели убить и кукунов, и нас. Кукуны  кидали в нас  и десантников огромные белоснежные яйца, которые от удара о землю разбивались и освобождали жуков -трупоедов. Они жадно жрали трупы десантников и наших товарищей. Чем больше они ели, тем больше они становились. В конце концов, они принялись есть  живых. Обезумя от страха  люди кинулись врассыпную. В этот момент   мы и десантники объединили свой усилия против жуков и кукунов. Мы начали отходить к блокпосту, зашли в здание и  палили из окон. Кукуны начали отступать, а жуки видимо всё ещё хотели есть и потому не отступали. Какой - то смельчак рванул  наружу,  и тут перед нами предстала ужасающая картина. Жуки склонились над парнем  и рвали его на части. Его лицо было полно радости, наконец-то этот кошмар для него закончился. Дожевав парня, жуки продолжили наступление. Но что-то вдруг случилось, жуки забеспокоились, и на горизонте появился вертолёт поддержки. Всё ближе и ближе приближался дикий рёв мотора. С вертолёта открыли огонь по жукам  и то тут, то там стали появляться лужи зелёной крови. Наша группа воспользовалась  замешательством и рванула из здания. Пробегая под шквальным мы ринулись в направление ведущее домой.  К семье, к нормальной жизни, я был уверен в том, что если я смогу пробежать ещё  сорок метров, то буду свободен. Свободен от страха, призраков моего настоящего. Я стремился  домой. Вертолёт покончил с жуками, и десантники  вспомнили про нас. Я решил задержаться и прикрыть  своих товарищей. Но нам опять не повезло, со стороны    нормальной жизни на нас наступали БТР, нас хотели загнать в ловушку. Не долго думая,  вся наша группа сталкеров  рванулась назад. Я прикрывал  впереди идущих и отстреливал  снайперов, которые уже успели засесть на крыше блокпоста. Толя, опытный сталкер, взорвал вертолёт из РГ-6, и куча горящего железа обрушилась на блокпост, похоронив под собой  людей. Нам удалось отойти от блокпоста.  Военные потеряли наш след,  и мы были спасены, по крайней мере, сегодня”. К этому времени  Егор уже оторвался от слепых псов, и поднимался по проржавелой  лестницы какого – то заброшенного дома. Но  что-то заставило его насторожиться, какая-то зловещая тишина. Ничто не нарушало тишину, как вдруг он услышал писк, предупреждающий его о том, что где-то поблизости есть аномалия. Он стал всматриваться в глубину тьмы царящей  на этаже. Затем последовал легкий шорох  за спиной Егора. Он обернулся  и приготовился  к стрельбе. Мощный удар по затылку вырубил его… </P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="14" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 2.00 (8)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/gaj-egor_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Урок Истории - Dayver aka Виталий Орлов</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_115.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Урок Истории</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Dayver aka Виталий Орлов</b><br>Дата: <b>07/05/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>780</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>5</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P ALIGN="RIGHT"><i>Два ангела сидят у&nbsp;меня на&nbsp;плечах:<br>
+ангел смеха и&nbsp;ангел слёз.<br>
+И&nbsp;их&nbsp;вечное пререкание&nbsp;&#151; моя жизнь.</i></P>
+<P ALIGN="JUSTIFY">Я,&nbsp;приняв позу мудрого учителя, оглядел самый необычный за&nbsp;всю мою немалую жизнь класс, и&nbsp;после того как самый последний разгильдяй соизволил поднять свою третью точку, кивнул и&nbsp;произнёс:</P>
+<P ALIGN="JUSTIFY">&#151; Спасибо, присаживайтесь. Сегодня мы&nbsp;заканчиваем курс современной истории, с&nbsp;чем вас и&nbsp;поздравляю,&nbsp;&#151; по&nbsp;классу пронёсся вздох облегчения, который всего десять лет назад был другой, детский вздох,&nbsp;&#151; что в&nbsp;нём&nbsp;может быть другого? я&nbsp;не&nbsp;мог объяснить, но&nbsp;знал&nbsp;&#151; он&nbsp;другой.&nbsp;&#151; Как вы&nbsp;знаете, тот, кто стоит перед вами, некоторое время работал в&nbsp;Зоне, мне многое удалось повидать и&nbsp;пережить, как ни&nbsp;странно, без сильных физических и&nbsp;моральных травм.&nbsp;&#151; Я&nbsp;улыбнулся, но&nbsp;смог&nbsp;ли кто оценить мой чёрный юмор?&nbsp;&#151; Но&nbsp;самое главное..&nbsp;&#151; пауза, как многое можно узнать, вовремя сделав перерыв и&nbsp;внимательно рассмотреть непоседливые, смешные, внимательнее, грустные, но&nbsp;главное заинтересованные мордашки,&nbsp;&#151; это Встреча, которая перевернула этот Мир вверх тормашками, это Встреча, которая свела, как&nbsp;бы невероятно это не&nbsp;выглядело, нас всех здесь вместе, и&nbsp;в&nbsp;которой я&nbsp;имел честь присутствовать и&nbsp;даже играть в&nbsp;ней немаловажную роль.</P>
+<P ALIGN="JUSTIFY">Итак, рассаживайтесь поудобнее и&nbsp;приготовьтесь, пережить эту историю вместе со&nbsp;мной, кто с&nbsp;помощью техники, а&nbsp;кто с&nbsp;помощью своих мозгов.</P>
+<P ALIGN="JUSTIFY">По&nbsp;классу прокатился смешок, я&nbsp;опять улыбнулся, закрыл глаза и&nbsp;стал вспоминать:</P>
+
+<I><P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">Зима 2040.</P>
+<P ALIGN="JUSTIFY">После очередного скачка Зона расширилась до&nbsp;100 километров в&nbsp;диаметре, это был скачёк&nbsp;не&nbsp;только размерный, но&nbsp;и&nbsp;качественный. Стали приходить сообщения о&nbsp;появлении новой силы, более организованной, хорошо использующей технологии людей, но&nbsp;предпочитающей не&nbsp;нападать на&nbsp;них. Самое странное, рождённые Зоной, они были в&nbsp;ней лишние, сражаясь с&nbsp;порождениями Зоны, с&nbsp;такой злобой и&nbsp;отчаянием, что становилось радостно, оттого, что они не&nbsp;были врагами человека. Несуразные создания на&nbsp;первый взгляд не&nbsp;вызывающие страха, но&nbsp;закованные в&nbsp;броню и&nbsp;ловко управляющиеся с&nbsp;самым разнообразным оружием, представляли реальную силу.</P>
+<P ALIGN="JUSTIFY">Я&nbsp;ехал в&nbsp;составе экспедиции на&nbsp;встречу с&nbsp;этой силой, эта встреча не&nbsp;была запланирована, т.е. мы&nbsp;ехали как всегда нахально и&nbsp;на&nbsp;авось, надеясь наткнуться на&nbsp;них, а&nbsp;там как получится. Я&nbsp;вздохнул, как&nbsp;же это было по&nbsp;человечески.</P>
+<P ALIGN="JUSTIFY">Молодые, хорошо обученные и&nbsp;подготовленные, &#132;зимние&#147; сталкеры и&nbsp;военные, прокладывая дорогу для машин, мелькали среди деревьев, оберегая нас. А&nbsp;мы&nbsp;учёные, боялись, мёрзли, опять боялись и&nbsp;опять мёрзли, напиваясь, снова и&nbsp;снова, а&nbsp;среди них, я&nbsp;уставший от&nbsp;детей, учитель истории, увлёкшийся тайнами Зоны, и&nbsp;полезший за&nbsp;приключениями.</P>
+<P ALIGN="JUSTIFY">Посмотрев в&nbsp;окно, я&nbsp;опять увидел снег, который таил в&nbsp;себе ловушки, которых не&nbsp;было летом, и&nbsp;новых тварей, которые жили только зимой. Конечно, оставались твари-универсалы, которые жили в&nbsp;любое время года, но&nbsp;активно действовать они предпочитали только летом, зимой&nbsp;же прячась в&nbsp;зданиях, не&nbsp;столько боясь холода, сколько безумных снежных созданий, которые нападали на&nbsp;всё&nbsp;что движется. В&nbsp;итоге получалось, что зимний период был самый опасный. Отсюда и&nbsp;пошло разделение на&nbsp;&#132;летних&#147; и&nbsp;&#132;зимних&#147; сталкеров, последние, конечно&nbsp;же, задирали нос, говоря, что они лучшие.</P>
+<P ALIGN="JUSTIFY">Вздохнув, я&nbsp;решил прочитать одно из&nbsp;Посланий Зоны, написанных со&nbsp;слов одного из&nbsp;рассказчиков, утверждавшего, что оно подлинное. Много предположений было по&nbsp;этому поводу, но&nbsp;я&nbsp;пока не&nbsp;выдвигал ни&nbsp;каких идей, я&nbsp;просто собирал эти записи:</P>
+
+</I><P ALIGN="JUSTIFY">&#132;Пришёл&nbsp;Человек к&nbsp;Зоне и&nbsp;говорит:</P>
+<P ALIGN="JUSTIFY">&#151; Много &#132;плохих&#147; в&nbsp;этом Мире, а&nbsp;я&nbsp;слаб и&nbsp;немощен, страшно мне. Сделай меня сильным и&nbsp;смелым, накажу &#132;плохих&#147;&nbsp;&#151; и&nbsp;придёт&nbsp;Благодать.</P>
+<P ALIGN="JUSTIFY">Выполнила его просьбу Зона, и&nbsp;пошёл&nbsp;этот Человек вершить правосудие.</P>
+<P ALIGN="JUSTIFY">Прошло время, оглянулся герой и&nbsp;видит,&nbsp;&#151; нет больше &#132;плохих&#147;, все &#132;хорошими&#147; стали, а&nbsp;кто не&nbsp;успел, тот на&nbsp;тот свет отправился. Опустились руки у&nbsp;молодца, скучно стало, много сил осталось, а&nbsp;смысл жизни кончился. И&nbsp;пошёл&nbsp;он&nbsp;опять в&nbsp;Зону:</P>
+<P ALIGN="JUSTIFY">&#151; Не&nbsp;осталось больше противника, помоги мне!</P>
+<P ALIGN="JUSTIFY">Выполнила и&nbsp;эту просьбу Зона&nbsp;&#151; сделала его &#132;плохим&#147;.</P>
+<P ALIGN="JUSTIFY">Опять пролетели дни, наполненные смыслом. Смахнул однажды пот со&nbsp;лба герой, глядь&nbsp;&#151; нет больше &#132;хороших&#147;, а&nbsp;&#132;плохим&#147; никто не&nbsp;успел стать. Грустно стало&nbsp;&#151; с&nbsp;кем теперь бороться?</P>
+<P ALIGN="JUSTIFY">Повесился Человек, и&nbsp;наступила Благодать'.</P>
+<I>
+<P ALIGN="JUSTIFY">А&nbsp;вокруг стояла звенящая тишина&#133; Стоп, а&nbsp;почему тишина? За&nbsp;своими думами я&nbsp;не&nbsp;заметил, как заглохли моторы машин. В&nbsp;ожидании выстрелов, я&nbsp;потянулся к&nbsp;своему <nobr>Р-92</nobr>, но&nbsp;руки предательски задрожали и&nbsp;ни&nbsp;как не&nbsp;могли открыть кобуру. Мне повезло, что я&nbsp;сидел, потому что на&nbsp;меня накатила такая слабость, которая бывает только тогда когда <nobr>какой-то</nobr> животный нюх чувствует приближение смерти. Какая&nbsp;же она на&nbsp;этот раз? Я&nbsp;видел и&nbsp;слышал о&nbsp;многих видах отбытия в&nbsp;иной мир, но&nbsp;зона была разнообразна, старуха с&nbsp;косой, верно, служила ей.</P>
+<P ALIGN="JUSTIFY">&#151; Что ты&nbsp;придумала?!!&nbsp;&#151; я&nbsp;не&nbsp;заметил, как закричал.&nbsp;&#151; Что ты&nbsp;хочешь? Зачем ты&nbsp;здесь? Почему? Как?</P>
+<P ALIGN="JUSTIFY">Ещё&nbsp;немного и&nbsp;я&nbsp;забился&nbsp;бы в&nbsp;истерике, но&nbsp;ответ не&nbsp;замедлил себя ждать&#133;. Но&nbsp;этот ответ был только на&nbsp;первый вопрос.</P>
+<P ALIGN="JUSTIFY">Задняя двухстворчатая дверь жилого фургона медленно открылась, и&nbsp;на&nbsp;фоне белого снега появился тот самый новый враг или друг?</P>
+<P ALIGN="JUSTIFY">Он&nbsp;зашёл&nbsp;и&nbsp;сел напротив&nbsp;&#151; как хозяин, вся его поза говорила об&nbsp;этом. Внешний вид и&nbsp;пропорции тела отличались от&nbsp;первоначальных, тех, что дала природа, но&nbsp;узнать тех млекопитающих, из&nbsp;которых они появились, было несложно.</P>
+<P ALIGN="JUSTIFY">&#151; Разум подарок или наказание?&nbsp;&#151; сказал гость, он&nbsp;чуть наклонил голову и&nbsp;я&nbsp;понял, не&nbsp;знаю, откуда, хотя интонация не&nbsp;сменилась, что это был вопрос&nbsp;&#151; Для начала необычные факты. Резкий, до&nbsp;сих пор необъясненный переход от&nbsp;обезьян до&nbsp;ваших первых разумных предков, довольно сильно друг от&nbsp;друга отличающихся, также как и&nbsp;мы&nbsp;отличаемся от&nbsp;своих прародителей. Хотя наша эволюция, <nobr>из-за</nobr> влияния Зоны, прошла в&nbsp;тысячи раз быстрее, мы&nbsp;не&nbsp;смогли отследить этого превращения. Сколько обезьяны живут вместе с&nbsp;человеком? Хоть у&nbsp;одной проснулся разум?</P>
+<P ALIGN="JUSTIFY">Далее, были созданы сразу две разумные ветки, имеющие схожие черты, но&nbsp;в&nbsp;тоже время обладающие различным потенциалом силы и&nbsp;агрессивности. Ваши конкуренты были&nbsp;&#151; неандертальцы, наши&nbsp;&#151; крысы. На&nbsp;первый взгляд, что и&nbsp;у&nbsp;вас, что и&nbsp;у&nbsp;нас противник был более перспективным, но&nbsp;итог оказался не&nbsp;в&nbsp;их&nbsp;пользу.</P>
+<P ALIGN="JUSTIFY">Можно найти больше доказательств, но&nbsp;сейчас не&nbsp;время для дискуссий, смысл один&nbsp;&#151; <nobr>кто-то</nobr> даёт&nbsp;Разум, причём&nbsp;действуя по&nbsp;одной схеме. Кто и&nbsp;зачем его даёт?&nbsp;Для начала, может быть, для того, что&nbsp;бы мы&nbsp;сменили вас, как вы&nbsp;сменили динозавров?&#133;</P>
+<P ALIGN="JUSTIFY">Наступила пауза, последовала очередная смена позы, я&nbsp;чувствовал, что говорящий смущён.</P>
+<P ALIGN="JUSTIFY">&#151; Никак не&nbsp;могу начать говорить о&nbsp;главном, да&nbsp;и&nbsp;тебе, как я&nbsp;чувствую не&nbsp;по&nbsp;себе. Представляю, как сидит какой-нибудь теранозавр, пьёт&nbsp;чаёк,&nbsp;размышляет о&nbsp;смысле жизни, и&nbsp;тут с&nbsp;ветки спрыгивает обезьяна, хватает чайную ложку со&nbsp;стола,&nbsp;&#151; ложка, сама по&nbsp;себе, взмыла в&nbsp;воздух,&nbsp;&#151; и&nbsp;как даст по&nbsp;лбу динозавру!</P>
+<P ALIGN="JUSTIFY">От&nbsp;недоброго предчувствия я&nbsp;зажмурил глаза, удара не&nbsp;последовало, открыв один глаз, я&nbsp;увидел как он,&nbsp;поднеся руку ко&nbsp;рту, задумчиво вертит ложку, эта поза обозначала улыбку, я&nbsp;вздрогнул, ну&nbsp;и&nbsp;шутка, блин.</P>
+<P ALIGN="JUSTIFY">&#151; Вернёмся к&nbsp;главному, мы&nbsp;не&nbsp;хотим драться с&nbsp;вами, не&nbsp;<nobr>из-за</nobr> того, что можем проиграть, а&nbsp;потому что на&nbsp;смену нам могут прийти другие, после того как наше время закончится. Нужен договор, мы&nbsp;найдём&nbsp;чему научить друг друга, а&nbsp;самое главное: попробуем найти того, кто даёт&nbsp;разум, и&nbsp;зачем нужна эта страшная игра&nbsp;&#151; игра со&nbsp;сменой Разума на&nbsp;планете.</P>
+<P ALIGN="JUSTIFY">И&nbsp;ещё,&nbsp;Мы&nbsp;не&nbsp;вызываем страха, на&nbsp;первый взгляд безобидны, дети смотрят мультики где мы&nbsp;добрые и&nbsp;хорошие, таким образом легче пройдёт&nbsp;адаптация.</P>
+<P ALIGN="JUSTIFY">Он&nbsp;протянул свою руку, а&nbsp;я&nbsp;протянул ему свою.</P>
+<P ALIGN="JUSTIFY"></P>
+
+</I><P ALIGN="JUSTIFY">Очнувшись, и&nbsp;оглядев класс, я&nbsp;произнёс:</P><DIR>
+
+<P ALIGN="JUSTIFY">&#151; Теперь и&nbsp;Вы&nbsp;стали участниками этого важнейшего события, а&nbsp;к&nbsp;чему это привело, преподавать буду уже ни&nbsp;я.</P>
+<P ALIGN="JUSTIFY">Прозвенел звонок и&nbsp;шумная ватага выбежала в&nbsp;коридор.</P></DIR>
+
+<I><P ALIGN="JUSTIFY">&#151;</I>Учитель,&nbsp;&#151; вздрогнув, я&nbsp;обернулся, за&nbsp;спиной никого не&nbsp;было, вот чёрт,&nbsp;совсем старый стал, наверное, так никогда и&nbsp;не&nbsp;привыкну к&nbsp;этому, переведя взгляд вниз я&nbsp;увидел перед собой<B> мышонка</B> ,&nbsp;с&nbsp;портфелем, в&nbsp;шортах и&nbsp;футболке, а&nbsp;поза его выражала&nbsp;&#151; смущение&#133;</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.08" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.44 (34)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Dayver_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

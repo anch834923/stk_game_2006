@@ -1,0 +1,403 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Чудес не бывает… - Столяров Иван</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_251.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Чудес не бывает…</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Столяров Иван</b><br>Дата: <b>22/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>915</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>8</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P>"...Мы еще раз 
+обращаем Ваше внимание на участившиеся случаи заболевания мутировавшим 
+энцефалитом. Сталкеры, будьте предельно внимательны при ходках в Зону! Это 
+заболевание смертельно! Оно передается при любых контактах с зараженным 
+организмом! При появлении ненормально слабого сокращения мышц немедленно 
+устраните все контакты с любыми живыми организмами, вас уже ничто не спасет, но 
+вы хотя бы подумайте о других. Повторяем еще раз. Ни в коем случае не пытайтесь 
+выходить из Зоны и обращаться к кому-либо за помощью. Эта болезнь очень заразна! 
+Если же эти симптомы обнаружились дома или вне Зоны, то немедленно уходите в 
+Зону. А сейчас лучшая ..."</P>
+<P>Да... 
+Подпольное сталкерское радио всегда приносит хорошие новости... Как раз этим 
+утром я и почувствовал то самое плохое сокращение мышц, еле поднялся с постели. 
+Так вот что чувствуют паралитики... Я и до этого кое-что слышал о 
+вирусе-мутанте, о неизлечимом смертельном заболевании, но одно дело слухи, а 
+другое - испытать его действие на себе. Сталкеры обычно смиряются со смертью, 
+она постоянно бродит где-то рядом, и внужный момент протягивает свою костлявую 
+руку. Я тоже давно с этим смирился, но теперь с каждой секундой мне все больше 
+хотелось жить. А вирус действительно был довольно интересен мне, как бывшему 
+студенту факультета естественных наук. При проникновении в организм он 
+скапливался сначала вокруг нервных волокон в месте проникновения. По всей 
+видимости, он использовал для поддержания своей маленькой жизни электрические 
+импульсы, а точнее разность потенциалов между окружающими нерв тканями и сами 
+нервом. Но все бы ничего, если бы не было одной поганой особенности – дальше, к 
+приемнику сигналов, например к мышцам, он шел значительно ослабленный, так как 
+вирус забирал большую часть энергии себе. Поэтому зараженный им человек, или 
+животное первое время ничего и не чувствовали кроме слабости. Но затем вирус 
+захватывал все больше пространства, и в конце-концов все до единого нерва в 
+организме были покрыты им. У заболевшего же сначала к слабости прибавлялся 
+паралич конечностей, а затем больной становился растением, так как от всех 
+отделов мозга до перифирии не доходил ни один сигнал. Через некоторое время 
+происходила либо паралич сердечной мышцы, либо остановка дыхания, либо и то, и 
+другое сразу. И все. Однажды пытались вылечить какого-то бедолагу от этого 
+вируса подавая на тело электрический ток в расчете на то, что вирус не выдержит 
+высокого напряжения и погибнет. Погиб, но вместе с больным. Мне же становиться 
+растением не хотелось. Но все-таки надо было уходить. В Зону.</P>
+<P>Я одел свое 
+обычное снаряжение - прорезиненный летний камуфляж, ботинки типа "Спецназ" и 
+перчатки, в точности повторяющие строение моей кисти. Их мне делал на заказ один 
+умелец. Стрелять в них было очень удобно. Где же они будут завтра? Больше я с 
+собой ничего не взял. Зачем идущему умирать в Зону сталкеру оружие, боеприпасы, 
+детекторы?</P>
+<P>До Зоны я 
+добрался легко - через лесок, потом по заросшему гигантской травой полю, но тут 
+меня заметила охрана периметра.</P>
+<P>“Сталкер! Ты нарушил закон. Положи оружие 
+на землю, и медленно выходи на открытое пространство, в противном случае мы откроем огонь!” </P>
+<P>-“Они никогда 
+не шутят!” </P>
+<P>Это сказал мне 
+мой Учитель, когда мы в первый раз проникали сюда.</P>
+<P>“Повторяю! 
+Положи оружие на землю, и медленно выходи на открытое пространство, на счет три 
+открываем огонь!” </P>
+<P>Не шутили они 
+и в этот ...</P>
+<P>“Раз!” – 
+договорили за меня </P>
+<P>Ведь если 
+выйду, меня посадят, не станут разбираться что к чему.</P>
+<P>“Два! У тебя 
+нет выбора!”</P>
+<P>“Да все, все! 
+Выхожу я!” -у меня действительно не было выбора. </P>
+<P>“Я безоружен, 
+не стреляйте! А лучше – отпустите меня!” – какая чушь, кто же меня отпустит. 
+Ведь я – опасный преступник, сталкер. Но шанс у меня был. Даже не шанс, а 
+козырная карта, возможно - джокер.</P>
+<P>“Ребята! Я 
+болен мутоэнцефалитом, эта болезнь очень заразна! Вы же наверняка слышали о 
+ней!”</P>
+<P>“Раз ты 
+больной, нахера в Зону поперся?”</P>
+<P>“Я умирать 
+сюда шел, чтобы других не заразить. Я вам даже подходить ко мне не советую”</P>
+<P>“Ладно, давай 
+вали в свою Зону. Только ты оттуда больше не выходи – подстрелим!”</P>
+<P>И я пошел. 
+Пересек границу Зоны, прошел метров четыреста. Вдруг ноги ослабли и я мешком 
+свалился в пожухлую траву. Началось... Вирус все это время не дремал, он 
+подтачивал мое здоровье как упрямый червячок, миллиметр за миллиметром 
+подбираясь к своей цели. Все же я нашел в себе силы подняться. Может быть у меня 
+была сильная воля может что то еще помогло. Но я уже плелся дальше. Справа от 
+меня раздался еле слышный шорох, я повернул голову и увидел как что-то мелькнуло 
+в траве. Но мне было совершенно все равно.</P>
+<P>Как это было 
+ни странно, но аномалий на моем пути совсем не встречались, как будто Зона, 
+провожая в последний путь, не хотела меня тревожить. Примерно через полчаса 
+справа от меня показался небольшая деревенька, с домами, напомнившими мне 
+бабушкин хуторок, где я жил все свое детство – белые мазанки с соломенными 
+крышами. Во дворе, возле калитки росла груша, на которую я любил взбираться. Но 
+соломенные крыши и яркий белый цвет дорисовывал мой мозг. На самом же деле все 
+дома были грязно-серого цвета, соломы давным давно не было, она сгнила в первый 
+же год после взрыва. </P>
+<P>Вдруг слева 
+снова повторился тихий шорох, точно такой же, как тот, когда я зашел в Зону. Я 
+уже осторожней повернулся и увидел два любопытных глаза. Они несомненно 
+принадлежали крындуку. Эти смешные зверьки, похожие на бурундуков, но с мышиными 
+лапками и мышиным хвостиком, были абсолютно неопасны, я часто подкармливал их 
+хлебом и они почти всегда провожали меня до границы Зоны. Но теперь, пока я 
+стоял, он неторопливо пошел ко мне, чего крындук никогда не делал – надо было 
+подходить к нему. Если же не подходили, то он просто напросто обженно убегал в 
+траву. Странно. Может быть это новая разновидность? Но тут случилось совсем 
+необычное – он подошел ко мне и начал проситься на руки, как котенок, которому 
+захотелось немного ласки. Я начал тянуть к нему руки, но тут вспомнил, что я 
+опасен для всего живого.</P>
+<P>“Дружок, ты 
+иди домой. Со мной идти нельзя, я очень сильно болею, и если я возьму тебя на 
+руки, то ты тоже заболеешь и умрешь” – я говорил с ним как с человеком, просто 
+потому, что мне больше не с кем было поговорить. И мне казалось, что он 
+понимает, настолько умными были у него глаза. Но он не уходил. И я направился к 
+одному из домов – умереть там будет не так одиноко, да и зверек шел со мной. Во 
+дворе дома я увидел первую аномалию за весь мой поход в Зону – это была Плешь. 
+Кто-то заговорил во мне: “Давай прыгай с разбегу прямо в нее, и все будет разом 
+кончено”. Это была прекрасная мысль, но я сразу отмел ее в сторону – сталкер 
+никогда не покончит с собой, какой бы безвыходной ни была ситуация. И я, отметив 
+границу плеши гайками, пошел ко входу в домик. Зайдя в него, я обнаружил, что 
+уцелели даже обои, покрывала и ковры на полу, если что-то похожее на мешковину с 
+выцветшим рисунком можно назвать ковром. Повернувшись, я еще раз удивился - 
+крындук зашел сюда вместе со мной. </P>
+<P>Я подошел к 
+кровати, и сел на нее. Прогнившая кровать не выдержала веса моего тела и я 
+провалился на пол. Сил подняться у меня уже не было. </P>
+<P>“Ну вот и твоя 
+судьба – помереть в Зоне на гнилой кровати, в чужом, давно заброшенном доме” – 
+почему-то подумалось мне. </P>
+<P>Я уже плохо 
+различал предметы в комнате, несмотря на то, что сейчас было около двендцати часов дня. Наверное этот вирус уже 
+добрался и до глазных нервов. Неожиданно на меня что-то запрыгнуло. Проведя 
+рукой в том месте, я почувствовал что-то пушистое и теплое. Да ведь это мой 
+зверек! Жаль его, теперь он тоже погибнет. Я еще раз провел по его мягкой шерсти 
+рукой. Возникло ощущение, что я глажу синтетическую наэлектризованную одежду – 
+руки слегка покалывало, и маленькие искорки щекотали мне ладонь. Мне почему-то 
+стало легче. Зверек тихонько сопел, и я начал засыпать в последний раз в своей 
+жизни……</P>
+<P>……я открыл 
+глаза. И увидев комнату, сразу 
+вспомнил, зачем сюда пришел. Я был еще жив. И слабости не было, была только 
+ясная голова, какая бывает после хорошего сна на лесной поляне. Я попытался 
+встать, и с удивлением обнаружил, что ноги слушаются меня. На пол что-то упало. 
+Я наклонился и увидел мертвого крындука. Да ведь это тот зверек, который шел за 
+мной от самой границы! И тут я понял. Этот зверек спас мне жизнь. Он пожертвовал 
+собой. По видимому, почувствовав меня, как только я вошел в Зону, он сразу же 
+пошел ко мне. И это он дал мне тот самый заряд, которого хватило, чтобы убить 
+вирус, но не затронуть мои клетки. Но это же убило и его – он отдал, весь запас 
+электричества, что у него был, и умер, подарив жизнь другому.</P>
+<P>Когда я 
+засыпал его могилу, уже было около десяти утра. Мне нужно было выбраться отсюда 
+любой ценой, добраться до людей и рассказать им о том, как Зона, породившая 
+вирус-мутант, создала и противоядие от него – этого смешного маленького 
+пушистого и доверчивого зверька, похожего на бурундука, но с мышиными лапками и 
+мышиным хвостиком.</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.71" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.53 (91)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Stolarov.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Умники  - BOPOH</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_124.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Умники </td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>BOPOH</b><br>Дата: <b>07/05/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>909</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>8</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P class="copyr"><b>Вступление</b></P>
+
+<P>Я&nbsp;мчался на&nbsp;максимальной скорости, рискуя не&nbsp;вписаться в&nbsp;следующий поворот, но&nbsp;меня спасало то,&nbsp;что этот маршрут я&nbsp;знаю наизусть, чего нельзя было сказать о&nbsp;двух УАЗах крепко сидящих у&nbsp;меня на&nbsp;хвосте. Они единственные из&nbsp;пяти умудрились прорваться за&nbsp;мной, и&nbsp;теперь не&nbsp;отставали не&nbsp;на&nbsp;метр.</P>
+<P>Я&nbsp;начал снижать скорость&nbsp;&#151; преследователи повторили мой маневр, предвидя <nobr>какой-то</nobr> подвох. Я&nbsp;только этого и&nbsp;ожидал&nbsp;&#151; нырнув во&nbsp;двор старого склада скобяных изделий, взвизгнули шины, я&nbsp;резко затормозил, и,&nbsp;потушив фары, виртуозно вырулил между прогнившими насквозь ящиками на&nbsp;автомобильную свалку. Никто не&nbsp;возьмется сказать&nbsp;&#151; сколько раз спасала она сталкеров от&nbsp;погони. В&nbsp;лунном свете в&nbsp;этих горах металлолома мой москвич отличить от&nbsp;других практически невозможно. Избитый Зоной, он&nbsp;ничем не&nbsp;отличался от&nbsp;множества других,навсегда похороненных здесь&nbsp;&#151; им&nbsp;повезло меньше.</P>
+<P>Я&nbsp;аккуратно пристроился между проржавевшим насквозь бывшим средством передвижения, и&nbsp;грудой железа, в&nbsp;которой угадывался еще один транспорт неизвестного назначения. Заглушив мотор, я&nbsp;перелез на&nbsp;заднее сиденье, и&nbsp;начал вспоминать: с&nbsp;чего&nbsp;же собственно все началось?</P>
+<P>А&nbsp;началось все с&nbsp;первой для моего ученика ловли бесов&#133;</P>
+
+<P class="copyr"><b>Часть 1</b></P>
+
+<P>Тошка глухо икнул и&nbsp;тут&nbsp;же схлопотал по&nbsp;загривку. И&nbsp;сколько мне еще с&nbsp;ним мучиться! Бесы заволновались&nbsp;&#151; <nobr>что-то</nobr> явно шло не&nbsp;так. Я&nbsp;снова основательно перепроверил свою ловушку&nbsp;&#151; вроде&nbsp;бы все нормально. Вот только&#133; Ничего не&nbsp;понимаю! Батареи только недавно перезаряжал ведь! Ну&nbsp;да&nbsp;ладно, не&nbsp;смертельно. Все равно они уже учуяли наживку. Еще пару секунд терпения и&#133;</P>
+<P>&#151; А&nbsp;чтоб тебя!&nbsp;&#151; невольно вскрикнул я,&nbsp;когда Тошка неосторожным движением спугнул всю стайку&nbsp;&#151; Ты&nbsp;что&nbsp;же, назло мне все делаешь что&nbsp;ли!?</P>
+<P>&#151; У&nbsp;меня рука зачесалась&#133;&nbsp;&#151; ответ прозвучал не&nbsp;слишком убедительно, но&nbsp;я&nbsp;тут&nbsp;же почувствовал себя виноватым.</P>
+<P>Зона медленно но&nbsp;верно делает свое дело&nbsp;&#151; я&nbsp;становлюсь нервным и&nbsp;раздражительным. Говорят, она уже многих свела с&nbsp;ума. Но&nbsp;я&nbsp;искренне надеялся, что мне до&nbsp;этого еще далеко. Да,&nbsp;надо отсюда уходить&nbsp;&#151; я&nbsp;и&nbsp;так задержался здесь слишком долго, да&nbsp;и&nbsp;запасы пищи уже на&nbsp;исходе&#133;</P>
+<P>Давно уже надо было уже собрать ловушку, и&nbsp;делать ноги, ведь находиться в&nbsp;одном месте длительное время чревато боком, и&nbsp;почти всегда другими частями тела&#133;</P>
+<P>Вдруг <nobr>из-за</nobr> поворота донесся рев едущего БТРа. Я&nbsp;понял, что слышу его уже некоторое время, но&nbsp;только сейчас обратил на&nbsp;это внимание. Я&nbsp;мысленно выругал себя&nbsp;&#151; нельзя быть столь неосторожным, ведь Зона таких ошибок не&nbsp;прощает.</P>
+<P>Или мне действительно совсем уже плохо, или у&nbsp;военных сорвало крышу. Они&nbsp;же ведь никогда сюда не&nbsp;заезжали, тем более что езда по&nbsp;этому сектору значит неминуемую смерть&nbsp;&#151; аномалии здесь расположены слишком густо. Я&nbsp;со&nbsp;всей доступной скоростью схватил ловушку и&nbsp;нырнул в&nbsp;ближайшие кусты, рискуя нарваться на&nbsp;неприятности с&nbsp;местной флорой. Тошка, повинуясь установленному правилу, рванул за&nbsp;мной. Я&nbsp;шепотом приказал не&nbsp;отставать ни&nbsp;на&nbsp;шаг. Не&nbsp;сбавляя скорости, мы&nbsp;старались двигаться как можно тише, чему мало способствовали тяжелые баллоны с&nbsp;кислородом на&nbsp;наших спинах.</P>
+<P>Отползя от&nbsp;дороги на&nbsp;небольшой пригорок, я&nbsp;достал бинокль и&nbsp;стал сосредоточенно наблюдать за&nbsp;движущейся мимо нас колонной. Первым катился порядком потрепанный, но&nbsp;еще работоспособный БТР, за&nbsp;ним&nbsp;&#151; вполне приличный КАМАЗ, и&nbsp;последней&nbsp;&#151; нива с&nbsp;гордо начертанной на&nbsp;дверях надписью &#171;МВС Украины&#187;. Я&nbsp;стал пристально рассматривать людей, и,&nbsp;заметив характерную скованность движений, стеклянные глаза и&nbsp;отсутствие правой руки у&nbsp;водителя Нивы (оставалось только догадываться&nbsp;&#151; как он&nbsp;переключал передачу?), понял&nbsp;&#151; передо мной уже не&nbsp;люди. Поискав глазами контроллера, я&nbsp;обнаружил его сидящим на&nbsp;заднем сидении нивы&nbsp;&#151; ни&nbsp;дать, ни&nbsp;взять прапорщик, сопровождающий груз боеприпасов к&nbsp;ближайшему блокпосту!</P>
+<P>Меня раздирали сомнения: ничто кроме отсутствия повязки на&nbsp;обрубке руки злосчастного водителя не&nbsp;говорило что случай неизлечимый&#133; Но&nbsp;я&nbsp;в&nbsp;первый раз вижу, чтобы зомби захватили хоть одно транспортное средство! Уму непостижимо! Хотя&#133; Кто знает? Чего только зона нам не&nbsp;преподносила за&nbsp;последние несколько лет! Благополучно переждав колонну, мы&nbsp;с&nbsp;Тошкой посчитали благом убраться отсюда поскорее и&nbsp;донести новость братьям по&nbsp;разуму.</P>
+<P>Дорога назад обошлась без особых происшествий.</P>
+<P>На&nbsp;подходе к&nbsp;ограждению меня начали одолевать неприянтые предчувствия. Я&nbsp;еще раз основательно проверил свое снаряжение и&nbsp;контейнеры с&nbsp;набранным. Вроде все было ОК&#133; Я&nbsp;понял, что <nobr>что-то</nobr> в&nbsp;окружающей местности было не&nbsp;так. Решил проитисьвдоль ограды, и&nbsp;через первые&nbsp;же десять метров наткнулся на&nbsp;скелет, лежащий у&nbsp;&#171;парадного входа&#187;, дыры, про которую знали и&nbsp;пользовались все без исключений вольные сталкеры. Я&nbsp;остановился, и&nbsp;стал методично осматривать окружающее пространство и&nbsp;почти сразу&nbsp;же заметил странное, непривычное мерцание вокруг заграждающей колючей проволки. Несомненно это была открытая сталкерами недавно &#171;призрачная паутина&#187;. Но&nbsp;что она делает так близко к&nbsp;границе?! Меня осенило: вероятно <nobr>кто-то</nobr> головастый из&nbsp;военных, несомненно &#171;любимый&#187; всеми вольными сталкерами наш местный цербер&nbsp;&#151; генерал Кофаскаль (надо&nbsp;же какая фамилия), сообразил приспособить некоторые предметы Зоны к&nbsp;своим потребностям. Этот старый пень уже не&nbsp;первый раз отравлял нам жизнь своими выходками: сначала определил нескольких сталкеров в&nbsp;&#171;санаторий&#187;, потом устроил несколько облав на&nbsp;местный сталкерский бар, потом стал, последовательно следя за&nbsp;неопытными сталкерами, латать дыры в&nbsp;ограде, а&nbsp;теперь вот это&#133;</P>
+<P>Эта паутина ничем не&nbsp;отличается от&nbsp;обычной, кроме некоторых физических свойств. На&nbsp;прочность она была много-много раз проверена -можно использовать вместо тросса для буксировки КАМАЗа! Если в&nbsp;нее попадает живое существо, то&nbsp;выбратся без посторонней помощи практически невозможно. Мне особо нравится ее&nbsp;одна особенность&nbsp;&#151; эта паутина &#171;боится&#187; спиртного&nbsp;&#151; если ее&nbsp;намочить, то&nbsp;она теряет все свои особые своиства. Действует это, пока эта паутина не&nbsp;высохнет, и&nbsp;за&nbsp;это время ее&nbsp;можно порвать, перенести на&nbsp;другое место и&nbsp;тд.&nbsp;Но&nbsp;это своиство пока известно только сталкерам, и&nbsp;его не&nbsp;спешат открывать ни&nbsp;ученым, ни&nbsp;военным.</P>
+<P>Обязательно надо будет предупредить ребят.</P>
+<P>Чтобы относительно безопасно пробратся пришлось перевести целых <nobr>пол-фляги</nobr> спирта. Ну&nbsp;генерал, ну&nbsp;погоди&#133;</P>
+<P>Первым делом я&nbsp;направился в&nbsp;исследовательский центр для проверки. Пройдя привычные процедуры как всегда сопровождаемые пощелкиванием, попискиванием и&nbsp;похрюкиванием различных приборов, я&nbsp;побрел в&nbsp;душевую. Ощутив теплую воду, которая, казалось, смывает почти материальное раздражение, я&nbsp;почувствовал себя намного лучше. Теперь, сдав часть добытого ученым мужам, имел полное право направится в&nbsp;бар.</P>
+<P>Позже я&nbsp;забежал к&nbsp;Деду&nbsp;&#151; местному Эйнштейну, и&nbsp;спросил, не&nbsp;надо&nbsp;ли ему чего-нибудь из&nbsp;принесенного мной скарба. Он&nbsp;взял два бутерброда (конструкции, изрядно смахивающие на&nbsp;чизбургер без начинки, а&nbsp;именно&nbsp;&#151; две цельные полусферы из&nbsp;неизвестного металла удерживаемые на&nbsp;расстоянии пальца друг от&nbsp;друга неведомой силой, и&nbsp;очень сильно нагревающиеся при попытках их&nbsp;разъединить, почему часто используемые как грелки) и&nbsp;несколько страноватых на&nbsp;вид кусочков стекла. Пригласив меня на&nbsp;&#171;чашечку чая&#187; к&nbsp;вечеру, он&nbsp;скрылся в&nbsp;недрах небольшого потрепанного сарайчика гордо именуемого &#171;экспериментальной лабораторией&#187;. Все сталкеры без разговоров отдавали ему редчайшие вещи, взамен получая полезную информацию об&nbsp;их&nbsp;свойствах, и&nbsp;иногда достаточно любопытные изобретения как те&nbsp;же ловушки для Бесов. Давно было доподлинно известно, что маленькие существа, похожие на&nbsp;крыс с&nbsp;ампутированными хвостами на&nbsp;манер ротвейлеров с&nbsp;рогами вместо ушей (за&nbsp;что и&nbsp;прозваны бесами), <nobr>как-то</nobr> странно реагируют на&nbsp;различные электрические приборы. Никто раньше Деда не&nbsp;додумался использовать данную особенность для их&nbsp;ловли. По&nbsp;сути, конструкция ловушки та&nbsp;же, что дети используют, ловя воробьев, но&nbsp;наживка&nbsp;&#151; <nobr>что-то</nobr> с&nbsp;<nobr>чем-то</nobr>. Я,&nbsp;честно говоря, слаб по&nbsp;части электроники, но&nbsp;насколько понял, то&nbsp;данная конструкция излучает <nobr>что-то</nobr> наподобие электромагнитных волн, которые бесов буквально сводят с&nbsp;ума, и&nbsp;они всей кучей стремятся побыстрей набиться в&nbsp;ловушку.</P>
+<P>Сталкерская компания как всегда сидела у&nbsp;углового столика, того, что ближе к&nbsp;черному ходу: военные сталкеров не&nbsp;очень жалуют. Заказав ХОРОШИЙ бокал пивка, я&nbsp;занял место возле моего напарника&nbsp;&#151; Тошка как всегда управился быстрее. Поговорив о&nbsp;том о&nbsp;сем&nbsp;&#151; подождав, когда исчезнут лишние уши, я&nbsp;рассказал коллегам о&nbsp;недавнем происшествии:</P>
+<P>&#151; И&nbsp;скоко&nbsp;ж их&nbsp;было?&nbsp;&#151; Вопрос был задан невысоким кряжистым типом известным как Утес. Хорошо развитая мускулатура, блестящие глаза, небывалая любовь к&nbsp;пиву и&nbsp;осторожность во&nbsp;всем выдавали в&nbsp;нем бывалого сталкера.</P>
+<P>Я&nbsp;наморщил лоб, пытаясь вспомнить подробности:</P>
+<P>&#151; Один зомби вел КАМАЗ, второй&nbsp;&#151; ниву. Да,&nbsp;и&nbsp;нельзя забывать про БТР&nbsp;&#151; там я&nbsp;не&nbsp;знаю, сколько их&nbsp;было. К&nbsp;тому&nbsp;же груз КАМАЗа тоже был накрыт.</P>
+<P>&#151; Остается только предполагать&nbsp;&#151; что&nbsp;же они везли? Или просто захватили технику длясвоих пока неведомых нам целей?&nbsp;&#151; приятный хорошо поставленный голос принадлежал высокому человеку с&nbsp;густой шевелюрой <nobr>а-ля</nobr> Валерий Леонтьев.&nbsp;&#151; И&nbsp;с&nbsp;какого это времени они так поумнели?</P>
+<P>&#151; Последний выброс&nbsp;&#151; я&nbsp;первым выразил посетившую всех одновременно мысль,&nbsp;&#151; был самым странным, после него в&nbsp;зоне началось массовое &#171;поумнение&#187;: даже бесы теперь на&nbsp;ловушки реагируют с&nbsp;огромным запозданием.</P>
+<P>&#151; Сообщить ученым?..&nbsp;&#151; Тошка выглядел не&nbsp;слишком уверено.</P>
+<P>&#151; Да&nbsp;ты&nbsp;что?! От&nbsp;них информации прямая дорога военным, а&nbsp;с&nbsp;ними у&nbsp;нас всегда были нелады.&nbsp;&#151; Утес сгорбился, потянувшись за&nbsp;следующей порцией пива.</P>
+<P><nobr>Да-а</nobr> ситуация действительно была препаскуднейшей&nbsp;&#151; сообщи ученым, так военные снова поднимут проблему о&nbsp;несанкционированном доступе в&nbsp;Зону, в&nbsp;противном случае жертв станет значительно больше и&nbsp;все равно обо всем узнают&#133;</P>
+<P>Я&nbsp;изложил свои невеселые мысли коллегам:</P>
+<P>&#151; Из&nbsp;двух зол выбираю меньшее&nbsp;&#151; надо все рассказать, мож пронесет?</P>
+<P>&#151; Ага, да&nbsp;так, что никто из&nbsp;нас в&nbsp;Зону вообще потом не&nbsp;попадет! И&nbsp;на&nbsp;какие шиши жить потом? В&nbsp;военные пойти, или за&nbsp;учеными лаборатории подметать?&nbsp;&#151; Утес сегодня был явно не&nbsp;в&nbsp;настроении.</P>
+<P>&#151; А&nbsp;теперь я&nbsp;вам еще немножко подпорчу настроение&nbsp;&#151; произнес я&nbsp;и&nbsp;недожидаясь ответа продолжил,&nbsp;&#151; теперь на&nbsp;ограждениях висит &#171;призрачная паутина&#187;&#133;</P>
+<P>&#151; Это шутка?</P>
+<P>&#151; Нет.</P>
+<P>&#151; Я&nbsp;этого генерала голыми руками задушу!!!</P>
+<P>&#151; Ладно, ладно, утро вечера мудренее.&nbsp;&#151; Я&nbsp;снова первым прервал затянувшееся было молчание,&nbsp;&#151; поговорим завтра утром, я&nbsp;предпочитаю спорить на&nbsp;свежую голову!</P>
+<P>Выбрался из&nbsp;бара, пребывая в&nbsp;крайне паскудном расположении духа. Ну&nbsp;и&nbsp;история! До&nbsp;чего&nbsp;же обидно иногда бывает&nbsp;&#151; по&nbsp;нескольку суток за&nbsp;гроши потом обливаешся, а&nbsp;смотрят как на&nbsp;отбросы общества.</P>
+<P>Свежий прохладный воздух слегка прочистил мне мозги. &#171;Да&nbsp;ладно!&#187;&nbsp;&#151; думаю,&nbsp;&#151; &#171;не&nbsp;такое переживал&nbsp;&#151; справимся!&#187;. Мне сразу&nbsp;же полегчало, и&nbsp;я&nbsp;решил прогулятся по&nbsp;опустевшим улицам спящего городка.</P>
+<P>Вяло перебирая ногами я&nbsp;стал размышлять: впервые за&nbsp;всю историю Зоны существа оттуда поумнели настолько, чтобы пользоватся нашими транспортными средствами. Вполне возможно появление какого-нибудь &#171;умника&#187;, способного научить контроллеров водить машины. И&nbsp;тут меня осенило: ведь можно&nbsp;же проследить за&nbsp;одним из&nbsp;украденных транспортных средств. Для пяти опытных сталкеров в&nbsp;случае неприятностей смыться из&nbsp;Зоны не&nbsp;составит труда&#133; надеюсь&#133; Я&nbsp;твердо решил поделиться своей идеей завтра утром.</P>
+<P>Холодный голубоватый лунный свет творил тени с&nbsp;самыми причудливыми очертаниями: вот неудавшийся сталкер бежит сломя голову от&nbsp;&#171;стального зубра&#187;, а&nbsp;вот другой, прихрамывая, в&nbsp;очередной возвращается из&nbsp;Зоны, таща на&nbsp;плече скарб, купленный за&nbsp;жизнь, а&nbsp;вот и&nbsp;я&nbsp;&#151; запутавшийся в&nbsp;&#171;призрачной паутине&#187; дожидаюсь смер&#133; Чего это я&nbsp;вдруг?! Что за&nbsp;мысли? <nobr>Та-ак</nobr>&nbsp;&#151; пора на&nbsp;отдых. Так и&nbsp;с&nbsp;ума сойти недолго!</P>
+<P>Внезапно вспомнив о&nbsp;приглашении Деда, я&nbsp;вернулся в&nbsp;бар, и&nbsp;прихватил с&nbsp;собой пару бутылочек пива. Краем глаза глянул на&nbsp;угловой столик&nbsp;&#151; за&nbsp;ним уже было пусто. Я&nbsp;вышел из&nbsp;бара и&nbsp;бодро потопал к&nbsp;&#171;экспериментальной лаборатории&#187;.</P>
+<P>Со&nbsp;стороны только с&nbsp;огромной натяжкой данное здание можно было назвать жилым. Слегка накоренившиеся стены вопреки всем ожиданиям и&nbsp;не&nbsp;собирались падать, <nobr>как-будто</nobr> еще не&nbsp;решили в&nbsp;какую сторону. При звездном освещении лаборатория больше смахивала на&nbsp;&#171;домик на&nbsp;курьих ножках&#187; столь часто упоминающийся в&nbsp;украинских народных сказках.</P>
+<P>Я&nbsp;нажал на&nbsp;кнопку звонка, дверь почти бесшумно отворилась, и&nbsp;я&nbsp;погрузился в&nbsp;гостеприимный мрак скромного, но&nbsp;уютного жилища.</P>
+<P>&#151; Располагайся, и&nbsp;чувствуй себя как дома&nbsp;&#151; сказал Дед и&nbsp;скрылся в&nbsp;соседней комнате. Через минутку он&nbsp;вышел оттуда неся сушеную рыбу. Я&nbsp;поудобней устроился в&nbsp;любезно предоставленном мне удобном мягком кресле.</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.71" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.53 (104)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Voron_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Там, за горизонтом - Анатолий Кириенко ака Erty</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_227.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Там, за горизонтом</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Анатолий Кириенко ака Erty</b><br>Дата: <b>04/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>459</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P ALIGN="RIGHT">“…Пока противник рисует карты,<br>
+мы меняем ландшафт. Причем вручную…<br>
+Потом противник теряется на незнакомой<br>
+местности и проигрывает. В этом <br>
+стратегия нашей победы. Ее тактика…”<br>
+ДМБ</P>
+
+<P>…Было это пару лет назад. Сидели мы как-то, с такими же как и я тогда, сталкерами, и разговор у нас зашел, как всегда, за Зону. И ляпнул я тогда, что пойду, на спор, в Зону без оружия и с хабаром вернусь. Тут все сразу загорелись, еще выпили, и порешили, значит, что если вернусь я не с пустыми руками, то они меня целый год угощать будут, а если нет, то я их, правда только месяц. А дабы я не смухлевал, прицепили они ко мне ученого, который тоже все на Зону просился. Да зачем мне жульничать то, мужик сказал – мужик сделал. Но, на том и по рукам ударили.</P>
+<P>Назавтра, с утреца, собрались мы все возле КПП. Меня, правда, отговаривать стали, но обламываться - это не по нашему. Комендант то, наш был, тоже вчера с нами сидел, так что через заслон без проблем прошли. У очкарика только блокнот с ручкой, да у меня лишь все проверенное и необходимое.</P>
+<P>Прошли мы, значит, где – то с полчаса, как на нас зомби вышел. Ученый сразу его зарисовывать начал, а я только хмыкнул – что на него смотреть. Зомби как зомби – одежда драная, глаза стеклянные. Ходячий труп вобщем. </P>
+<P>Зомби то, как нас заприметил, руки раскинул и замычал радостно, на нас надвигаясь. Ну, я свою губную гармошку достал и “Августина” ему зашпарил. Тот повеселел сразу. Стал в так мычать что – то и вприсядку пританцовывать. “Красавец. Ай красавец.” - а ему только того и надо было - еще пуще разошелся. А потом приказал, – “А ну веди нас к своему хозяину.”</P>
+<P>Зомби, как и положено, развернулся, и повел нас, приплясывая, к опушке, где за холмом другие околачивались. А в центре, значит, их контролер сидел.</P>
+<P>Завидев нас, он на разгулявшегося зомби как глянул, что тто притих сразу и среди своих затесался. А контролер на нас глаза выпучил и зашипел. Но и мы не лыком шиты. Снял я сапог, и как заехал окованным каблуком ему по лбу, что он наземь и повалился. Потом встал, такой погрустневший весь и молвил нечеловеческим голосом: “Граждане сталкеры, коцайте талончики. Прокоцанный талончик приводит к отмазке, напрокоцанный – к гнилому базару.”</P>
+<P>Ну, тут я, чтоб его попустило малеха, кулаком ему промеж глаз зарядил. Но он поскучнел еще шибче, глазами завращал и мычать начал: “Все на субботник. Все на коммунистический субботник.” А потом в лес пошуршал. </P>
+<P>Зомби, без него оставшись, растерялись как – то, и тоже кто куда разбредаться стали. Ну я, чтоб они не сильно расстраивались, еще на гармошке им сыграл. </P>
+<P>Что тут началось! Какие они кренделя выделывать начали! Ну прямо ансамбль песни и пляски.</P>
+<P>Ученый, что до этого все за спиной прятался, выскочил и стал с зомби кусочки одежды собирать, да в карманы к себе складывать. “Уникальный,” - говорит, - “материал для исследований. Я на нем такую диссертацию напишу, что сразу профессором стану.”</P>
+<P>Потом оставили мы, значит, артистов и дальше пошли. И все бы ничего, да только умник, очкастая его душонка, под землю провалился. И как только умудрился? Упал и орет со страху как недорезанный. Ну я ему сказал, чтоб кричал потише, а то еще какая гадость на звук прибежит. Он притих, а потом снова как заорет: “Карлики! Карлики! Выручай скорее!”. Тут пришлось мне уже спускаться.</P>
+<P>Внизу, когда глаза к темноте попривыкли, огляделся я. И точно – стоит один, а морда, главное, толстая такая. Стоит, значит, и ножи на нас направил. И где взял только? Но нападать пока боится, чувствует гад, что не на того нарвался. Они, карлика, хоть с виду и невзрачные, но мозгами уж больно хорошо шурупают – вещи там всякие двигать умеют. Вот и теперь, стоит он, ножами вокруг нас вертит.</P>
+<P>Ну, я сразу не растерялся, и про Черного Сталкера стал ему рассказывать. Как понравилась ему одна девушка и загадала она ему, чтобы он принес из Зоны такое, чего больше ни у кого нету. И пошел тогда Черный Сталкер, и стал искать, сам не зная что и всех, кто ему встречался, об незнамо чем спрашивать. Но не смог ответить ему никто, и осерчал тогда Черный Сталкер сильно. Так осерчал, что стал всем морды бить. Так что монстры потом не то что ходить, но и лежать не могли. А особенно ему карлики понравились – потому что мягкие. И судя по тому, что не вернулся до сих пор Черный Сталкер, ходит он еще где – то по Зоне, подарок ищет.</P>
+<P>Карлик послушал, послушал, и, вот что значит, мозговитая тварь, страх почувствовал. Затряслись тут у него поджилки мелко – мелко и убрался он подобру-поздорову.</P>
+<P>Ученый только стоит, глазами хлопает. А потом как затараторит, что у карликов, мол, сильно развита высшая нервная деятельность и их обязательно изучать надо, чтобы потом в полезных целях применять. Ну, там на стойке или лесозаготовках. Еле его потом наверх вытолкал – он все рвался вслед за карликом побежать.</P>
+<P>Прошли мы еще немного и начались уж места поопаснее. Ну, я свой манок достал, с которым еще прадед на утку ходил, и что есть мочи дунул. Ученый за уши схватился, к земле пригнулся – забыл я его предупредить, что счас будет. Мясорубки от звука разряжаться начали. А вокруг их много было, тут они все разом и грянули, так что аж деревья гнуться начали.</P>
+<P>Ученый, когда оклемался, все стал у меня расспрашивать что это у меня такое и почему такие высокочастотные колебания создает. Ну, я пообещал ему показать как это самому делать и он успокоился.</P>
+<P>Много чего мы потом насобирали, так что когда вернулись гулял я целый год беспробудно, а ученый шибко знаменитым стал, его даже по телику показывали.</P>
+<P>Что смеешься? Не веришь что-ль?</P>
+<P>А ты мне еще два раза по столько же поставь, и я тебе расскажу, как с голыми руками на ежа ходил. Как на какого? Ну ты и деревня…, хоть и из города. На Зоновского конечно…</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="31.08" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.44 (18)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Kirienko_03.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

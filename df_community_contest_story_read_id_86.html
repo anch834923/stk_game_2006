@@ -1,0 +1,331 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Осколок в черепе - Снежков Максим</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_86.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Осколок в черепе</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Снежков Максим</b><br>Дата: <b>26/03/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>647</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>7</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p>&nbsp;Шел первый час наступившей ночи, шел проливной дождь и&nbsp;под этим дождем шел пьяный Виктор. (Удивительно, сколько происходит движения в&nbsp;один миг) Шел он&nbsp;на&nbsp;удивление прямо, лишь иногда его ноги делали неточные движения, но&nbsp;к&nbsp;падению это не&nbsp;приводило. На&nbsp;его плече болтался автомат, вместо капроновой лямки на&nbsp;котором, была <nobr>почему-то</nobr> суконная веревка. Он&nbsp;вдруг остановился, недолго думая его рука расстегнула молнию на&nbsp;брюках, извлекая из&nbsp;них, запутавшееся в&nbsp;исподнем&nbsp;&#151; &#171;хозяйство&#187;, и&nbsp;подперев тело ближайшим дубом, Виктор принялся отливать, высвистывая при этом <nobr>какую-то</nobr> нехитрую мелодию. Шел он&nbsp;куда глядели глаза.</p>
+
+<p class="copyr"><i>***</i></p>
+
+<p> Виктор, надо отметить, всегда напивался в&nbsp;грозу и&nbsp;всегда &#171;шел&#187;, потому как думал, что какая-нибудь из&nbsp;них, в&nbsp;конце концов, поставит жирную точку в&nbsp;его нелегкой и&nbsp;странной жизни. В&nbsp;прочем так думал не&nbsp;он&nbsp;один, а&nbsp;еще многие его знакомые и&nbsp;друзья, которые старались как можно реже принимать участие в&nbsp;пьянках, в&nbsp;которых принимал участие Виктор. И&nbsp;особенно отрешение достигало своего апогея, в&nbsp;плохую погоду, точнее в&nbsp;&#171;молниеносную&#187; грозу или бурю, которые в&nbsp;Зоне с&nbsp;недавних пор, были далеко не&nbsp;редкостью! </p>
+
+<p> Причиной всему этому служила, как это было ни&nbsp;странно и&nbsp;не&nbsp;иронично&nbsp;&#151; голова Виктора, в&nbsp;которую год тому назад, вонзился осколок странного вещества, посланный ему во&nbsp;время ужасной грозы прямиком с&nbsp;разбушевавшихся небес. Но&nbsp;ничего божественного, вопреки расползшимся тогда слухам и&nbsp;сплетням, дотошным ученым обнаружить не&nbsp;удалось, наоборот они объяснили все со&nbsp;своей научной и&nbsp;довольно скучной точки зрения;</p>
+
+<p>&#151; залетный метеорит, не&nbsp;до&nbsp;конца сгоревший в&nbsp;атмосфере Земли, выбрал точкой своего инопланетного приземления, ни&nbsp;что иное как голову Малокровкина Виктора Андреевича, при этом войдя в&nbsp;нее ровно на&nbsp;половину!</p>
+
+<p> Единственный факт, который ученые тогда не&nbsp;смогли положить в&nbsp;свою 
+  копилку &#171;онаученых чудес&#187;, так это то,&nbsp;что Виктор <nobr>каким-то</nobr> 
+  чудом остался жив, ибо мозг <i>не&nbsp;совсем</i> был задет! </p>
+
+<p> Была попытка извлечь осколок хирургическим путем, но&nbsp;дитя прогресса&nbsp;&#151; компьютер, показал, что осколок тревожить категорически не&nbsp;рекомендуется, так как была велика вероятность летального исхода его носителя. Подумали и&nbsp;не&nbsp;стали тревожить. Самый очкастый, наверно самый умный ученый, тогда похлопал Виктора по&nbsp;плечу и&nbsp;назвав его счастливчиком, выписал долой из&nbsp;городской больницы. Покинув ее&nbsp;с&nbsp;потяжелевшей ровно на&nbsp;семь грамм головой, Виктор снова вернулся в&nbsp;Зону, где с&nbsp;ним спустя пол года и&nbsp;стали твориться необъяснимые и&nbsp;мистические события&#133; </p>
+
+<p> Частые головные боли, порой приводили Виктора в&nbsp;состояние исступления, инопланетный осколок казалось, пульсировал у&nbsp;него в&nbsp;голове подобно второму сердцу! Его хотелось вырвать из&nbsp;головы, как хочется порой вырвать постоянно ноющий зуб, но&nbsp;оттого, что это было сделать невозможно, он&nbsp;впадал в&nbsp;длительные депрессии и&nbsp;долго ни&nbsp;с&nbsp;кем не&nbsp;разговаривал. Позже он&nbsp;стал замечать, что боли возникали точно перед непогодой и&nbsp;чем сильнее была эта боль, тем пуще была непогода.</p>
+
+<p> Друзья Виктора, да&nbsp;и&nbsp;он&nbsp;сам, не&nbsp;придавали сперва этому большого значения, думая, что инородный предмет в&nbsp;его голове, просто реагирует на&nbsp;метеоусловия как антенна, но&nbsp;они ошибались&#133; Грозы стали следовать за&nbsp;Малокровкиным, словно голодный волк за&nbsp;раненой добычей, и&nbsp;в&nbsp;самый их&nbsp;разгар, в&nbsp;голове у&nbsp;него творилось <nobr>что-то</nobr> невообразимое, <nobr>что-то</nobr> загадочное и&nbsp;ужасное! Порой он&nbsp;слышал <nobr>какие-то</nobr> зловещие голоса, шепчущие и&nbsp;кричащие на&nbsp;различных языках, не&nbsp;совсем понятных Виктору, точнее совсем непонятных. Иногда он&nbsp;неожиданно для всех, отвечал на&nbsp;скрытые мысли своих товарищей, что повергало последних в&nbsp;недоумение, а&nbsp;порой он&nbsp;видел странные сны, которые потом происходили с&nbsp;ним или с&nbsp;<nobr>кем-нибудь</nobr> на&nbsp;яву&#133; Его голова напоминала ему самому&nbsp;&#151; <nobr>что-то</nobr> на&nbsp;подобии приемника, который тщетно пытался настроиться на&nbsp;какую-нибудь волну.</p>
+
+<p> Как&nbsp;бы то&nbsp;ни&nbsp;было, но&nbsp;Виктора стали побаиваться и&nbsp;откровенно 
+  избегать, что вводило его в&nbsp;еще большую и&nbsp;длительную меланхолию. Про 
+  него стали слагать слухи и&nbsp;легенды, в&nbsp;которых <nobr>кто-то</nobr> 
+  прозвал его &#171;Приносящим грозу&#187;, что вполне соответствовало истине, 
+  ведь там где был он,&nbsp;всегда вскоре зарождалась и&nbsp;<i>она</i>! </p>
+
+<p> Временами, он&nbsp;брал в&nbsp;руку пистолет и&nbsp;подносил его к&nbsp;виску, но&nbsp;<nobr>что-то</nobr> его все время останавливало&#133; Этим &#171;<nobr>что-то&#187;</nobr>, скорее всего, было слабое желание жить! </p>
+
+<p>Он&nbsp;постепенно стал ощущать, что инопланетный осколок в&nbsp;его голове, становился некой частью его организма, <nobr>чем-то</nobr> вроде продолжения мозга&#133; Осознавал он&nbsp;это отчетливей, когда напивался в&nbsp;стельку, дабы немного унять мучающую боль, и&nbsp;в&nbsp;тот&nbsp;же миг, бушующая непогода постепенно сменяла гнев на&nbsp;милость! В&nbsp;эти моменты относительного освобождения, Виктор направлял все свои мысли на&nbsp;поиск некой связи, между осколком, грозой и&nbsp;ее&nbsp;паро-нормальными явлениями. В&nbsp;другое&nbsp;же время, когда боль прогрессировала, все мысли были заняты ей&nbsp;и&nbsp;только ей.&nbsp;И&nbsp;это было невыносимо! </p>
+<p class="copyr"><i>***</i></p>
+
+<p> Закончив свое &#171;мокрое дело&#187; и&nbsp;засунув вынутое обратно, сталкер продолжил свой путь, из&nbsp;пункта &#171;Б&#187;&nbsp;в&nbsp;пункт &#171;А&#187;,&nbsp;при этом стараясь не&nbsp;сбиться с&nbsp;него и&nbsp;не&nbsp;угодить в&nbsp;другие, менее знакомые и&nbsp;небезопасные &#171;пункты&#187; Зоны. Хотя сейчас ему было все равно, он&nbsp;сейчас был свободен от&nbsp;пульсирующей боли, он&nbsp;был пьян&#133;</p>
+
+<p> Чавкая резиновыми сапогами, он&nbsp;брел по&nbsp;лесу, слушая звуки успокаивающейся стихии и&nbsp;голоса, которые не&nbsp;отпускали его голову, даже когда в&nbsp;ней играл крепкий хмель, но&nbsp;это Виктор научился использовать себе на&nbsp;пользу. Когда он&nbsp;подходил близко к&nbsp;аномалии, то&nbsp;его &#171;приемник&#187; будто улавливал помехи, а&nbsp;глаза видели странную рябь, которой и&nbsp;была аномалия. Можно сказать он&nbsp;видел ее!</p>
+
+<p>&nbsp;Пройдя мимо почерневшей от&nbsp;выбросов рощицы, Виктор отчетливо услышал тихий, шепчущий голос&#133;, будто голос ребенка. Он&nbsp;доносился из&nbsp;старого дзота, спрятанного от&nbsp;глаз осиновой рощей : </p>
+
+<p>&nbsp;<i>&#151; О&nbsp;мать моя Зона&#133;, эта человека опять тревожить мой 
+  покой&#133;, она снова забирать мои мысли и&nbsp;не&nbsp;отдавать свои&#133;! 
+  </i></p>
+
+<p> Виктор остановился и&nbsp;неуклюже свернул в&nbsp;сторону, откуда по&nbsp;его мнению донесся голос, хотя может он&nbsp;уловил <nobr>чьи-то</nobr> мысли. Шатаясь, он&nbsp;стал продираться сквозь почерневшие деревья, желая узнать кому принадлежали эти слова.</p>
+
+<p>&nbsp;&#151; <i>Твоя не&nbsp;шагать больше&#133;! Оставаться так&#133;!</i>&nbsp;&#151; 
+  снова эхом разразилось в&nbsp;голове Виктора, который наконец увидел источник 
+  писклявого и&nbsp;жалобного голоса. В&nbsp;пулеметном окне дзота, виднелась 
+  уродливая физиономия карлика, он&nbsp;&#171;лупал&#187; своими зелеными &#171;блюдцами&#187; 
+  и&nbsp;совсем не&nbsp;пытался драпануть. </p>
+
+<p>&nbsp;&#151; Ах&nbsp;вот,&nbsp;&#151; &#171;ик&#187;&nbsp;&#151; что за&nbsp;тварь тут так громко мыслит&#133;&#171;ик&#187;!&nbsp;&#151; Виктор не&nbsp;спеша снял с&nbsp;плеча автомат и&nbsp;передернул затвор.</p>
+
+<p>&nbsp;&#151; <i>Ты&nbsp;не&nbsp;убивать&#133;, я&nbsp;служить..!</i>&nbsp;&#151; 
+  жалобно пропищало существо.</p>
+
+<p>&nbsp;&#151; <nobr>Ха-ха</nobr>-,&#171;ик&#187;,-<nobr>ха-ха</nobr>! Ты&nbsp;же не&nbsp;щука,&nbsp;&#151; &#171;мать твою Зону&#187;,&nbsp;&#151; &#171;ик&#187;&nbsp;&#151; а&nbsp;я&nbsp;не&nbsp;Иван Дурак&#133; Все вы&nbsp;твари одинаковые&#133;&#171;ик&#187;,&nbsp;вот гляди &#171;морда&#187;:&nbsp;&#151; Виктор грузно опустился наземь, убирая автомат. Он&nbsp;ничуть не&nbsp;опасался этого существа, он&nbsp;знал что оно будет его слушать пока не&nbsp;умрет, они всегда слушали&#133; </p>
+
+<p>&nbsp;&#151; Слепой пес &#171;сказал&#187;&nbsp;&#151; &#171;ик&#187;,&nbsp;что будет охотиться для меня, а&nbsp;когда я&nbsp;заснул, то&nbsp;вцепился мне в&nbsp;горло&#133;,&nbsp;&#151; &#171;ик&#187;&#133; Еле справился&#133; </p>
+
+<p>&nbsp;&#151; Контроллер,&nbsp;&#151; мать его -, сказал одно, а&nbsp;подумал совсем другое&#133;Пришлось убить. Были еще там разные&#133; &#171;ик&#187;,&nbsp;&#171;паразиты", двухголовые, трехглазые, шестирукие&#133;и&nbsp;все они <nobr>что-то</nobr> в&nbsp;страхе лепетали! Но&nbsp;я&nbsp;ведь не&nbsp;доктор Дулитл&#133;&#171;ик&#187;&#133; </p>
+
+<p>&nbsp;&#151; Вот и&nbsp;ты&nbsp;&#171;харя&#187;, щас тут понаобещаешь с&nbsp;три короба, а&nbsp;потом&#133;&nbsp;&#151; Виктор устало поднял автомат. </p>
+
+<p>&nbsp;&#151;<i> Моя не&nbsp;врать, моя бояться твоя голова&#133;!</i></p>
+
+<p>&nbsp;&#151; Моя тоже бояться моя голова!&nbsp;&#151; передразнивая карлика, произнес Малокровкин и&nbsp;направил ствол на&nbsp;торчащую в&nbsp;дзоте морду. </p>
+
+<p>&nbsp;&#151; <i>Мать моя Зона! Я&nbsp;открывать тебе тайна твоя страшная голова&#133;, 
+  та&nbsp;метеорита&#133;</i>&nbsp;&#151; голова карлика внезапно разлетелась 
+  на&nbsp;куски и&nbsp;оборвала его речь на&nbsp;полуслове, это Виктор нажал на&nbsp;спусковой 
+  крючок своего автомата.</p>
+
+<p> -На&nbsp;свою голову поглядел&nbsp;бы,&nbsp;&#151; урод!&nbsp;&#151; он&nbsp;презрительно сплюнул в&nbsp;сторону кровавой расправы и&nbsp;зашагал по&nbsp;лесу. Цепкая хватка алкогольного опьянения, что до&nbsp;сего момента сковывала Виктора, постепенно стала ослабевать, головная боль нарастать, а&nbsp;погода ухудшаться. Ухудшалось и&nbsp;настроение Малокровкина, который за&nbsp;последнюю неделю, все чаще подносил дуло своего пистолета к&nbsp;виску и&nbsp;долгое время не&nbsp;отводил&#133; Вот и&nbsp;сейчас он&nbsp;уходил в&nbsp;темноту ночи, расстегивая по&nbsp;дороге кобуру и&nbsp;доставая из&nbsp;нее пистолет&#133; Его высокая фигура бесшумно скрылась за&nbsp;стеной из&nbsp;пожухлого орешника, откуда донеслось тихое высвистывание нехитрой мелодии, которая вскоре потонула в&nbsp;сильном ударе грома&#133;</p>
+
+<p> Яркая вспышка молнии запоздало озарила мрачные окрестности Зоны и&nbsp;потом все стихло&#133;</p>
+
+<p>Утонул&nbsp;ли одиночный выстрел в&nbsp;этом ударе грома или нет, но&nbsp;вскоре после этого, небо над Зоной прояснилось. </p>
+
+
+
+
+<p> </p>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="30.45" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 4.35 (20)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/snezkov_04.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

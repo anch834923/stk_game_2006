@@ -1,0 +1,279 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - На Бумаге - Шалапуда Александер aka *Dante*</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_237.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">На Бумаге</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Шалапуда Александер aka *Dante*</b><br>Дата: <b>15/12/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>585</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>11</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P><i>“Как удар молнии, резкий и внезапный, падают на нас ее слова. Прислушавшись, можно различить отдельные фразы и предложения. В тихом шепоте все открывается и мы видим. Мы начинаем видеть, как будто приходит прозрение, мы видим сквозь закрытые глаза. Сквозь наше мировоззрение, сквозь наше неверие, сквозь наши предрассудки…</i></P>
+<P><i>Через порывы ветра и капли кислотных дождей. На поляне, через ржавый мусор. Сквозь опустошенную и изрезанную людской неприязнью землю, быстрым и почти бесшумным шагом идут они…</i></P>
+<P><i>Искатели приключений? Охотники за наживой? Странники ищущие смысл жизни? Заблудшие твари? Кто они? Что им здесь им нужно? Здесь в ЗОНЕ, нет победителей и проигравших. Здесь нет героев. Нет оружия. Нет армии. Здесь нет чудовищ, что с голодными ртами ищут где бы им открыть новую пищевую цепь. Здесь нет людей, которые скитаются со стеклянными глазами и превращаются в этих же чудовищ.</i></P>
+<P><i>Здесь нет ничего.</i></P>
+<P><i>Представьте себе мир созданный внутри одного человека. Сотканный из его страхов и ночных кошмаров. Созданный внутри…</i></P>
+<P><i>Никто не может понять того, что настоящий мир, рисующий и противостоящий ЗОНЕ, это твой разум. Собранные в комок все мысли, знания и опыт превращаются в пулю, которую заряжают в самое смертоносное оружие…в мозг. При бешенном ритме, танцующего адреналина в крови. Один выстрел, одно движение, одно сознание. И приходит осознание того что сегодня ты выжил.</i></P>
+<P><i>Сталкер против ЗОНЫ.</i></P>
+<P><i>Когда мы выживаем, мы благодарим ее. Она и кормит и поит нас, заставляя, ради своей забавы, нас ходить по острию ножа. Нам приходится смеятся, когда она этого хочет. Нам приходится плакать, когда она этого хочет. И нам приходится умирать, когда она этого хочет…</i></P>
+<P><i>Тысячи смельчаков, зеленых новичков и ветеранов бросали ей вызовы и безответные признания в любви. Чего они ждали? Милости? Или может быть награды? Их кости до сих пор гниют на ее землях. Они стали частью ее, похоронив здесь, неоправданные надежды и несовершенные мечты.</i></P>
+<P><i>Так кто я? Угадай! Мое лицо похоже на тысячи лиц что ты видел за свою жизнь. Мой голос похож на тысяч голосов что ты слышал в этом мире. Кто я? Я думаю не так как все люди, там где люди видят грязь и развалины, я вижу новое место для ночлега. Там где все видят летящих птиц, я вижу то что можно поесть. Ну и кто я?</i></P>
+<P><i>Я такой же как и сотни моих братьев – я Сталкер!</i></P>
+<P><i>В моей руке зажат карандаш. Строчка за строчкой. Мысль за мыслью. Мое имя не имеет значения. Знай одно – я Сталкер. Справедливый или нечестный, злой или добрый, бедный или богатый. Мое имя не будет иметь значения…для нее.</i></P>
+<P><i>Хотя она всегда любила смелых. Тех кто был бесстрашен. Проснувшийся герой в каждом человеке, вызывал у нее восхищение. А трус до конца своих дней, даже боялся произнести ее имя. Сталкер взявший свое прошлое, настоящее и будущее и закопавший это на берегу пересыхающей реки, который пожимает руку смерти, словно она его старый друг, каждый раз при встрече с ней, который даже с переломанными ногами способен сохранят улыбку на лице, бросает НАСТОЯЩИЙ ВЫЗОВ ЗОНЕ. Но тот кто бросает ей НАСТОЯЩИЙ ВЫЗОВ, либо получает смерть подобной которой не существовало еще в этом мире, либо находит собственное “я” вписанное в страницы историй о ЗОНЕ.</P>
+<P>Я много слышал историй от пьяных посетителей таверны в Сталкеровской деревне. Легенды, сказки там и даже тосты. Но ни одна из них не сравнится с легендой об “Архиве Мыслей”.</i></P>
+<P><i>Вы думает что это какое-либо хранилище информации ЗОНЫ? Или это место где собираются монстры? Нет! Это нечто более земное. Нечто более жизненное.</i></P>
+<P><i>Я искал его, долго и упорно. И я нашел его.</i></P>
+<P><i>Сейчас я пишу. Пишу свое исповедание, так же как и сотни Сталкеров до меня. Может быть я и не вернусь, и может мне повезет…первому.</i></P>
+<P><i>Хочу лишь сказать что те, кто будет читать это письмо, может быть вспомнит что был когда то такой Сталкер. Который бросил НАСТОЯЩИЙ ВЫЗОВ ЗОНЕ и звали его Ледовитый.”</i></P>
+<P ALIGN="CENTER">***</P>
+<P>Пустой коридор освещали лишь мутные лампы. В самом центре, на полу сидел человек. Он писал на желтом листе бумаги, аккуратно выводив слова карандашом.</P>
+<P>Закончив, он несколько секунд всматривался в написанное, а затем, тяжело вздохнув, встал.</P>
+<P>Вытащив изо рта жвачку. Он подошел к стене.</P>
+<P>Нельзя было оторвать взгляда от открывшегося зрелища. И то что можно было увидеть, создавало внутри не с чем не сравнимое чувство. Чувство уничтожающее одиночество.</P>
+<P>Все стены этого коридора были сплошь увешаны бумажными листами. Десятки, сотни листов. Маленькие и большие, пыльные от времени и совсем свежие. Они висели прикрепленные, кто кнопкой, кто гвоздем, кто жвачкой.</P>
+<P>“Архив Мыслей” - мыслей всех Сталкеров. Вот он какой. Они приходили и оставляли здесь свои надежды и мечты. Свои мысли и размышления. Свои победы и разочарования…</P>
+<P>Многих, кто оставил здесь свою исповедь, уже нет в живых. А кто-то до сих пор ищет, ищет ответы на свои такие сокровенные и такие глупые вопросы. Но никто из них, будь он живой или мертвый, никогда не расскажет о расположении этого места. Потому что ты должен найти его сам, так же как найти роль, ту роль которую ты играешь, в пьесе под названием “ЗОНА”.</P>
+<P>Сталкер подошел ближе и нашел небольшое и свободное место. Приклеив на жвачку к стене свое письмо. Он развернулся и зашагал к выходу.</P>
+<P>Железная дверь со скрежетом отворилась. В глаза ударил свет. Такой знакомый и такой теплый. Сталкер поправил рюкзак и зашагал на встречу с ней, со своей судьбой…с ЗОНОЙ.<I> </I>Через порывы ветра и капли кислотных дождей, через ржавый мусор…</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.57" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.51 (70)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Dante_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

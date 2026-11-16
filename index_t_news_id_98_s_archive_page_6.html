@@ -1,0 +1,680 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="rus">
+	<meta http-equiv="Keywords" content="game, games, stalker, s.t.a.l.k.e.r., oblivion lost, software, development">
+	<link rel="stylesheet" href="css/style.css">
+	<title>S.T.A.L.K.E.R. - Новости: Архив </title>
+<script language="VBScript">
+<!--
+Sub lighting_FSCommand(ByVal command, ByVal args)
+  call lighting_DoFSCommand(command, args)
+end sub
+-->
+</script>
+
+<script language=javascript>
+//if(!top.contents){
+//top.
+parent.document.title='S.T.A.L.K.E.R. - Новости: Архив';
+//}
+
+/*------------------For Flash Menu----------------------*/
+var id=1;
+var id_sound=2-1;
+var brNav,brIE = false;
+if (navigator.appName.indexOf("Microsoft") != -1) {
+	brIE = true;
+	} else {
+	brNav = true;
+}
+
+function menu_DoFSCommand(command, args) {
+	if ( command == "init" ) {
+    	if (document.menu != null ) {
+	    	document.menu.GotoFrame(id);
+    	}
+	}
+}
+
+function dSend() {
+	if (brIE) {document.menu.GotoFrame(id);}
+	if(brIE ? parent.frames.music : parent.frames[0]){
+		document.lighting.GotoFrame(id_sound+1);
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(id_sound+2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(id_sound+2);
+		}
+	} else {
+		document.lighting.GotoFrame(1);
+	}
+}
+/*______________________________________________________*/
+
+var time=1794819019*1000;
+   
+function lighting_DoFSCommand(comm, arg){
+if(parent.music){
+	if (comm == "no_sound"){
+		document.cookie = "sound=1;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(2);
+		}
+	}
+	if (comm == "sound"){
+		document.cookie = "sound=2;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(3);
+		} else {
+			parent.frames[0].document.music.GotoFrame(3);
+		}
+	}
+}
+}
+</script>
+<script language="JavaScript">
+<!--
+function rnd_win(){
+   var randscript = -1;
+   var howMany =10000;
+   while (randscript <= 0 || randscript > howMany || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+1));
+   }
+   return randscript;
+}
+
+
+function screen_view (url)
+{
+var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+function screen_view_big (url)
+{
+ var  v_screens=  rnd_win(); 
+ var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+
+function wallpaper_view (url, res)
+{
+	if (res) { var x_res = res;	} else { var x_res = 800; }
+	 var  v_screens=  rnd_win(); 
+	var y_res = x_res*0.75;
+    window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+-->
+</script></head>
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+<tr>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+    <td rowspan="2" width="900">
+
+<table cellspacing="0" cellpadding="0" border="0" width="900" height="100%">
+<tr>
+    <td valign="top" height="99"><img src="images/top_left_back.jpg" width="90" height="99" border="0"></td>
+    <td valign="top" height="99">
+<!--Main Header-->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="logo2" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/logo2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED menu=false src="swf/logo2.swf"
+	 quality=high bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="logo2" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="lighting" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/lighting.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/lighting.swf"
+	 quality=high menu=false bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="lighting" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="22" id="news_display" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/news_display.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/news_display.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="22" NAME="news_display" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+                      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="438" height="22" id="menu">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+<param name="movie" value="menu_rus.swf"><PARAM NAME=menu VALUE=false>
+                          <param name="quality" value="high"><param name="bgcolor" value="#000000">
+                          <embed src="menu_rus.swf" menu="false" bgcolor="#000000" width="438" height="22" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="menu" allowscriptaccess="always" wmode="opaque"></embed></object></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+<!--End Main Header-->
+	</td>
+    <td valign="top" height="99"><img src="images/top_right_back.jpg" width="90" height="99" border="0"></td>
+</tr>
+<tr>
+    <td valign="bottom" height="95%"><img src="images/left_back_line.jpg" width="90" height="420" border="0"></td>
+    <td valign="top">
+<table cellspacing="0" cellpadding="0" border="0" height="100%">
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+                                                        <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+
+<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
+	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
+-->
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="385" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="26" height="20" border="0"></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="25" border="0"></td>
+    <td align="right" class="m_head">Новости</td>
+    <td></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="19" border="0"></td>
+    <td align="right" class="m_nav"><a href='index_t_news_s_news.html' title='Последние Новости'><font color='#CBCBCB'  class='subnav'>Последние Новости</font></a> | <font color='#ffffff' class='subnav'>Архив</font></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/header_line.gif" width="416" height="16" border="0"></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
+    <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr><td><!--Main Text-->
+<!--<span class="newsT"><b>Support | Feedback Form</b></span>
+
+<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_archive.gif" width="503" height="39" border="0" alt=""></p>
+<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
+<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
+-->
+<script language="JavaScript">
+<!--
+ var howMany =6;
+ var Min=1;
+
+function rndnumber(){
+   var randscript = -1
+   while (randscript < Min || randscript > (howMany+Min) || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+Min));
+   }
+   return randscript
+}
+var Max=rndnumber();
+var ImgH="0";
+if(Max<10) ImgH="0"+Max+"";
+else ImgH = Max;
+Cod ="<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"6\" border=\"0\"></td></tr>";
+Cod =Cod +"<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\" valign=\"top\">";
+Cod =Cod +"<img src=\"images/_dot.gif\" width=\"20\" height=\"27\" border=\"0\"><span class=\"myHeader\">Архив</span></td></tr>";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"14\" border=\"0\"></td></tr>";
+Cod =Cod +"</table>";
+//-->
+</script>
+<script language="JavaScript">document.write(Cod)</script>
+<img src="images/_dot.gif" width="503" height="1" border="0" alt="">
+	<table width="100%" cellspacing="0" border="0" cellpadding="0">
+	<tr>
+	    <td>
+		<table width="482" height="34" cellspacing="0" cellpadding="0" border="0" background="images/_newsPodloga.jpg">
+		<tr><!--<td width="9"><img src="images/ns_begin.gif" width="15" height="27" border="0"></td>-->
+		    <td valign="top" align="left"><img src="images/_dot.gif" width="18" height="20" border="0" alt=""><span class="ns_head">Чат с разработчиками S.T.A.L.K.E.R.<span class="cl_blue"> - 04/02/2004</span></span></td>
+		<!--<td width="9"><img src="images/ns_end.gif" width="9" height="27" border="0"></td>--></tr></table>
+		</td>
+	</tr>
+	<tr><td><img src="images/_dot.gif" width="1" height="12" border="0"></td></tr>
+	<tr>
+		<td>
+	    <table cellpadding="0" cellspacing="0" border="0"><tr>
+		<td width="1"><img src="images/_dot.gif" width="5" height="1" border="0" alt=""></td>
+		<td><p><span class="myH31"><b>В:</b></b> Что вы думаете о краже версии и пиратстве в общем?<br>
+</span><b>О:</b> Мы с большим удовольстием поговорили бы о голоде в Африке чем о пиратстве.  Пиратству сложно противостоять, и мы научились жить с ним. Мы видели украденый код Сталкера в продаже на улице, и это было грустно…</p>
+
+<p><span class="myH31"><b>В:</b></b> Можете назвать несколько симптомов лучевой болезни, и о том что случится с игроком если он облучится?<br>
+</span><b>О:</b> Время от времени, игрок будет испытывать слабость (визуальный эфект). Для того чтобы вылечиться, нужно принять противорадиационных таблеток, или выпить водки. Сон тоже немного лечит.</p>
+
+<p><span class="myH31"><b>В:</b></b> Какой движок используется в игре?<br>
+</span><b>О:</b> Движок называется X-ray. Он создан нашей компанией "с нуля".</p>
+
+<p><span class="myH31"><b>В:</b></b> Будут ли в игре железные гайки для обнаружения аномалий, как это было в фильме "Сталкер"?<br>
+</span><b>О:</b> В игре будут металлические болты. Они более заметны.</p>
+
+<p><span class="myH31"><b>В:</b></b> Откуда пошло название игры S.T.A.L.K.E.R.?<br>
+</span><b>О:</b> S.T.A.L.K.E.R. - это акроним, который будет расшифрован только а в игре.</p>
+
+<p><span class="myH31"><b>В:</b></b> Будет ли ограничено число тяжёлых стволов которые можно переносить одновременно?<br>
+</span><b>О:</b> Инвентарь игрока ограничен сорока килограммами. Так что игрок должен будет сам выбирать чего ему взять в Зону больше, оружия, снаряжения или еды.</p>
+
+<p><span class="myH31"><b>В:</b></b> Можно ли будет сохранять игру в кооперативном режиме? Если да, то будет ли сохраняться весь мир, или только игроки?<br>
+</span><b>О:</b> Мы не уверены, что сможем воплотить этот режим. Существуют некоторые сложности.</p>
+
+<p><span class="myH31"><b>В:</b></b> Вы не любите сложности?<br>
+</span><b>О:</b> Сложность - слишком мягкое слово. Правильнее было бы сказать преграды.</p>
+
+<p><span class="myH31"><b>В:</b></b> Когда выйдет игра?<br>
+</span><b>О:</b> Во втором квартале 2004 года. Скорее всего летом.</p>
+
+<p><span class="myH31"><b>В:</b></b> Как будут построены диалоги между героем и NPC?<br>
+</span><b>О:</b> Часть диалогов будет озвучена, а часть будет в виде текста.</p>
+
+<p><span class="myH31"><b>В:</b></b> Планируется ли демонстрационная версия, будет ли она выпущена до игры или после?<br>
+</span><b>О:</b> Ещё не решено, будет ли она вообще, поэтому сейчас ничего сказать не можем.</p>
+
+<p><span class="myH31"><b>В:</b></b> Какая версия игры будет выпущена первой, русская или аглийская?<br>
+</span><b>О:</b> Мы планируем одновременный выпуск обеих версий.</p>
+
+<p><span class="myH31"><b>В:</b></b> Будет ли количество ботов ограниченным?<br>
+</span><b>О:</b> В одиночной игре количество ботов будет неограниченным, так как будет существовать постоянный приток новичков в Зону.</p>
+
+<p><span class="myH31"><b>В:</b></b> Будет ли концовка зависеть от наших действий в игре?<br>
+</span><b>О:</b> Мы планируем более 8-ми концовок. Концовка будет зависеть от стиля прохождения и информации, которую игроку удастся собрать.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли нас принуждать покупать оружие.<br>
+</span><b>О:</b> Нет, игрока никто не будет принуждать покупать оружие.</p>
+
+<p><span class="myH31"><b>В:</b> На скриншотах мы видели большое количество зданий. Можно ли будет заходить во все здания?<br>
+</span><b>О:</b> Заходить можно будет практически во все здания, за исключением тех, вход в которые завален.</p>
+
+<p><span class="myH31"><b>В:</b> Возможно ли такое чтобы при сражении двух кланов монстры становились на сторону одного из них?<br>
+</span><b>О:</b> Монстры всегда сражаются за самих себя. Другими словами, они воспримут оба клана как врагов.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли у игрока параметры вроде жизни, облучения, навыков, статистики (вроде числа убитых врагов, открытой территории, итд)?<br>
+</span><b>О:</b> Игрок должен будет следить за четырьмя параметрами. В них входят здоровье, голод, усталость и облучение.</p>
+
+<p><span class="myH31"><b>В:</b> Влияет ли погода на игровой процесс?<br>
+</span><b>О:</b> Да. Игрок будет хуже видеть ночью, и быстрее уставать во время дождя.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли монстры понимать, кто в них стреляет? Или будут атаковать ближайшего врага?<br>
+</span><b>О:</b> Монстры могут атаковать только тех врагов, которых они видят.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет модифицировать оружие?<br>
+</span><b>О:</b> Да, практически все оружие можно будет модифицировать.</p>
+
+<p><span class="myH31"><b>В:</b> В прошлом году вы сказали, что ещё не решили включать ли девушек в игру. Есть ли уже окончательное решение?<br>
+</span><b>О:</b> Мы всё ещё голосуем. Увидим.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет управлять машиной или другим транспортом?<br>
+</span><b>О:</b> Да, можно будет управлять как пассажирским транспортом, так и грузовым (Камаз).</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли место сна предопределено, и будет ли оно всегда безопасным?<br>
+</span><b>О:</b> Игроку придётся искать безопасное место для сна. Иначе он может быть разбужен в середине ночи монстром.</p>
+
+<p><span class="myH31"><b>В:</b> Не боитель ли вы того что не сможете реализовать все обещанные части игры?<br>
+</span><b>О:</b> Нет, мы этого не боимся. Мы не исключили почти ничего из обещанного списка.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли в игре танки?<br>
+</span><b>О:</b> Нет, только БТР.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли управлять вертолетом?<br>
+</span><b>О:</b> Вертолетом смогут управлять только военные патрулируя Зону.</p> 
+
+<p><span class="myH31"><b>В:</b> Разбита ли многопользовательская игра на сессии, или можно будет подключиться в любое время?<br>
+</span><b>О:</b> Да, можно будет войти и выйти в любой момент.</p>
+
+<p><span class="myH31"><b>В:</b> Имеют ли боеприпасы вес?<br>
+</span><b>О:</b> Да.</p>
+
+<p><span class="myH31"><b>В:</b> Как на счет модов?<br>
+</span><b>О:</b> Мы немало думали об этом потому, что мы понимаем значение поддержки моддеров.</p>  
+
+<p><span class="myH31"><b>В:</b> Стоит ли ожидать в игре хоть какую то форму наготы? Вроде русских порнографических журналов восьмидесятых годов валяющихся на полу.<br>
+</span><b>О:</b> В восьмидесятых в Советском Союзе не было никаких порнографических журналов. Но если вы пришлёте нам несколько, мы с радостью отсканируем и вставим их для вас :). </p>
+
+<p><span class="myH31"><b>В:</b> Считается ли движок уже законченным? Думаете ли вы теперь только об игровом процессе и оптимизации?<br>
+</span><b>О:</b> DX8 движок уже закончен. Сейчас мы работаем над DX9. Об игровом процессе заботятся другие люди, поэтому мы делаем и то и другое одновременно.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли транспорт разрушаем? Можно ли будет его чинить?<br>
+</span><b>О:</b> Транспорт разрушаем, но, вероятно, чинить его будет нельзя.</p>
+
+<p><span class="myH31"><b>В:</b> Какая часть разработки наиболее сложна?<br>
+</span><b>О:</b> Наиболее сложна?... Э… Они все одинаково сложные :)</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли другие средства борьбы с радиацией кроме таблеток?<br>
+</span><b>О:</b> Да, будет также аптечка.</p>
+
+<p><span class="myH31"><b>В:</b> Смогут ли монстры видеть игрока лежащего в траве или прячущегося за преградой?<br>
+</span><b>О:</b> Они не смогут видеть сквозь преграды. Трава не позволит видеть им отчетливо. То есть, у монстров будут реалистичные зрение и слух.</p>
+
+<p><span class="myH31"><b>В:</b> Говоря о монстрах, которые питаются трупами, будут ли трупы разлагаться?<br>
+</span><b>О:</b> Трупы будут разлагаться, но монстры будут предпочитать свежие трупы. </p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет ставить ловушки.<br>
+</span><b>О:</b> Пока нет.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли монстры иметь обоняние?<br>
+</span><b>О:</b> Нет.</p>
+
+<p><span class="myH31"><b>В:</b> Физика в игре хороша, но будет ли возможность нанести повреждение противнику, бросив с высоты на него какой-либо предмет.<br>
+</span><b>О:</b> Да, предмет упавший с высоты, обязательно нанесет вред, а может даже и убьет.</p> 
+
+<p><span class="myH31"><b>В:</b> В игре будут видеовставки или 3D анимация?<br>
+</span><b>О:</b> В игре будет видео.</p>
+
+<p><span class="myH31"><b>В:</b> Ваш источник вдохновения?<br>
+</span><b>О:</b> Чернобыль, Fallout, фильм "Сталкер", "Пикник на обочине" Стругацких.</p>
+
+<p><span class="myH31"><b>В:</b> Смогут ли разработчики модов использовать бесплатные инструменты, вроде Blender, или обязательно понадобится 3dMmax или Lightwave?<br>
+</span><b>О:</b> Только если модель можно будет перевести в формат 3Dmax, Lightwave или Maya.</p>
+
+<p><span class="myH31"><b>В:</b> Сможет ли радиация оживлять трупы?<br>
+</span><b>О:</b> Нет.</p> 
+
+<p><span class="myH31"><b>В:</b> Не будет ли ИИ игры слишком требователен к ресурсам из за того что вы не используете скрипты?<br>
+</span><b>О:</b> ИИ будет требователен к ресурсами, но относительно. Мы его оптимизируем.</p>
+
+<p><span class="myH31"><b>В:</b> Оставите ли вы русские голоса, сделав титры на английском или они будут локализированы?<br>
+</span><b>О:</b> Речь будет локализирована.</p>
+
+<p><span class="myH31"><b>В:</b> Сколько видов монстров будет в Зоне?<br>
+</span><b>О:</b> Точно сказать мы не можем, но гарантируем что скучать вам не придется :)</p> 
+
+<p><span class="myH31"><b>В:</b> Каким будет интерфейс?<br>
+</span><b>О:</b> Он будет довольно простым, но с инвентарём. Наиболее схожим он будет с Фоллаутом.</p>
+
+<br><span class="myH31"><b>В:</b> Закончена ли разработка воды?<br>
+</span><b>О:</b> Разработка воды ещё не закончена.
+
+<p><span class="myH31"><b>В:</b> Использовали ли вы систему motion capture и для чего?<br>
+</span><b>О:</b> Да, мы использовали ее для того, чтобы сделать движения персонажей более естественными.</p>
+
+<p><span class="myH31"><b>В:</b> Вы уделяете огромное внимание мелочам. Добавляете ли вы еще что-то сейчас?<br>
+</span><b>О:</b> Этот процесс не останавливается.</p>
+
+<p><span class="myH31"><b>В:</b> Повлияет ли украденная версия на дальнейший процесс разработки игры?<br>
+</span><b>О:</b> Та версия была очень старой, так что нет, не повлияет.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли карта автоматически заполняться по мере открытия новых территорий?<br>
+</span><b>О:</b> Да.</p>
+
+<p><span class="myH31"><b>В:</b> THQ недавно объявили на своём сайте о смене названии игры на S.T.A.L.K.E.R.: The Shadow of Chernobyl. Следует ли ожидать в ближайшем времени официальную замену названия?<br>
+</span><b>О:</b> Изменение названия не исключена.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли второстепенные квесты в игре?<br>
+</span><b>О:</b> В игре будут ключевые квесты, предложенные по сценарию, а также большое количество сгенерированных случайно.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет спрятать предмет, а потом вернуться и найти его на том же месте?<br>
+</span><b>О:</b> Да. Предмет можно спрятать, и он останется лежать на своём месте, если его не найдет кто-нибудь еще.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли игра совместима с 5.1 звуком?<br>
+</span><b>О:</b> Да.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли оружие наносить реалистичный урон? Как на счет ранений?<br>
+</span><b>О:</b> Да, оружие будет наносить реалистичный урон. Будут различные уровни повреждений. Открытые раны буду кровоточить и оставлять следы на земле.</p>
+
+<p><span class="myH31"><b>В:</b> Откуда появляются монстры?<br>
+</span><b>О:</b> Монстры размножаются и приходят из середины Зоны.</p>
+
+<p><span class="myH31"><b>В:</b> Как будет работать сон?<br>
+</span><b>О:</b> Игрок сможет выбрать опцию сна, и тогда экран потемнеет, а система симуляции жизни просчитает то, что должно произойти в это время. Игрок проснётся если кто-то нападёт.</p>
+
+<p><span class="myH31"><b>В:</b> Некоторое время назад, вы показывали скриншоты оптимизированные для GeforceFX карты, но не в последние несколько месяцев. Планируете ли вы всё ещё подобные оптимизации?<br>
+</span><b>О:</b> Да, мы всё ещё планируем оптимизацию под DX9, и продемонстрируем её позже.</p>
+
+<p><span class="myH31"><b>В:</b> Насколько реалистичной будет система прицеливания? (Vietcong)<br>
+</span><b>О:</b> Мы делаем всё что можем для воплощения реалистичной системы прицеливания.</p>
+
+<p><span class="myH31"><b>В:</b> Планируете ли вы продавать свой движок?<br>
+</span><b>О:</b> Мы планируем лицензировать движок. Заинтересованные в этом могут связаться с нами по почте.</p>
+
+<p><span class="myH31"><b>В:</b> Как вы считаете, понравится ли игра американцами? Или она будет слишком экзотичной для них?<br>
+</span><b>О:</b> Мы считает что американским игрокам она понравится.</p>
+
+<p><span class="myH31"><b>В:</b> Нужен ли будет бензин?<br>
+</span><b>О:</b> Всем двигателям в игре для работы будет необходим бензин. </p>
+
+<p><span class="myH31"><b>В:</b> Так что, погода будет изменяться только во время сна?<br>
+</span><b>О:</b> Погода будет изменяться в режиме realtime.</p>
+
+<p><span class="myH31"><b>В:</b> Когда выйдет ролик с настоящим игровым процессом.<br>
+</span><b>О:</b> Ролик с настоящим игровым процессом выйдет очень даже скоро.</p>
+
+<p><span class="myH31"><b>В:</b> Если бросить машину, а потом вернуться, она все еще будет там?<br>
+</span><b>О:</b> Машина будет на старом месте, если…</p>
+
+<p><span class="myH31"><b>В:</b> Как будет работать система сохранений?<br>
+</span><b>О:</b> Система сохранений будет зависеть от сложности игры.</p>
+
+<p><span class="myH31"><b>В:</b> Какая будет система сохранений в однопользовательской игре?<br>
+</span><b>О:</b> Система сохранений будет зависеть от уровня сложности.</p>
+
+<p><span class="myH31"><b>В:</b> Какое отношение игра имеет к фильму "Сталкер"?<br>
+</span><b>О:</b> Игра и фильм связаны лишь атмосферой Зоны.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли техника доступна в мультиплеере?<br>
+</span><b>О:</b> Да.</p>
+
+<p><span class="myH31"><b>В:</b> Используете ли вы шейдеры 2.0?<br>
+</span><b>О:</b> Да, в рендере под DX9 они будут.</p>
+
+<p><span class="myH31"><b>В:</b> Если монстры сражаются друг с другом, они остановятся и нападут на игрока или продолжат бой?<br>
+</span><b>О:</b> Монстры будут атаковать ближайшего врага, также учитывая опасность остальных.</p>
+
+<p><span class="myH31"><b>В:</b> Последний ролик показывал DX 9?<br>
+</span><b>О:</b> Нет, только DX8.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли в игре рукопашный бой?<br>
+</span><b>О:</b> Да, но пока что только с применением ножа. </p>
+
+
+<p><span class="myH31"><b>В:</b> Планируется ли консольная версия?<br>
+</span><b>О:</b> Нет. Сначала нужно закончить версию для PC.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли Co-op?<br>
+</span><b>О:</b> Вопрос о кооперативе еще не решен, есть некоторые сложности.</p>
+
+<p><span class="myH31"><b>В:</b> Планируете ли вы поддержку процессора AMD 64?<br>
+</span><b>О:</b> Мы работаем над этим.</p>
+
+<p><span class="myH31"><b>В:</b> Чем вы выделяете игру из других FPS?<br>
+</span><b>О:</b> Грубо говоря, мы попытались создать необычный геймплей внутри живого мира, с этим связано много инновационного.</p>  
+
+<p><span class="myH31"><b>В:</b> Вы читали книгу братьев Стругацких?<br>
+</span><b>О:</b> Мы читали много их книг.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли в игре ядерное оружие?<br>
+</span><b>О:</b> Нет.</p>
+
+<p><span class="myH31"><b>В:</b> Расскажите больше о саундреке?<br>
+</span><b>О:</b> Он будет похож на музыку, которая звучит на сайте (точнее, та музыка и есть часть саундтрека игры).</p>
+
+<p><span class="myH31"><b>В:</b> Вы уже думаете над второй частью игры?<br>
+</span><b>О:</b> Вечерами у камина :)</p>
+ 
+
+<p><span class="myH31"><b>В:</b> Можно ли будет заходить внутрь атомной станции?<br>
+</span><b>О:</b> Да.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли патчи содержащие новое оружие, машины?<br>
+</span><b>О:</b> Возможно.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли игрок начинать в Зоне, или вне неё, как в фильме?<br>
+</span><b>О:</b> Игра будет начинаться в Зоне.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет придумывать собственные рецепты для еды?<br>
+</span><b>О:</b> Да, конечно. Кулинарный справочник будет прилагаться с игрой. Шутка. Игроку придётся есть довольно простую пищу.</p>
+
+<p><span class="myH31"><b>В:</b> Смогут ли монстры восстанавливаться с помощью радиации?<br>
+</span><b>О:</b> Монстры восстанавливаются с помощью еды и отдыха, но не радиации.</p>
+ 
+<p><span class="myH31"><b>В:</b> Возможно ли совсем пропустить расшифровку названия? Есть ли части сюжета которые можно пропустить?<br>
+</span><b>О:</b> Игра будет наполнена необязательными событиями. Многие события могут быть пропущены.</p>
+
+<p><span class="myH31"><b>В:</b> Будет ли игра быстрее на картах ATI или nVIDIA?<br>
+</span><b>О:</b> Мы оптимизируем игру для всех основных карт. Не имеет смысла оптимизировать игру только под одну карту. Пользователь не должен страдать!</p>
+
+<p><span class="myH31"><b>В:</b> Как работает загрузка?<br>
+</span><b>О:</b> Загрузка будет происходить при пересечении границы локации.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет добавлять новые площади, больше чем сорок квадратных километров?<br>
+</span><b>О:</b> Отдельная локация не должна превышать 5х5 километров, количество локаций не ограничено.</p>
+
+<p><span class="myH31"><b>В:</b> Модет ли игрок стать мутантом?<br>
+</span><b>О:</b> Да, но не в игре :)</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет двигать или поднимать разные объекты?<br>
+</span><b>О:</b> Почти всё физические объекты можно будет двигать (мебель, тела...).</p>
+
+<p><span class="myH31"><b>В:</b> А как на счет взаимоотношений с другими персонажами?<br>
+</span><b>О:</b> Отношения будут зависеть от ситуации и действий игрока.</p>
+
+<p><span class="myH31"><b>В:</b> Сможем ли мы выбирать ответы общаясь с NPC?<br>
+</span><b>О:</b> Да.</p>
+
+<p><span class="myH31"><b>В:</b> Сколько людей работает над игрой?<br>
+</span><b>О:</b> Команда состоит из 25 человек.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет убить торговца?<br>
+</span><b>О:</b> Нет, он побеспокоился о своей безопасности.</p>
+
+<p><span class="myH31"><b>В:</b> Можно ли будет приручить монстра?<br>
+</span><b>О:</b> Нет.</p>
+
+<p><span class="myH31"><b>В:</b> Будут ли в игре другие виды транспорта кроме тех, что представлены на официальном сайте?<br>
+</span><b>О:</b> Да.</p> 
+
+<p><span class="myH31"><b>В:</b> Можно ли будет заразиться чем-нибудь от монстра, например, в процессе рукопашного боя?<br>
+</span><b>О:</b> Скорее всего нет.</p>
+
+<p><span class="myH31"><b>В:</b> Несколько слов для комьюнити?<br>
+</span><b>О:</b> Хотим поблагодарить всех поклонников за поддержку. Вы помогаете нам сделать игру и поддерживаете наш дух.
+Спасибо за интересные вопросы. До встречи!!!!!</p>
+
+</td>
+		</tr></table>
+		</td>
+	</tr>
+	<tr><td><img src="images/_dot.gif" width="1" height="12" border="0"></td></tr>
+<tr>
+		<td>
+	    <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+		<td width="1"><img src="images/_dot.gif" width="5" height="1" border="0"></td>
+		<td align="left"><a href="index_t_news_s_archive_page_6.html">назад</a></td>
+		<td width="1"><img src="images/_dot.gif" width="5" height="1" border="0"></td>
+		</tr></table>
+		</td>
+	</tr>
+	</table>
+<!--End Main Text <table></table>--></td></tr>
+<tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
+</table></td><td width="100" valign="top">
+
+<!--Hot Elements--><!--dinamic menu-->
+<!--end dinamic menu-->
+
+<div id="sidebar_hot_block"></div>
+<div id="sidebar_screen"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_game.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_graphics.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_tech.gif" alt="" width="114" height="130" border="0"></td></tr>
+</table><!--End Hot Elements--></td>
+    <td width="22"><img src="images/_dot.gif" width="21" height="1" border="0"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
+</tr>
+<tr>
+	<td height="45" class="copyr" align="center"><a href="../&s=archive.html" class="bottomMenu"></a> | Новости | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | <a href="index_t_community.html" class="bottomMenu">Community</a> | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
+src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
+�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
+Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">21&nbsp;&nbsp;21</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
+</tr>
+<tr><td height="2"><img src="images/_dot.gif" width="1" height="6" border="0"></td></tr>
+</table>
+
+	</td>
+    <td valign="bottom" height="90%"><img src="images/right_back_line.jpg" width="90" height="420" border="0"></td>
+</tr>
+</table>
+
+</td>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+</tr>
+</table>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,318 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Дойти - Алексей Леваков</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_126.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Дойти</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Алексей Леваков</b><br>Дата: <b>23/05/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>785</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>21</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p>Он&nbsp;шёл&nbsp;из&nbsp;последних сил. Он&nbsp;должен дойти. Он&nbsp;дойдёт.</p>
+
+<p>За&nbsp;спиной остались развалины города. За&nbsp;спиной осталась смерть. Но&nbsp;смерть всегда успевает прийти первой&#133;И&nbsp;поэтому он&nbsp;шёл-<br>
+&#151;он&nbsp;уже не&nbsp;мог бежать&#133;</p>
+
+<p>Давно уже брошен рюкзак с&nbsp;хабаром&nbsp;&#151; лишь&nbsp;бы дойти, лишь&nbsp;бы успеть. Выкинут автомат&nbsp;&#151; всё&nbsp;равно больше нет патронов&#133;</p>
+
+<p>&#133;Он&nbsp;убил её.&nbsp;Он&nbsp;уничтожил её&nbsp;&#151; никакое живое существо не&nbsp;выдержит прямого попадания разрывной гранаты&#133;</p>
+
+<p>Пути назад нет. Есть лишь цель&nbsp;&#151; дойти. Куда&#133; Нет, не&nbsp;сейчас. Не&nbsp;время. Главное&nbsp;&#151; дойти&#133;</p>
+
+<p>&#133;Он&nbsp;видел, как она встала. &#171;Этого не&nbsp;может быть!&#133;"</p>
+
+<p>В&nbsp;голове нет мыслей. Они исчезли. Есть лишь один выход&nbsp;&#151; идти. И&nbsp;он&nbsp;идёт&#133;</p>
+
+<p>&#133;Кончилась последняя обойма. Он&nbsp;убил её&#133;</p>
+
+<p>&#171;Надо идти&#133; Надо&#133; Я&nbsp;должен дойти&#133;" И&nbsp;он&nbsp;идёт&#133;</p>
+
+<p>&#133;Она была мертва. Она улыбалась ему&#133;</p>
+
+<p>&#171;Нет!!! Я&#133; должен&#133; идти&#133;"</p>
+
+<p>&#133;Он&nbsp;обернулся&#133;</p>
+
+<p>&#171;Идти&#133;Идти вперёд&#133;"</p>
+
+<p>&#133;Она стояла и&nbsp;смотрела ему вглаза&#133;</p>
+
+<p>&#171;Ещё&nbsp;шаг&#133; Ещё&#133;"</p>
+
+<p>&#133;У&nbsp;неё&nbsp;не&nbsp;было лица&nbsp;&#151; в&nbsp;её&nbsp;глазах клубилась тьма&#133;</p>
+
+<p>Он&nbsp;шёл.&nbsp;Он&nbsp;успеет дойти&#133;</p>
+
+<p>&#133;Он&nbsp;побежал&#133;</p>
+
+<p>&#171;Отпусти меня, стерва&#133; Сволочь&#133;" Он&nbsp;шёл&nbsp;дальше&#133;</p>
+
+<p>&#133;Впереди&nbsp;&#151; лес. Мёртвый лес. Лес ждёт&nbsp;его, но&nbsp;он&nbsp;пройдёт&nbsp;&#151; должен пройти&#133;</p>
+
+<p>&#171;Я&nbsp;отдал&#133; то,&nbsp;что принадлежит тебе&#133; Отпусти&#133;"</p>
+
+<p>&#133;Лес выпустил его. Лес почуял то,&nbsp;что шло за&nbsp;ним&#133;</p>
+
+<p>&#171;Я&#133; всё&nbsp;равно&#133; успею&#133;"</p>
+
+<p>&#133;Эпицентр давно уже пройден. он&nbsp;шёл&nbsp;дальше&#133;</p>
+
+<p>&#171;Что&nbsp;же ты&#133; Почему так со&nbsp;мной?&#133;"</p>
+
+<p>&#133;Он&nbsp;идёт&nbsp;по&nbsp;дороге. Он&nbsp;не&nbsp;может не&nbsp;успеть&#133;</p>
+
+<p>&#171;Как&nbsp;же ты&nbsp;не&nbsp;понимаешь? Мы&nbsp;не&nbsp;можем&#133; иначе&#133;Отпусти&#133;тварь&#133;"</p>
+
+<p>&#133;Он&nbsp;бежит&nbsp;&#151; до&nbsp;блокпоста осталось совсем немного&#133;</p>
+
+<p>&#171;Я&nbsp;дошёл&#133;Дошёл,&nbsp;слышишь&#133;"</p>
+
+<p>&#133;Он&nbsp;уже не&nbsp;увидел, как чудовищная судорога исказила горизонт&#133;<br>
+Воздух загустел, превратился в&nbsp;стекло&#133;и&nbsp;треснула, распалась на&nbsp;мириады осколков тень.<br>
+Тень, что шагала за&nbsp;ним&#133;<br>
+Гигантский гриб вспух над далёкой станцией&nbsp;&#151; вспух, выстрелил в&nbsp;небо чёрным отростком&#133;<br>
+Земля закричала, преждем чем расплавиться&#133;<br>
+Ослепительный свет залил всё&nbsp;вокруг&nbsp;&#151; как будто в&nbsp;небе над Зоной родилось новое Солнце&#133;<br>
+&#133;Мигнуло&#133;<br>
+&#133;И&nbsp;стало тихо.</p>
+
+<p>Зона прошла изменение&#133;</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.22" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.46 (171)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Levakov_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="rus">
+	<meta http-equiv="Keywords" content="game, games, stalker, s.t.a.l.k.e.r., oblivion lost, software, development">
+	<link rel="stylesheet" href="css/style.css">
+	<title>S.T.A.L.K.E.R. - Community: Конкурсы </title>
+<script language="VBScript">
+<!--
+Sub lighting_FSCommand(ByVal command, ByVal args)
+  call lighting_DoFSCommand(command, args)
+end sub
+-->
+</script>
+
+<script language=javascript>
+//if(!top.contents){
+//top.
+parent.document.title='S.T.A.L.K.E.R. - Community: Конкурсы';
+//}
+
+/*------------------For Flash Menu----------------------*/
+var id=3;
+var id_sound=2-1;
+var brNav,brIE = false;
+if (navigator.appName.indexOf("Microsoft") != -1) {
+	brIE = true;
+	} else {
+	brNav = true;
+}
+
+function menu_DoFSCommand(command, args) {
+	if ( command == "init" ) {
+    	if (document.menu != null ) {
+	    	document.menu.GotoFrame(id);
+    	}
+	}
+}
+
+function dSend() {
+	if (brIE) {document.menu.GotoFrame(id);}
+	if(brIE ? parent.frames.music : parent.frames[0]){
+		document.lighting.GotoFrame(id_sound+1);
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(id_sound+2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(id_sound+2);
+		}
+	} else {
+		document.lighting.GotoFrame(1);
+	}
+}
+/*______________________________________________________*/
+
+var time=1794818423*1000;
+   
+function lighting_DoFSCommand(comm, arg){
+if(parent.music){
+	if (comm == "no_sound"){
+		document.cookie = "sound=1;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(2);
+		} else {
+			parent.frames[0].document.music.GotoFrame(2);
+		}
+	}
+	if (comm == "sound"){
+		document.cookie = "sound=2;"
+		if (brIE) {
+			parent.frames.music.music.GotoFrame(3);
+		} else {
+			parent.frames[0].document.music.GotoFrame(3);
+		}
+	}
+}
+}
+</script>
+<script language="JavaScript">
+<!--
+function rnd_win(){
+   var randscript = -1;
+   var howMany =10000;
+   while (randscript <= 0 || randscript > howMany || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+1));
+   }
+   return randscript;
+}
+
+
+function screen_view (url)
+{
+var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+function screen_view_big (url)
+{
+ var  v_screens=  rnd_win(); 
+ var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+
+
+function wallpaper_view (url, res)
+{
+	if (res) { var x_res = res;	} else { var x_res = 800; }
+	 var  v_screens=  rnd_win(); 
+	var y_res = x_res*0.75;
+    window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
+}
+-->
+</script></head>
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+<tr>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+    <td rowspan="2" width="900">
+
+<table cellspacing="0" cellpadding="0" border="0" width="900" height="100%">
+<tr>
+    <td valign="top" height="99"><img src="images/top_left_back.jpg" width="90" height="99" border="0"></td>
+    <td valign="top" height="99">
+<!--Main Header-->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="logo2" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/logo2.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED menu=false src="swf/logo2.swf"
+	 quality=high bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="logo2" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="360" HEIGHT="77" id="lighting" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/lighting.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/lighting.swf"
+	 quality=high menu=false bgcolor=#000000  WIDTH="360" HEIGHT="77" NAME="lighting" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="22" id="news_display" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/news_display.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/news_display.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="22" NAME="news_display" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+                      <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="438" height="22" id="menu">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+<param name="movie" value="menu_rus.swf"><PARAM NAME=menu VALUE=false>
+                          <param name="quality" value="high"><param name="bgcolor" value="#000000">
+                          <embed src="menu_rus.swf" menu="false" bgcolor="#000000" width="438" height="22" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="menu" allowscriptaccess="always" wmode="opaque"></embed></object></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+<!--End Main Header-->
+	</td>
+    <td valign="top" height="99"><img src="images/top_right_back.jpg" width="90" height="99" border="0"></td>
+</tr>
+<tr>
+    <td valign="bottom" height="95%"><img src="images/left_back_line.jpg" width="90" height="420" border="0"></td>
+    <td valign="top">
+<table cellspacing="0" cellpadding="0" border="0" height="100%">
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+                                                        <td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+ <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=menu VALUE=false>
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
+WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
+
+<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
+<param name="allowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+
+	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
+	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
+	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
+-->
+    <td>
+
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="385" height="20" border="0"></td>
+    <td><img src="images/_dot.gif" width="26" height="20" border="0"></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="25" border="0"></td>
+    <td align="right" class="m_head">Community</td>
+    <td></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="5" height="19" border="0"></td>
+    <td align="right" class="m_nav"><font color='#ffffff' class='subnav'>Конкурсы</font> | <a href='index_t_community_s_links.html' title='Ссылки'><font color='#CBCBCB'  class='subnav'>Ссылки</font></a> | <a href='http://www.gsc-game.com/russian/main.php?t=community&s=forums&s_game_type=xr&lang=ru' target='_blank' title='Форум'><font color='#CBCBCB'  class='subnav'>Форум</font></a></td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="3"><img src="images/header_line.gif" width="416" height="16" border="0"></td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+    <td valign="top">
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+    <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
+    <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
+<tr><td><!--Main Text-->
+<!--<span class="newsT"><b>Support | Feedback Form</b></span>
+
+<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_contest.gif" width="503" height="39" border="0" alt=""></p>
+<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
+<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
+-->
+<script language="JavaScript">
+<!--
+ var howMany =6;
+ var Min=1;
+
+function rndnumber(){
+   var randscript = -1
+   while (randscript < Min || randscript > (howMany+Min) || isNaN(randscript)){
+      randscript = parseInt(Math.random()*(howMany+Min));
+   }
+   return randscript
+}
+var Max=rndnumber();
+var ImgH="0";
+if(Max<10) ImgH="0"+Max+"";
+else ImgH = Max;
+Cod ="<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"6\" border=\"0\"></td></tr>";
+Cod =Cod +"<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\" valign=\"top\">";
+Cod =Cod +"<img src=\"images/_dot.gif\" width=\"20\" height=\"27\" border=\"0\"><span class=\"myHeader\">Истории Зоны</span></td></tr>";
+Cod =Cod +"<tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"14\" border=\"0\"></td></tr>";
+Cod =Cod +"</table>";
+//-->
+</script>
+<script language="JavaScript">document.write(Cod)</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><p><b>Истории Зоны | <a href="index_t_community_s_contest_ss_conditions.html" class="myLink">Условия Литературного Конкурса</a> | <a href="index_t_community_s_contest_ss_monsters.html" class="myLink">Результаты &quot;Бала Монстров&quot;</a></b><br><img src="images/_dot.gif" width="1" height="7" border="0" alt=""></p></td></tr></table>	<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td><img src="images/_dot.gif" alt="" width="1" height="8" border="0"></td></tr>
+<tr><td>
+</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="8" border="0"></td></tr>
+<tr>
+    <td><img src="images/_contest/header_01.jpg" alt="" width="339" height="29" border="0"><img src="images/_contest/header_date.jpg" alt="" width="164" height="29" border="0" usemap="#MapR"></td>
+</tr></table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+		<td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_262.html"  class="myH3">Антисталкер: Дорога в ад</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Макс Т.</b><br>Дата: <b>04/02/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>827</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>15</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Необычное ощущение, когда напряжение достигает придела, тебе становится приятно. Как будто организм превращается в натянутые струны, а мозг-музыкант ловко управляется с ними...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.78" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.54&nbsp;(83)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_262.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_262.html">комментарии</a> | <a href="download/contest/Maks_t_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_263.html"  class="myH3">Проклятый чан</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Metaball</b><br>Дата: <b>04/02/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>653</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Я проверял - здесь не было аномалий. - сказал он глядя на то, чем был Сирс.-...Хотя Зона часто подкидывала что-то новенькое...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="37.94" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.42&nbsp;(36)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_263.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_263.html">комментарии</a> | <a href="download/contest/Metaball_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_264.html"  class="myH3">Без названия</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>VictoZ</b><br>Дата: <b>04/02/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>712</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>6</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Быстро придя в себя, сталкер побежал к небольшому окну, прямо напротив лестницы. Рядом с ним проходила водосточная труба. Когда он уже начал вылезать из окна, по лестнице снова кто-то поднялся и, увидев стакера его, открыл огонь из пистолета...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="21.56" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;3.08&nbsp;(50)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_264.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_264.html">комментарии</a> | <a href="download/contest/VictoZ_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_269.html"  class="myH3">Ядерный Взрыв</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Dolzi</b><br>Дата: <b>17/03/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>436</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>11</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...после этого он подумал, откуда тогда появились мутанты, и звери, и он решил сходить с 
+этими вопросом ко многим знакомым учёным, он спросил их, могут ли люди стать очень не 
+красивыми или даже я бы сказал похожими ...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="17.5" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;2.50&nbsp;(24)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_269.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_269.html">комментарии</a> | <a href="download/contest/Dolzi_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_270.html"  class="myH3">Странник</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Elena R</b><br>Дата: <b>17/03/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>435</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>7</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Он лежал, пусть и не со связанными руками, но под наблюдением двух солдат из числа подразделений, охранявших Зону...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="34.02" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;4.86&nbsp;(14)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_270.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_270.html">комментарии</a> | <a href="_down_contest.php?id=270&link=Elena R_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_271.html"  class="myH3">Макс</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Holoduk</b><br>Дата: <b>17/03/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>537</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>17</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Назвать нормальным восход в Зоне язык не повернётся. Это или кислотное месиво фиолетово-красных оттенков в просветах туч...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="37.66" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.38&nbsp;(48)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_271.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_271.html">комментарии</a> | <a href="download/contest/Holoduk_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_272.html"  class="myH3">Я - один из них</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Саша Седых</b><br>Дата: <b>17/03/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>965</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>31</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...поднимали столбы пыли и с диким рёвом уносились вдаль,теперь человек с самым воспалённым воображением не мог бы представить,как какой-нибудь...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="40.88" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.84&nbsp;(142)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_272.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_272.html">комментарии</a> | <a href="_down_contest.php?id=272&link=Sasha Sedih_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_273.html"  class="myH3">Айболит</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Владимир Алифанов</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>321</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Мой спутник досадливо дернул плечом, но потом все же остановился, поправляя свой "АК" - последняя спецмодификация, в войска, как водится, еще не поступала, а у сталкеров побогаче уже вовсю в ходу...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="47.95" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;6.85&nbsp;(26)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_273.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_273.html">комментарии</a> | <a href="download/contest/Alifanov_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_274.html"  class="myH3">Снорк</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Владимир Алифанов</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>532</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>10</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Темный горизонт над Зоной стал медленно разгораться опаловым заревом. Перед прошлым выбросом было то же самое - но тогда мы знали, что находимся в безопасности...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="44.73" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;6.39&nbsp;(44)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_274.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_274.html">комментарии</a> | <a href="download/contest/Alifanov_2.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_275.html"  class="myH3">. . .Please don't cry. . .</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Chaos & Reven_craw</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>384</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>4</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Дредноут - дьявол в человеческом обличии. Существо, которому любое эмоциональное напряжение, видимо, было изначально не присуще. Недавно от торгашей я слышал знаменитую историю, как этот громила...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.97" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.71&nbsp;(49)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_275.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_275.html">комментарии</a> | <a href="download/contest/Chaos_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_276.html"  class="myH3">Последняя ходка</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Серебряков Дмитрий aka Freeman</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>924</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>62</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Через секунду тишины трубка характерно стукнулась о поверхность стола, и все стихло. Хе-хе, а он совсем не изменился, подумалось мне, и я вспомнил случай, когда Комар...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="40.11" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.73&nbsp;(378)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_276.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_276.html">комментарии</a> | <a href="download/contest/Freeman_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_277.html"  class="myH3">Чернобыль</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Кузнецов Артём aka Orc</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>1068</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>31</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Над Чернобылем,будто пред бурей,
+Вились птицы,свободы сыны,
+Небо было светлее лазури,
+Город спалв пышном цвете весны...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="40.04" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.72&nbsp;(461)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_277.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_277.html">комментарии</a> | <a href="download/contest/Orc_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_278.html"  class="myH3">Скалолаз</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Powercom</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>352</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Артефактов приметных у меня с собой не было, на тварь из местных я вроде тоже не шибко похож, а ведь увязался за мной этот горе-охотник, с десяток километров протопал...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="53.83" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;7.69&nbsp;(26)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_278.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_278.html">комментарии</a> | <a href="download/contest/Powercom_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_279.html"  class="myH3">Без названия</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Puas</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>242</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Солдаты молча поднялись. Один из них залил костер, и быстрым шагом они пошли прочь. Никто не задавал вопросов...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(5)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_279.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_279.html">комментарии</a> | <a href="download/contest/Puas_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_280.html"  class="myH3">Трудный месяц Май</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Явган Пурст</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>271</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>0</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...В сталкерских кругах он был известен под именем Ouwen , что значит сова, настоящее его имя было Владимир. Ему было 27...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="40.25" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.75&nbsp;(12)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_280.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_280.html">комментарии</a> | <a href="download/contest/Purst_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_281.html"  class="myH3">Цепь</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Quester</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>314</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>4</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...и теперь вот они, обелиски первым героям освоения, которых не только сталкеры считают кретинами и идиотами, хотя кто тогда знал. Остовы брошенных БТР-ов и строительной техники...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.55" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.65&nbsp;(17)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_281.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_281.html">комментарии</a> | <a href="download/contest/Quester_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_282.html"  class="myH3">Камень Абсолюта</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Валерьян Симаков</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>295</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>2</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...во внешнюю среду, а вовнутрь, куда-то в глубину его крепкого, шишковатого черепа, в котором двумя колодцами горели красные, обожженные глаза.....</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="41.16" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.88&nbsp;(16)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_282.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_282.html">комментарии</a> | <a href="download/contest/Simakov_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_283.html"  class="myH3">Одна Зона на всех</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Дмитрий Скобелев</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>329</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>1</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Солдаты молча поднялись. Один из них залил костер, и быстрым шагом они пошли прочь. Никто не задавал вопросов. Это армия, - за отказ подчиниться, расстрел...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.48" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.64&nbsp;(39)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_283.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_283.html">комментарии</a> | <a href="download/contest/Skobelev_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_284.html"  class="myH3">Не ходи за околицу</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Spirit of war</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>359</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>6</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Вероятность того, что в ЗОНЕ есть постоянное население, практически равнялась нулю. И дело здесь было вовсе не в опасных тварях, радиации и влиянии самой ЗОНЫ...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.92" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.56&nbsp;(25)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_284.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_284.html">комментарии</a> | <a href="_down_contest.php?id=284&link=Spirit of war_1.zip">скачать</a></font></td></tr>
+	</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
+	</table>
+</td></tr>
+</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="17" border="0"></td></tr>
+<tr><td class="myH3"><a href="index_t_community_s_contest_ss_rating_id_285.html"  class="myH3">Что за разговор без пива</a></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Spirit of war</b><br>Дата: <b>23/04/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:&nbsp;</font><font color="#9DC0FB"><b>327</b></font>&nbsp;</td><td width="115" align="right" valign="bottom" color="6D6D6D"><font color="#6D6D6D">Комментариев:&nbsp;</font><font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td>...Чего ты сказал? Запомни, сынок, лучше тебе не ссориться ни с кем в этом заведении. Во-первых, с тобой здесь перестанут торговать, и тебе за спичками...</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.2" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;5.60&nbsp;(30)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_285.html" target="_blank" onClick="history.go(0)">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_285.html">комментарии</a> | <a href="_down_contest.php?id=285&link=Spirit of war_2.zip">скачать</a></font></td></tr>
+	</table>
+
+	</td></tr>
+</table>
+					</td>
+  
+  <tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+  <tr>
+  	<td><a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_13.html" class="nw_link">&laquo; 20 предыдущих  историй</a> | <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_1.html" class="nw_link">1</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_2.html" class="nw_link">2</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_3.html" class="nw_link">3</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_4.html" class="nw_link">4</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_5.html" class="nw_link">5</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_6.html" class="nw_link">6</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_7.html" class="nw_link">7</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_8.html" class="nw_link">8</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_9.html" class="nw_link">9</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_10.html" class="nw_link">10</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_11.html" class="nw_link">11</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_12.html" class="nw_link">12</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_13.html" class="nw_link">13</a>  |  14  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_15.html" class="nw_link">15</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_16.html" class="nw_link">16</a>  |  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_17.html" class="nw_link">17</a> | <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_15.html" class="nw_link">20 cледующих  историй &raquo;</a> &nbsp;&nbsp;| <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_all.html" class="nw_link">Все истории</a><br>&nbsp;</td>
+
+
+<!--  	<td><a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_13.html" class="nw_link">&laquo; 20 ����������  �������</a> | 	  <a href="index_t_community_s_contest_ss_story_sort_date_asc_c_index_15.html" class="nw_link">20 c��������  ������� &raquo;</a><br>&nbsp;</td>
+-->  </tr>
+
+</tr>
+</table>
+<map name="MapR">
+  <area shape="poly" coords="0,27,15,8,91,8,75,27" href="index_t_community_s_contest_ss_story_sort_rate_desc.html">
+  <area shape="poly" coords="79,28,96,9,161,9,161,28" href="index_t_community_s_contest_ss_story_sort_date_desc.html">
+</map>
+<map name="MapD">
+  <area shape="poly" coords="0,27,15,8,91,8,75,27" href="index_t_community_s_contest_ss_story_sort_rate_desc.html">
+  <area shape="poly" coords="79,28,96,9,161,9,161,28" href="index_t_community_s_contest_ss_story_sort_date_desc.html">
+</map>
+ <!--End Main Text <table></table>--></td></tr>
+<tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
+</table></td><td width="100" valign="top">
+
+<!--Hot Elements--><!--dinamic menu-->
+<!--end dinamic menu-->
+
+<div id="sidebar_hot_block"></div>
+<div id="sidebar_screen"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_game.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_graphics.gif" alt="" width="114" height="130" border="0"><br><br><img src="images/_dot.gif" width="27" height="1" border="0"><img src="images/logo/best_tech.gif" alt="" width="114" height="130" border="0"></td></tr>
+</table><!--End Hot Elements--></td>
+    <td width="22"><img src="images/_dot.gif" width="21" height="1" border="0"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
+</tr>
+<tr>
+	<td height="45" class="copyr" align="center"><a href="../&s=contest&ss=story.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | Community | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
+src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
+�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
+Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">22&nbsp;&nbsp;146</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
+</tr>
+<tr><td height="2"><img src="images/_dot.gif" width="1" height="6" border="0"></td></tr>
+</table>
+
+	</td>
+    <td valign="bottom" height="90%"><img src="images/right_back_line.jpg" width="90" height="420" border="0"></td>
+</tr>
+</table>
+
+</td>
+    <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
+</tr>
+<tr>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+    <td><img src="images/_dot.gif" width="1" height="420" border="0"></td>
+</tr>
+</table>
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,322 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Нет выхода - Саня</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_202.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Нет выхода</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Саня</b><br>Дата: <b>05/11/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>563</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>14</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+<P>Боже мой, выхода нет из Зоны. Непонятно почему на блокпостах усилилась охрана, даже на некоторых есть спецназ.</P>
+<P>Я обыкновенный сталкер - новичок, вляпался на первом же деле. Бродя по зараженной земле уже больше часа, я наткнулся на заброшенную деревню. Судя по виду деревни, жителей в ней нет. Я сделал ещё несколько шагов, и увидел целый дом. Ну сказать что он прям целый не могу. Открыв дверь, я залетел в дом и выпустил очередь. Мне рассказывали сталкеры, что у мародёров появилась идея как как избавляться от врагов, засядут в доме и ждут когда ты войдёшь, а когда зайдёшь делают из тебя друшлак.</P>
+<P>Я лёг спать,  в обнимку с автоматом. Утром, я начал ходить по дому </P>
+<P>- Жрать нечего </P>
+<P>Вспомнив что в рюкзаке есть паёк, я достал его, и жадно разорвал обёртку.  Я сразу понял что делать мне здесь нечего,  и спокойно направлялся к двери, и быстро рванул на пол. Через окно было видно как бродил “контролер”. Он вёл себя как будто только что родился,  неосторожно ходил и заглядывал в каждое окно.   Когда я начал перезаряжать автомат, то с ужасом увидел, что обойма пуста. Но рядом лежал топор.</P>
+<P>Контролер спокойно подходил к моему дому. Заглянул в окно….  </P>
+<P>Я взмахнул топором, раздался ужасный рёв. Его тело упало на землю, и судорожно дёргалось.  </P>
+<P>Собрав вещи, я  пошёл по дороге. У меня бегали мурашки по коже, патронов нет, детектор аномалий не работает, мне казалось, что сейчас выпрыгнет стая слепых псов и разорвёт меня.  Но всё обошлось, на первый час. Пройдя около километра я замер на месте, впереди меня лежали останки человека. Его разорвало на части. Применив самый простой метод, я бросил камень. Как и должно было быть , камень полетел в другую строну, в мою. Он влетел мне прямо в лоб. Боль была настолько сильная, что я потерял сознание.</P>
+<P>- Очнулся…. – усмехнулся старик  сидящий рядом.</P>
+<P>- Да,  хорошо ты аномалии находишь.</P>
+<P>Открыв глаза, я стал думать, где я ?  Голова была перебинтована.  Я начал осматриваться, в доме мебели не было, только тумбочка, да и то без дверки,  на ней стояла бутылка водки. На кухне горел свет, от туда доносились маты старика.</P>
+<P>- Су….ка!!!  - Громко заорал старик, и судя по звуку что то раздавил.</P>
+<P>Он спокойно подошёл ко мне, и протянул тарелку с едой, и кружку чая.</P>
+<P>- От этих тараканов спасу нет. Величиной с крысу.</P>
+<P>Я его перебил и спросил:</P>
+<P>- Где я?</P>
+<P>- Да ты парень не дёргайся, всё нормально. Слава богу ты камень не большой кинул, а то бы тебе башку пробил. А ты сталкер так?     </P>
+<P>Я с трудом ответил:</P>
+<P>- Да</P>
+<P>- Ну вот и хорошо. Меня зовут Александр Петрович, а вообще я торговец. Я сразу понял, что ты новичок. И есть у меня к тебе одно дело.</P>
+<P>- Я слушаю!</P>
+<P>- Один мой приятель, командир блокпоста,  который меня снабжал едой, оружием, деньгами, куда-то пропал. Некоторые солдаты говорили, что он просто взял и ушёл. Похоже, его увёл контролер или ещё какая ни будь нечисть. Найди его, и приведи сюда, хорошо заплачу! Ну что согласен?</P>
+<P>Я подумал и ответил:</P>
+<P>- Хорошо. Но у меня условие. Когда я приведу командира, ты вытащишь меня от сюда.</P>
+<P>- Ну - у не знаю. Я сам здесь торчу уже неделю, мне тот вояка помогал.        </P>
+<P>Мы ещё выпели чаю. Послышался тихий стук в дверь, от туда доносился чей то голос:</P>
+<P>- Петрович, открывай это я!</P>
+<P>Торговец неуклюжа встал со стула, и пошёл к двери. В дом вошёл сталкер в чёрном обмундировании. В руке у него был, АК – 47, с подствольным гранатомётом. Он посмотрел на меня и каким то странным голосом сказал:</P>
+<P>- А это кто?</P>
+<P>- Это сталкер, новичок, я его на дороге нашёл. Весь в крови лежал, вот я его и принёс.</P>
+<P>- А-а, ну ясно.</P>
+<P>- Да кстати. Я ему предложил одно дело он вроде согласился, ты как пойдёшь с ним?</P>
+<P>- Петрович,  ты же меня знаешь, мне без разницы какое дело, главное это оплата.</P>
+<P>- Ну… сколько наскребу.</P>
+<P>- А оружие? </P>
+<P>- Ну я посмотрю что есть. Ладно это утром.</P>
+<B><P>На следующее утро.</P>
+</B><P>Я проснулся от храпа торговца. Странное утро, в Зоне. Лучи солнца, вместо того что бы греть, всё морозят. Птички не щебечут, не видно никаких зверьков, только бегают крысы.   </P>
+<P>Сталкер по кличке Белый, как то странно он просыпается. Встал с постели как учат спецназовцев. Всё своё обмундирование надел за меньше минуты. Странный тип. Подошёл к спящему торговцу, и легонько его пнул.</P>
+<P>- Петрович!!. Подъём, уже утро. – Громко сказал Белый. </P>
+<P>- А, чё . Уже утро,  а сколько сейчас?</P>
+<P>- Шесть утра.</P>
+<P>Торговец с кислой рожей потянулся, и пошёл на кухню. Опохмелиться наверное.</P>
+<P>- Петрович! Ну, чё  ты там? Дай нам оружие, да мы пойдём.</P>
+<P>- Ага! Без карты, без жратвы пойдёте?!</P>
+<P>Белый подошёл к торговцу, они разложили карту. Торговец, показал пальцем, область, где приблизительно находиться командир. Это рядом с городом Припять. Бывал я там, жуткое место. Петрович пошёл, в какую-то тёмную комнату, и принёс один F2000, АК-74, пять обойм, и станковый пулемёт. Белый, от удивления широко раскрыл глаза, и спросил:</P>
+<P>- А это у тебя от куда?</P>
+<P>- Старый приятель со склада, принёс. Да это ещё мало, больше половины у меня вояки отобрали. Совсем обарзели. Только это и спрятал.   </P>
+<P>Я взял F2000, и пару обойм от калаша. Белый, прихватил станковый пулемёт. А АК-74 отдал Петровичу, как он говорил: “На всякий случай.”   </P>
+<P>Продвигались мы осторожно. Пройдя около километра, мы нашли танк, похоже на Т-80. Он был покрыт брезентом. Этот брезент означал что техника заражена. Потом был слышан звук летящего вертолёта. На нём был странный опознавательный знак. Похоже на то, что он вёз научную экспедицию. Ещё одна партия самоубийц. Выйдя на опушку, Белый со злостью проговорил:</P>
+<P>- Бля, спецназ! Похоже, не мы одни его ищем.  </P>
+<P>Их пришлось обходить за километр. Я даже жалел что согласился, лучше б  сдался пограничникам. Опустив голову вниз я наткнулся на Белого. Мы стояли рядом со старым заводом, Белый всё время прислушивался. И как видно не зря. Из дыры в стене вылетел солдат с автоматом, и начал строчить по нам. Чёрт это было так неожиданно, что одна пуля пробило мне плечо. Белый рванул вместе со мной в сторону, остановившись он скинул с плеча автомат, прицелился и ждал, пока эта мразь покажется. Но никто не выбежал. Меня пронизала насквозь эта жуткая тишина. Вдруг послышался тихий стон, этот стон приближался, всё ближе и ближе. Мы затаили дыхание. Из-за угла вышла целая толпа зомби, и  сзади. Так  как мы были между стен, бежать было некуда. Белый начал стрелять из своего автомата. Выстреливая обойму за обоймой. Я тоже принял в этом участие. И вдруг послышался звук которого я боялся. Щелчок в автомате, патроны кончались. Белый вытащил из сапога огромный нож, и с криком побежал на оставшихся мертвяков.</P>
+<P>Пока я разобрался с теми что сзади, Белый к тому времени за считанные секунды выпотрошил мертвяков как настоящий мясник. Его руки были по локоть в крови. Он подошёл ко мне, вытирая нож об себя сказал:</P>
+<P>- Пойдём от сюда. В жопу это задание, без оружия мы долго не протяним.</P>
+<P>Я согласившись с ним кивнул. Когда мы походили рядом с трупами мертвяков, Белый  разгону так пнул голову мертвяка, что та аж оторвалась полетела в стену, рикошетом отлетела куда-то за угол. Из угла послышалась чья-то ругань:</P>
+<P>- Чёрт, что за дерьмо тут летает.</P>
+<P>Белый тихонько подошёл, и выглянул из-за угла. Он увидел перед собой человека в форме, по погонам явно высокого ранга. Увидев что он безоружен Белый с уверенностью пошёл к нему. Вояка увидев его даже пошатнулся. Не каждый день увидишь человека всего в крови. Он даже спросил:</P>
+<P>- Вам помощь не нужна?</P>
+<P>Белый ответил:</P>
+<P>- Мне нет а тебе?</P>
+<P>- Тоже нет. А вы от куда?</P>
+<P>- Мы пришли за тобой.</P>
+<P>- Кто это мы?</P>
+<P>- Я и…</P>
+<P>Белый подозвал меня, И я  вышел из-за угла. Белый снова вернулся к теме:</P>
+<P>- Нас прислал за тобой Александр Петрович. И ты сейчас пойдёшь с нами к нему.</P>
+<P>- Хорошо, хорошо я иду.</P>
+<P>Шли мы свободно, только командир вечно оглядывался по сторонам.</P>
+<P>Выйдя из леса, мы увидели дом Петровича. Подойдя к дому, Белый постучал в дверь, открыл Петрович, увидев Белого сказал:</P>
+<P>- Ты из какой задницы вылез?! Давай – те заходите.</P>
+<P>Уставший я завалился на койку. Я долго думал  обо всём. Странно что ещё вчера я смерился с тем что выхода нет. Оказалось что это не так, выход <U>ЕСТЬ</U>.</P>
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="37.17" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.31 (32)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Sanya.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

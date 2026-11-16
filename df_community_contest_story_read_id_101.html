@@ -1,0 +1,426 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Судьба Сталкеров - ИЛЬЯ РЫБАЛКИН aka Ily@n</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_101.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Судьба Сталкеров</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>ИЛЬЯ РЫБАЛКИН aka Ily@n</b><br>Дата: <b>01/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>797</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>5</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p align="right"><i>Тому, кто взял оружие<br>
+Не&nbsp;подобает искать помощи<br>
+У&nbsp;безоружных ног.</i></p>
+
+<p align="right"><i> <b>Сулла</b> (о&nbsp;чести сталкера).</i></p>
+
+<p class="copyr"><b>1.Встреча.</b></p>
+
+<p> Меня всё&nbsp;ещё&nbsp;тошнило. Я&nbsp;всё&nbsp;ближе и&nbsp;ближе подходил к&nbsp;месту встречи, где меня должен был ждать сталкер. Дождь лил как из&nbsp;ведра.</p>
+
+<p> Я&nbsp;думал: &#171;Зачеи идти туда, откуда ещё&nbsp;никто не&nbsp;возвращался? Мужеством я&nbsp;никогда не&nbsp;отличался, тем более что мне ещё&nbsp;18&nbsp;лет и&nbsp;я&nbsp;почти не&nbsp;умею обращатся с&nbsp;оружием!&#187; Нет, меня туда манили не&nbsp;долг перед родиной, не&nbsp;желание проявить себя и&nbsp;уж&nbsp;тем более не&nbsp;деньги, которые можно получить продавая артефакты. Я&nbsp;искал там цену человека, цену жизни, её&nbsp;смысл.</p>
+
+<p> Грунтовая дорога была мокрой и&nbsp;при каждом шаге я&nbsp;танул в&nbsp;грязи; ступать было очень тяжело.Я смотрел в&nbsp;серое небо, мрачное и&nbsp;холодное. Те&nbsp;лучи солнца, что проьивались сквозь олака зажигали моё&nbsp;сердце, давая надежду на&nbsp;прояснение погоды. Увидев фигуру вдали, я&nbsp;сразу понял, что это сталкер. Крепкий мужчина, высокого роста, широкоплечий, с&nbsp;огромным шрамом на&nbsp;добром лице и&nbsp;АК&nbsp;в&nbsp;руках.</p>
+
+<p> &#171;Я&nbsp;Алексей, это ты&nbsp;хочешь попасть в&nbsp;ЗОНУ!&#187;-громко спросил он.</p>
+
+<p> -Да,&nbsp;меня зовут Илья!</p>
+
+<p> -А&nbsp;ты&nbsp;готов встретить все опастности которые ждут тебя там?</p>
+
+<p> Я&nbsp;смутился, опустил глаза и&nbsp;ответил: &#171;Не&nbsp;знаю.А Вы&nbsp;как сюда пали!&#187;</p>
+
+<p> -Можешь называть меня на&nbsp;ты,&nbsp;а&nbsp;сюда меня провёл&nbsp;сталкер, я&nbsp;многому у&nbsp;него научился, а&nbsp;потом он&nbsp;умер, спасая меня, а&nbsp;я&nbsp;остался в&nbsp;живых. Я&nbsp;уже 2&nbsp;года в&nbsp;ЗОНЕ&#133;</p>
+
+<p> Его глаза груснели, казалось будто он&nbsp;счас заплачет. Я&nbsp;решил поменять тему:</p>
+
+<p> -Чего мы&nbsp;ждём?</p>
+
+<p> -Еще один должен к&nbsp;нам присоединиться.</p>
+
+<p> -Что мы&nbsp;будем делать на&nbsp;ЗОНЕ?</p>
+
+<p> -Мне доверили очень трудное задание-попасть в&nbsp;лабораторию. Трудное потому, что там вполне могут обитать мутанты. Ты&nbsp;как, идёшь?</p>
+
+<p>&nbsp;Лицо моё&nbsp;скорее всего в&nbsp;тот момент побелело. Я&nbsp;знал, что будет нелегко, но&nbsp;чтоб настолько&#133;идти в&nbsp;лабораторию, в&nbsp;которой может быть всё&nbsp;что угодно. &#171;Да,&nbsp;да,&nbsp;конечно,"-сказал я.&nbsp;У&nbsp;меня кружилась голова, в&nbsp;глазах были искры. Я&nbsp;упал и&nbsp;сразу уснул.мне снилось как нас убивают мутанты, как едят Лёху,&nbsp;а&nbsp;я&nbsp;на&nbsp;это смотрел&#133;когда я&nbsp;проснулся, я&nbsp;увидел, что Алексей <nobr>что-то</nobr> говорил <nobr>какой-то</nobr> девушке. Она была невероятно красива. Голубые глаза,казавшиеся мне очень грустными, темные волосы, красивая фигура.</p>
+
+<p> &#171;Это наш новый спутник,"-сказал Лёха.</p>
+
+<p> -Но&nbsp;<nobr>это-девушка</nobr>! Ты&nbsp;что, хочешь пойти в&nbsp;лаболаторию с&nbsp;девушкой?</p>
+
+<p> -За&nbsp;кого меня принимаешь? Конечно&nbsp;же не&nbsp;хочу. Но&nbsp;она наняла меня при одном условии, что она пойдет с&nbsp;нами. Так ты&nbsp;идёшь?</p>
+
+<p> -Да,&nbsp;я&nbsp;согласен.</p>
+
+<p> &#171;Ну&nbsp;вот и&nbsp;хорошо,-вмешалась девушка,-предлагаю тронуться в&nbsp;путь,нам рредстоит долгое путешевствие!&#187;</p>
+
+<p> Я&nbsp;попытался познакомиться с&nbsp;ней, но&nbsp;ничего не&nbsp;получилось.</p>
+
+<p class="copyr"><b>2.Дома у&nbsp;Лёхи.</b></p>
+
+<p>&nbsp;У&nbsp;меня всё&nbsp;ещё&nbsp;болела голова. Мы&nbsp;быстро перебежали на&nbsp;ту&nbsp;сторону ограды, так что нас даже никто не&nbsp;заметил. А&nbsp;говорили- самое охраняемое место на&nbsp;земле. Лёха&nbsp;объяснил это так:&#171;Сейчас за&nbsp;<nobr>деньги-все</nobr> что угодно!&#187;. Девушка ни&nbsp;разу не&nbsp;обранила ни&nbsp;слова. Пройдя ещё&nbsp;около километра, мы&nbsp;увидели в&nbsp;кустах Москвич. У.&nbsp;ЛЛёхи&nbsp;всё&nbsp;схваченно! Он&nbsp;сел за&nbsp;руль, я&nbsp;рядом, а&nbsp;девушка легла на&nbsp;заднние сиденья. Надо было начать разговор:</p>
+
+<p> -Куда мы&nbsp;едем?</p>
+
+<p> -У&nbsp;меня тут недалеко прекрасный дом с&nbsp;подвалом, там мы&nbsp;отдохнём&nbsp;до&nbsp;завра, поедим и&nbsp;подготовимся к&nbsp;путешествию. Я&nbsp;уже заказал нужное снаряжение у&nbsp;торговца.</p>
+
+<p> -Тут есть торгаш?</p>
+
+<p> -Да,&nbsp;мерзкий тип, он&nbsp;предлагает мододым сталкерам невыполнимые задания, но&nbsp;у&nbsp;него самые крепкие связи с&nbsp;внешним миром, да&nbsp;и&nbsp;оружие он&nbsp;продаёт&nbsp;неплохое. Мне всё&nbsp;равно с&nbsp;кем иметь дело.</p>
+
+<p> Я&nbsp;стал думать о&nbsp;своих новых товарищах. Мне казалось, что меня здесь будут называть салагой и&nbsp;постоянно будут говорить что и&nbsp;как делать&#133; Но&nbsp;Лёха&nbsp;ставил меня наравне с&nbsp;собой. Классный он&nbsp;всё&nbsp;же мужик! Я&nbsp;думал, что в&nbsp;зону рвутся только здоровые мужики, но&nbsp;никак не&nbsp;ожидал увидеть здесь хрупкую девушку. Зачем ей&nbsp;так срочно надо было попасть в&nbsp;лабораторию? Я&nbsp;надеялся это выяснить как можно скорее.</p>
+
+<p> Меж тем, вечерело. Тучи уже разбегались, и&nbsp;дождь уже кончался, только маленькие капли моросили по&nbsp;стеклу и&nbsp;крыше. Солнце, только выглянувшее <nobr>из-за</nobr> туч, начало скрываться за&nbsp;горизонтом. Не&nbsp;было слышно ничего, кроие воя то&nbsp;ли волка, то&nbsp;ли собаки. В&nbsp;то&nbsp;время я&nbsp;очень мало знал о&nbsp;ЗОНЕ, её&nbsp;природе, обитателях.</p>
+
+<p> Мы&nbsp;подъехали к&nbsp;&#171;прекрасному&#187; дому Алексея. Оон был сильно разрушен снаружи, но&nbsp;подвал был целым.В одной из&nbsp;комнат я&nbsp;заметил много маленьких скеклетов и&nbsp;костей.&#171;Тут раньше был дедский сад,-сказал Лёха&nbsp;грустно,-они умерли,скорее всего, сразу после взрыва&#187;. Я&nbsp;предложил ему похоронить скелеты, Лёха&nbsp;поддержал мою идею. Тучи уже разбежались и&nbsp;на&nbsp;небе была огромная желтая луна, яркие звёзды: ночь была светлой. Мы&nbsp;вышли во&nbsp;двор, вырыли яму, положили туда скелеты. Лёха&nbsp;произнес краткую молитву, я&nbsp;еле сдержал слёзы.</p>
+
+<p>&nbsp;В&nbsp;подвале раньше было бомбоубежище, ещё&nbsp;с&nbsp;2004&nbsp;года. Там мы&nbsp;уютно расположились.</p>
+
+<p> Примерно через пол часа раздался стук в&nbsp;дверь.</p>
+
+<p> -Я&nbsp;от&nbsp;торговца.</p>
+
+<p> Лёха&nbsp;отворил люк.</p>
+
+<p> -Принёс?</p>
+
+<p> -Да,&nbsp;АК47, 2&nbsp;ППМ , хорошие ножи (я&nbsp;удивился: &#171;Нахрена нам ножи!&#187;, но&nbsp;видом это не&nbsp;показал.), два костюма сталкера и&nbsp;рюкзаки.</p>
+
+<p> -Вот деньги! </p>
+
+<p> Тот быстро пересчитвл стопку денег и&nbsp;уже направился к&nbsp;своей машине, но&nbsp;его остановил Лёха.</p>
+
+<p> -Сколько хочешь за&nbsp;Ниву? Я&nbsp;могу предложить Москвич и&nbsp;ещё&nbsp;500$. </p>
+
+<p> Представляю своё лицо в&nbsp;тот момент. 500$ за&nbsp;этот хлам? Да&nbsp;ещё&nbsp;и&nbsp;Москвич.Вне ЗОНЫ цена Нивы- не&nbsp;больше 100$. Однако наш гость не&nbsp;посчитал это предложение слижком выгодным.</p>
+
+<p> &#171;Нива гораздо удомнее для еэды по&nbsp;дорогам ЗОНЫ, но&nbsp;я&nbsp;готов пойти на&nbsp;уступку. По&nbsp;рукам!&#187;-расщедрился он.</p>
+
+<p>&nbsp;Лёха&nbsp;проводил взглядом своего бывшего железного коня и&nbsp;прыгнул в&nbsp;подвал, звхлопнув люк. Я&nbsp;решил осмотреться в&nbsp;убежище. Тут было много спальных комнат, в&nbsp;одной из&nbsp;которых спала девушка, одна кухня, даже примитивный туалет. Всё&nbsp;было сделано для возможной жизни под землёй.&nbsp;Всё,кроме душа. Непомывшись, я&nbsp;пошёл&nbsp;спать.</p>
+
+<p> Мне снился мой родной край, мама, тихий дом в&nbsp;поле, в&nbsp;котором я&nbsp;провёл&nbsp;всё&nbsp;детство. Я&nbsp;бегаю по&nbsp;лугу с&nbsp;друзьями&#133; Мягкая рука легла мне на&nbsp;плячо, я&nbsp;проснулся и&nbsp;понял, чтоэто был всего лишь сон и&nbsp;те&nbsp;времена уже не&nbsp;вернуть. Девушка кивнула головой в&nbsp;сторону зала, самой большой комнаты убежища.</p>
+
+<p> &#171;С&nbsp;добрым утром,-сказал Лёха,-сегодня чудесный день!&#187;. Настроение у&nbsp;меня сразу приподнялось.</p>
+
+<p> &#171;Итак, это защитные костюмы, они защищают вас как от&nbsp;телесных повреждений, так и&nbsp;от&nbsp;радиации (когда я&nbsp;стал опытным сталкером, я&nbsp;узнал, что ни&nbsp;от&nbsp;того, ни&nbsp;от&nbsp;другого они особо не&nbsp;защищают, но&nbsp;моральный дух нам лёхины слова очень подняли). Примерьте их!.!&#187;</p>
+
+<p>&nbsp;Я&nbsp;одел эту штуковину, мне она пришлась по&nbsp;размеру и&nbsp;я&nbsp;чувствовал себя в&nbsp;ней прекрасно. Полюбовавшись на&nbsp;себя в&nbsp;<nobr>каком-то</nobr> разбитом зеркале, я&nbsp;дал Лёхе&nbsp;понять что всё&nbsp;окей. А&nbsp;вот девушке костюм не&nbsp;подошёл.&nbsp;Несмотря на&nbsp;то&nbsp;длина была в&nbsp;пору, размеры груди и&nbsp;талии были намного велики. Явно никто не&nbsp;расчитывал, что девушка с&nbsp;такой фигурой оденет защитный костюм. Однако, она смирилась с&nbsp;этим.</p>
+
+<p> Лёха&nbsp;продолжил: &#171;Вот АК47.Кто не&nbsp;знает что такое АК47? Это надежность и&nbsp;низкая цена, идеальные данные для новечков. Лови, Илья. А&nbsp;девушке- ППМ, хотя я&nbsp;надеюсь, что ей&nbsp;его использывать не&nbsp;придется. Так&#133; а&nbsp;мне <nobr>LR-300ML</nobr>. С&nbsp;оружием обращатся максимально осторожно, не&nbsp;стреляйте в&nbsp;пустую-только когда это на&nbsp;самом деле необходимо. А&nbsp;главное-никогда не&nbsp;направляйте на&nbsp;людей. Ясно!&#187;</p>
+
+<p> -Ясно</p>
+
+<p> -Да.&nbsp;Ещё&nbsp;каждому по&nbsp;охотничьему ножу, три аптечки,средству от&nbsp;радиации. Прошу в&nbsp;машину!</p>
+
+<p> Я&nbsp;потренеровался стрелять, делать уколы.Сначала, я&nbsp;часто мазал , но&nbsp;привыкнув к&nbsp;оружию, я&nbsp;добился успехов.</p>
+
+<p> Мы&nbsp;вышли на&nbsp;улицу и&nbsp;залезли в&nbsp;машину.</p>
+
+<p class="copyr"><b>3.Убей меня!</b></p>
+
+<p> День и&nbsp;в&nbsp;правду был солнечным и&nbsp;красивым. Небо было синим, плавно плыли облака. В&nbsp;машине оказалась магнетола, и&nbsp;я&nbsp;с&nbsp;радостью включил Лёхину кассету. Музыка была тяжёлой, я&nbsp;был в&nbsp;восторге. Взбодрившись ещё&nbsp;сильней, я&nbsp;наслаждался ветерком, дувшим из&nbsp;открытого окна.</p>
+
+<p> Вдруг Лёха&nbsp;остановил машину. &#171;Тихо!&#187;-крикнул он.&nbsp;Я&nbsp;убавил звук и&nbsp;прислушался. Был слышен лай и&nbsp;дикий вопль из&nbsp;одного дома, стоящего недалеко от&nbsp;дороги. &#171;Надо узнать кто орёт,&nbsp;пойдем проверим. Девушка останеттся в&nbsp;машине&#187;-скомандовал Лёха.&nbsp;Мы&nbsp;тино вышли из&nbsp;Нивы, остфвив девушку там, и&nbsp;двинулись к&nbsp;дому. Приоткрыв дверь мы&nbsp;увидели жуткую картину:три собаки ели ещё&nbsp;живого человека, по&nbsp;всюду была кровь, стоял дикий запах. Когда одна из&nbsp;собак повернулась, я&nbsp;увидел, что у&nbsp;неё&nbsp;совсем нет глаз. Лёха&nbsp;выстрелил, попав точно в&nbsp;углубление где у&nbsp;обычной собаки глаза. Две другие кинулись на&nbsp;нас. Снова прозвучал выстрел и&nbsp;ещё&nbsp;одна собака рухнула на&nbsp;пол. А&nbsp;выжившая свалилась на&nbsp;меня всем весом. Лёха&nbsp;направил на&nbsp;неё&nbsp;автомат, но&nbsp;стрелять не&nbsp;стал, боясь задеть меня. Собака лежала на&nbsp;мне,пытаясь своими зубами достать моё&nbsp;горло. Изо рта у&nbsp;неё&nbsp;лилась кровь. Одной рукой я&nbsp;пытался сопротивляться собаке, но&nbsp;она была явно сильнее меня. Я&nbsp;вспомнил, что у&nbsp;меня за&nbsp;разухой был нож. Нащупав оружие, я&nbsp;аккуратно достал его. &#171;Получай, тварь!&#187;-крикнул я&nbsp;и&nbsp;всадил в&nbsp;собаку нож по&nbsp;самую рукоятку. Псина, взвизгнув, стала ещё&nbsp;свирепее, как&nbsp;бы стараясь взять меня в&nbsp;Ад&nbsp;вместе с&nbsp;собой. Получив ещё&nbsp;три ранения, собака ослабла и&nbsp;я&nbsp;скинул её&nbsp;с&nbsp;себя. Тут&nbsp;же прозвучал выстрел Лёхи,&nbsp;и&nbsp;собака взвизгнула в&nbsp;последний раз. Я&nbsp;всё&nbsp;ещё&nbsp;лежал на&nbsp;полу; человек зашивелился. &#171;Он&nbsp;жив!&#187;-крикнул я.&nbsp;Лёха,&nbsp;осмотрев его, подошёл&nbsp;к&nbsp;нему и,&nbsp;приставив к&nbsp;горду АК,&nbsp;нажал на&nbsp;курок. Я&nbsp;вскочил и&nbsp;побежал на&nbsp;улицу, меня рвало, у&nbsp;меня кружилась голова.</p>
+
+<p> Я&nbsp;сидел на&nbsp;коленях, Лёха&nbsp;подошёл&nbsp;ко&nbsp;мне, бросил передо мной АК.&nbsp;&#171;Это твоё. Поверь мне, я&nbsp;сделал правильно. Помнишь я&nbsp;рассказывал о&nbsp;том сталкере который научил меня всему? Когда я&nbsp;только пришёл&nbsp;в&nbsp;ЗОНУ, мы&nbsp;нашли одного человека, попавшего в&nbsp;&#171;туман&#187;, его кожа, волосы, глаза были дико повреждены. Сталкер убил его; сказал мне: &#171;Ты&nbsp;сделаешь тоже самое со&nbsp;мной&#187;. И&nbsp;я&nbsp;сделал. Я&nbsp;убил его, когда его почти съели крысы. И&nbsp;тебя я&nbsp;прошу: убей меня, когда это понадоьится! Ладно, пойдём,&nbsp;нас уже заждались!&#187;-сказал он&nbsp;и&nbsp;направился к&nbsp;машине. Я&nbsp;сидел ещё&nbsp;пол часа на&nbsp;коленях, а&nbsp;потом сел в&nbsp;машину.</p>
+
+<p> Девушка меня удивила совсем. Она не&nbsp;поинтересовалась где мы&nbsp;были, что за&nbsp;выстрелы, и&nbsp;почему меня так рвало. Тока в&nbsp;лаборатории мы&nbsp;сможем расскрыть её&nbsp;тайну.</p>
+
+<p class="copyr"><b>4.Лаборатория.</b></p>
+
+<p> Уже в&nbsp;дали была видна лаборатория. Девушка явно оживилась. Я&nbsp;решил снова заговорить с&nbsp;Лёхой.</p>
+
+<p> -А&nbsp;что это за&nbsp;лаборатория такая?</p>
+
+<p> -Знаешь, о&nbsp;ней ходят всякие слухи. Одни говорят,что там изучали внеземной разум, другие, что там создавали химическое оружие. Ничего по&nbsp;существу, такие слухи ходят о&nbsp;всех засекреченных лабораториях. Она находится в&nbsp;очень опастной точке, очень подвергающейся радиации. Возможно, что весь персонал-мутанты.</p>
+
+<p> Когда мы&nbsp;подъехали к&nbsp;лаборатории, девушка выбежала из&nbsp;машины.</p>
+
+<p> &#171;Стой, подожди!&#187;-крикнул я,&nbsp;выходя из&nbsp;Нивы.</p>
+
+<p> -Я&nbsp;уже не&nbsp;в&nbsp;силах ждать!</p>
+
+<p> -Зачем ты&nbsp;торопишься в&nbsp;эту долбаную лабораторию?</p>
+
+<p> Ответа не&nbsp;последовало, мы&nbsp;побежали за&nbsp;ней. Когда мы&nbsp;её&nbsp;наконец догнали, она уже открывала дверь перед входом в&nbsp;лабораторию. Я&nbsp;помог ей.&nbsp;А&nbsp;Лёха&nbsp;достал два хороших корманных фонарика. Мы&nbsp;вошли в&nbsp;лабораторию. При помощи фонариков нам удалось включить свет. Открывая одну комнату за&nbsp;другой, мы&nbsp;находили всё&nbsp;больше и&nbsp;больше трупов. В&nbsp;лаборатории явно проводились эксперименты.</p>
+
+<p> Спустившись в&nbsp;подвальное помещение, мы&nbsp;нашли план лабораториии. Посчитав что он&nbsp;никому не&nbsp;понадобится, Лёха&nbsp;аккуратно снял чертёж. </p>
+
+<p> &#171;Куда нам надо попасть!&#187;-поинтерисовался он.</p>
+
+<p>&nbsp;&#171;В&nbsp;главное отделение!&#187;-ответила девушка.</p>
+
+<p> Пол минуты возился Лёха&nbsp;с&nbsp;картой, а&nbsp;потом повел нас через длинный коридор. Открыв дверь главного отделения, мы&nbsp;наткнулись на&nbsp;два десятка мутантов. АК&nbsp;и&nbsp;<nobr>LR-300ML</nobr> пошли в&nbsp;действие, твари валились один за&nbsp;другим. Очень скоро все они были мертвы.</p>
+
+<p> &#171;Не&nbsp;вздумайте больше стрелять!-крикнула девушка,-я&nbsp;что, <nobr>по-вашему</nobr>, полезла сюда чтобы смотреть как вы&nbsp;убиваете мутантов&#133;"</p>
+
+<p> Её&nbsp;речь была прервана громким шорохом, доносившимся , как выяснилось, из&nbsp;склада. Мы&nbsp;аккуратно открыли дверь и&nbsp;увидкли получеловека-полумутанта. Глаза у&nbsp;него были голубые, человеческие,но&nbsp;внешне он&nbsp;больше напоминал мутата. Девушка бросилась в&nbsp;его объятия. Он&nbsp;подхватил её,&nbsp;стал обнимать её&nbsp;и&nbsp;целовать. Я&nbsp;посмотрел на&nbsp;Лёху.&nbsp;Настолько удивлённого лица я&nbsp;ещё&nbsp;не&nbsp;видел! Пара клялась друг другу в&nbsp;верности и&nbsp;любви.</p>
+
+<p>Я&nbsp;<nobr>наконец-то</nobr> услышал имя девушки-Натали, мужчину звали Сэм.</p>
+
+<p> Вот его история: &#171;Мы&nbsp;жили очунь бедно и&nbsp;мне захотелось немного заработать. Один мой друг сказал , что есть богатый учёный, готовый отдать нам огромные деньги за&nbsp;то&nbsp;что на&nbsp;мне испытают его припараты. Натали я&nbsp;конечно не&nbsp;сказал насчёт&nbsp;экспериментов. Отдав ей&nbsp;часть денег, а&nbsp;другую часть спрятав, я&nbsp;отправился в&nbsp;эту лабораторию. Мне вкалывали разные припораты. Однажды учёный сказал мне что они укрепляют связи в&nbsp;ДНК. То&nbsp;есть моя реакция на&nbsp;анешние факторы очень снизилась, но&nbsp;я&nbsp;потерял возможность эвалюцианировать. Под действием радиации все люди в&nbsp;лаборатории или умерли, или стали мутантами. А&nbsp;я&nbsp;остался человеком. Я&nbsp;написал сообщение Натали через сеть о&nbsp;оставшихся деньгах и&nbsp;обо всём,&nbsp;что со&nbsp;мной случилось, а&nbsp;сам спрятался на&nbsp;складе&#133;И&nbsp;вот вы&nbsp;тут&#133;"</p>
+
+<p> Дальше продолжила Натали: &#171;Да,&nbsp;получив сообщение и&nbsp;найдя деньги, я&nbsp;решила нанять сталкера. Алексей как раз предлогал свою помощ, да&nbsp;и&nbsp;Илья оказался кстати. С&nbsp;их&nbsp;помощью я&nbsp;добралась живой до&nbsp;лаборатории!&#187;</p>
+
+<p> Раздались громкие шаги. Мы&nbsp;притаились. В&nbsp;комнату вошли три четыре сталкера с&nbsp;надписью &#171;Долг&#187; на&nbsp;груди. Самый крутой из&nbsp;них вышел вперёд&nbsp;и&nbsp;нацелил АК&nbsp;на&nbsp;Сэма. Лёха&nbsp;в&nbsp;тот момент прыгнул ,оказавшись между сталкером и&nbsp;Сэмом, и&nbsp;,когда сталкер нажал на&nbsp;курок, он&nbsp;вкрикнул от&nbsp;боли. &#171;Нееееееееет!!!!&#187;-изо всех сил заорал я,&nbsp;схватил АК&nbsp;и&nbsp;стал стрелять очередями по&nbsp;удивлённым сталкерам. Сэм и&nbsp;Натали также во&nbsp;всю стреляли. Не&nbsp;знаю как мы&nbsp;уложили четырёх&nbsp;спецов, но&nbsp;их&nbsp;трупы скоро лежали перед нашими ногами, возможно нам помогла ситуация: врят&nbsp;ли они видели чтоб человек защитил мутанта. Я&nbsp;и&nbsp;Сэм был слегка ранены, но&nbsp;это не&nbsp;волновало меня.</p>
+
+<p> -Лёха,&nbsp;ты&nbsp;как?</p>
+
+<p> -Ты&nbsp;знаешь что делать!</p>
+
+<p> -Нет, ты&nbsp;выкорокаешься!</p>
+
+<p> -Мне больно, к&nbsp;тому&nbsp;же в&nbsp;ЗОНЕ никто не&nbsp;живёт&nbsp;больше трёх&nbsp;лет.</p>
+
+<p> Я&nbsp;плакал.Нет, я&nbsp;рыдал. Посмотрев ещё&nbsp;раз на&nbsp;Лёху,&nbsp;я&nbsp;понял что ему ещё&nbsp;мучиться не&nbsp;меньше трёх&nbsp;часов, а&nbsp;вылечить его невозможно.</p>
+
+<p> -Прощай!!!</p>
+
+<p> -Поздравляю, <nobr>ты-сталкер</nobr>!</p>
+
+<p> Это были его последние слова&#133;&#133;&#133;&#133;&#133; </p>
+
+<p>&nbsp;</p>
+
+<p>P.S. Скоро меня судьба разделила с&nbsp;Натали и&nbsp;Сэмом. А&nbsp;в&nbsp;ЗОНЕ я&nbsp;уже второй год.</p>
+
+<p>P.P.S. Для сталкера, умереть от&nbsp;своего ученика-честь. Это символ того что ты&nbsp;научил его не&nbsp;боятся смерти.</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="36.33" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.19 (26)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/rybalkin_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

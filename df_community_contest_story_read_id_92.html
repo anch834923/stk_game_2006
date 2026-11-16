@@ -1,0 +1,401 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Левиафан - Максим Снежков</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_92.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Левиафан</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Максим Снежков</b><br>Дата: <b>01/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>639</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>1</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p>Небо над Зоной уже давно перестало удивлять каждого, кто ненароком запрокидывал голову и&nbsp;вскинув брови, взирал на&nbsp;причудливые облака. Это явление уже перестало будоражить молодые умы сталкеров и&nbsp;всех, кто бродил по&nbsp;этой грешной земле. Атмосфера была больна и&nbsp;эта болезнь прогрессировала и&nbsp;была неизлечима, ибо еженедельные выбросы лишь вводили в&nbsp;ее&nbsp;&#171;вену&#187;, новую порцию &#171;крепкого&#187; яда. Когда это происходило, казалось будто вся Зона впадала в&nbsp;кратковременный, летаргический сон, все в&nbsp;ней будто замирало на&nbsp;мгновение, ждало <nobr>чего-то</nobr>&#133; Многим казалось, что в&nbsp;эти мгновения Зона была как никогда живой&#133;</p>
+
+<p> Вот снова резкий порыв прохладного ветра, принес с&nbsp;севера знакомые голоса хаоса. Разговаривали пулеметы, разговаривали будто сами с&nbsp;собой. И&nbsp;вскоре, как всегда один голос обрывается и&nbsp;его эхом продолжает другой, угасающий в&nbsp;преддверии смерти, крик&#133;</p>
+
+<p>&nbsp;&#151; Вот и&nbsp;поговорили, не&nbsp;так&nbsp;ли, Ангел?&nbsp;&#151; произнес сталкер, называющий себя &#171;Хантером&#187; и&nbsp;снова прислушался.</p>
+
+<p>&nbsp;&#151; Да,&nbsp;разговаривали примерно в&nbsp;милях двух от&nbsp;сюда!</p>
+
+<p>&nbsp;&#151; Нужно двигаться, или упустим след!&nbsp;&#151; Хантер поправил лямку автомата и&nbsp;зашагал на&nbsp;восток. Он&nbsp;на&nbsp;секунду остановился и&nbsp;обернувшись разинул рот, видимо желая <nobr>что-то</nobr> сказать, но&nbsp;быстро передумав продолжил решительное движение вперед. Его голову украшала странная шляпа с&nbsp;высокими бортами, а&nbsp;сталкерский костюм почти полностью покрывался серым, потрепанным плащом. Вообще он&nbsp;был странным человеком.</p>
+
+<p>&nbsp;&#151; Ты&nbsp;<nobr>все-таки</nobr> веришь в&nbsp;него?&nbsp;&#151; неуверенно спросил Ангел, останавливая Хантера.</p>
+
+<p> Охотник на&nbsp;мгновение задумался, ему часто задавали этот вопрос, на&nbsp;который он&nbsp;всегда отвечал одинаково:</p>
+
+<p>&nbsp;&#151; А&nbsp;что мне остается? В&nbsp;этом месте остается только верить, ибо лишь вера в&nbsp;свою заветную цель, позволяет нам выживать в&nbsp;этом безумии, которое мы&nbsp;зовем Зоной!</p>
+
+<p>&nbsp;&#151; Но&nbsp;ведь ты&nbsp;не&nbsp;ее&nbsp;пленник? Зачем ты&nbsp;проникаешь в&nbsp;безумие?</p>
+
+<p>&nbsp;&#151; Если мы&nbsp;не&nbsp;пленники, то&nbsp;тогда кто? Что заставляет нас лезть в&nbsp;самое пекло за&nbsp;каким-нибудь гвоздем с&nbsp;необычными свойствами, видя при этом смерть многих друзей?&nbsp;&#151; Ангел замешкался с&nbsp;ответом, потом неуверенно, словно не&nbsp;выучивший урок школьник, произнес:</p>
+
+<p>&nbsp;&#151; Деньги и&nbsp;слава, я&nbsp;думаю! Но&nbsp;ведь никто нас не&nbsp;заставляет это делать.</p>
+
+<p>&nbsp;&#151; Ты&nbsp;сам ответил на&nbsp;свой вопрос,&nbsp;&#151; &#171;деньги и&nbsp;слава&#187;&nbsp;&#151; это всего лишь аппетитная приманка, <nobr>из-за</nobr> которой голодный зверь слепо, не&nbsp;раздумывая лезет в&nbsp;ловушку, из&nbsp;которой всегда есть один только путь&#133;, ты&nbsp;сам знаешь какой,&nbsp;&#151; он&nbsp;замолчал, потом добавил,&nbsp;&#151; Ты&nbsp;и&nbsp;есть этот голодный зверь, который сидит сейчас в&nbsp;захлопнувшемся капкане и&nbsp;ждет своей участи! Разве ты&nbsp;этого не&nbsp;понимаешь? </p>
+
+<p>&nbsp;&#151; Не&nbsp;совсем.</p>
+
+<p> Хантер презрительно хмыкнул.</p>
+
+<p>&nbsp;&#151; Но&nbsp;ведь ты&nbsp;тоже находишься в&nbsp;этом капкане, хотя вполне можешь из&nbsp;него выбраться, ты&nbsp;ведь здесь не&nbsp;<nobr>из-за</nobr> славы и&nbsp;денег?&nbsp;&#151; возразил Ангел.</p>
+
+<p>&nbsp;&#151; Ты&nbsp;прав, но&nbsp;куда мне идти, когда я&nbsp;выберусь от&nbsp;сюда? </p>
+
+<p>&nbsp;&#151; Домой, в&nbsp;город!? Чем он&nbsp;отличается от&nbsp;этого места? Те&nbsp;же деньги и&nbsp;слава, тот&nbsp;же единственный выход&#133;,&nbsp;&#151; он&nbsp;прислонился спиной к&nbsp;дереву и&nbsp;тяжело вздохнул,&nbsp;&#151; Мне нравиться как сказал один человек, может это и&nbsp;не&nbsp;раскроет смысл выше сказанного но&nbsp;все&nbsp;же&#133;&nbsp;&#151; он&nbsp;сказал:&nbsp;&#151; &#171;Когда охотник входит в&nbsp;лес, он&nbsp;и&nbsp;не&nbsp;подозревает о&nbsp;том, что на&nbsp;него <nobr>кто-то</nobr> уже ведет охоту&#187;.</p>
+
+<p>&nbsp;&#151; Я&nbsp;это к&nbsp;тому, что город тоже в&nbsp;<nobr>какой-то</nobr> степени является лесом, каменным лесом&#133;- Хантер вдруг встрепенулся от&nbsp;прозвучавшего вдалеке выстрела и&nbsp;будто опомнившись, вновь зашагал вверх по&nbsp;склону. Они шли молча по&nbsp;мягкой от&nbsp;весеннего солнца почве, ветерок гулял между недавно позеленевших ветвей деревьев, было тепло. Хантер порой придерживал свою шляпу рукой, ветер так и&nbsp;норовил ее&nbsp;сорвать, будто не&nbsp;желая терпеть такого нелепого головного убора в&nbsp;своих владениях. Хантер двигался по&nbsp;лесу постоянно меняя свое направление, он&nbsp;хаотично ломал траекторию движения и&nbsp;при этом не&nbsp;пользовался не&nbsp;одним прибором. Говорят, будто он&nbsp;видел аномалию! После одного случая, который с&nbsp;ним произошел, это вполне звучало логично, но&nbsp;все равно его считали сумасшедшим. Там, где все сталкеры наблюдали искривленный полет обычного предмета и&nbsp;больше ничего, Хантер ведал о&nbsp;странных, причудливых мирах, о&nbsp;которых он&nbsp;рассказывал с&nbsp;такой подробностью, что у&nbsp;некоторых это даже не&nbsp;вызывало сомнений. Он&nbsp;говорил, что смотрит в&nbsp;аномалии, словно в&nbsp;окна чужих миров! И&nbsp;в&nbsp;подтверждение этому, он&nbsp;порой с&nbsp;легкостью спринтера нарезал километры пути, по&nbsp;опасной и&nbsp;ужасной Зоне. Скептики все&nbsp;же были склонны верить в&nbsp;его невероятную удачу, которая когда-нибудь должна была исчерпать свой потенциал. </p>
+
+<p>&nbsp;&#151; О&nbsp;боже!&nbsp;&#151; вдруг остановившись, сдавлено произнес Хантер,&nbsp;&#151; Хорошо, что ты&nbsp;не&nbsp;видишь того, что вижу я!&nbsp;&#151; он&nbsp;вонзился глазами в&nbsp;обычное пространство леса, где из&nbsp;земли вырастали массивные деревья, а&nbsp;почва была покрыта мелкой щетиной весенней травы. </p>
+
+<p>&nbsp;&#151; Что ты&nbsp;видишь?</p>
+
+<p>&nbsp;&#151; Иной мир, он&nbsp;ужасен! Там идет война, война миров, ужасные создания едят друг друга, повсюду разруха и&nbsp;хаос! Не&nbsp;этот мир я&nbsp;искал&#133;,&nbsp;&#151; тихо произнес он&nbsp;и&nbsp;обогнув аномалию, продолжил свой путь. Ангел&nbsp;же не&nbsp;видел ничего кроме очередного фрагмента леса. </p>
+
+<p> Снова ветер принес перебранку пулеметов и&nbsp;автоматов, уже гораздо ближе чем в&nbsp;прошлый раз, это казалось не&nbsp;вызвало у&nbsp;Хантера опасений. Поправив подернутую ветром шляпу, он&nbsp;снял с&nbsp;плеча автомат и&nbsp;положив ладонь на&nbsp;цивье, направился на&nbsp;звуки хаоса.</p>
+
+<p>&nbsp;&#151; Расскажи о&nbsp;Левиафане, Хантер,&nbsp;&#151; произнес Ангел, желая хоть <nobr>чем-нибудь</nobr> заполнить давящее молчание. Охотник будто не&nbsp;услышал просьбы, он&nbsp;опустился на&nbsp;одно колено и&nbsp;прислонившись к&nbsp;обгоревшему дереву, осторожно взглянул за&nbsp;макушку холма, по&nbsp;которому они поднимались. Его взору предстала заснеженная низина леса, здесь снег в&nbsp;силу своих необычных свойств, лежал и&nbsp;не&nbsp;таял вплоть до&nbsp;июля, что всегда приводило в&nbsp;трепет молодые умы сталкеров, особенно девушек. </p>
+
+<p>&nbsp;&#151; Что ты&nbsp;хочешь знать о&nbsp;моем звере?&nbsp;&#151; внезапно разразился Хантер.</p>
+
+<p>&nbsp;&#151; Что это за&nbsp;существо?&nbsp;&#151; почти шепотом произнес Ангел.</p>
+
+<p> Охотник вскинул брови и&nbsp;уставился на&nbsp;макушки деревьев, будто ища там ответа.</p>
+
+<p>&nbsp;&#151; Это фимерный и&nbsp;в&nbsp;то&nbsp;же время вполне материальный монстр, в&nbsp;каждом мире он&nbsp;принимает разные образы, какой образ у&nbsp;него в&nbsp;нашем мире, я&nbsp;не&nbsp;знаю. </p>
+
+<p>&nbsp;&#151; Как&nbsp;же ты&nbsp;его найдешь? </p>
+
+<p>&nbsp;&#151; Я&nbsp;ищу не&nbsp;его самого, я&nbsp;ищу его след! В&nbsp;тысячах других, отыскать след моего Левиафана очень сложно&#133;</p>
+
+<p>&nbsp;&#151; В&nbsp;тысячах других?</p>
+
+<p>&nbsp;&#151; Да,&nbsp;то&nbsp;что ты&nbsp;называешь аномалией,&nbsp;&#151; я&nbsp;называю следом Левиафана!</p>
+
+<p>&nbsp;&#151; И&nbsp;какой&nbsp;же след ты&nbsp;ищешь? </p>
+
+<p>&nbsp;&#151; Тот, который приведет меня в&nbsp;колыбель миров! Все остальные следы&nbsp;&#151; ложные, это лишь фрагменты моего зверя, окна в&nbsp;миры, которые ведут в&nbsp;никуда и&nbsp;которые закрыты для многих! Вот почему многие гибнут, не&nbsp;успев даже постучаться в&nbsp;запертую для них дверь. </p>
+
+<p>&nbsp;&#151; Ты&nbsp;говоришь про ужасные смерти в&nbsp;аномалиях Зоны?</p>
+
+<p>&nbsp;&#151; Как угодно,&nbsp;&#151; безразлично буркнул он&nbsp;и&nbsp;медленно поднявшись на&nbsp;обе ноги, зашагал теперь уже вниз по&nbsp;склону. Когда его ноги коснулись хрустящего снега, Хантер остановился и&nbsp;прислушался к&nbsp;нависшей дамокловым мечем, тишине. В&nbsp;миле на&nbsp;<nobr>юго-восток</nobr> <nobr>что-то</nobr> происходило, странные звуки доносились оттуда, но&nbsp;понять к&nbsp;какому источнику они принадлежат, было невозможно. <nobr>Что-то</nobr> похрустывало и&nbsp;повизгивало, ломалось и&nbsp;в&nbsp;то&nbsp;же время строилось, рождалось и&nbsp;умирало, было в&nbsp;движении и&nbsp;тихо покоилось&#133; Хантер почувствовал все это, это пронеслось у&nbsp;него в&nbsp;голове со&nbsp;скоростью мысли, умноженной в&nbsp;три раза. </p>
+
+<p>&nbsp;&#151; Что с&nbsp;тобой, Хантер?&nbsp;&#151; обеспокоено спросил Ангел, глядя на&nbsp;странное поведение охотника. Он&nbsp;опустошенным взглядом взирал на&nbsp;заснеженный лес и&nbsp;его глаза часто хлопали уставшими веками, будто обжигаемые ярким светом. </p>
+
+<p>&nbsp;&#151; Кажется я&nbsp;вышел на&nbsp;след Левиафана, он&nbsp;в&nbsp;миле отсюда! Ты&nbsp;слышишь его дыхание Ангел?&nbsp;&#151; громко и&nbsp;волнительно произнес Хантер и&nbsp;сорвавшись с&nbsp;места, быстро побежал вперед.</p>
+
+<p>&nbsp;&#151; Подожди меня!&nbsp;&#151; донеслось ему вслед, но&nbsp;охотник уже ничего не&nbsp;слышал, кроме тех звуков, которыми он&nbsp;назвал дыхание своего зверя.</p>
+
+<p> Он&nbsp;бежал петляя между деревьями и&nbsp;аномалиями, которые представали перед ним в&nbsp;совершенно ином виде, ему открывались окна в&nbsp;другие миры и&nbsp;он&nbsp;наслаждался их&nbsp;ужасными и&nbsp;прекрасными видами. Вот его взору открылся чудесный мир, без кровавых войн и&nbsp;тех ужасов, которые ему доводилось видеть в&nbsp;других и&nbsp;своем, мирах. Вот он&nbsp;заглянул в&nbsp;окно мира, ничем не&nbsp;отличающимся от&nbsp;его собственного, но&nbsp;его населяли только женщины. Теперь он&nbsp;уже видел ужасный мир, населенный машинами, которые бездумно истребляли все живое на&nbsp;своей планете и&nbsp;на&nbsp;месте живых деревьев с&nbsp;развесистыми лианами, вырастали металлические столбы с&nbsp;угрюмо нависшими на&nbsp;них проводами&#133; Перед его взором проносились множества миров, в&nbsp;которых он&nbsp;пытался разглядеть тот, который так давно искал, мир, в&nbsp;котором он&nbsp;уже <nobr>когда-то</nobr> был&#133;</p>
+<p class="copyr"><b>&#171;Спустя три дня&#187;</b></p>
+
+<p> Два сталкера молча несли ночное дежурство у&nbsp;ворот своей базы, когда вдалеке вдруг послышались <nobr>чьи-то</nobr> шаги. Вскинув автоматы, они направили стволы в&nbsp;бесконечное тело тьмы и&nbsp;стали ждать появление гостя. Когда на&nbsp;дороге показался темный силуэт, один из&nbsp;сталкеров громко крикнул:</p>
+
+<p>&nbsp;&#151; Если ты&nbsp;человек, остановись и&nbsp;назови себя! Если продолжишь движение&nbsp;&#151; мы&nbsp;открываем огонь!</p>
+
+<p> Фигура прекратила движение и&nbsp;ее&nbsp;уставший голос произнес:</p>
+
+<p>&nbsp;&#151; Я&nbsp;человек!</p>
+
+<p> Дозорный сталкер сразу узнал этот голос и&nbsp;жестом приказал напарнику тоже опустить автомат. Темная фигура медленно продолжила движение.</p>
+
+<p>&nbsp;&#151; Давненько тебя не&nbsp;было видно, опять <nobr>куда-то</nobr> исчез?&nbsp;&#151; звонко поприветствовал приблизившегося человека, дозорный. Тот ничего не&nbsp;ответил и&nbsp;молча миновал ворота базы. В&nbsp;тусклом свете горящего прожектора, различались черты высокого, широкоплечего мужчины, голову которого покрывала чудная шляпа с&nbsp;высокими бортами, а&nbsp;за&nbsp;плечами развивался потрепанный, серый плащ. Оружия, как ни&nbsp;странно у&nbsp;него не&nbsp;было. </p>
+<p>&nbsp;&#151; Кто это?&nbsp;&#151; спросил молодой сталкер, что стоял в&nbsp;ночном дозоре, у&nbsp;своего напарника. Тот взглядом проводил человека в&nbsp;шляпе и&nbsp;повернувшись ответил:</p>
+
+<p>&nbsp;&#151; Мы&nbsp;за&nbsp;глаза зовем его &#171;<nobr>два-в-одном&#187;</nobr>, а&nbsp;так его прозвище Хантер!</p>
+
+<p>&nbsp;&#151; Почему <nobr>два-в-одном</nobr>?&nbsp;&#151; с&nbsp;глупой улыбкой спросил сталкер.</p>
+
+<p>&nbsp;&#151; После странного случая в&nbsp;Зоне, он&nbsp;страдает раздвоением личности, постоянно говорит с&nbsp;<nobr>каким-то</nobr> Ангелом, спорит с&nbsp;ним&#133; Вообще он&nbsp;матерый сталкер, но&nbsp;вот крыша у&nbsp;него протекает, охотиться за&nbsp;<nobr>каким-то</nobr> Левиафаном!&nbsp;&#151; он&nbsp;закончил смачным плевком в&nbsp;темноту ночи. </p>
+
+<p>&nbsp;&#151; Если я&nbsp;не&nbsp;ошибаюсь, это мифическое существо из&nbsp;библии?! </p>
+
+<p>&nbsp;&#151; Только не&nbsp;для него!&nbsp;&#151; бросил старший. </p>
+
+<p>&nbsp;&#151; А&nbsp;что это за&nbsp;случай?&nbsp;&#151; выуживая из&nbsp;нагрудного кармана папироску, не&nbsp;унимался напарник.</p>
+
+<p>&nbsp;&#151; Да,&nbsp;&#151; протянул тот,&nbsp;&#151; был давно один&#133; Пять человек видело, как Хантер споткнулся о&nbsp;торчащий из&nbsp;земли корень и&nbsp;покатился вниз по&nbsp;склону&#133;</p>
+
+<p>&nbsp;&#151; Ну.</p>
+
+<p>&nbsp;&#151; Чё&nbsp;ну?&nbsp;Попал в&nbsp;<nobr>какую-то</nobr> аномалию и&nbsp;исчез&#133;</p>
+
+<p>&nbsp;&#151; Как исчез?</p>
+
+<p>&nbsp;&#151; Да&nbsp;вот так&#133;, везде его искали, сканировали местность, но&nbsp;ничего не&nbsp;нашли. Его рация не&nbsp;отвечала, поисковый маяк сигнала не&nbsp;давал. В&nbsp;общем, исчез как в&nbsp;бабушкиных сказках!</p>
+
+<p>&nbsp;&#151; И&nbsp;что дальше?</p>
+
+<p>&nbsp;&#151; Хм,&nbsp;дальше? Дальше, он&nbsp;объявился через два месяца, нес <nobr>какую-то</nobr> чушь про другие миры, существ, которые их&nbsp;населяли и&#133;, про своего Левиафана! Теперь вот бродит по&nbsp;Зоне и&nbsp;ищет, как он&nbsp;говорит, вход в&nbsp;параллельный тоннель! Он&nbsp;называет его следом зверя!</p>
+
+<p>&nbsp;&#151; Вообще Хантер&nbsp;&#151; легенда Зоны! Говорят он&nbsp;видит аномалии, как сейчас я&nbsp;вижу тебя! Но&nbsp;он&nbsp;одиночка, единственный его друг&nbsp;&#151; это Ангел и&nbsp;больше он&nbsp;ни&nbsp;с&nbsp;кем в&nbsp;Зону не&nbsp;ходит, а&nbsp;раньше был&nbsp;же нормальный мужик&#133;&nbsp;&#151; он&nbsp;взял папироску у&nbsp;напарника и&nbsp;подкурив, затянулся. </p>
+
+<p>&nbsp;&#151; Да,&nbsp;&#151; теперь уже протянул младший,&nbsp;&#151; что только Зона делает с&nbsp;людьми&#133;&nbsp;&#151; в&nbsp;выдохе произнес он&nbsp;и&nbsp;тоже затянулся. </p>
+<p><nobr><i>Где-то</i></nobr> <i>за&nbsp;пределами реальности&#133;</i></p>
+<p> <i>Перед глазами Хантера возник океан миров, он&nbsp;был бесконечным и&nbsp;бездонным, 
+  спокойным и&nbsp;волнующимся, чудовищным и&nbsp;в&nbsp;то&nbsp;же время завораживающим 
+  своей неземной красотой. И&nbsp;он&nbsp;увидел в&nbsp;его спящей глубине ревущего 
+  зверя, который стремительно поднимался на&nbsp;поверхность синего океана. Вот 
+  показалось его массивное тело, переливающееся миллионами оттенков спектра, вот 
+  его открытая пасть не&nbsp;внушающая ничего кроме страха и&nbsp;отчаянья и&nbsp;вот 
+  он&nbsp;наконец выныривает полностью из&nbsp;своей бурлящей стихии и&nbsp;замирает 
+  в&nbsp;величественном полете! Мириады брызг зависли над плотью непокорного океана 
+  и&nbsp;каждая капля превратилась в&nbsp;искрящийся мирок, которому суждено было 
+  лишь на&nbsp;мгновение почувствовать себя свободным от&nbsp;океана остальных&#133;</i></p>
+<p> <i>И&nbsp;тут Хантер увидел в&nbsp;этом искрящимся мирке, до&nbsp;боли знакомые 
+  черты его собственного мира, он&nbsp;утонул в&nbsp;этой сверкающей капле, завороженный 
+  зрелищем, глубину которого не&nbsp;суждено было познать никому из&nbsp;живых&#133; 
+  Он&nbsp;увидел призрачный образ Левиафана, образ, который его зверь принял в&nbsp;его&nbsp;же 
+  собственном мире! Он&nbsp;понял как он&nbsp;ошибался, ища его след в&nbsp;тысячах 
+  других следов&#133; Зачем вообще он&nbsp;искал!? Хантер осознал, что все это 
+  время он&nbsp;бродил по&nbsp;телу умирающего гиганта, даже и&nbsp;не&nbsp;подозревая 
+  об&nbsp;этом, ибо то,&nbsp;что все называли Зоной и&nbsp;был его Зверь! Теперь 
+  все вставало на&nbsp;свои места,&nbsp;&#151; выбросы и&nbsp;затишья между ними, 
+  превратились в&nbsp;предсмертные выдох и&nbsp;вдох живого существа, а&nbsp;ужасная 
+  нечисть Зоны в&nbsp;глумящихся над разлагающимися останками, паразитов. Хантер 
+  содрогнулся от&nbsp;этой ужасной догадки. Что&nbsp;же произойдет, когда его 
+  Левиафан умрет? Окажется&nbsp;ли его образ, обычной падалью из&nbsp;другого 
+  мира, которая тихо и&nbsp;мирно вскоре обратиться в&nbsp;ничто, или его предсмертная 
+  агония оповестит о&nbsp;конце всего этого мирка? Хантер знал, что образ Левиафана 
+  живет в&nbsp;каждом мире, но&nbsp;что происходило когда этот образ умирал, он&nbsp;даже 
+  и&nbsp;не&nbsp;догадывался&#133;</i></p>
+<p> Внезапно открыв глаза, Хантер проснулся. Медленно приподнявшись на&nbsp;локтях и&nbsp;осмотревшись, он&nbsp;обнаружил себя лежащим посреди леса, вымокшего от&nbsp;недавнего дождя. В&nbsp;голове была <nobr>какая-то</nobr> каша из&nbsp;воспоминаний, отрывки прошедших дней. Он&nbsp;попытался вспомнить как здесь очутился, но&nbsp;память сыграла с&nbsp;ним злую шутку, лишив его этой возможности. Вокруг было не&nbsp;души, рядом лежал его потрепанный временем АКМ, а&nbsp;голову покрывала все та&nbsp;же чудная шляпа с&nbsp;высокими бортами. </p>
+
+<p>&nbsp;&#151; Неужели мне все это приснилось? Или нет&#133;?&nbsp;&#151; задал себе вопрос Хантер и&nbsp;поднявшись, зашагал в&nbsp;направлении, конечной цели которого он&nbsp;не&nbsp;знал&#133;</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="35.49" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.07 (14)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/snezkov_06.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

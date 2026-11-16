@@ -1,0 +1,343 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Утро добрым не бывает - Lestat</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_160.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Утро добрым не бывает</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Lestat</b><br>Дата: <b>04/07/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>1533</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>35</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P>&#151; Эй,&nbsp;а&nbsp;тебе не&nbsp;хватит?&nbsp;&#151; спросил Тим, хозяин кабака &#171;Призонье&#187; у&nbsp;пьяного в&nbsp;дупель сталкера, собравшегося было уснуть прямо на&nbsp;столике.</P>
+<P>От&nbsp;такого вопроса сталкер даже проснулся. А,&nbsp;когда до&nbsp;него дошел и&nbsp;смысл сказанного, он&nbsp;яростно замотал головой: мол&nbsp;&#151; не,&nbsp;не&nbsp;хватит, при этом чуть не&nbsp;смахнув этой самой головой полупустую бутылку, стоявшую на&nbsp;столике.</P>
+<P>&#151; Мне, хватит?&nbsp;&#151; наконец обрел он&nbsp;дар речи,&nbsp;&#151; Да&nbsp;мне еще знаешь сколько надо?&nbsp;&#151; он&nbsp;на&nbsp;минуту задумался, затем потряс перед носом начинающего злиться Тима раскрытой пятерней,&nbsp;&#151; Во&nbsp;сколько!</P>
+<P>С&nbsp;каменной физиономией, не&nbsp;предвещавшей ничего хорошего, Тим скрылся в&nbsp;подсобке. Вернувшись через пару минут, он&nbsp;выставил на&nbsp;столик перед пьяным то,&nbsp;что просили&nbsp;&#151; пять бутылок. Сталкер уставился было на&nbsp;них, но&nbsp;хозяин твердой рукой взял его за&nbsp;подбородок и&nbsp;развернул лицом к&nbsp;себе.</P>
+<P>&#151; Это последние!</P>
+<P>&#151; Как последние?&nbsp;&#151; в&nbsp;голосе пьяного была бездна неизбывной тоски,&nbsp;&#151; Тимофей, родной, не&nbsp;пугай меня так, у&nbsp;тебя что&#133; больше нету?!</P>
+<P>&#151; Для тебя последние, балда!&nbsp;&#151; рявкнул Тим, потеряв терпение,&nbsp;&#151; Все, твой кредит закрыт! Ты&nbsp;меня понял, Кот? Теперь ничего, пока не&nbsp;вернешь долг! Ни&nbsp;выпивки, ни&nbsp;заданий, ни&nbsp;снаряжения! <nobr>Ни-че-го</nobr>!</P>
+<P>&#151; <nobr>А-а-а</nobr>&#133;- сказал сталкер и,&nbsp;подумав, добавил,&nbsp;&#151; <nobr>А-а-а-а</nobr>&#133;</P>
+<P>&#151; Ничего!!!</P>
+<P>Это Тим прорычал так доходчиво, что в&nbsp;стельку пьяный Кот понял&nbsp;&#151; халява кончилась. Резко и&nbsp;неожиданно. Окончательно и&nbsp;бесповоротно. Шустро сгребая последнее свое добро в&nbsp;рюкзак, Кот попытался встать на&nbsp;ноги.</P>
+<P>&#151; Да&nbsp;я!&nbsp;Да&nbsp;я&nbsp;этот твой долг! Вернее, Ик!&nbsp;Этот мой долг! Да&nbsp;я!&nbsp;Да&nbsp;хоть завтра! Да,&nbsp;блин, ик!&nbsp;Хоть сейчас!</P>
+<P>Тимофей, давно привыкший к&nbsp;подобным клятвам, стоял молча, но&nbsp;глядел так, что сталкер обиженно насупился.</P>
+<P>&#151; Не&nbsp;веришь, да?&nbsp;Не&nbsp;веришь, кровопивец? Упырь! А&nbsp;я&nbsp;вот возьму и&nbsp;прям щас в&nbsp;Зону пойду! Не&nbsp;веришь? А&nbsp;вот <nobr>на-кося</nobr>! Пойду!&nbsp;&#151; с&nbsp;этими словами Кот протопал к&nbsp;двери бара и&nbsp;вывалился на&nbsp;улицу.</P>
+<P>Он&nbsp;кубарем скатился с&nbsp;крыльца, бормоча <nobr>что-то</nobr> о&nbsp;том, что ему, дескать, никто не&nbsp;верит, а&nbsp;он&nbsp;всем назло пойдет и&nbsp;притащит половину Зоны на&nbsp;своем горбу. <nobr>Да-да</nobr>, и&nbsp;свалит вот прям тут&nbsp;&#151; на&nbsp;крыльце у&nbsp;Тима, чтоб он&nbsp;подавился своим долгом, жлоб!</P>
+<P>Если&nbsp;бы Кот споткнулся тогда, когда шатаясь ковылял к&nbsp;своему дому, он&nbsp;бы просто упал и&nbsp;уснул, а,&nbsp;проснувшись утром, вряд&nbsp;ли вспомнил&nbsp;бы свою идиотскую затею. Но,&nbsp;к&nbsp;несчастью (или к&nbsp;счастью?), он&nbsp;не&nbsp;споткнулся. Он&nbsp;добрел до&nbsp;своего гаража, с&nbsp;большим трудом открыл его и&nbsp;принялся скидывать свое нехитрое снаряжение в&nbsp;багажник старенькой Нивы. Затем натянул защитный костюм, сел за&nbsp;руль и&nbsp;погнал в&nbsp;сторону Зоны.</P>
+<P>Кот направлялся к&nbsp;тому месту, где часть бетонной стены, огораживающей всю Зону, отсутствовала, и&nbsp;данная брешь была наспех заделана металлической сеткой и&nbsp;колючей проволокой. Так что у&nbsp;него были все шансы зацепиться за&nbsp;&#171;колючку&#187; и&nbsp;провисеть на&nbsp;ней до&nbsp;утра, пока его не&nbsp;снял&nbsp;бы военный патруль. Но&nbsp;этого не&nbsp;произошло: примерно за&nbsp;сотню метров от&nbsp;сетки Кот элементарно заснул за&nbsp;рулем. Неуправляемая машина протаранила сетку, проехала несколько десятков метров по&nbsp;самой что ни&nbsp;на&nbsp;есть Зоне и&nbsp;врезалась в&nbsp;здоровенный пень. От&nbsp;удара у&nbsp;Нивы помялся весь передок, а&nbsp;спящий сталкер проломил лобовое стекло защитным шлемом, пролетел несколько метров, свалился в&nbsp;густую траву и,&nbsp;наконец, проснулся. Кот с&nbsp;трудом поднялся из&nbsp;травы и,&nbsp;почесав шлем, пробормотал <nobr>что-то</nobr> вроде: &#171;Вот мы&nbsp;и&nbsp;приехали, в&nbsp;следующий раз, шеф, так не&nbsp;гони&#187;. Затем тупо уставился на&nbsp;Ниву. <nobr>Где-то</nobr> на&nbsp;окраине спящего сознания появилась мысль, что завтра, возможно, будет жалко разбитую машину и&nbsp;вообще, еще много чего будет жалко. Мысль неуверенно потопталась на&nbsp;пороге и&nbsp;ушла. Со&nbsp;словами &#171;а&nbsp;и&nbsp;хрен с&nbsp;ней!&#187;, сталкер нацепил свое снаряжение и&nbsp;отправился вглубь Зоны.</P>
+<P>&#151; Ик!&nbsp;&#151; подумал Кот через некоторое время,&nbsp;&#151; Ведь не&nbsp;дурак сказал: в&nbsp;Зоне нет прямых путей. А&nbsp;для пьяного? Для пьяного есть прямые пути? Нет! Вывод: отныне в&nbsp;Зону&nbsp;&#151; только пьяным! Ик!&nbsp;Вот, например плешь комариная. <nobr>Она-то</nobr> прямо по&nbsp;курсу, вот она, зараза,&nbsp;&#151; плевок вверх полетел, а&nbsp;в&nbsp;нее не&nbsp;попадешь при всем желании, <nobr>ноги-то</nobr> влево <nobr>зачем-то</nobr> пошли. Пошли-пошли-пошли! <nobr>Стоят-ть</nobr>!&nbsp;&#151; Кот ухватил сам себя за&nbsp;шиворот и&nbsp;только так остановился.</P>
+<P>Неожиданно сталкеру показалось, что вокруг стало слишком тихо, и&nbsp;вообще <nobr>как-то</nobr> скучно. Тогда он&nbsp;прочистил горло и&nbsp;запел, точнее, немузыкально заорал на&nbsp;всю округу:</P>
+<P><nobr>А-адинока-ая</nobr> <nobr>пти-ица</nobr>, <nobr>ты-ы</nobr> <nobr>лета-а-аешь</nobr> в&nbsp;<nobr>высоко-о-о-о</nobr>!</P>
+<P>И&nbsp;<nobr>ли-ишь</nobr> безумец был <nobr>спосо-о-обен</nobr> <nobr>та-а-ак</nobr> напи-иться!</P>
+<P>&#151; <nobr>Э-э-э</nobr>&#133; Тьфу ты.</P>
+<P>Он&nbsp;задумался, вспоминая слова песни. Вдалеке жалобно завыли ничего не&nbsp;понимающие в&nbsp;высоком искусстве слепые псы.</P>
+<P>&#151; <nobr>А-а-а</nobr>! вспомнил!</P>
+<P>И&nbsp;<nobr>ли-ишь</nobr> безумец был <nobr>спосо-о-обен</nobr> <nobr>та-а-ак</nobr> влюби-иться!</P>
+<P><nobr>За-а</nobr> <nobr>табо-ою</nobr> вслед <nobr>подня-я-яться</nobr>!</P>
+<P><nobr>За-а</nobr> <nobr>табо-ою</nobr> вслед <nobr>подня-я-яться</nobr>!</P>
+<P><nobr>Что-обы</nobr> <nobr>вместе-е-е</nobr> с&nbsp;<nobr>тобо-о-ой</nobr>!</P>
+<P>Напиться с&nbsp;<nobr>тобо-ою</nobr> <nobr>вме-есте-е</nobr>!</P>
+<P>Поняв, что опять сморозил фигню, Кот замолк.</P>
+<P>И&nbsp;тут у&nbsp;него в&nbsp;голове возник голос.</P>
+<P>&#151; Иди сюда,&nbsp;&#151; скомандовал он.</P>
+<P>Кот трагически икнул и&nbsp;с&nbsp;сочувствием уставился на&nbsp;початую бутылку, зажатую в&nbsp;левой руке (в&nbsp;правой он&nbsp;держал автомат), явно собираясь зашвырнуть ее&nbsp;куда подальше.</P>
+<P>&#151; Иди сюда,&nbsp;&#151; повторил голос.</P>
+<P>Кот неуверенно потопал в&nbsp;сторону ближайших кустов.</P>
+<P>&#151; Ближе. Еще ближе,&nbsp;&#151; не&nbsp;унималась белая горячка.</P>
+<P>Сталкер сделал еще пару шагов.</P>
+<P>&#151; И&nbsp;<nobr>ч-че</nobr>?&nbsp;&#151; тупо оглядевшись, спросил он.</P>
+<P>&#151; И&nbsp;все,&nbsp;&#151; радостно поведал голос,&nbsp;&#151; Теперь ты&nbsp;мой!</P>
+<P>&#151; Не&nbsp;<nobr>п-понял</nobr>! А&nbsp;че&nbsp;<nobr>мыть-то</nobr>?!&nbsp;&#151; спросил сталкер и&nbsp;опять огляделся.</P>
+<P>Голос у&nbsp;него в&nbsp;голове издал странный звук, как будто подавился, а&nbsp;из&nbsp;кустов неожиданно возникла несколько растерянная морда контроллера.</P>
+<P>&#151; Ты&nbsp;что, не&nbsp;понял? Я&nbsp;тебя подчинил своей воле!&nbsp;&#151; прорычал мутант,&nbsp;&#151; <nobr>Ну-ка</nobr> упал-отжался!</P>
+<P>&#151; Ага, щас!&nbsp;&#151; Кот размахнулся, было, чтобы ударить контроллера прикладом по&nbsp;морде, но&nbsp;поскользнулся на&nbsp;мокрой от&nbsp;росы траве и&nbsp;уселся на&nbsp;пятую точку, выпустив при этом автомат из&nbsp;рук.</P>
+<P>&#151; То&nbsp;есть как это &#171;щас&#187;?!&nbsp;&#151; контроллер заметно побледнел,&nbsp;&#151; Я&#133; Я&nbsp;же тебя контролирую!</P>
+<P>Кот в&nbsp;ответ скрутил кукиш и&nbsp;продемонстрировал его мутанту со&nbsp;всех сторон. Контроллера, казалось, хватит удар. Посмотрев на&nbsp;его отпавшую челюсть, сталкер довольно заржал. Когда густое облако перегара достигло контроллера, тот заметно пошатнулся.</P>
+<P>&#151; Ты&nbsp;что, пьяный?</P>
+<P>&#151; Ага,&nbsp;&#151; Кот радостно затряс головой и&nbsp;протянул контроллеру бутылку,&nbsp;&#151; Будешь?</P>
+<P>&#151; Что?&nbsp;&#151; мутант аж&nbsp;задохнулся от&nbsp;подобной наглости,&nbsp;&#151; Да&nbsp;я&#133; Да&nbsp;я&nbsp;тебя &#133; Сейчас зомбями травить буду!&nbsp;&#151; он&nbsp;мотнул головой в&nbsp;сторону соседней полянки на&nbsp;которой действительно толкалось десятка два самых что ни&nbsp;на&nbsp;есть зомби.</P>
+<P>&#151; Меня? Зомбями?&nbsp;&#151; нехорошо прищурился Кот.</P>
+<P>&#151; Тебя, урод, тебя,&nbsp;&#151; контроллер радостно оскалился.</P>
+<P>Это было последней каплей. Прыгнув из&nbsp;положения сидя, сталкер сшиб субтильного мутанта, и&nbsp;они вместе покатились по&nbsp;земле. В&nbsp;следующую минуту из&nbsp;кустов слышался такой диалог:</P>
+<P>&#151; Ты,&nbsp;урод, кого уродом назвал?</P>
+<P>Хрясь!</P>
+<P>&#151; Ай!</P>
+<P>&#151; Ты&nbsp;кого&#133;</P>
+<P>&#151; Только не&nbsp;в&nbsp;глаз!</P>
+<P>Хрясь!</P>
+<P>&#151; Айй!</P>
+<P>&#151; &#133;уродом назвал, морда?</P>
+<P>&#151; Не&nbsp;<nobr>на-а</nobr>&#133;</P>
+<P>Хрясь!</P>
+<P>&#151; <nobr>Хва-а-а</nobr>&#133;</P>
+<P>Хрясь!</P>
+<P>&#151; Аййй!</P>
+<P>Затем из&nbsp;кустов появился шатающийся Кот, волочивший за&nbsp;шиворот изрядно помятого контроллера, на&nbsp;морде которого расцветал здоровенный фингал. Бросив свою ношу на&nbsp;траву, сталкер упал рядом. Мутант жалобно заскулил.</P>
+<P>&#151; Молчи, козел!&nbsp;&#151; важно проговорил победитель и&nbsp;приложился к&nbsp;бутылке.</P>
+<P>Контроллер завыл еще жалобнее и&nbsp;тоже потянулся к&nbsp;выпивке. Сталкер несильно стукнул его по&nbsp;руке.</P>
+<P>&#151; Куда! Ищи стакан. Я&nbsp;с&nbsp;тобой из&nbsp;одной Ик!&nbsp;посуды пить <nobr>не-е</nobr> буду. Мало&nbsp;ли&#133;</P>
+<P>Контроллер не&nbsp;разгибаясь, на&nbsp;четвереньках, исчез в&nbsp;кустах. Пошуршав там с&nbsp;минуту, он&nbsp;появился, держа в&nbsp;корявой лапе грязный, замусоленный, но&nbsp;вполне пригодный к&nbsp;использованию граненый стакан. Сталкер щедро набулькал ему чуть&nbsp;ли не&nbsp;&#171;с&nbsp;горкой&#187;. Тяпнув полный стакан одним махом, контроллер задохнулся и&nbsp;затряс головой. Догадливый Кот уже вскрывал армейским ножом банку тушенки.</P>
+<P>&#151; Ты&nbsp;закусывай, Ик!&nbsp;закусывай.&nbsp;&#151; сам сталкер ел&nbsp;с&nbsp;ножа. Мутант и&nbsp;вовсе запустил в&nbsp;банку свои длинные и,&nbsp;явно давно немытые, когти. Как ни&nbsp;странно, после первой страх перед контроллеровской заразой перестал быть актуальным.</P>
+<P>&#151; Огурчика&nbsp;бы,&nbsp;&#151; чавкая тушенкой, мечтательно протянул контроллер.</P>
+<P>&#151; А&nbsp;у&nbsp;тебя есть?</P>
+<P>&#151; Неее&#133;</P>
+<P>&#151; Ну&nbsp;так давай пошлем кого-нибудь.</P>
+<P>&#151; Кого?&nbsp;&#151; сразу насторожился контроллер и&nbsp;<nobr>зачем-то</nobr> потрогал свой фингал.</P>
+<P>&#151; <nobr>А-а</nobr>&#133; <nobr>Ну-у</nobr>&#133; Вон из&nbsp;них кого-нибудь,&nbsp;&#151; сталкер нетвердой рукой ткнул в&nbsp;сторону притихших зомби. Мутант чуть не&nbsp;подавился.</P>
+<P>&#151; Их?!&nbsp;Да&nbsp;этих баранов только за&nbsp;смертью посылать!&nbsp;&#151; в&nbsp;доказательство своих слов он&nbsp;налил полный стакан и&nbsp;протянул его зомби,&nbsp;&#151; Э,&nbsp;мужики, будете?</P>
+<P>Зомби <nobr>что-то</nobr> нестройно замычали, но&nbsp;ни&nbsp;один не&nbsp;сделал попытки приблизиться.</P>
+<P>&#151; Вот видишь&nbsp;&#151; <nobr>ба-ра-ны</nobr>!</P>
+<P>Сталкер согласно закивал&#133;</P>
+<P>&#133;Ближе к&nbsp;утру разговор <nobr>как-то</nobr> перестал клеиться. То&nbsp;есть он&nbsp;как раз достиг своего апогея, но,&nbsp;так как ни&nbsp;один из&nbsp;собеседников не&nbsp;слушал другого, смысла в&nbsp;таком общении было мало.</P>
+<P>&#151; Не,&nbsp;ты&nbsp;послушай: эта крыса педальная меня будит и&nbsp;говорит: ты,&nbsp;грит, когда долг отдашь?! Долг ему, блин. И,&nbsp;грит, пока не&nbsp;отдашь&#133;</P>
+<P>&#151; А&nbsp;он&nbsp;на&nbsp;меня смотрит, как на&nbsp;барана&#133; То&nbsp;есть, как баран&#133; А&nbsp;я&nbsp;ему: ты&nbsp;куда, курва однорукая, АКС дел? Я&nbsp;его, что, находил, чтобы ты&nbsp;терял?!</P>
+<P>&#151; &#133; Ни&nbsp;фига, говорит, тебе не&nbsp;будет: ни&nbsp;бухла, прикинь? Ни&nbsp;обмордова&#133; <nobr>э-э-э</nobr>&#133; обуродов&#133; Да&nbsp;как его?! Оборудования! Во!&nbsp;Так и&nbsp;сказал&nbsp;&#151; ни&nbsp;фига!</P>
+<P>&#151; Не,&nbsp;ну&nbsp;где я&nbsp;еще АКС возьму, а?&nbsp;А&nbsp;тот новенький&#133;&nbsp;&#151; недоговорив, контроллер хрюкнул, упал мордой в&nbsp;траву и&nbsp;отрубился.</P>
+<P>Сталкер радостно заржал, тыча в&nbsp;него пальцем, затем сам <nobr>почему-то</nobr> откинулся на&nbsp;спину. Несколько секунд над ним бешеной каруселью крутилось небо Зоны, потом он&nbsp;уснул&#133;</P>
+<P>&#133;Было около полудня, когда Кот, наконец, заставил себя продрать глаза.</P>
+<P>&#151; Утро добрым не&nbsp;бывает,&nbsp;&#151; пробормотал он&nbsp;свое обычное утреннее приветствие и&nbsp;попытался приподняться. Это ему почти удалось. Он&nbsp;огляделся. Вокруг валялись пустые бутылки, рядом дрых контроллер. Мутант спал так, как свалился&nbsp;&#151; мордой в&nbsp;траву.</P>
+<P>Кот тряхнул головой и&nbsp;замычал не&nbsp;хуже зомби. Голову как будто набили осколками стекла, глаза еле ворочаются, во&nbsp;рту сухо, как в&nbsp;памперсе. И,&nbsp;главное,&nbsp;&#151; нигде ни&nbsp;капельки. Ну&nbsp;ни&nbsp;капелюшечки! Не&nbsp;могли&nbsp;же они все вдвоем выпить. Не&nbsp;иначе, ночью зомби наведывались. Вон, тоже еле ходят, сволочи!</P>
+<P>Сталкер рукой нашарил в&nbsp;траве автомат и,&nbsp;опершись на&nbsp;него, <nobr>кое-как</nobr> встал. Перешагнув через контроллера, он&nbsp;поплелся в&nbsp;сторону зомби.</P>
+<P>&#151; Он&nbsp;бы их&nbsp;стреноживал на&nbsp;ночь, что&nbsp;ли. Разбредутся ведь.</P>
+<P>Но&nbsp;зомби и&nbsp;не&nbsp;думали разбредаться. Более того, они напрочь игнорировали похмельного сталкера, видимо, приняв его за&nbsp;своего. Только когда он&nbsp;закурил, ближайший к&nbsp;нему зомби <nobr>как-то</nobr> странно оживился: замычал и&nbsp;стал тыкать пальцем в&nbsp;сигарету.</P>
+<P>&#151; Оставлю, оставлю,&nbsp;&#151; прохрипел Кот, держась рукой за&nbsp;голову,&nbsp;&#151; Только не&nbsp;ори.</P>
+<P>Выкурив половину, он&nbsp;протянул окурок зомби. Тот сделал одну тяжку и&nbsp;свалился. На&nbsp;губах зомби медленно проявлялась счастливая улыбка&#133;</P>
+<P>Сталкер привычным движением закинул автомат за&nbsp;спину и,&nbsp;пошатываясь, поплелся по&nbsp;лесной тропинке.</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.41" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.63 (301)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Lestat_02.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

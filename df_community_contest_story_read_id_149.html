@@ -1,0 +1,298 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Фрагменты: Два Крыла - Samael aka Ариманов</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_149.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Фрагменты: Два Крыла</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Samael aka Ариманов</b><br>Дата: <b>09/06/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>835</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>6</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P><i>Зона, Зона, я&nbsp;не&nbsp;твой,<br>
+отпусти меня, Зона&#133;</i></P>
+
+<P>&#133;А&nbsp;потом всё&nbsp;изменилось. С&nbsp;появлением старшего в&nbsp;наших рядах поселилась уверенность и&nbsp;чувство силы. Понемногу стало появляться оружие. Уже не&nbsp;только у&nbsp;одного меня был АК,&nbsp;но&nbsp;и&nbsp;у&nbsp;других моих товарищей, а&nbsp;сам я&nbsp;сменил 47й АК&nbsp;на&nbsp;108й. Нас с&nbsp;каждым днём&nbsp;становилось больше. Больше становилось и&nbsp;вооружения. Некоторые новички при поступлении приносили по&nbsp;несколько единиц оружия&nbsp;&#151; пистолеты, автоматы, даже снайперские винтовки. А&nbsp;однажды, после особо крупной перестрелки двух враждующих группировок в&nbsp;нашем районе у&nbsp;нас появилось и&nbsp;достаточное количество патронов. Постепенно мы&nbsp;начали не&nbsp;только устраивать засады, но&nbsp;и&nbsp;нападать в&nbsp;открытую. Нападать на&nbsp;более крупные группы сталкеров, вступать в&nbsp;локальные бои с&nbsp;военными. Мы&nbsp;научились без особых потерь побеждать в&nbsp;таких боях. Научились и&nbsp;уничтожать карательные экспедиции &#171;Долга&#187;. Дела шли прекрасно&#133; Но&nbsp;она испортила всё.</P>
+<P>&#133;Стоял прекрасный серо-коричневый осенний день, я&nbsp;мирно нёс&nbsp;дозор в&nbsp;ветвях старого дуба, аккуратно наблюдая за&nbsp;выделенным мне сектором обстрела, хозяин отдыхал, а&nbsp;старший пытался пристрелять арбалет с&nbsp;навёрнутым на&nbsp;него день назад оптическим прицелом. Ничто не&nbsp;предвещало неприятностей&#133; Вдруг среди деревьев мелькнула тень. Приглядевшись, я&nbsp;понял, что по&nbsp;лесу крадётся человек. Я&nbsp;сообщил об&nbsp;этом хозяину, он&nbsp;тут&nbsp;же передал эту новость всем остальным. Полдюжины автоматов уже были готовы выстрелить, когда старший, рассмотрев лицо крадущегося в&nbsp;прицел арбалета, приказал не&nbsp;стрелять. Стволы автоматов опустились, а&nbsp;он&nbsp;ещё&nbsp;долго смотрел вслед пробиравшейся мимо нас девушке&#133;</P>
+<P>Два часа подряд старший пытался написать <nobr>что-то</nobr> на&nbsp;блокнотных листах, рвал их,&nbsp;переписывал заново и&nbsp;снова рвал&#133; После этого он&nbsp;попытался прикрепить записку к&nbsp;арбалетной стреле и,&nbsp;после того, как с&nbsp;пятой попытки всё-таки прикрепил, залёг&nbsp;в&nbsp;ложбинке и&nbsp;стал вглядываться вглубь леса. Тогда я&nbsp;впервые и&nbsp;почуял неладное&#133;</P>
+<P>Через три часа тень в&nbsp;лесу мелькнула снова, направляясь уже в&nbsp;другую сторону. Я&nbsp;взглянул на&nbsp;старшего и&nbsp;обомлел. Такое лицо я&nbsp;уже видел раньше&nbsp;&#151; лицо человека, потерявшего разум. И&nbsp;такое лицо не&nbsp;сулило нам ничего хорошего. Заворожено рассматривая лицо девушки в&nbsp;оптику, старший нажал на&nbsp;спуск&#133;</P>
+<P>Стрела вошла в&nbsp;дерево наполовину.</P>
+<P>Девушка как подрубленная упала на&nbsp;землю, и&nbsp;только ствол её&nbsp;СВУ быстро двигался из&nbsp;стороны в&nbsp;сторону. Когда она сквозь оптику увидела старшего, он&nbsp;уже зарядил новую стрелу и&nbsp;снова смотрел на&nbsp;неё.&nbsp;Наступила неловкая тишина. Тихо перешёптывались с&nbsp;ветром листья, ко&nbsp;сну готовилась земля, время медленно струилось сквозь пальцы, а&nbsp;двое смотрели и&nbsp;смотрели друг на&nbsp;друга. Любовь в&nbsp;перекрестье прицела&nbsp;&#151; бывает&nbsp;ли такое? Выходит, что да.&nbsp;Девушка, медленно встав, сняла со&nbsp;стрелы листок бумаги и,&nbsp;прочитав его, неуверенно направилась к&nbsp;нам. Старший опустил арбалет и&nbsp;нерешительно улыбнулся. Это и&nbsp;было началом конца.</P>
+<P>&#133;Время дежурства закончилось, сменщик занял мой пост, и&nbsp;я&nbsp;медленно побрёл&nbsp;к&nbsp;хозяину. Старший с&nbsp;девушкой тоже шли туда&#133; Войдя в&nbsp;наше укрытие, девушка оторопело осмотрелась по&nbsp;сторонам и&nbsp;<nobr>как-то</nobr> затравленно улыбнулась. Двадцать пар немигающих глаз смотрели на&nbsp;неё&nbsp;не&nbsp;отрываясь. Нервно сглотнув, она представилась&#133; Я&nbsp;не&nbsp;запомнил её&nbsp;имени&nbsp;&#151; я&nbsp;в&nbsp;последнее время вообще плохо запоминаю имена, даже имя старшего так и&nbsp;осталось в&nbsp;глубинах памяти <nobr>каким-то</nobr> напоминанием о&nbsp;былой развесёлой жизни, но&nbsp;запомнить его я&nbsp;так и&nbsp;не&nbsp;смог. Старший тем временем мысленно обратился к&nbsp;хозяину: &#171;Она переночует с&nbsp;нами. Она не&nbsp;причинит нам вреда&#187;. Красный огонь блеснул на&nbsp;мгновение в&nbsp;глазах контроллера, но&nbsp;тут&nbsp;же потух. Девушка затравленно пробормотала &#171;Спасибо&#187; и,&nbsp;опасливо оглядываясь, прижалась к&nbsp;старшему&#133;</P>
+<P>На&nbsp;следующий день она ушла&nbsp;&#151; ей&nbsp;ещё&nbsp;нельзя было оставаться в&nbsp;Зоне на&nbsp;время Выброса&#133; И&nbsp;снова мутной чередой ничего не&nbsp;значащих событий тянулся бесконечный день перед очередным обновлением, и&nbsp;снова был свет, и&nbsp;снова Зона отдавала миру накопленное ей&nbsp;за&nbsp;долгие дни тепло, и&nbsp;новые силы привычно заполняли меня, давая ещё&nbsp;на&nbsp;одну неделю силы существовать здесь, силы помнить произошедшее&#133;</P>
+<P>Уже через день девушка вернулась. Постепенно она привыкла к&nbsp;новому окружению и&nbsp;больше не&nbsp;боялась нас. Только хозяина она ещё&nbsp;сторонилась, наверное, слишком глубоко в&nbsp;ней засели предубеждения к&nbsp;таким, как он.&nbsp;Я&nbsp;тоже чувствовал <nobr>что-то</nobr> недоброе, но&nbsp;в&nbsp;его стремительных и&nbsp;мимолётных мыслях было очень сложно уловить <nobr>что-то</nobr> конкретное, я&nbsp;ещё&nbsp;не&nbsp;был для этого достаточно силён.&nbsp;Но&nbsp;не&nbsp;чувствовать надвигающейся угрозы я&nbsp;не&nbsp;мог&#133;</P>
+<P>&#133;Она, уютно расположившись у&nbsp;стены нашего убежища, перебирала наше вооружение, когда я&nbsp;наконец решился подойти к&nbsp;ней. Нерешительно приблизившись, я&nbsp;дождался, пока она поднимет голову и&nbsp;произнёс:</P>
+<P>&#151; Я&nbsp;<nobr>м-мог-гу</nobr> <nobr>п-пом-мочь</nobr> <nobr>В-вам</nobr>?&nbsp;&#151; мой голос совершенно перестал меня слушаться, видимо, связки от&nbsp;бездействия совсем забыли, что такое звук.</P>
+<P>&#151; А&nbsp;чем ты&nbsp;можешь мне помочь?&nbsp;&#151; она, кажется, искренне удивилась.</P>
+<P>&#151; <nobr>Н-ну</nobr>&#133;&nbsp;&#151; я&nbsp;совершенно смутился.</P>
+<P>&#151; Ну&nbsp;ладно, садись, раз пришёл&nbsp;&#151; она светло улыбнулась&nbsp;&#151; и&nbsp;для тебя <nobr>что-нибудь</nobr> найдём&#133; Ты&nbsp;Калашниковы разбирать умеешь?</P>
+<P>&#151; Дда ййя&#133;я&nbsp;йих зза ддессять <nobr>сек-к-к</nobr>&#133;&nbsp;&#151; я&nbsp;закашлялся, тщетно пытаясь закончить фразу.</P>
+<P>&#151; Ну&nbsp;вот, так уже лучше&nbsp;&#151; ласково шептала она, стуча кулаком по&nbsp;моей спине&nbsp;&#151; сейчас всё&nbsp;пройдёт,&nbsp;подожди немного&#133;</P>
+<P>&#151; Сппа&#133;сибо, <nobr>п-прост</nobr>-тите&#133;&nbsp;&#151; я&nbsp;проклинал себя последними словами.</P>
+<P>&#151; Да&nbsp;ладно, всё&nbsp;нормально&nbsp;&#151; улыбнулась она&nbsp;&#151; о,&nbsp;придумала! Для начала разбери вот эти автоматы, а&nbsp;потом&#133; потом видно будет.</P>
+<P>С&nbsp;невиданным прежде рвением я&nbsp;принялся разбирать трофейные автоматы, а&nbsp;она в&nbsp;это время грациозно, но&nbsp;в&nbsp;то&nbsp;же время очень быстро начала добавлять патроны в&nbsp;опустошённые перед этим рожки, соблюдая одной ей&nbsp;понятный порядок. Три обычных&nbsp;&#151; три трассирующих&nbsp;&#151; обычный&nbsp;&#151; бронебойный&#133; Мои руки разбирали очередной автомат, а&nbsp;сам я&nbsp;заворожено наблюдал за&nbsp;этим священнодействием. Она подняла на&nbsp;меня глаза и&nbsp;грустно улыбнулась. И&nbsp;я&nbsp;<nobr>почему-то</nobr> спросил: &#171;Как ты&nbsp;здесь оказалась!&#187; Она удивленно посмотрела на&nbsp;меня, но&nbsp;после секундного замешательства ответила:</P>
+<P>&#151; Вот уж&nbsp;от&nbsp;кого не&nbsp;ожидала подобного вопроса&#133; Знаешь, я&nbsp;тогда пришла к&nbsp;своему тайнику и,&nbsp;заглянув в&nbsp;него, просто поразилась. Там поверх всех моих вещей лежала записка. Но&nbsp;ведь такого просто не&nbsp;могло быть! Ни&nbsp;один ЧЕЛОВЕК не&nbsp;способен ничего положить в&nbsp;чужой тайник! Так вот, в&nbsp;той записке были координаты и&nbsp;примерная стоимость артефакта, находящегося там. И&nbsp;я&nbsp;решила рискнуть. В&nbsp;указанном месте действительно был этот артефакт, и&nbsp;много позже я&nbsp;действительно выручила за&nbsp;него большие деньги. Только вот на&nbsp;обратном пути в&nbsp;дерево передо мной вонзилась стрела&#133; Ну,&nbsp;думаю, остальное ты&nbsp;знаешь. Только вот&#133;&nbsp;&#151; она явно не&nbsp;решалась продолжить&nbsp;&#151; Слушай, вот ты,&nbsp;наверное, многое здесь видишь&#133; как думаешь, Пьяный меня любит?</P>
+<P>&#151; <nobr>К-кто</nobr>?&nbsp;&#151; я&nbsp;снова стал заикаться.</P>
+<P>&#151; Ну&nbsp;Пьяный, парень с&nbsp;АЕКом, с&nbsp;арбалетом&nbsp;&#151; терпеливо, как ребёнку, объясняла она.</P>
+<P>&#151; А,&nbsp;<nobr>ст-тарш-ший</nobr>&#133; <nobr>Д-да</nobr>, ллюббит&nbsp;&#151; я&nbsp;отвёл&nbsp;глаза в&nbsp;сторону&nbsp;&#151; ддумаю, да.</P>
+<P>&#151; Ты&nbsp;что, расстроился, дурачок?&nbsp;&#151; засмеявшись, она обняла меня&nbsp;&#151; право&nbsp;же, не&nbsp;стоит. Мы&nbsp;ведь друзья, а&nbsp;на&nbsp;друзей нельзя обижаться, понял?</P>
+<P>&#151; Я&nbsp;поннял&nbsp;&#151; мрачно ответил я&nbsp;и&nbsp;неловко похлопал её&nbsp;по&nbsp;спине.</P>
+<P>Мы&nbsp;сидели тогда вместе весь вечер, перебирали оружие, и&nbsp;настроение моё,&nbsp;несмотря ни&nbsp;на&nbsp;что, было светлым и&nbsp;спокойным. Как всё-таки хорошо, что хозяину сейчас нет до&nbsp;меня никакого дела, что есть на&nbsp;свете эта вечная серо-коричневая осень, этот прозрачный воздух, тихо журчащий вокруг, и&nbsp;эта девушка, рядом с&nbsp;которой так легко и&nbsp;спокойно&#133; В&nbsp;голове раздался голос хозяина&nbsp;&#151; пора заступать на&nbsp;дежурство. Как не&nbsp;вовремя&#133; Я&nbsp;извинился и&nbsp;занял своё обычное место в&nbsp;ветвях старого дуба. Как&nbsp;бы я&nbsp;ни&nbsp;хотел остаться рядом с&nbsp;ней, субординация прежде всего.</P>
+<P>&#133;С&nbsp;того времени я&nbsp;постоянно искал возможность <nobr>как-то</nobr> помочь этой девушке, просто побыть с&nbsp;ней рядом&#133; и&nbsp;она не&nbsp;гнала меня&nbsp;&#151; пока старший планировал операции или совершал сольные вылазки, мы&nbsp;подолгу сидели вместе и&nbsp;делали <nobr>что-нибудь</nobr> полезное. Это было прекрасное время.</P>
+<P>Но&nbsp;в&nbsp;то&nbsp;же время вся наша жизнь начинала меняться. Мы&nbsp;постепенно теряли старшего. В&nbsp;его глазах погас огонь решимости воевать, он&nbsp;проявлял всё&nbsp;меньше интереса к&nbsp;планированию операций, и&nbsp;уже в&nbsp;следующей битве мы&nbsp;потеряли двоих убитыми. Через неделю при встрече с&nbsp;карателями &#171;Долга&#187; погибли уже пятеро. После этого девушка сказала мне, что они вдвоём&nbsp;собираются уехать из&nbsp;Зоны&#133; На&nbsp;нас надвигалась буря. И&nbsp;очень скоро грянул гром.</P>
+<P>&#133;Наступал день прощания. Они пытались скрыть свои замыслы, но&nbsp;такие наивные уловки не&nbsp;действовали на&nbsp;хозяина. Старший, отправляясь как&nbsp;бы на&nbsp;очередную вылазку, на&nbsp;самом деле ушёл&nbsp;к&nbsp;своему тайнику, девушка, как всегда перед Выбросом, уходя в&nbsp;Призонье, направилась к&nbsp;своему. Они договорились встретиться <nobr>где-то</nobr> между нашим убежищем и&nbsp;границей Зоны&#133; Но&nbsp;контроллер не&nbsp;мог себе позволить потерять своего лучшего бойца. И&nbsp;он&nbsp;отдал приказ. Я&nbsp;автоматически встал, взял АК&nbsp;и&nbsp;пошёл&nbsp;вслед за&nbsp;уже скрывшейся в&nbsp;лесу девушкой. &#171;Что мы&nbsp;должны сделать!&#187;&nbsp;&#151; пронеслась в&nbsp;моей голове несмелая мысль. &#171;Вы&nbsp;должны найти её&nbsp;и&nbsp;убить, представив это как облаву военных&#187;&nbsp;&#151; ответ хозяина был краток и&nbsp;беспощаден. &#171;Кого убить!&#187;&nbsp;&#151; глупо переспросил я,&nbsp;ведь всё&nbsp;и&nbsp;так уже было понятно. Вдруг <nobr>почему-то</nobr> вспомнилась песня, которую в&nbsp;первые дни часто напевал старший. &#171;Алину, кого&nbsp;же ещё?&nbsp;Действуйте!&#187;&nbsp;&#151; прозвучал приказ хозяина, и&nbsp;моя воля стала стремительно утекать сквозь пальцы. И&nbsp;только слова той песни вдруг вспомнились особенно чётко, и&nbsp;я&nbsp;успел начать петь:</P>
+<P>&#151; Мы&nbsp;&#151; два крыла&#133;</P>
+<P>Воля начала возвращаться в&nbsp;моё&nbsp;измученное тело, оно снова стало подчиняться мне&#133;</P>
+<P>&#151; Поднебесной чёрной птицы&#133;</P>
+<P>Напрягшись так, что затрещали иссохшиеся мышцы, я&nbsp;очень чётко подумал: &#171;Я&nbsp;не&nbsp;убью Алину!&#187;. Не&nbsp;успеть&nbsp;бы забыть, как её&nbsp;зовут&#133;</P>
+<P>&#151; Что летит над землёй&#133;</P>
+<P>Удивлению хозяина нет предела. И&nbsp;он&nbsp;тут&nbsp;же отдаёт&nbsp;другим приказ убить меня.</P>
+<P>&#151; Со&nbsp;стрелою в&nbsp;груди&#133;</P>
+<P>Но&nbsp;я&nbsp;безумным усилием вернувшейся воли глушу его приказы, и&nbsp;мои товарищи замирают на&nbsp;месте. Хозяин начинает паниковать, а&nbsp;я&nbsp;&#151; видеть свет обновления, дающий мне силы&#133;</P>
+<P>&#151; Мы&nbsp;&#151; два крыла&#133;</P>
+<P>&#171;Идиот, ты&nbsp;ведь очень долго был под моим контролем, после моей смерти ты&nbsp;будешь полностью обездвижен, ты&nbsp;не&nbsp;сможешь даже&#133;"&nbsp;&#151; голос в&nbsp;моей голове превратился в&nbsp;визг&#133;</P>
+<P>&#151; Умирающей чёрной птицы&#133;</P>
+<P>&#171;Ты&nbsp;не&nbsp;сможешь даже убить себя!&#187;</P>
+<P>Переставив сто восьмой в&nbsp;положение &#171;автомат&#187;, я&nbsp;нажал на&nbsp;спуск.</P>
+<P>&#133;Через несколько недель в&nbsp;убежище осторожно спустились двое. Молодой, ещё&nbsp;зелёный сталкер опасливо озирался по&nbsp;сторонам, видя вокруг себя десятки трупов, но,&nbsp;обнаружив немалый арсенал, хранившийся там, немного успокоился. Он&nbsp;потянулся к&nbsp;лежащему на&nbsp;земле автомату и&nbsp;от&nbsp;неожиданности вскрикнул&nbsp;&#151; лежащий на&nbsp;земле мертвец пристально смотрел на&nbsp;него. Когда к&nbsp;нему мягким кошачьим шагом подошёл&nbsp;второй, явно более опытный сталкер, зомби перевёл&nbsp;страдальческий взгляд на&nbsp;него. &#171;Добей его&#187;&nbsp;&#151; брезгливо отвернулся более опытный. Младший, сглотнув ком в&nbsp;горле, выпустил очередь в&nbsp;недвижимое тело и&nbsp;остолбенел. На&nbsp;губах зомби медленно появлялась счастливая улыбка&#133;</P>
+<P>&#133;А&nbsp;в&nbsp;день побега Пьяный всё-таки встретил Алину. И&nbsp;они сразу&nbsp;же попали в&nbsp;засаду. Каратели &#171;Долга&#187; успели занять более выгодные места недалеко друг от&nbsp;друга и,&nbsp;не&nbsp;подходя слишком близко, методично поливали их&nbsp;позиции металлическим дождём.&nbsp;Ухали Грозы, верещали <nobr>М-16</nobr>, мерно отплевывался АЕК&#133; Пьяный подумал, что всё&nbsp;это уже было, и&nbsp;выпустил в&nbsp;нападающих длинную очередь, Алина привстала на&nbsp;одно колено и&nbsp;прицелилась в&nbsp;центрального из&nbsp;нападавших&#133; Пуля <nobr>СП-6</nobr>, стандартная для Грозы, вошла ей&nbsp;в&nbsp;голову прямо позади уха. Ещё&nbsp;успев нажать на&nbsp;спуск, она медленно осела на&nbsp;землю. Трава вокруг её&nbsp;головы медленно пропитывалась кровью, а&nbsp;Пьяный закричал. Такого крика ещё&nbsp;не&nbsp;знала Зона&#133; Он,&nbsp;охваченный безумием, выскочил из&nbsp;укрывавшего их&nbsp;овражка и,&nbsp;разрывая воздух впереди себя рёвом пуль, ринулся к&nbsp;нападавшим. Подбежав к&nbsp;их&nbsp;бездыханным телам, он&nbsp;перезаряжал автомат и&nbsp;стрелял в&nbsp;мёртвых Должников, перезаряжал и&nbsp;стрелял, и&nbsp;снова перезаряжал&#133;</P>
+<P><nobr>Тогда-то</nobr> он&nbsp;и&nbsp;понял&nbsp;&#151; чтобы осуществить возмездие, он&nbsp;должен найти Лестата. И&nbsp;Пьяный знал, где его искать.</P>
+<P>Через три дня произошло страшное&nbsp;&#151; Крылья объединились&#133;</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.36" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.48 (69)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Samael_03.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

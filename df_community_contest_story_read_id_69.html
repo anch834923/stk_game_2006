@@ -1,0 +1,266 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Старик - Михаил Шишкин</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_69.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Старик</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Михаил Шишкин</b><br>Дата: <b>26/02/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>840</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>8</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p>Василий Петрович только вернулся и&nbsp;достал из&nbsp;своей котомки целлофановый пакет с&nbsp;сушками. Он&nbsp;положил его на&nbsp;буфет, а&nbsp;сам сел за&nbsp;стол, накрытый липкой скатертью, и&nbsp;отдышался. Затем он&nbsp;встал и&nbsp;пошёл&nbsp;готовить себе ужин.</p>
+<p>Василий Петрович родился в&nbsp;деревне Корогод, что под Чернобылем. После аварии на&nbsp;ЧАЭС он&nbsp;отказался эвакуироваться и&nbsp;остался в&nbsp;родной деревне. Куда ему, семидесятилетнему деду, уезжать с&nbsp;места, где он&nbsp;прожил всю жизнь? Если ему и&nbsp;суждено умереть, то&nbsp;пусть это будет в&nbsp;родных ему местах. Да&nbsp;и&nbsp;не&nbsp;всё&nbsp;ли равно, где умирать? В&nbsp;тёплой постели в&nbsp;окружении родственников или одному в&nbsp;пустой деревне на&nbsp;облученной территории? Ему было всё&nbsp;равно. Он&nbsp;оглядел фотографии на&nbsp;стенах: милые, родные лица. Вон висят его отец с&nbsp;матерью, а&nbsp;вон и&nbsp;сын висит, улыбается. А&nbsp;вот и&nbsp;он&nbsp;сам, на&nbsp;фоне реки. Его жена&#133; Господи, они все умерли! Мать умерла от&nbsp;рака, отец от&nbsp;старости, сын погиб на&nbsp;АЭС&#133; Остался один&#133;</p>
+<p>На&nbsp;ужин была картошка. Василий Петрович запил её&nbsp;кипятком и&nbsp;заел пресными сушками, которые ему выдали на&nbsp;блокпосту. Сушки были невкусные, с&nbsp;металлическим привкусом. Он&nbsp;этого уже не&nbsp;замечал, потому что всё&nbsp;в&nbsp;Зоне было с&nbsp;металлическим привкусом. Вода, воздух, пища, запахи&#133; Василий Петрович привык. Привык он&nbsp;и&nbsp;к&nbsp;тому, что практически каждую неделю заходят к&nbsp;нему сталкеры, многие из&nbsp;них раненые, а&nbsp;<nobr>кто-то</nobr> и&nbsp;просто так, в&nbsp;гости. Много их&nbsp;тут стало в&nbsp;последнее время. Вот как стали по&nbsp;лесам, болотам, кладбищам твари всякие шнырять, так и&nbsp;сталкеры появились. Ходят, ищут <nobr>чего-то</nobr>. Бывает, деньгами помогут. </p>
+<p>Вдруг Василий Петрович услышал за&nbsp;стеной <nobr>какие-то</nobr> шаги, и&nbsp;тут&nbsp;же схватил стоящую в&nbsp;углу двустволку. <nobr>Кто-то</nobr>, вероятно перебежками, шёл&nbsp;по&nbsp;периметру избы Василия Петровича, пока не&nbsp;дошёл&nbsp;до&nbsp;двери. Послышался тяжёлый стук, и&nbsp;<nobr>чей-то</nobr> глухой хриплый голос выкрикнул: &#171;Василий! Петрович! Открывай! Я&nbsp;это! Скорее!&#187; Василий Петрович отбросил оружие и&nbsp;судорожно стал двигать заевшую задвижку. Когда ему это удалось, вошёл&nbsp;сталкер&nbsp;&#151; высокий, с&nbsp;пятнами крови на&nbsp;правой руке. Сняв защитный шлем, он,&nbsp;шатаясь и&nbsp;хрипя, подошёл&nbsp;к&nbsp;лавке и&nbsp;сел. Василий Петрович пошёл&nbsp;в&nbsp;другую комнату за&nbsp;аптечкой. Пока он&nbsp;смазывал и&nbsp;перевязывал раны сталкеру, тот начал свой рассказ: &#171;Хорошо, Василий, что живёшь&nbsp;ты&nbsp;рядом. Если&nbsp;бы не&nbsp;ты,&nbsp;не&nbsp;знаю, что и&nbsp;было&nbsp;бы&nbsp;&#151; до&nbsp;блокпоста ближайшего ещё&nbsp;часа два ходьбы. Ты&nbsp;всем сталкерам помогаешь, в&nbsp;беде никого не&nbsp;оставишь. Агрх&#133;жжёт&#133;",&nbsp;&#151; сталкер сидел на&nbsp;скамейке, а&nbsp;Василий Петрович аккуратно заматывал ему руку жгутом. &#171;А&nbsp;ты&nbsp;скажи мне, Володя, чего с&nbsp;тобой <nobr>приключилось-то</nobr>? Мертвецы, что&nbsp;ли, чёрт&nbsp;бы их&nbsp;побрал? Или ещё&nbsp;какая напасть? Ты&nbsp;рассказывай, я&nbsp;водочки налью, сушками закусим&#187;. <br />
+&#151; Наливай, Василий!&nbsp;&#151; сказал сталкер, уже немного оправившийся от&nbsp;раны, и&nbsp;Василий Петрович вытащил <nobr>из-под</nobr> стола бутылку горилки. Разлив по&nbsp;стаканам, они выпили и&nbsp;закусили сушками.&nbsp;&#151; Понимаешь, Петрович, тяжёлая это штука наша звериная работа. Ходишь по&nbsp;заражённой территории, с&nbsp;риском для жизни добываешь всякие вещи. А&nbsp;всё&nbsp;ради чего? Ради этих вонючих денег. А&nbsp;ведь никуда уже не&nbsp;деться. Приходится ведь семью кормить. У&nbsp;меня ведь, Петрович, семья есть. Да,&nbsp;жена, дочь. В&nbsp;Киеве. <br />
+А&nbsp;ты&nbsp;думал? <br />
+Василий Петрович внимательно слушал сталкера. <br />
+&#151; А&nbsp;скажи мне, Володя, кто тебе руку поранил? Уж&nbsp;не&nbsp;эти, не&#133; мутоны проклятые?<br />
+&#151; <nobr>Мутанты-то</nobr>? Да,&nbsp;они самые. Слепые псы. <br />
+&#151; Да,&nbsp;да,&nbsp;Володя, мутанты&#133; Не&nbsp;могу никак название запомнить, память старая&#133; По&nbsp;мне они просто твари. Вон, на&nbsp;прошлой неделе, эти, маленькие как их&nbsp;там? Дом окружили. И&nbsp;поди с&nbsp;ними что сделай! В&nbsp;стёкла стучат, дверь ломают. Но&nbsp;под утро они ушли. <br />
+&#151; Петрович, <nobr>карлики-то</nobr>? Да,&nbsp;эти могут. Совсем обнаглели, сволочи. Недавно северный блокпост атаковали. Верно, прорваться хотели,&nbsp;&#151; и&nbsp;они оба захохотали. Потом выпили ещё&nbsp;по&nbsp;одной. Пошёл&nbsp;дождь.</p>
+<p>В&nbsp;вечерней тьме невидимые капли мерно стучали по&nbsp;крыше и&nbsp;пропадали в&nbsp;мокрой траве. Деревья стояли, опустив ветви и&nbsp;принимая на&nbsp;себя тяжкое бремя быть изничтоженными ливнем. Василий Петрович и&nbsp;Володя разошлись по&nbsp;комнатам избы и&nbsp;легли спать. За&nbsp;стеной послышался храп Владимира. Василий Петрович не&nbsp;спал. Он&nbsp;лежал на&nbsp;спине, вглядывался в&nbsp;чёрную прощелину между брёвнами на&nbsp;потолке и&nbsp;думал. Вспомнилось детство. Каждый вторник он&nbsp;с&nbsp;отцом ходил на&nbsp;рыбалку. Они сидели на&nbsp;берегу Припяти, и&nbsp;отец рассказывал ему смешные истории. Вася хохотал, и&nbsp;тогда отец, шикал на&nbsp;него: &#171;Тише ты,&nbsp;всю рыбу распугаешь!&#187; Но&nbsp;потом начинал смеяться вместе с&nbsp;сыном. А&nbsp;ещё,&nbsp;но&nbsp;уже позже, шёл,&nbsp;помнится, маленький Вася по&nbsp;дороге с&nbsp;куском чёрного хлеба в&nbsp;руке. Ел&nbsp;его, не&nbsp;заметил высохшую впадину от&nbsp;лужи, споткнулся и&nbsp;выронил хлеб прямо в&nbsp;грязь&#133; Неужели такая мелочь так запомнилась ему, прямо на&nbsp;всю жизнь? Странно, а&nbsp;вот авария на&nbsp;АЭС прошла для него как <nobr>что-то</nobr> совершенно обыденное, как будто так и&nbsp;должно было быть. Но&nbsp;вот в&nbsp;голове его пронеслись <nobr>какие-то</nobr> смутные мысли, неясные лица мелькали перед закрытыми глазами, и&nbsp;Василий Петрович, наконец, заснул.</p>
+<p>Когда он&nbsp;проснулся, Володя уже ушёл.&nbsp;Василий Петрович вышел на&nbsp;улицу умыться. После водных процедур Василий Петрович пошёл&nbsp;домой и&nbsp;стал завтракать. Кроме вчерашних сушек ничего не&nbsp;было. Вдруг в&nbsp;окне, с&nbsp;другой стороны леса он&nbsp;увидел четыре фигуры. Они медленно приближались, шли, словно загипнотизированные. Одетые в&nbsp;<nobr>какие-то</nobr> лохмотья, Василий Петрович сразу понял, что это &#171;мертвецы&#187;, как он&nbsp;их&nbsp;называл. Зомби шли к&nbsp;дому. &#171;Ах,&nbsp;чтоб тебя!&#187;&nbsp;&#151; прошептал Василий Петрович и&nbsp;схватил ружьё. За&nbsp;последние 30&nbsp;лет ему пришлось научиться хорошо стрелять, потому что кто в&nbsp;Зоне не&nbsp;умеет хорошо стрелять, тот не&nbsp;жилец на&nbsp;этом свете. Василий Петрович открыл окно, и,&nbsp;дождавшись пока они подойдут поближе, стал стрелять. Охнув, один из&nbsp;зомби упал в&nbsp;траву, на&nbsp;выгоревшие сучья. Василий Петрович захлопнул окно и&nbsp;быстро стал перезаряжать ружьё. Открывать окно было уже небезопасно&nbsp;&#151; они подошли совсем близко. Василий Петрович вспомнил, что забыл закрыть дверь. В&nbsp;два прыжка одолел он&nbsp;расстояние между окном и&nbsp;дверью и&nbsp;стукнул по&nbsp;задвижке. Та&nbsp;послушно въехала в&nbsp;замок. Теперь оставалось только уповать на&nbsp;то,&nbsp;что зомби не&nbsp;выбьют стёкла. Чёрт&nbsp;бы их&nbsp;побрал, чёрт&nbsp;бы побрал эту АЭС, чёрт&nbsp;бы побрал эту жизнь! Но&nbsp;вот уже слышно хриплое дыхание&#133; Они совсем близко. Вдруг одна мерзкая харя заглянула в&nbsp;окно. Василий Петрович не&nbsp;выдержал, и&nbsp;выстрелил через стекло. Одновременно послышались предсмертный крик и&nbsp;разбитое стекло, полетевшее в&nbsp;избу. Зомби обмяк и&nbsp;упал на&nbsp;подоконник. Голова его и&nbsp;руки свесились в&nbsp;избу. Василий Петрович замер в&nbsp;страхе, но&nbsp;<nobr>откуда-то</nobr> сзади, в&nbsp;другой комнате, опять раздался звон стекла. &#171;Суки&#187;&nbsp;&#151; подумал Василий Петрович, и&nbsp;нацелился на&nbsp;дверной проём.&nbsp;Одного он&nbsp;успеет прибить, но&nbsp;тогда не&nbsp;останется времени на&nbsp;перезарядку ружья. Значит, придётся второго в&nbsp;рукопашную. </p>
+<p>Василий Петрович окинул взглядом комнату, и,&nbsp;увидев на&nbsp;столе нож, схватил его и&nbsp;засунул себе за&nbsp;пояс. Шаркающие шаги за&nbsp;стеной приближались, и&nbsp;первый зомби уже вышел из&nbsp;темноты проёма.&nbsp;Василий Петрович выстрелил. Зомби пошатнулся, но&nbsp;остался на&nbsp;ногах. Вот показался второй. Василий Петрович откинул уже бесполезную двустволку и,&nbsp;пятясь, выхватил нож. Зомби шли к&nbsp;нему. Василий Петрович вдруг почувствовал то,&nbsp;что он&nbsp;стар. Ради кого ему бороться за&nbsp;свою жизнь? Ради кого? Ради этого постоянного страха? Ради этих мучительных воспоминаний? Он&nbsp;не&nbsp;мог дать себе ответа на&nbsp;этот вопрос. </p>
+<p>Зомби зажали Виктора Петровича в&nbsp;угол и&nbsp;уже тянули к&nbsp;нему свои смрадные руки. Василий Петрович уже смирился со&nbsp;своей участью. Но&nbsp;тут в&nbsp;голове его промелькнула мысль,&nbsp;&#151; а&nbsp;как&nbsp;же сталкеры? Куда они без него? В&nbsp;последние несколько лет, как они здесь появились, стольких их&nbsp;он&nbsp;спас! Что&nbsp;же они без него будут делать? И&nbsp;Василий Петрович, опомнившись от&nbsp;раздумий, проткнул ножом одному зомби живот, а&nbsp;второму с&nbsp;размаху дал в&nbsp;челюсть. Первый захрипел и&nbsp;повалился на&nbsp;пол, хлеща гнилой кровью. Второй отшатнулся, захрипел и&nbsp;схватил Василия Петровича за&nbsp;шею двумя руками. Василий Петрович ударил зомби ногой в&nbsp;живот, тот согнулся. Затем Василий Петрович всадил ему в&nbsp;спину нож&#133; </p>
+<p>Василий Петрович сидел на&nbsp;лавочке перед своим домом в&nbsp;Корогоде, на&nbsp;облучённой Зоне и&nbsp;нежился в&nbsp;радиоактивных лучах&#133; 
+</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.92" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.56 (96)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/shishkin_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

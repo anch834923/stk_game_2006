@@ -1,0 +1,384 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - подкрался не заметно - Макс Тарасов</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_153.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">подкрался не заметно</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Макс Тарасов</b><br>Дата: <b>10/06/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>865</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>6</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><P>&#133;подкрался не&nbsp;заметно (это название такое).</P>
+
+
+<P class="copyr"><b>Примечание автора.</b></P>
+
+<P>Людей со&nbsp;слабыми желудками и&nbsp;расшатанной нервной системой просьба не&nbsp;беспокоиться. Этот рассказ чисто экспериментальный, все чувства, вызванные этой чушью, прошу, не&nbsp;утаивая оставлять в&nbsp;комментариях.</P>
+
+
+<i><P ALIGN="RIGHT">Сидит макака на&nbsp;берегу Амазонки и&nbsp;жуёт&nbsp;бананы. К&nbsp;ней подплывает крокодил и&nbsp;спрашивает.<br>
+&#151; Чего жуёшь?<br>
+&#151; Грибы,&nbsp;&#151; отвечает макака.<br>
+&#151; Какие это грибы это&nbsp;же бананы!&nbsp;&#151; недоумевает крокодил.<br>
+&#151; Я&nbsp;говорю грибы отсюда зеленая какашка.<br>
+<br>
+Детский анекдот.</P></i>
+
+
+
+<P>Капельки крови красными бусинками падали на&nbsp;бетонные ступеньки. Шлёп,&nbsp;шлёп&nbsp;металось эхо в&nbsp;стенах. Шлёп,&nbsp;шлёп&nbsp;билась кровь о&nbsp;бетон. Хлюп, хлюп вторил им&nbsp;разбитый нос сталкера.</P>
+
+<P>На&nbsp;лестнице в&nbsp;подвал сидел человек, он&nbsp;согнулся пополам и&nbsp;почти не&nbsp;шевелился. Было темно и&nbsp;сразу кривую фигуру было не&nbsp;заметить. Лишь переломанная тень на&nbsp;стене говорила о&nbsp;наличии живого существа.</P>
+
+<P>Сталкер сидел и&nbsp;внимательно наблюдал, как падающая алая кровь скапливалась в&nbsp;лужицу и&nbsp;перемешивалась с&nbsp;<nobr>чем-то</nobr> черным. Он&nbsp;видел, как эта чернота быстро поглощала кровь, не&nbsp;перемешивалась, а&nbsp;поглощала, как черная дыра, или глотка голодного вампира. У&nbsp;последней ступеньки лежало тело. Массивная туша с&nbsp;хитиновыми наростами, из&nbsp;которых торчали иголки. Руки, ноги здоровые и&nbsp;жилистые как у&nbsp;дистрофика, без единственного намёка&nbsp;на&nbsp;жир. А&nbsp;за&nbsp;место головы кокон. Тело было мертво, а&nbsp;Кокон на&nbsp;голове нет. Этот паразит усердно переваривал своего бывшего карлика носителя. Он&nbsp;жадно хлюпал и&nbsp;издавал другие звуки активной жизнедеятельности.</P>
+
+<P>&#151; Мразь сраная,&nbsp;&#151; вслух просипел сталкер,&nbsp;&#151; Что&nbsp;б ты&nbsp;подавилась!</P>
+
+<P>Но&nbsp;паразит остался равнодушен к&nbsp;его словам, и&nbsp;стал усерднее хлюпать. Сталкер попытался выпрямиться, но&nbsp;лишь охнул и&nbsp;опять сложился пополам.</P>
+
+<P>&#151; О&nbsp;бля,&nbsp;&#151; простонал он&nbsp;и&nbsp;зажал пальцами нос, дабы унять кровотечение.</P>
+
+<P>Болели рёбра, болела голова, болела челюсть. Сталкеру попался не&nbsp;простой карл. Эта тварь была на&nbsp;голову выше своих собратьев, и&nbsp;сильнее раз в&nbsp;пять. А&nbsp;паразит на&nbsp;голове видно был с&nbsp;ним в&nbsp;сембиозе, в&nbsp;союзе то&nbsp;есть. Карлик даже не&nbsp;стал подходить к&nbsp;человеку, он&nbsp;просто впечатал его в&nbsp;стену при помощи телекинеза, раза три. На&nbsp;несчастье карлика у&nbsp;сталкера была граната.</P>
+
+<P>Сталкер вспомнил, как его отбросило взрывной волной, и&nbsp;как он&nbsp;очнулся, чуть&nbsp;ли не&nbsp;в&nbsp;обнимку с&nbsp;трупом карлика носителя. Вспомнил, как блевал, до&nbsp;слёз&nbsp;от&nbsp;боли в&nbsp;грудной клетке. Вспомнив, вид кокона, он,&nbsp;терпя боль, подавил рвотный спазм, на&nbsp;глазах сами собой навернулись слёзы.</P>
+
+<P>&#151; Боже что за&nbsp;дьявольщина, откуда такое взялось?&nbsp;&#151; спрашивал человек в&nbsp;слух неизвестно кого.</P>
+
+<P>Никто не&nbsp;отвечал.</P>
+
+<P>Сталкер вновь разогнулся и&nbsp;скрепя зубами, полез за&nbsp;аптечкой. Деревянными пальцами он&nbsp;достал шприц с&nbsp;анаболиками, закатал рукав и,&nbsp;отыскав точку, обозначавшую вену вкатил себе всё,&nbsp;что было. То,&nbsp;что он&nbsp;не&nbsp;промазал, стало ясно по&nbsp;тому, как уходила боль и&nbsp;голова наливалась тяжестью. Казалось, мозг распух и&nbsp;стал в&nbsp;два раза тяжелее, от&nbsp;чего мысли блуждающие по&nbsp;извилинам застревали и&nbsp;не&nbsp;доходили до&nbsp;точки назначения.</P>
+
+<P>Сталкер встал и,&nbsp;опираясь о&nbsp;стену, стал подниматься вверх по&nbsp;лестнице. Боль отступила, но&nbsp;за&nbsp;место неё,&nbsp;тело наливалось тупой свинцовой тяжестью. Как одеревеневший зомби он&nbsp;ковыляя выбрался из&nbsp;дома в&nbsp;подвале которого повстречался с&nbsp;новым проявление зоны, альянс карлика и&nbsp;неизвестного паразита. Опираясь на&nbsp;стену дома, сталкер огляделся. Пусто.</P>
+
+<P>Человеку захотелось ещё&nbsp;поблевать, но&nbsp;было не&nbsp;чем, свой завтрак он&nbsp;оставил ненасытному паразиту. Вдруг в&nbsp;ушах загудело. Сталкер поднял глаза в&nbsp;сторону гуда и&nbsp;увидел, как в&nbsp;десяти метров от&nbsp;него вибрировал ржавый остов старого москвича. Он&nbsp;всмотрелся, каркас расстраивался и&nbsp;подрагивал, будто в&nbsp;нем вновь заработал призрачный двигатель. Тут сталкер понял, что не&nbsp;слышит вибрацию, а&nbsp;чувствует её.</P>
+
+<P>Он&nbsp;глянул одним глазом на&nbsp;прибор. Тот показывал скопление энергии как раз в&nbsp;точке ржавого кузова. Количество энергии было характерно для мясорубки третьего уровня.</P>
+
+<P>Сталкер устал думать, он&nbsp;прислонился к&nbsp;стене и&nbsp;закрыл глаза. Простояв так минут пять он&nbsp;почувствовал как <nobr>кто-то</nobr> теребит его ботинок. Это была крыса, простая ещё&nbsp;не&nbsp;мутировавшая. Крыса резво грызла кожу ботинка, надменно игнорирую его хозяина. Сталкер не&nbsp;долго думая, словил её,&nbsp;и&nbsp;запустил в&nbsp;сторону вибрирующего остова. Крыса визгнула на&nbsp;прощание и&nbsp;лопнула как тухлый помидор о&nbsp;голову печального клоуна, не&nbsp;долетев до&nbsp;точки назначения пол метра. Вибрация исчезла. Сталкер от&nbsp;удивления почесал голову и&nbsp;наткнулся на&nbsp;<nobr>что-то</nobr> горячее и&nbsp;круглое в&nbsp;волосах. &#132;Гематома&#147;&nbsp;&#151; подумал он&nbsp;и&nbsp;направился дальше.</P>
+
+<P>Мимо плыли скелеты домов, сталкер плыл среди них как по&nbsp;реке Стикс. Дорога, рвущаяся вдаль из&nbsp;под обломков шифера и&nbsp;кирпича, прочь от&nbsp;бетонного кладбища, казалась очень длинной и&nbsp;хрупкой. <nobr>Из-под</nobr> асфальта пробивалась молодая зелень, настырно и&nbsp;нагло она отовсюду торчала клочками, пробив черную шкуру дороги. Даже дорога умирала здесь. Ещё&nbsp;год или два и&nbsp;не&nbsp;останется и&nbsp;намёка&nbsp;о&nbsp;существовании вечной страницы, дорога исчезнет, и&nbsp;некуда будет идти.</P>
+
+<P>Сталкер упрямо шагал, повесив голову изредка кидая гайки и&nbsp;поглядывая на&nbsp;прибор. Куда ноги вели его, он&nbsp;не&nbsp;знал, терминал он&nbsp;посеял, и&nbsp;сориентироваться не&nbsp;мог, голова была квадратная, а&nbsp;извилины прямые и&nbsp;те&nbsp;пунктиром.</P>
+
+<P>&#151; Дядя куда путь держим?&nbsp;&#151; раздалось сзади.</P>
+
+<P>Сталкер медленно повернулся и&nbsp;прокаркал не&nbsp;своим голосом.</P>
+
+<P>&#151; Домой иду!<BR>
+<BR>
+&nbsp;Перед ним стоял молодчик, с&nbsp;бритым лицом, маленькими подлыми глазками, и&nbsp;желтой не&nbsp;менее наглой улыбкой. Руки его были пусты.</P>
+
+<P>&#151; Может помочь, плохо вам, давайте с&nbsp;мешочком подсоблю,&nbsp;&#151; с&nbsp;задором протараторил молодчик.</P>
+
+<P>&#151; Авось сам дойду,&nbsp;&#151; буркнул сталкер и&nbsp;развернулся.</P>
+
+<P>&#151; Ты&nbsp;мразь, по&nbsp;хорошему&nbsp;же просил, давай хабар пока ухи не&nbsp;поотрывали,&nbsp;&#151; раздался другой голос <nobr>из-за</nobr> спины молодчика.</P>
+
+<P>Тяжесть в&nbsp;теле сталкера, как по&nbsp;мановению волшебной палочки пропала. Он&nbsp;прыгнул в&nbsp;сторону, на&nbsp;лету передергивая затвор автомата Калашникова. Упав на&nbsp;землю, он&nbsp;развернулся в&nbsp;сторону молодчика и&nbsp;дал очередью. Но&nbsp;желтозубого уже там не&nbsp;было, на&nbsp;его место стоял громила с&nbsp;перекошенным лицом. Лицо его было перекошено <nobr>из-за</nobr> наличия трёх&nbsp;пулевых отверстий в&nbsp;груди. Громила с&nbsp;тихим стоном повалился на&nbsp;землю, а&nbsp;сталкер замер, пытаясь определить, где залёг&nbsp;молодчик.</P>
+
+<P>&#151; Дяденька не&nbsp;стреляй, я&nbsp;не&nbsp;трону, это всё&nbsp;он,&nbsp;&#151; раздался жалобный голос.</P>
+
+<P>&#151; Ладно, не&nbsp;боись, я&nbsp;добрых людей за&nbsp;версту чую!&nbsp;&#151; хохотнул сталкер.</P>
+
+<P>&#151; Не&nbsp;тронете,&nbsp;&#151; из&nbsp;травы показалась голова молодчика.</P>
+
+<P>&#151; Не&nbsp;трону,&nbsp;&#151; сказал сталкер и&nbsp;выстрелил.</P>
+
+<P>Пуля попала желтозубому в&nbsp;глаз, и&nbsp;опорожнила от&nbsp;всего ненужного черепную коробку, моментально прикончив бедолагу.</P>
+
+<P>&#151; А&nbsp;мозгов то&nbsp;сколько, умник блин нашёлся,&nbsp;&#151; прошипел сквозь зубы сталкер, чувствуя, как опять на&nbsp;тело наваливается тяжесть, и&nbsp;грудная клетка отдаётся тихими толчками боли.</P>
+
+<P>По&nbsp;лицу опять покатились теплые струйки крови. Отфыркиваясь, сталкер встал, огляделся вокруг мутными глазами. Рядом два трупа, мародёры.</P>
+
+<P>&#151; Ублюдки, вас мать не&nbsp;родила а&nbsp;высрала,&nbsp;&#151; ругался он.</P>
+
+<P>Тем не&nbsp;менее, наличие мародёров его обрадовало, граница Зоны была близко. И&nbsp;блок посты тоже.</P>
+
+<P>Сталкер присел и&nbsp;стал думать. Думать, как назло, не&nbsp;получалось, в&nbsp;голову лез <nobr>какой-то</nobr> бред. Всплывали образы карликов, и&nbsp;ещё&nbsp;<nobr>чего-то</nobr> непонятного. <nobr>Какие-то</nobr> узкие проходы вроде пещер. Потом вспышки и&nbsp;ощущение момента боли, а&nbsp;потом ощущение вечного блаженства.</P>
+
+<P>Человека передернуло. Он&nbsp;схватился за&nbsp;голову и&nbsp;обмер. Его рука нащупала огромный желвак на&nbsp;левом виске, который он&nbsp;по&nbsp;началу принял за&nbsp;гематому. Желвак был горячим, бугристым и&nbsp;активно пульсировал. Человек в&nbsp;ужасе оторвал дрожащую руку и&nbsp;посмотрел на&nbsp;неё,&nbsp;как не&nbsp;на&nbsp;свою. Рука была в&nbsp;порядке, лишь клочки волос застряли между пальцев.</P>
+
+<P>&#151; Нет, нет, сука, мать твою гнида&#133;&nbsp;&#151; трясясь всем телом, лепетал сталкер, колотя по&nbsp;левому виску дрожащими пальцами.</P>
+
+<P>Это не&nbsp;помогало, и&nbsp;он&nbsp;стал, что было силы биться головой о&nbsp;землю, первые два удара пришлись по&nbsp;лбу, третий не&nbsp;получился, но&nbsp;в&nbsp;четвертый раз удар пришёлся по&nbsp;желваку.</P>
+
+<P>Дикий вопль огласил окрестности зоны. Сталкер схватившись за&nbsp;голову, катался по&nbsp;земле, пытаясь унять раздирающую мозги боль. Казалось, от&nbsp;боли лопались сосуды в&nbsp;голове и&nbsp;глаза вылезали из&nbsp;орбит. Но&nbsp;боль медленно угасала. Перекошенное лицо сталкера было бледно как у&nbsp;мертвеца, даже сквозь маску крови и&nbsp;пыли было видно бледную до&nbsp;синевы кожу. Он&nbsp;лежал на&nbsp;спине смотрел в&nbsp;небо, боль почти отступила, на&nbsp;её&nbsp;место приходило блаженство, и&nbsp;умиротворение.</P>
+
+<P>Небо, укутавшись в&nbsp;хмурые тучи, было серо и&nbsp;беспросветно. Сталкер лежал и&nbsp;наслаждался полным отсутствием боли. Ему было всё&nbsp;равно, что у&nbsp;него на&nbsp;голове, было всё&nbsp;равно, что будет дальше, единственное, что его радовало так это отсутствие боли.</P>
+
+<P>Но&nbsp;страх за&nbsp;свою судьбу не&nbsp;дал сталкеру полностью расслабиться. Его рука медленно потянулась к&nbsp;ножу. Как во&nbsp;сне он,&nbsp;достал его из&nbsp;ножен, из&nbsp;фляги полил на&nbsp;лезвие водки. Потом, переждав пока уймётся дрожь в&nbsp;руках, он&nbsp;приготовился к&nbsp;новому приступу боли и&nbsp;поднял нож.</P>
+
+<P>&#151; Ну,&nbsp;тварь сейчас больно будет не&nbsp;только мне&#133;</P>
+
+<P>Человек почувствовал, как нож входит в&nbsp;плоть. Всё&nbsp;тело пронзила судорога боли, но&nbsp;сталкер не&nbsp;выпустил нож. Он&nbsp;нажал ещё,&nbsp;чувствуя, как сдувается желвак подобно здоровому чирью. По&nbsp;руке поползли струйки <nobr>чего-то</nobr> тёплого и&nbsp;дурно пахнущего. Тут боль дошла до&nbsp;своего пика, организм не&nbsp;выдержал такого напряжения и&nbsp;отключился.</P>
+
+<P>Очнулся он&nbsp;оттого, что <nobr>кто-то</nobr> его бил по&nbsp;лицу.</P>
+
+<P>&#151; Очнись, чего разлёгся!&nbsp;&#151; басил <nobr>кто-то</nobr>.</P>
+
+<P>Сталкер открыл глаза и&nbsp;увидел желтозубого молодчика которому он&nbsp;давеча всадил пулю в&nbsp;глаз.</P>
+
+<P>&#151; Чего вылупился а?&nbsp;Что это у&nbsp;тебя на&nbsp;башке растёт?&nbsp;&#151; выпучив свои маленькие глазки, дивился молодчик,&nbsp;&#151; Гриб что&nbsp;ли?</P>
+
+<P>Сталкер молчал, он&nbsp;был не&nbsp;в&nbsp;себе от&nbsp;ужаса, и&nbsp;непонимания происходящего.</P>
+
+<P>&#151; Ты&nbsp;же труп,&nbsp;&#151; выдавил он.</P>
+
+<P>&#151; Да&nbsp;ты&nbsp;что?&nbsp;&#151; наигранно удивился желтозубый,&nbsp;&#151; А&nbsp;я&nbsp;и&nbsp;не&nbsp;знал! Что касательно трупов, так на&nbsp;эту роль больше тянешь ты,&nbsp;нежели я.&nbsp;Что на&nbsp;башке спрашиваю?!</P>
+
+<P>&#151; Гриб,&nbsp;&#151; сталкер выпалил первое, что пришло на&nbsp;ум.</P>
+
+<P>&#151; Так ты&nbsp;их&nbsp;специально разводишь,&nbsp;&#151; удивился молодчик,&nbsp;&#151; наверное, в&nbsp;лечебных целях, да!</P>
+
+<P>&#151; Так оно и&nbsp;есть.</P>
+
+<P>&#151;Вот что дружок, сейчас ты&nbsp;встанешь и&nbsp;пойдёшь&nbsp;со&nbsp;мной.</P>
+
+<P>&#151; Куда?</P>
+
+<P>&#151; К&nbsp;специалисту по&nbsp;грибам,&nbsp;&#151; улыбнулся желтозубый.</P>
+
+<P>&#151; Не&nbsp;пойду, не&nbsp;хочу,&nbsp;&#151; залепетал обессиливший сталкер.</P>
+
+<P>&#151; А&nbsp;кто тебя спрашивать будет!</P>
+
+<P>Сталкер услышал, как фыркнул высвобожденный газ. И&nbsp;тут&nbsp;же почувствовал иглу транквилизатора впившуюся в&nbsp;грудь. &#132;П#%^$#ец&nbsp;подкрался незаметно!&#147;&nbsp;&#151; успел подумать сталкер и&nbsp;вновь погрузился в&nbsp;омут беспамятства.</P></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="37.8" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.40 (43)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/MaxT_06.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

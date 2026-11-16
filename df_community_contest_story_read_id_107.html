@@ -1,0 +1,505 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Волк - Rabit</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_107.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Волк</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Rabit</b><br>Дата: <b>23/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>697</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>4</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p class="copyr"><b>Часть 1</b></p>
+
+<p class="copyr"><b>12.06.2017.<br>
+КВАДРАТ ХОЛМОВ.<br>
+12&nbsp;ЧАСОВ ДНЯ.</b></p>
+<p>Сталкер, лежал в&nbsp;густых зарослях на&nbsp;вершине холма. Склоны холма были почти вертикальными, лишь в&nbsp;метрах 30&nbsp;левее сталкера была возможность взобраться на&nbsp;холм. Вокруг холма расположившись, где попала, сидела стая мутантов. Почти как слепые псы, но&nbsp;крупнее. Красные глаза. Черные шкуры. Отливающие металлом когти и&nbsp;клыки. Похожи на&nbsp;мутировавших волков.</p>
+
+<p>Его звали Волк, и&nbsp;он&nbsp;считался одним из&nbsp;самых молодых сталкеров, которые имеют шансы на&nbsp;выживание в&nbsp;Зоне. Волк внимательно оглядывал заросли, на&nbsp;соседних холмах и&nbsp;соседнюю рощу. Он&nbsp;лежал здесь уже 3&nbsp;дня. Наконец он&nbsp;чёртыхнулся, и&nbsp;положил бинокль рядом с&nbsp;собой.</p>
+
+<p>&#171;Я&nbsp;смогу протянуть здесь ещё&nbsp;от&nbsp;силы дня 4&nbsp;"- подумал он&nbsp;&#151; &#171;Нужно найти контролера. Псы слишком разумно действуют. Ими <nobr>кто-то</nobr> управляет &#171;.</p>
+
+<p> Псы загнали Волка на&nbsp;этот холм, 3&nbsp;дня назад, когда он&nbsp;шел в&nbsp;глубь зоны. Ненадолго шел, поэтому не&nbsp;взял с&nbsp;собой много еды. Ещё&nbsp;минут 5&nbsp;до&nbsp;боли в&nbsp;глазах он&nbsp;всматривался в&nbsp;соседний холм. В&nbsp;принципе, он&nbsp;давно&nbsp;бы мог перестрелять псов, но&nbsp;тут <nobr>где-то</nobr> рядом, скорее всего, был контролер. А&nbsp;в&nbsp;этот рейд, он&nbsp;вышел без <nobr>пси-защиты</nobr>. Приборчик сломался, а&nbsp;починить денег не&nbsp;было. Он&nbsp;положил бинокль, и,&nbsp;давая глазам отдохнуть, заполз подальше в&nbsp;заросли. Он&nbsp;улегся и&nbsp;закрыл глаза. На&nbsp;него навалились воспоминания.</p>
+
+<p>Он&nbsp;вспоминал свою прошлую жизнь, тот мир, в&nbsp;котором он&nbsp;жил, до&nbsp;тех пор, когда стал сталкером.</p>
+
+<p>Как давно это было! Вспоминал родителей и&nbsp;друзей. Да,&nbsp;все это было очень давно. Он&nbsp;вспоминал не&nbsp;большой дом в&nbsp;Подмосковье, школу, отца, забиравшей его с&nbsp;учебы. мать и&nbsp;отца. Отец всегда хотел, чтобы Витя (так звали Волка на&nbsp;самом деле) стал его приемником в&nbsp;мастерской, да&nbsp;и&nbsp;сам Витя хотел этого. Но&nbsp;вот в&nbsp;18&nbsp;лет умерла от&nbsp;пневмонии его мать. Отец не&nbsp;выдержал и&nbsp;запил&#133;. Через год его отец по&nbsp;пьянке попал под машину. Страховку за&nbsp;жизнь отца украла у&nbsp;него его девушка, а&nbsp;потом&#133;</p>
+
+<p>Внезапно датчик запищал. Волк мгновенно выключил сигнал, и&nbsp;схватился за&nbsp;<nobr>АКМ-74У</nobr>. Датчик показывал приближение живого существа, с&nbsp;северо-запада, масса 87&nbsp;килограмм, скорее всего&nbsp;&#151; человек! Сталкер!</p>
+
+<p>Волк мгновенно схватил все вещи, и&nbsp;побежал к&nbsp;обрыву. Рядом с&nbsp;ним, он&nbsp;залег за&nbsp;валуном, и&nbsp;уставился на&nbsp;место, где должен был появиться человек. Он&nbsp;ждал минут 5.&nbsp;И&nbsp;сталкер появился. Волк с&nbsp;радостью, схватился за&nbsp;бинокль, что&nbsp;бы рассмотреть его. И&nbsp;тут&nbsp;же его радость потухла. Это был полный новичок!</p>
+
+<p>Он&nbsp;шел без скафандра, с&nbsp;видом Шварцннеггера, с&nbsp;одним РПК, на&nbsp;голове был &#171;обруч&#187;- прибор <nobr>пси-защиты</nobr>. &#171;Богатый Буратино!&#187;&nbsp;&#151; подумал Волк, и,&nbsp;прибавив увеличение бинокля, обнаружил, что маленький индикатор на&nbsp;обруче не&nbsp;горел&nbsp;&#151; прибор даже не&nbsp;был включен!!! Такие новички долго не&nbsp;выживают&#133; Попадет он&nbsp;со&nbsp;своим пулемётом в&nbsp;подвал к&nbsp;крысам&#133; и&#133;и&nbsp;возможно и&nbsp;найдет <nobr>кто-нибудь</nobr>, через пару лет его пулемёт.&nbsp;Сколько раз он&nbsp;видел, как в&nbsp;зону уходили новички без учителей с&nbsp;одними калашниковами, и&nbsp;естественно, 99%&nbsp;их&nbsp;не&nbsp;возвращались. Пристрелить его, что&nbsp;ли, чтоб не&nbsp;мучился???</p>
+
+<p> Внезапно, в&nbsp;метрах 15&nbsp;от&nbsp;него <nobr>что-то</nobr> шевельнулось. Из&nbsp;норы карлика показалось голова контролера. Дак вот где он&nbsp;гад! Псы завыли, и&nbsp;бросились к&nbsp;новичку. Волк схватил Кедр (снайперскую винтовку Калашникова), прицелился, и&nbsp;выстрелил. Волк был отличным стрелком, и&nbsp;сразу попал. Голова контролера разлетелась на&nbsp;части. Новичок увидел мутантов и&nbsp;открыл по&nbsp;ним огонь. Кедр Волка то&nbsp;же тихо отзывался, и&nbsp;псы падали. На&nbsp;Кедре стоял глушак, и&nbsp;новенький, не&nbsp;знал о&nbsp;его помощи, воображая, что псы падают от&nbsp;его пулемёта.&nbsp;Один из&nbsp;мутантов, <nobr>все-таки</nobr> добежал, до&nbsp;него и&nbsp;опрокинул его на&nbsp;спину. Волк разнес ему череп очередью, и&nbsp;добил оставшихся двух. Только тут новичок понял, что здесь он&nbsp;не&nbsp;один.</p>
+
+<p> Волк спрыгнул с&nbsp;обрыва, и,&nbsp;повесив на&nbsp;плечо Кедр, взял в&nbsp;руки АКМ (носить кедр и&nbsp;калашников&nbsp;&#151; это была его старая привычка, по&nbsp;ней его можно было узнать издалека), направился к&nbsp;нему. Новенький, оправился от&nbsp;испуга, и&nbsp;вновь принял вид крутого.</p>
+
+<p>&#151;Эй,&nbsp;мужик, как тебя зовут?</p>
+
+<p>&#151;Я&nbsp;не&nbsp;эй!&nbsp;Я&nbsp;Волк&nbsp;&#151; сказал Волк,&nbsp;&#151; а&nbsp;вот кто ты&nbsp;такой и&nbsp;что здесь делаешь? </p>
+
+<p>&#151;Да&nbsp;ты&nbsp;на&nbsp;кого наехал, а?&nbsp;Ты&nbsp;вообще, кто такой для меня?</p>
+
+<p>&#151;Новички сюда не&nbsp;доходят!</p>
+
+<p>Новичок поведал всем окрестным секторам Зоны, о&nbsp;том какой он&nbsp;крутой, богатый, и&nbsp;что сделают с&nbsp;Волком когда они вернутся&#133;</p>
+
+<p>Через несколько минут разговора, Волк узнал, что Толян (Так назвал себя новичок) в&nbsp;зоне первый раз, что он&nbsp;действительно сын &#171;богатого буратины&#187;, попал сюда на&nbsp;вертолете (&#171;на&nbsp;монстров поохотится&#187;) за&nbsp;большие деньги, и&nbsp;что всё&nbsp;его снаряжение у&nbsp;него с&nbsp;собой.</p>
+
+<p>&#151; Только РПК, не&nbsp;включенная <nobr>пси-защита</nobr> и&nbsp;всё?&nbsp;&#151; спросил Волк.</p>
+
+<p>&#151; А&nbsp;что, ещё&nbsp;<nobr>что-то</nobr> надо?- удивленно спросил Толян.</p>
+
+<p>&#151; Такие новички долго здесь не&nbsp;протягивают. Предлагаю помощь. Вижу денег у&nbsp;тебя достаточно. Скажем, за&nbsp;день в&nbsp;Зоне 3&nbsp;штуки.</p>
+
+<p>&#151; Зелёных?</p>
+
+<p>&#151; А&nbsp;как&nbsp;же? Не&nbsp;хочешь? Ну&nbsp;ладно, погибать тебе&#133;. Сказав это, Волк развернулся и&nbsp;пошёл.</p>
+
+<p>&#151; Подожди! Я&nbsp;согласен! Только&nbsp;&#151; условие: ты&nbsp;проведёшь&nbsp;меня туда, куда я&nbsp;скажу!</p>
+
+<p>&#151; Не&nbsp;пойдет. Может, ты&nbsp;на&nbsp;луну захочешь.</p>
+
+<p>&#151; Ладно, 6&nbsp;штук в&nbsp;день!</p>
+
+<p>&#151; И&nbsp;куда&nbsp;же тебе нужно?</p>
+
+<p>&#151; В&nbsp;центр Зоны!</p>
+
+<p>&#151; Смеешься? что ты&nbsp;там забыл? Может тебя ещё&nbsp;в&nbsp;квадрат Феникса провести? Ладно. Только при беспрекословном подчинении.</p>
+
+<p>&#151; Подчинении? Да&nbsp;это&nbsp;же я&nbsp;тебя нанимаю, а&nbsp;не&nbsp;ты&nbsp;меня!</p>
+
+<p>&#151; Твои проблемы!&nbsp;&#151; сказал Волк и&nbsp;пошел.</p>
+
+<p>&#151; Да&nbsp;погоди&nbsp;же ты,&nbsp;мужик. </p>
+
+<p>Медведь (так окрестил новичка сталкер) согласился.</p>
+
+<p>&#171;Зачем я&nbsp;ввязываюсь в&nbsp;это дело!&#187;&nbsp;&#151; подумал тогда Волк.</p>
+
+<p class="copyr"><b>12.06.2017.<br>
+КВАДРАТ ХОЛМОВ.<br>
+16&nbsp;ЧАСОВ ДНЯ.</b></p>
+
+<p>Медведь шел и&nbsp;слушал наставления сталкера.</p>
+
+<p>&#151; Не&nbsp;курить. Громко не&nbsp;разговаривать. Не&nbsp;палить по&nbsp;своим страхам. Всегда слушать меня.</p>
+
+<p>&#151; Да,&nbsp;хорошо,&nbsp;&#151; отвечал Медведь, с&nbsp;таким видом, что любому&nbsp;бы, кто его увидел, стало&nbsp;бы ясно&nbsp;&#151; все эти наставления зря&#133;</p>
+
+<p>Волк внезапно остановился, и&nbsp;прислушался. Медведь тупо уставился на&nbsp;него.</p>
+
+<p>&#151; Командир, ну&nbsp;ты&nbsp;чё,&nbsp;встал как&#133;</p>
+
+<p>&#151; Вертушка! Скорее!</p>
+
+<p>Волк схватил его за&nbsp;руку, и&nbsp;потащил в&nbsp;соседние кусты, бросил его на&nbsp;землю.</p>
+
+<p>&#151; Ну,&nbsp;так что такое? И&nbsp;вообще, ты&nbsp;чего себе позволяешь, а?</p>
+
+<p>&#151; Молчать! Вертолет! Не&nbsp;высовывайся, давай лезь под куст, подальше!</p>
+
+<p>&#151; Подумаешь, вертолёт!</p>
+
+<p>&#151; Лезь, я&nbsp;сказал! Живо! Черт знает, зачем они здесь! Так что лучше к&nbsp;ним не&nbsp;показываться.</p>
+
+<p>Тут <nobr>из-за</nobr> холма вылетел <nobr>МИ-8</nobr>, и&nbsp;с&nbsp;гулом пролетел над кустами, так низко, что Волк смог рассмотреть его бортовой номер&nbsp;&#151; 5345.</p>
+
+<p>&#151; 5345&#133; Странно. Обычно они далеко так не&nbsp;летают.</p>
+
+<p>&#151; 5345? Дак я&nbsp;же на&nbsp;нём&nbsp;и&nbsp;прилетел.</p>
+
+<p>&#151; Сколько говоришь, заплатил?</p>
+
+<p>&#151; 100.000&nbsp;баксов.</p>
+
+<p>&#151; Похоже, вояки придумали новый бизнес. И&nbsp;свидетелей не&nbsp;остаётся&#133;</p>
+
+<p>Вертолёт&nbsp;был уже над соседнем холмом, как Волк заметил над холмом цепочку пятнышек. Это была Птичья карусель.</p>
+
+<p> Волк мгновенно выхватил бинокль и&nbsp;направил на&nbsp;пятно. Это были Птицы. &#171;Странно, их&nbsp;я&nbsp;тут их&nbsp;раньше никогда не&nbsp;видел&#187;- подумал Волк&nbsp;&#151; &#171;Птицы больше по&nbsp;размерам, чем обычно&#187;.</p>
+
+<p>Пилот, не&nbsp;успел среагировать, а&nbsp;птицы, устремившаяся за&nbsp;добычей, налетели на&nbsp;винт.</p>
+
+<p>Волк опустил бинокль. Вертолет на&nbsp;секунду завис в&nbsp;воздухе, и,&nbsp;покачиваясь, рухнул в&nbsp;низ. Взрыва не&nbsp;последовало.</p>
+
+<p>Волк помедлил секунду, и,&nbsp;схватив рюкзак, побежал к&nbsp;вертолёту.</p>
+
+<p>&#151; ты&nbsp;куда?&nbsp;&#151; заорал Медведь.</p>
+
+<p>&#151; К&nbsp;вертолёту!&nbsp;Может, поживимся, пока можно!</p>
+
+<p>&#151; Он&nbsp;же разбился! Зачем спешить?</p>
+
+<p>&#151; Через час на&nbsp;запах трупов сбегутся падальщики&nbsp;&#151; крысы и&nbsp;слепые псы, и&nbsp;тогда будет уже поздно. Давай, быстрее!</p>
+
+<p>Когда они добежали до&nbsp;вертолёта&nbsp;первое, что они увидели&nbsp;&#151; труп солдата, лежащего</p>
+
+<p>рядом с&nbsp;вертолётом. Похоже, и&nbsp;все остальные были мертвы.</p>
+
+<p>&#151; Возьми АКМ.- сказал Волк Медведю.&nbsp;&#151; И&nbsp;патроны не&nbsp;забудь. И&nbsp;раз уж&nbsp;без скафа&nbsp;&#151; возьми броню.</p>
+
+<p>&#151; Ага. </p>
+
+<p>Волк полез внутрь вертолёта.&nbsp;Внутри все было перевёрнуто. Рядом с&nbsp;дверью, лежал <nobr>какой-то</nobr> мужик. У&nbsp;двери в&nbsp;кабину ещё&nbsp;&#151; 2&nbsp;солдата. Волк схватил все, что попалось под руку и&nbsp;могло пригодиться. В&nbsp;хвосте лежала целая груда вещей. Он&nbsp;пошёл&nbsp;к&nbsp;ним. Среди них лежал</p>
+
+<p>потрёпанная, вся в&nbsp;крови записная книжка. Он&nbsp;положил её&nbsp;в&nbsp;карман.</p>
+
+<p>&#151;Быстрей&nbsp;&#151; заорал он&nbsp;на&nbsp;Медведя&nbsp;&#151; хватай всё,&nbsp;что я&nbsp;вытащил и&nbsp;бегом за&nbsp;мной!</p>
+
+<p class="copyr"><b>12.06.2017.<br>
+КВАДРАТ <nobr>X-02</nobr>.<br>
+ХУТОР СТАРАЯ ПОДКОВА.<br>
+9&nbsp;ЧАСОВ ВЕЧЕРА.</b></p>
+
+<p>&#171;наконец&nbsp;&#151; то&nbsp;дошли&#187;&nbsp;&#151; подумал Волк, и&nbsp;стал взламывать дверь. </p>
+
+<p>&#171;странно, по&nbsp;пути сюда, нам на&nbsp;пути попалась только одно мясорубка&#187;- пришла в&nbsp;голову странная мысль.</p>
+
+<p>Медведь к&nbsp;тому времени доковылял с&nbsp;горой оружия в&nbsp;руках (как он&nbsp;вообще дошел, не&nbsp;понятно, стонал о&nbsp;своей усталости всю дорогу.). Через несколько минут Волк сидел за&nbsp;столом, и&nbsp;рассматривал трофеи:. 2&nbsp;АКМ -74,&nbsp;пара макаровых.</p>
+
+<p>&#171;Положу их&nbsp;в&nbsp;тайник, все равно, сейчас они мне не&nbsp;понадобятся. Потом, когда спроважу Медведя&#187;&nbsp;&#151; подумал он.&nbsp;Тут он&nbsp;вспомнил о&nbsp;записной книжке, вытащил её&nbsp;из&nbsp;кармана, и&nbsp;стал смотреть. Она оказалась дневником. Половина страниц вылетела, другие были залиты кровью. Вот что он&nbsp;смог разобрать:</p>
+<p>&#171;11.06.17. 12&nbsp;часов&#133; &#133;приближаемся к&nbsp;квадрату <nobr>Y-98</nobr> Аномалии&nbsp;&#151; как обычно, попалась и&nbsp;одна странная стая мутантов&nbsp;&#151; таких я&nbsp;ещё&nbsp;ни&nbsp;когда не&nbsp;видел&#187;.</p>
+
+<p>&#171;Странно",- подумал Волк&nbsp;&#151; &#171;так далеко вояки обычно не&nbsp;забираются&#187;.</p>
+<p>&#171;11.06.17. 16&nbsp;часов&nbsp;&#151; мы&nbsp;на&nbsp;месте. Разворачиваем лагерь. Все нормально. Поработаем пару часиков и&nbsp;вызовем вертолёт,&nbsp;смоемся отсюда. <nobr>Что-то</nobr> мне здесь не&nbsp;нравит&#133;".</p>
+<p>&#171;11.06.17 20&nbsp;часов Вертолёт&nbsp;вызвать не&nbsp;возможно, так как началась магнитная буря. Придется ночевать здесь&#187;</p>
+<p>&#171;12.06.17 11&nbsp;часов. Все кроме меня и&nbsp;двух солдат погибли этой ночью. Мы&nbsp;сами еле спаслись, да&nbsp;и&nbsp;то&nbsp;потому что, за&nbsp;нами с&nbsp;базы, обеспокоенными отсутствием нашей радиограммы, выслали вертолёт.&nbsp;Это было ужасно!!! </p>
+
+<p>ОНИ появились внезапно, из&nbsp;темноты, и&nbsp;сразу убили солдат, дежуривших на&nbsp;периметре, потом принесись за&nbsp;персонал. Они убивают людей струёй&nbsp;<nobr>какой-то</nobr> жидкости. Я&nbsp;и&nbsp;2&nbsp;солдата заперлись в&nbsp;небольшом бункере, вырытом вчера, и&nbsp;так спаслись. Утром нас подобрал вертолёт".</p>
+<p>"&nbsp;Квадрат <nobr>Y-98</nobr>? Но&nbsp;ведь не&nbsp;смотря на&nbsp;то,&nbsp;что он&nbsp;в&nbsp;глубине Зоны, это один из&nbsp;самых спокойных секторов. Его и&nbsp;зовут так&nbsp;&#151; сектор Спокойствия"&nbsp;&#151; подумал Волк.</p>
+
+<p> <nobr>Где-то</nobr> внезапно раздался вой.</p>
+
+<p> &#171; Это ещё&nbsp;что за&nbsp;хрень?&#187;- подумал Волк.</p>
+
+<p>&#151; эй,&nbsp;Медведь, просыпайся, живо!</p>
+
+<p>&#151; Да&nbsp;в&nbsp;чем дело, только ведь заснул&#133;</p>
+
+<p>&#151; Живо, я&nbsp;сказал! Это слепые псы!</p>
+
+<p>Медведь вскочил, и&nbsp;подбежал к&nbsp;окну.</p>
+
+<p>&#151; Ты&nbsp;куда это? Помоги мне закрыть дверь!</p>
+
+<p>Волк опрокинул шкаф, и&nbsp;закрыл им&nbsp;дверной проём.</p>
+
+<p>&#151; закрой окна, где можно!</p>
+
+<p>&#151; Чё?&nbsp;Я&nbsp;тебя нанял, ты&nbsp;и&nbsp;закрывай!</p>
+
+<p>Волк направил на&nbsp;него АКМ.</p>
+
+<p>&#151; Давай, закрывай, я&nbsp;сказал.</p>
+
+<p>Вой приближался. <nobr>Кто-то</nobr> заскрёбся в&nbsp;сенях избушки. Медведь осторожно выглянул в&nbsp;окно.</p>
+
+<p>&#151; Да&nbsp;их&nbsp;же тут тыщи! </p>
+
+<p>Крутому явно стало не&nbsp;по&nbsp;себе. Он&nbsp;схватил свой РПК, и&nbsp;встал у&nbsp;двери. Шорохи в&nbsp;сенях продолжались. Они услышали, что <nobr>кто-то</nobr> или <nobr>что-то</nobr> начало скрестись в&nbsp;дверь и,&nbsp;похоже, не&nbsp;без успеха. Дверь задрожала. </p>
+
+<p>&#151; Отойди!&nbsp;&#151; сказал шепотом Волк, и&nbsp;подошел к&nbsp;шкафу, открыл дверцу в&nbsp;нём.&nbsp;Дверь уже почти поддалась псам, в&nbsp;неё&nbsp;зияла дыра. В&nbsp;дыру просунулась безглазая морда, и&nbsp;принялась продолжать разгрызать дверь.</p>
+
+<p>Волк выстрелил в&nbsp;пса, и&nbsp;тотчас&nbsp;же вытащил из&nbsp;подсумка гранату, и&nbsp;бросил в&nbsp;дыру. Вой, раздавшейся за&nbsp;дверью, показал, что бросил гранату он&nbsp;не&nbsp;зря. Волк отбежал от&nbsp;двери, и&nbsp;устроился у&nbsp;ближайшей стенки.</p>
+
+<p>&#151; Так Медведь! Слушай меня! Стрелять будешь только тогда, когда морда покажется в&nbsp;дыре.</p>
+
+<p>Медведь побледнел, и&nbsp;с&nbsp;дрожью в&nbsp;руках направил свой рпк на&nbsp;дверь.</p>
+
+<p>Вой стал раздаваться не&nbsp;только в&nbsp;сенях, но&nbsp;и&nbsp;вокруг дома. В&nbsp;дыре показалась очередная морда, и&nbsp;Волк выстрелил&#133;</p>
+
+<p>Так прошло уже полночи. Патроны стали заканчиваться, а&nbsp;псы всё&nbsp;напирали. Внезапно атаки прекратились. Волк сменил рожок, и&nbsp;прислушался. Слабое рычание. Тут&nbsp;же раздался звон стекла, и&nbsp;на&nbsp;середину комнаты выпрыгнул монстр. Безглазая морда, редкая шерсть, гигантские когти&#133;</p>
+
+<p> Волк полоснул по&nbsp;монстру очередью от&nbsp;пояса. Тот взвыл и&nbsp;упал в&nbsp;лужу собственной крови. Такая&nbsp;же участь постигла и&nbsp;ещё&nbsp;несколько монстров запрыгнувших в&nbsp;окно.</p>
+
+<p> Псы больше не&nbsp;появлялись. Волк сменил рожок. И&nbsp;тут их&nbsp;целая река хлынула в&nbsp;пролом в&nbsp;двери. Наконец, Медведь очухался и&nbsp;нажал на&nbsp;курок. С&nbsp;такого расстояния не&nbsp;попасть было не&nbsp;возможно.</p>
+
+<p> Лавину псов буквально смело, но&nbsp;они всё&nbsp;напирали. Наконец, лента кончилась. Волк зашвырнул в&nbsp;пролом бывшей двери гранату, через несколько секунд после взрыва&nbsp;&#151; ещё&nbsp;одну.</p>
+
+<p>&#151; Ну,&nbsp;перезаряжай,&nbsp;же, скорее!</p>
+
+<p>&#151; Это последняя лента!</p>
+
+<p>&#151; Ты&nbsp;что их&nbsp;только 3&nbsp;взял??</p>
+
+<p>&#151; Яж&nbsp;не&nbsp;знал, что тут такое!</p>
+
+<p>&#151; Бери калаш, вон&nbsp;же они лежат!!</p>
+
+<p>Волки прекратили наступление. Настала тишина. Волк посмотрел в&nbsp;подсумок. Последний рожок! В&nbsp;трофейных автоматах&nbsp;&#151; ещё&nbsp;по&nbsp;одному. Что делать???</p>
+
+<p>Взгляд Волка упёрся в&nbsp;лестницу на&nbsp;чердак. Спасение!</p>
+
+<p>Волк подбежал, открыл люк.</p>
+
+<p>&#151; Быстрее, сюда! Возьми трофеи!&nbsp;&#151; крикнул он&nbsp;медведю.</p>
+
+<p>Они быстро поднялись по&nbsp;лестнице, и&nbsp;Волк закрыл люк за&nbsp;собой.</p>
+
+<p>Через несколько минут в&nbsp;комнату вбежала следующая волна мутантов. Волк бросил гранату, и&nbsp;отпрянул от&nbsp;люка, и&nbsp;закрыл его. Осмотрелся. Внимание его привлёк&nbsp;сундук, стоящий рядом с&nbsp;ним.</p>
+
+<p>Он&nbsp;подбежал и&nbsp;открыл его. В&nbsp;нем был целый склад, наверное</p>
+
+<p>Это был тайник <nobr>какого-то</nobr> сталкера. Но&nbsp;пользоваться им&nbsp;было нельзя.</p>
+
+<p>ЗОНА не&nbsp;прощала подобного. Не&nbsp;кто после такого не&nbsp;выживал больше дня. Волк не&nbsp;был суеверным, но&nbsp;в&nbsp;это искренне верил.</p>
+
+<p>&#171;Но&nbsp;ведь можно нечего и&nbsp;не&nbsp;брать!!!&#187;&nbsp;&#151; подумал он.&nbsp;В&nbsp;сундуке был целый арсенал взрывчатки, а&nbsp;на&nbsp;самом чердаке&nbsp;&#151; окно. Волк достал из&nbsp;кармана моток ниток из&nbsp;кармана, бечевку&nbsp;&#151; из&nbsp;рюкзака, привязал один конец&nbsp;&#151; к&nbsp;противоположной стене, а&nbsp;другой к&nbsp;гранате, выдернул из&nbsp;неё&nbsp;чеку, и&nbsp;осторожно положил её&nbsp;на&nbsp;край сундука, привязал к&nbsp;люку верёвку, и&nbsp;вышиб окно. На&nbsp;улице псов не&nbsp;было, &#171;все в&nbsp;доме &#171;&nbsp;&#151; подумал Волк. </p>
+
+<p>&#151; Прыгай!</p>
+
+<p>&#151; Куда? Там&nbsp;же псы!!</p>
+
+<p>&#151; Прыгай, я&nbsp;сказал!</p>
+
+<p>Когда Медведь прыгнул, за&nbsp;ним прыгнул и&nbsp;Волк, а&nbsp;когда приземлился&nbsp;&#151; с&nbsp;силой потянул за&nbsp;верёвку.</p>
+
+<p>&#151;Бежим скорее, скорее!</p>
+
+<p>Не&nbsp;успели они добежать и&nbsp;до&nbsp;подножья соседнего холма, собаки ворвались на&nbsp;чердак, и&nbsp;самая не&nbsp;удачная из&nbsp;них, нарвалась на&nbsp;нить.</p>
+
+<p>Раздался мощный взрыв. Когда Волк оглянулся&nbsp;&#151; дома уже не&nbsp;было.</p>
+
+<p>Собак&nbsp;&#151; тоже.</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="36.05" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.15 (26)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Rabit_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

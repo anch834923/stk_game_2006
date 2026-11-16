@@ -1,0 +1,313 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Лезвие бритвы (части 5-10) - Черный юмор  aka ARIEЦ</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_93.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Лезвие бритвы (части 5-10)</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Черный юмор  aka ARIEЦ</b><br>Дата: <b>01/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>1345</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>6</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p class="coyr"><b>Часть V.&nbsp;Чужой мир.</b></p>
+
+<p>Я&nbsp;шел вдоль дороги из&nbsp;Зоны по&nbsp;направлению к&nbsp;своему дому. Не&nbsp;помню, зачем я&nbsp;туда ходил, и&nbsp;что я&nbsp;хотел там найти. В&nbsp;моей голове вертелась только одна мысль: когда кончится эта дорога? Я&nbsp;не&nbsp;раз возвращался с&nbsp;задания по&nbsp;этому пути, но&nbsp;ни&nbsp;разу мне это шоссе не&nbsp;казалось таким длинным. До&nbsp;сих пор помню то&nbsp;чувство: чем дальше идешь, тем длиннее становиться дорога, и&nbsp;время течет не&nbsp;так, будто приостанавливается в&nbsp;ожидании <nobr>чего-то</nobr>. Тогда чувство тревоги наполняет душу, страх затмевает разум, хочется бежать отсюда, чтобы находиться где угодно, только не&nbsp;здесь. На&nbsp;правом плече у&nbsp;меня весел автомат, раздражая своим стуком об&nbsp;аптечку. Не&nbsp;понимаю, зачем я&nbsp;его тащил с&nbsp;собой? Все равно у&nbsp;меня не&nbsp;было к&nbsp;нему патронов, а&nbsp;силы были на&nbsp;исходе. Остановившись, я&nbsp;снял шлем и&nbsp;вдохнул свежий воздух. Опасности не&nbsp;было: датчик не&nbsp;показывал превышения радиации. По&nbsp;одну сторону от&nbsp;дороги возвышался небольшой обрывистый пригорок, покрытый песком, который казался темно-красным в&nbsp;лучах заходящего солнца. По&nbsp;другую сторону&nbsp;&#151; лес, зачаровывающий своей зеленой окраской. Когда привык к&nbsp;растениям, мутировавшим и&nbsp;похожим на&nbsp;золу, зеленый лес в&nbsp;глазах Сталкера схож, пожалуй, только с&nbsp;чудом, на&nbsp;которое хочется смотреть просто так, без цели. Мудрые люди говорят, что долго смотреть можно на&nbsp;огонь и&nbsp;воду, но&nbsp;для некоторых и&nbsp;лес будет прекраснейшим творением природы. Очарованный зелеными листьями высоких деревьев, я&nbsp;не&nbsp;заметил, как наступила ночь. Времени совсем не&nbsp;оставалось, надо было спешить: ночь в&nbsp;этих местах&nbsp;&#151; самое опасное время суток. Большинство пропавших в&nbsp;Зоне людей исчезли именно ночью&#133; как мой брат&#133;</p>
+
+<p>Мертвая тишина нагнетала ужас, который обжигал сердце. Я&nbsp;оцепенел, но&nbsp;не&nbsp;от&nbsp;страха, а&nbsp;от&nbsp;безмолвия. Но&nbsp;не&nbsp;только тело застыло, застыл и&nbsp;разум: все мысли, будто растворившись в&nbsp;тишине, <nobr>куда-то</nobr> сами собой исчезли. Не&nbsp;помню, сколько времени я&nbsp;так простоял&#133;</p>
+
+<p>Шаги за&nbsp;спиной прервали мое бездействие. Я&nbsp;машинально повернулся и&nbsp;увидел человека, стоящего метрах в&nbsp;семи от&nbsp;меня. Мысли, внезапно замелькавшие у&nbsp;меня в&nbsp;голове, не&nbsp;давали мне прийти в&nbsp;себя. Я&nbsp;не&nbsp;мог разглядеть его лица, виден был лишь один силуэт. Вдруг незнакомец упал на&nbsp;землю, после чего раздался зов о&nbsp;помощи. Его голос показался мне очень знакомым. Бросив все снаряжение из&nbsp;рук, я&nbsp;подбежал к&nbsp;лежавшему на&nbsp;земле человеку, присел возле него и&nbsp;попытался приподнять беднягу.</p>
+
+<p>&#151; Что с&nbsp;тобой случилось? Где твоя группа?&nbsp;&#151; спросил я,&nbsp;когда переворачивал его. Но&nbsp;когда я&nbsp;разглядел его лицо, молния прошла через каждую молекулу моего мозга, глаза на&nbsp;секунду ослепли&#133;. Это был мой пропавший брат. </p>
+
+<p>&#151; Брат&#133;- шепотом произнес он&nbsp;и&nbsp;медленно закрыл глаза. На&nbsp;его спине была смертельная рана. Я&nbsp;приложил ладонь к&nbsp;его шее: пульс не&nbsp;прощупывался. Я&nbsp;пытался <nobr>что-нибудь</nobr> сделать, но&nbsp;было поздно, его сердце остановилось. Он&nbsp;умер у&nbsp;меня на&nbsp;руках.</p>
+
+<p>&#151; НЕЕЕТ!!!&nbsp;&#151; в&nbsp;исступлении кричал я&#133;</p>
+
+<p class="copyr"><b>&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;&#151;</b></p>
+
+<p>	Я&nbsp;проснулся в&nbsp;холодном поту на&nbsp;своей кровати&#133;&#133;</p>
+
+<p class="copyr"><b>Часть VI.&nbsp;Лезвие бритвы.</b> </p>
+<p>Сновидение заставило меня вспомнить лучшего друга, пропавшего несколько лет назад недалеко от&nbsp;АЭС в&nbsp;момент катастрофы. В&nbsp;глубине души жила надежда, что он,&nbsp;может быть, еще жив. Мне и&nbsp;раньше снились странные сны, но&nbsp;ни&nbsp;в&nbsp;одном из&nbsp;них я&nbsp;не&nbsp;находился так близко к&nbsp;пропавшему брату. Вообще, сны не&nbsp;редко бывают пророчествами, но&nbsp;люди не&nbsp;обращают на&nbsp;это никакого внимания. Не&nbsp;правильно говорят те,&nbsp;кот считает, что человек одну треть жизни находится во&nbsp;сне. Я&nbsp;считаю, что во&nbsp;сне человек живет второй жизнью, которая неподвластна разуму. Во&nbsp;сне раскрывается настоящее &#171;Я&#187;&nbsp;каждой личности, потому что наяву мы&nbsp;можем контролировать себя, свои поступки, делать так, как нам хочется, а&nbsp;во&nbsp;сне мы&nbsp;всего лишь наблюдаем за&nbsp;собой, не&nbsp;имея возможности вмешаться в&nbsp;происходящее. Грань между явью и&nbsp;сном настолько тонка, как лезвие бритвы, что иногда мы&nbsp;не&nbsp;замечаем, что находимся во&nbsp;сне. И&nbsp;личность, которой мы&nbsp;живем во&nbsp;сне, может манипулировать той, которой мы&nbsp;живем в&nbsp;реальности. Так сон заставил меня бросить все свои дела и&nbsp;идти на&nbsp;поиски брата. Честно говоря, особо важных дел у&nbsp;<nobr>меня-то</nobr> и&nbsp;не&nbsp;было. </p>
+
+<p>Солнце уже светило в&nbsp;окна, наполняя комнату своими светло-желтыми лучами. На&nbsp;улице дул свежий ветер, медленно качая верхушки стоявших рядом с&nbsp;домом деревьев. На&nbsp;фоне ярко-голубого неба <nobr>где-то</nobr> вдалеке виднелись белые, казавшиеся лохмотьями, облака. Такой прекрасной погоды я&nbsp;не&nbsp;помнил с&nbsp;той последней встречи с&nbsp;братом, когда еще был офицером армии и&nbsp;находился на&nbsp;посту КПП Чернобыльской АЭС. С&nbsp;тех пор прошло не&nbsp;меньше четырех лет, а&nbsp;я&nbsp;как сейчас помню то&nbsp;утро&#133;</p>
+
+<p>Я&nbsp;отправился в&nbsp;подвал за&nbsp;снаряжением, лежавшим там довольно долго. Дело в&nbsp;том, что я&nbsp;неделю назад выполнил заказ от&nbsp;правительства достать &#171;ртутный шар&#187;, как они его называли, и&nbsp;немного студеня, тогда федералы отвалили мне 1000&nbsp;рублей. И&nbsp;следующую неделю я&nbsp;не&nbsp;ходил в&nbsp;Зону за&nbsp;наживой. От&nbsp;этой суммы я&nbsp;почти ничего не&nbsp;истратил. Так что с&nbsp;финансовой стороны дела у&nbsp;меня полный порядок. Достав оборудование, я&nbsp;взглянул на&nbsp;датчик: &#171;21&nbsp;May 2010, Sector <nobr>19-254AX17</nobr>, Temperature ~ 19°C&nbsp;(66,2F),&nbsp;Radiation ~ 0,3&nbsp;R/h,&nbsp;Battery FULL&#187;. Уложив оборудование в&nbsp;сумку, я&nbsp;вышел из&nbsp;подвала и&nbsp;поставил ее&nbsp;на&nbsp;пол. Достав из&nbsp;шкафа АК&nbsp;и&nbsp;патроны к&nbsp;нему, я&nbsp;уселся на&nbsp;кресле. Отодвинув затвор, нажал на&nbsp;спусковой курок: затвор со&nbsp;звонким щелчком ударился о&nbsp;металл; в&nbsp;этот момент ко&nbsp;мне пришло чувство удовлетворения. Зарядив патронами магазин и&nbsp;вставив его в&nbsp;автомат, я&nbsp;положил оружие в&nbsp;ту&nbsp;же сумку, где лежало оборудование. </p>
+
+<p>В&nbsp;гараже стояла &#171;Нива&#187;, слегка потрепанная и&nbsp;грязная. &#171;Не&nbsp;на&nbsp;международную конференцию <nobr>все-таки</nobr> еду!&#187;&nbsp;&#151; ободрил я&nbsp;сам себя. </p>
+
+<p class="copyr"><b>Часть VII. Мертвая зона.</b></p>
+
+<p>Я&nbsp;вышел из&nbsp;Нивы и&nbsp;осмотрелся: похоже, мой приезд никого не&nbsp;потревожил. Хотя здесь, около границы с&nbsp;Зоной, редко встречаются аномалии, но&nbsp;я&nbsp;все&nbsp;же проверил датчик: все в&nbsp;порядке, можно двигаться. По&nbsp;дороге сюда я&nbsp;встретил двух Сталкеров, которые осведомили меня о&nbsp;том, что выброс произошел два дня назад и&nbsp;опасности в&nbsp;нем сейчас нет. Я&nbsp;надел шлем и&nbsp;взял в&nbsp;руки автомат, после чего пешком направился вдоль дороги, по&nbsp;которой некогда проезжал брат, в&nbsp;сторону деревни Стечанка, в&nbsp;которой он&nbsp;должен был высадить ученых. Когда автомобиль скрылся за&nbsp;поворотом, с&nbsp;правой стороны от&nbsp;дороги, метрах в&nbsp;семидесяти впереди от&nbsp;меня, я&nbsp;заметил Ниву, сильно напоминавшую мою собственную, но&nbsp;без колес и&nbsp;с&nbsp;выбитыми стеклами. Она стояла на&nbsp;обочине и&nbsp;сильно заросла травой. Видно, что она стоит здесь с&nbsp;момента катастрофы. Когда до&nbsp;нее оставалось шагов пять, неожиданно в&nbsp;моих ушах раздался звук сирены: рядом аномалия. Я&nbsp;мигом, почти машинально попятился назад. Датчик замолчал. </p>
+
+<p>&#151; Комариная плешь, как мог не&nbsp;заметить?&nbsp;&#151; произнес я,&nbsp;когда разглядел изогнутые бампер и&nbsp;капот автомобиля,&nbsp;&#151; Рисковать не&nbsp;буду, не&nbsp;за&nbsp;этим я&nbsp;сюда пришел.</p>
+
+<p>Обойдя аномальную зону, я&nbsp;продолжил свой путь. Вдалеке виднелись черные крыши полуразрушенных зданий. &#171;Вот и&nbsp;деревня, осталось немного&#187;&nbsp;&#151; пронеслось в&nbsp;голове. Но&nbsp;<nobr>что-то</nobr> меня остановило, шестое чувство подсказывало мне, что <nobr>где-то</nobr> рядом опасность. </p>
+
+<p>Когда рискуешь своей жизнью каждый день, блуждая по&nbsp;территории, наполненной неизвестными миру аномалиями и&nbsp;враждебными существами, в&nbsp;поисках артефактов, за&nbsp;которые можно получить немного денег, чтобы прокормить себя, и&nbsp;зная, что назад пути нет, что быть Сталкером&nbsp;&#151; значит обречь себя на&nbsp;неизбежную смерть, у&nbsp;тебя рождается шестое чувство, которое предостерегает тебя от&nbsp;неизвестной опасности. Это чувство схоже с&nbsp;интуицией и&nbsp;никогда, в&nbsp;отличие от&nbsp;нее, не&nbsp;обманывает тебя. Каждому бывалому Сталкеру знакомо это чувство.</p>
+
+<p>Я&nbsp;остановился, стал окидывать пристальным взглядом окрестности: ничего особенного, кроме деревьев, асфальта и&nbsp;крыш домов, я&nbsp;не&nbsp;нашел. Мой датчик молчал. В&nbsp;небе со&nbsp;стороны деревни, по&nbsp;направлению ко&nbsp;мне, летела стая ворон. Ворон&nbsp;&#151; единственное выжившее и&nbsp;не&nbsp;мутировавшее животное в&nbsp;Зоне&nbsp;&#151; падальщик. Он&nbsp;держатся недалеко от&nbsp;хищника, питаясь останками жертвы. А&nbsp;это значит, что на&nbsp;меня охотится один из&nbsp;порождений Зоны. Я&nbsp;решил ждать, может он&nbsp;выдаст себя движением. Простоял я&nbsp;так <nobr>три-четыри</nobr> минуты. Когда я&nbsp;уже потерял терпение и&nbsp;решил идти дальше, на&nbsp;мониторе датчика появилась точка, движущаяся со&nbsp;спины на&nbsp;меня. Я&nbsp;развернулся, передернул затвор автомата. Все мои мышцы были напряжены. Нервы были натянуты как струны, я&nbsp;готов был стрелять в&nbsp;любой движущийся объект. <nobr>Из-за</nobr> поворота по&nbsp;дороге, откуда я&nbsp;только что пришел, бежала стая слепых псов&#133;</p>
+
+<p class="copyr"><b>Часть VIII. Обман.</b></p>
+
+<p>Я&nbsp;сел на&nbsp;старый стул, который едва не&nbsp;рухнул под моим весом. Здание, в&nbsp;котором я&nbsp;нахожусь, <nobr>когда-то</nobr> было жилым домом. Из&nbsp;мебели остался один стул и&nbsp;маленький газетный столик, на&nbsp;котором лежало несколько обрывков выцветшей бумаги, остальную мебель унесли мародеры. Переведя дух, я&nbsp;взял в&nbsp;руки автомат и&nbsp;стал его осматривать, ища причину его поломки. Тогда, на&nbsp;дороге, мне пришлось отстреливаться от&nbsp;псов пистолетом, который всегда находился со&nbsp;мной, даже тогда, когда я&nbsp;отдыхал. А&nbsp;автомат после нескольких выстрелов, непонятно почему, заклинил. Отодвинув затвор, я&nbsp;обнаружил, что в&nbsp;патроннике находится патрон, давший осечку. </p>
+
+<p>&#151; Заплатил этому болвану кучу денег за&nbsp;боеприпасы, а&nbsp;он&nbsp;всунул мне бракованные патроны. А&nbsp;если&nbsp;бы у&nbsp;меня не&nbsp;было пистолета? Всё,&nbsp;с&nbsp;этого момента, как выберусь из&nbsp;Зоны, буду сам себе изготовлять патроны к&nbsp;автомату,&nbsp;&#151; ворчал я&nbsp;себе дон нос, осматривая автомат. Когда закончил возиться с&nbsp;оружием, взглянул на&nbsp;датчик: &#171;21&nbsp;May 2010, Sector <nobr>25-356AX23</nobr>, Temperature ~ 16°C&nbsp;(60,8F),&nbsp;Radiation ~ 1,1&nbsp;R/h,&nbsp;Battery FULL&#187;. </p>
+
+<p>&#151; Хоть с&nbsp;оборудованием всё&nbsp;нормально,&nbsp;&#151; успокоил я&nbsp;себя и,&nbsp;взяв автомат, направился к&nbsp;выходу. Но&nbsp;меня привлекла бумага, лежавшая на&nbsp;письменном столике. Верхние листы выгорели на&nbsp;солнце, на&nbsp;них ничего нельзя было разобрать, зато нижние остались нетронутые. Пройдя быстрым взглядом несколько листов, я&nbsp;понял, что это секретные документы <nobr>какой-то</nobr> лаборатории, находившийся под АЭС. &#171;Атомная станция&nbsp;&#151; неплохое прикрытие для секретной лаборатории&#187;&nbsp;&#151; подумал я.&nbsp;Меня заинтересовали эти документы, взяв их&nbsp;в&nbsp;охапку, я&nbsp;уселся на&nbsp;стул. Это был отчет правительству от&nbsp;директора &#171;Секретной научной лаборатории Украины по&nbsp;исследованию действия биологического оружия&#187; о&nbsp;проделанной работе. В&nbsp;одном из&nbsp;докладов я&nbsp;заметил, что автор упоминает об&nbsp;опасности выхода болезни за&nbsp;пределы лаборатории. Вникнув в&nbsp;написанное, я&nbsp;понял, что &#171;болезнь&#187;&nbsp;&#151; это результат действия нового биологического оружия. Чтобы заразится этой болезнью, достаточно нескольким молекулам вируса попасть на&nbsp;кожу. Последствия болезни ужасны&nbsp;&#151; летальный исход в&nbsp;99,9%,&nbsp;в&nbsp;остальных 0,1%&nbsp;человек остается жив, но&nbsp;у&nbsp;него мутируют конечности. Видимо, ученые не&nbsp;смогли удержать болезнь под землей, она вырвалась наружу и&nbsp;заразила сотрудников АЭС. Оставшись без обслуживающего персонала и&nbsp;без контроля, в&nbsp;реакторе АЭС началась цепная реакция, которая привела к&nbsp;чудовищному взрыву. Но&nbsp;кроме радиации произошел выброс в&nbsp;атмосферу и&nbsp;бактерий биологического оружия, заразивших все живое на&nbsp;прилегающих к&nbsp;станции территориях. Вот почему сегодняшняя Зона выглядит так, а&nbsp;правительство скрывает правду. Всё&nbsp;встало на&nbsp;свои места: никаких пришельцев и&nbsp;потустороннего мира&nbsp;&#151; всего лишь чокнутые ученые со&nbsp;своим оружием и&nbsp;лживое правительство, создавшее иллюзию о&nbsp;иноземных существах. </p>
+
+<p class="copyr"><b>Часть IX.&nbsp;Рок.</b></p>
+
+<p>Я&nbsp;вышел из&nbsp;дома, передернул затвор автомата и&nbsp;направился в&nbsp;другой конец села. Прочитанное будоражило мой разум, я&nbsp;настолько отвлекся в&nbsp;свои размышления, что забыл о&nbsp;том, где нахожусь&#133;</p>
+
+<p>Опомнился лишь тогда, когда услышал странный шум в&nbsp;доме с&nbsp;правой стороны от&nbsp;дороги, мимо которого проходил. Я&nbsp;подошел ближе к&nbsp;окну и&nbsp;стал всматриваться в&nbsp;темноту, царившую в&nbsp;комнате небольшой постройки. Ничего не&nbsp;разглядев, я&nbsp;опустил автомат и&nbsp;стал доставать из&nbsp;кармана фонарик. В&nbsp;это мгновение через окно из&nbsp;темноты выпрыгнул на&nbsp;меня пес. От&nbsp;неожиданности я&nbsp;растерялся. Он&nbsp;завалил меня на&nbsp;землю и&nbsp;пытался дотянуться своей челюстью до&nbsp;моего горла. Страх, затмивший разум, сковал на&nbsp;секунду мое тело, я&nbsp;потерял координацию движений. Хорошо, что я&nbsp;успел подставить левую руку под шею псу. Придя в&nbsp;себя, правой рукой я&nbsp;стал судорожно шарить карманы в&nbsp;поисках ножа. Когда я&nbsp;нащупал рукоятку ножа, ко&nbsp;мне пришла уверенность. Достав его, я&nbsp;всадил псу в&nbsp;шею лезвие кинжала до&nbsp;упора. Из&nbsp;раны хлынула темно-красная, теплая и&nbsp;липкая, попавшая мне на&nbsp;шлем, кровь. Я&nbsp;сделал усилие и&nbsp;сбросил тело с&nbsp;себя. Пес, скуля от&nbsp;боли, повалился на&nbsp;холодную землю и&nbsp;умер. Я&nbsp;встал, вынул нож, положил его назад в&nbsp;карман и&nbsp;пошел к&nbsp;колодцу, чтобы смыть со&nbsp;стекла шлема кровь. </p>
+
+<p>Дойдя до&nbsp;конца села, я&nbsp;заметил недалеко от&nbsp;дороги три грузовика, на&nbsp;одном из&nbsp;которых должен был везти ученых мой брат. Я&nbsp;посмотрел на&nbsp;датчик: аномальных зон нет, и&nbsp;стал подходить к&nbsp;автомобилям. Волнение нарастало, хотелось бросить все и&nbsp;броситься к&nbsp;машинам. Но&nbsp;я&nbsp;сдерживал себя, понимая, что здесь не&nbsp;безопасно. Подойдя к&nbsp;кабине, я&nbsp;дернул за&nbsp;ручку, дверце со&nbsp;скрипом распахнулось. В&nbsp;кабине одного из&nbsp;грузовиков я&nbsp;обнаружил труп водителя. &#171;Только не&nbsp;брат, пожалуйста, только не&nbsp;брат&#187;&nbsp;&#151; шептал я.&nbsp;На&nbsp;груди у&nbsp;трупа лежал медальон. Сдув пыль и&nbsp;протерев его, я&nbsp;стал разбирать надпись. То,&nbsp;что я&nbsp;почувствовал в&nbsp;этот момент, не&nbsp;передать словами. На&nbsp;медальоне значились имя и&nbsp;фамилия моего брата. Я&nbsp;уверял себя, что ошибся, вновь и&nbsp;вновь читая надпись. Но&nbsp;металл равнодушен к&nbsp;человеческим страданиям. </p>
+
+<p>Не&nbsp;помню, как я&nbsp;добрался до&nbsp;дома и&nbsp;завалился в&nbsp;постель.</p>
+
+<p class="copyr"><b>Часть X.&nbsp;Епилог.</b></p>
+
+<p>Прошло 10&nbsp;лет с&nbsp;того момента, когда я&nbsp;узнал правду.</p>
+
+<p>Я&nbsp;стоял на&nbsp;вершине холма и&nbsp;смотрел вслед заходящему солнцу. Сомнения, жившие со&nbsp;мной после исчезновения брата, оставили меня. Я&nbsp;знал, что его душа не&nbsp;принадлежит Зоне, и&nbsp;от&nbsp;этого мне становилось легче. Теперь и&nbsp;моя жизнь на&nbsp;закате, как то&nbsp;солнце, которое уходит за&nbsp;горизонт. Я&nbsp;забылся&#133;.</p>
+
+<p>Я&nbsp;не&nbsp;заметил, как простоял до&nbsp;глубокой ночи. Спустившись с&nbsp;холма, я&nbsp;направился домой. Мне перестали сниться кошмарные сновидения&#133;</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="39.48" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.64 (361)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/ariec_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Она жива... - Гербовник Геннадий Викторович и Гербовник Игорь Викторович</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_71.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Она жива...</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Гербовник Геннадий Викторович и Гербовник Игорь Викторович</b><br>Дата: <b>28/02/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>762</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>3</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p class="copyr"><b>Чернобыль 2010&nbsp;г.&nbsp;<nobr>Где-то</nobr> в&nbsp;зоне карантина&#133;.</b></p>
+<p>Новичок Сталкер приглядывается к&nbsp;дому, где по&nbsp;слухам живет торговец. Он&nbsp;отпирает старую дряхлую деревянную дверь и&nbsp;видеть неухоженную комнату с&nbsp;потрескавшейся побелкой и&nbsp;ржавой кроватью, он&nbsp;собиравшись уйти видеть неприметную дверь слившуюся с&nbsp;комнатой и&nbsp;его берет любопытность что там? Дверь, вела в&nbsp;подвал, пройдя немного дальше он,&nbsp;почувствовал, что к&nbsp;его затылку прижался <nobr>какой-то</nobr> твердый предмет через миг он&nbsp;услышал хриплый голос, который ему сказал: ты&nbsp;кто? что здесь делаешь? Сталкер испугавшись такого разворота событий, сказал: я&nbsp;безоружен я&#133;. Его прервал этот хриплый голос, который промолвил: я&nbsp;не&nbsp;дурак здесь некто без оружия не&nbsp;ходит, ты&nbsp;мне врешь&#133;.о&nbsp;нет, нет однажды мне ошибка стоила многого, очень многого&#133;&#133; после паузы Сталкер сказал, что он&nbsp;ищет торговца и&nbsp;некого не&nbsp;хочет трогать, ему нужна карта, амуниция и&nbsp;немного еды, вдруг предмет который уткнулся ему в&nbsp;затылок исчез, и&nbsp;Сталкер вздохнул с&nbsp;облегчением. Ты&nbsp;можешь повернуться, приказал <nobr>кто-то</nobr> сзади, чувствуй себя как дома. Да&nbsp;уж&nbsp;поворачиваясь и&nbsp;почесывая затылок Сталкер, перед собой он&nbsp;увидел крепкого мужика с&nbsp;обоженным лицом и&nbsp;с&nbsp;пистолетом в&nbsp;руках. Ну&nbsp;что тебе надо бери и&nbsp;выметайся отсюда!!!</p>
+<p>Ладно, ты&nbsp;не&nbsp;слишком разговорчив ведь так&#133;..Валяй что тебе надо..? Давай по&nbsp;порядку, я&nbsp;собираюсь в&nbsp;главный саркофаг и&nbsp;мне нужна карта. КАРТА!! Усмехнулся торговец: тебе ее&nbsp;не&nbsp;достать, но&nbsp;я&nbsp;дам тебе нечто больше, дневник!! ДНЕВНИК!?!?! Удивлено сказал Сталкер. Мне не&nbsp;нужен кусок бумаги с&nbsp;<nobr>чьими-то</nobr> каракулями!! Нет, ты&nbsp;не&nbsp;понял глупый мальчишка!! В&nbsp;этом дневнике записи ученого, который был в&nbsp;саркофаге и&nbsp;его обследовал!!! Ну&nbsp;что мне могут дать <nobr>какие-то</nobr> записи?? Эти записи олух, смогут провести тебя безопасно по&nbsp;саркофагу! Теперь ты&nbsp;понял? Да&nbsp;конечно, спасибо! Спасибо на&nbsp;хлеб не&nbsp;намажешь! Ну&nbsp;ладно, сколько тебе надо 30&nbsp;40,&nbsp;а&nbsp;может 50&nbsp;рублей? Нет 70!&nbsp;Что, да&nbsp;за&nbsp;эти деньги я&nbsp;сам что угодно напишу!! Не&nbsp;хочешь, уходи. Ну&nbsp;ладно вот держи. Сталкер с&nbsp;неохотой и&nbsp;перекошенным лицом отдает деньги торговцу. Только я&nbsp;в&nbsp;начале прочту, потом уйду. Вдруг ты&nbsp;мне соврал. Нет, нет, что ты,&nbsp;там правда!! Торговец вытащил из&nbsp;сейфа <nobr>какую-то</nobr> книгу, которая была вся в&nbsp;давно засохшей крови. Хорошо, я&nbsp;пока почищу оружие. Сталкер берет дневник и&nbsp;медленно разворачивает его. </p>
+<p class="copyr"><b>2010г. 4&nbsp;июня 13:34</b></p>
+<p><nobr>Наконец-то</nobr> я&nbsp;попал сюда, мне приходилось слышать об&nbsp;этом месте только по&nbsp;книгам, научным работам и&nbsp;по&nbsp;телевизору. Здесь довольно мрачновато, но&nbsp;я&nbsp;свыкнусь, у&nbsp;нас с&nbsp;ребятами хороший руководитель Заставной Михаил и&nbsp;охрана, не&nbsp;знаю, зачем нам дали таких крутых ребят как будто здесь водятся монстры. Вроде говорят, что командир этих ребят глава спецназа, аж&nbsp;жутко становиться как он&nbsp;что не&nbsp;будь, рявкнет, а&nbsp;имя этого зверя Данилов Александр. Ну,&nbsp;а&nbsp;так здесь весело и&nbsp;кампания подобралась из&nbsp;двадцати человек, десять ученых и&nbsp;десять охранников. Мы&nbsp;отправимся в&nbsp;экспедиция в&nbsp;саркофаг через 6&nbsp;дней.</p>
+<p class="copyr"><b>2010г. 5&nbsp;июня 7:27</b></p>
+<p>Да&nbsp;сны здесь действительно другие <nobr>какие-то</nobr> пустые, бессмысленные и&nbsp;очень мрачные. Но&nbsp;может это <nobr>из-за</nobr> того, что я&nbsp;переволновался, да&nbsp;и&nbsp;впечатление было не&nbsp;райского уголка на&nbsp;краю планеты, а&nbsp;темного мрачного места с&nbsp;повышенной радиацией и&nbsp;практически вечным дождем. Меня успокоил руководитель проекта, он&nbsp;сказал, что нечего бояться и&nbsp;все будет в&nbsp;порядке. </p>
+<p class="copyr"><b>2010г. 6&nbsp;июня 14:51</b></p>
+<p>Я&nbsp;уже начинаю сходить с&nbsp;ума, сегодня меня поразил факт, когда я&nbsp;выходил покурить, я&nbsp;увидел в&nbsp;куче мусора существо, напоминавшее крысу, но&nbsp;она была намного больше и&nbsp;страшнее крысы. Меня поразил ее&nbsp;мощный скелет, который как <nobr>будто-то</nobr> предназначенный для этой местности, а&nbsp;когда я&nbsp;рассказал это нашему, руководителю он&nbsp;сказал что у&nbsp;меня галлюцинации и&nbsp;не&nbsp;стоит придавать этому значение. Но&nbsp;мне кажется, он&nbsp;<nobr>что-то</nobr> от&nbsp;меня скрывает, да&nbsp;и&nbsp;ребята когда стали говорить, а&nbsp;том, что видели странных созданий, мне казалась, что они шутят или дразнят меня, но&nbsp;теперь я&nbsp;знаю, что они говорили правду. Не&nbsp;может&nbsp;же <nobr>быть-то</nobr>, что все видят одни и&nbsp;те&nbsp;же галлюцинации.</p>
+<p class="copyr"><b>2010г. 7&nbsp;июня 15:51</b></p>
+<p>Сегодня я&nbsp;случайно подслушал разговор Заставного с&nbsp;<nobr>кем-то</nobr> кто его очень торопил и&nbsp;мне показалось очень странным, куда нас еще торопить, неужели нашему университету так не&nbsp;терпится побольше узнать об&nbsp;этой зоне. А&nbsp;может, нас послал сюда вовсе не&nbsp;университет, а&nbsp;правительство? Когда мой дядя участвовал в&nbsp;тушении пожара на&nbsp;Чернобыльской АЭС, я&nbsp;слышал одну интересную версию, а&nbsp;том, что якобы во&nbsp;время холодной войны СССР использовало психотропное оружие, которое была направлена на&nbsp;Западную Европу, а&nbsp;АЭС была только прикрытием. Но&nbsp;<nobr>что-то</nobr> не&nbsp;заладилось и&nbsp;все вышло <nobr>из-под</nobr> контроля и&nbsp;правительство бросило все силы, чтобы об&nbsp;этом никто не&nbsp;узнал. Во&nbsp;время тушения мой дядя увидел, что в&nbsp;ранее зоны, где не&nbsp;было огня, заливали бочки с&nbsp;<nobr>каким-то</nobr> веществом, на&nbsp;вопрос что это? Глава по&nbsp;чрезвычайным ситуациям отвечал, что это пена, которая не&nbsp;даст огню пройти дальше. Позже он&nbsp;обнаружил, что это вещество НАПАЛМ!!! Но&nbsp;ему заткнули рот и&nbsp;лишили всех наград. <nobr>Что-то</nobr> здесь происходит, и&nbsp;нас этому явно не&nbsp;обучали, и&nbsp;чтобы там не&nbsp;было, я&nbsp;это разузнаю. </p>
+<p class="copyr"><b>2010г. 8&nbsp;июня 11:32</b></p>
+<p>Я&nbsp;больше не&nbsp;могу здесь, находиться у&nbsp;меня болит голова, я&nbsp;слышу <nobr>какой-то</nobr> шепот, который не&nbsp;дает мне спать. У&nbsp;всех начинают сдавать нервы, у&nbsp;моего друга Николая поехала крыша: он&nbsp;бредил, и&nbsp;говорил, что мы&nbsp;все погибнем.</p>
+<p class="copyr"><b>2010г. 8&nbsp;июня 23:12</b></p>
+<p>Ночью нас разбудил голос Заставного, который сообщил нам, что Николай повесился. </p>
+<p class="copyr"><b>2010г. 9&nbsp;июня 3:29&nbsp;</b></p>
+<p>Мне не&nbsp;спиться&#133;Зачем я&nbsp;здесь: деньги, слава, карьера нет просто любопытство проклятое любопытство и&nbsp;сколько жизней оно еще унесет? И&nbsp;почему мне не&nbsp;сиделось дома в&nbsp;Питере в&nbsp;тридцать четыре года можно найти неплохую работу.</p>
+<p class="copyr"><b>2010г. 9&nbsp;июня 15:43</b></p>
+<p>Мы&nbsp;прошли все испытания и&nbsp;проверку оборудования, скоро мы&nbsp;отправимся в&nbsp;этот проклятый саркофаг.</p>
+<p class="copyr"><b>2010г. 10&nbsp;июня 14:17</b></p>
+<p>Я&nbsp;пишу из&nbsp;БТР, нам осталось ехать около 3км. до&nbsp;главного саркофага. На&nbsp;меня все так смотрят, как будто я&nbsp;пишу их&nbsp;некролог. </p>
+<p class="copyr"><b>2010г. 10&nbsp;июня 21:32</b></p>
+<p>Когда мы&nbsp;вошли в&nbsp;саркофаг, я&nbsp;увидел куски обоженного оборудования и&nbsp;сожженных компьютеров. Здания как будто горело, но&nbsp;снаружи по&nbsp;нему не&nbsp;скажешь, что в&nbsp;нем бушевало пламя. Я&nbsp;не&nbsp;видел ни&nbsp;трупов, ни&nbsp;кусков одежды только хлам и&nbsp;мусор. У&nbsp;меня появилось ощущение, как будто за&nbsp;мной <nobr>кто-то</nobr> наблюдает и&nbsp;голос, который я&nbsp;слышал, стал громче. Данилов сказал, что вниз 5&nbsp;этажей и&nbsp;чтобы никто не&nbsp;отставал. Я&nbsp;даже себе не&nbsp;мог представить какое огромное это здание оно просто гигантское! Мы&nbsp;прошли этаж вниз и&nbsp;все устали и&nbsp;не&nbsp;могли двигаться дальше. Наша охрана нашла, какую то&nbsp;комнату с&nbsp;железной дверью, когда мы&nbsp;туда вошли, комната была довольно пуста, и&nbsp;мы&nbsp;могли&nbsp;бы поместится, в&nbsp;ней вмести с&nbsp;БТР. Данилов поставил постового, но&nbsp;некому не&nbsp;спалось.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 4:16</b></p>
+<p>Некоторые уснули, но&nbsp;не&nbsp;я.&nbsp;Я&nbsp;сидел и&nbsp;вспоминал о&nbsp;той другой жизни, жизни до&nbsp;зоны до&nbsp;этого проклятого момента, когда я&nbsp;днями и&nbsp;ночами зубрил однотонные лекции по&nbsp;радиации, безопасности и&nbsp;другой чуши, чтобы войти в&nbsp;десятку счастливчиков которые отправятся на&nbsp;эту зону отчуждения. Каким&nbsp;же я&nbsp;был дураком! Вдруг мои мысли прервал шум, <nobr>кто-то</nobr> за&nbsp;дверью шел, как <nobr>бут-то</nobr> тащил за&nbsp;собой свои ноги и&nbsp;<nobr>что-то</nobr> бормотал. Я&nbsp;попытался сказать постовому слышит&nbsp;ли он&nbsp;тоже, что и&nbsp;я,&nbsp;но&nbsp;вдруг шум исчез как <nobr>бут-то</nobr> он&nbsp;замер в&nbsp;ожидании, что мы,&nbsp;что ни&nbsp;будь, предпримем. Но&nbsp;шума так и&nbsp;не&nbsp;было, а&nbsp;постовой сказал, что здесь дырявая вентиляция и&nbsp;море крыс. НУ&nbsp;А&nbsp;ГДЕ ЖЕ&nbsp;ТРУПЫ ПЕРСОНАЛА ИХ&nbsp;ОДЕЖДА СКЕЛЕТЫ, В&nbsp;КОНЦЕ КОНЦОВ??? На&nbsp;этот вопрос ни&nbsp;постовой, ни&nbsp;Данилов, ни&nbsp;наш руководитель никто, не&nbsp;смог толком дать ответ.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 13:36&nbsp;</b></p>
+<p>Когда мы&nbsp;отперли дверь, ни&nbsp;какого монстра там не&nbsp;было, может, это и&nbsp;были крысы, вентиляция и&nbsp;мое больное воображение. Все выглядит <nobr>как-то</nobr> <nobr>по-другому</nobr> и&nbsp;чувство как за&nbsp;мной <nobr>кто-то</nobr> следит становиться все сильнее и&nbsp;сильнее. Дальше нас ждал длинный коридор. Данилов шел, медленно оглядываясь по&nbsp;сторонам, за&nbsp;ним шли все остальные, в&nbsp;<nobr>какой-то</nobr> момент раздался сильный скрежет и&nbsp;со&nbsp;стены полетел большой заряд энергии и&nbsp;попал в&nbsp;одного из&nbsp;солдат, а&nbsp;именно в&nbsp;того постового. Мы&nbsp;сняли с&nbsp;него амуницию и&nbsp;оставили лежать бездыханным. Пройдя, дальше мы&nbsp;сделали привал, где я&nbsp;сейчас и&nbsp;пишу свой дневник.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 13:47</b></p>
+<p>Один из&nbsp;ученых сошел с&nbsp;ума взял AK74 у&nbsp;одного из&nbsp;спецназовца и,&nbsp;угрожая нам оружием, скрылся в&nbsp;глубине коридоров.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 14:22&nbsp;</b></p>
+<p>Когда мы&nbsp;двигались дальше на&nbsp;нас напал <nobr>какой-то</nobr> монстр с&nbsp;бледной кожей, черными волосами и&nbsp;длиной шеей, он&nbsp;очень был похож на&nbsp;человека. После этого Данилов сказал: а&nbsp;вот и&nbsp;где весь персонал.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 15:34</b></p>
+<p>Когда коридор привел в&nbsp;тупик. Нам пришлось вернуться и&nbsp;мы&nbsp;не&nbsp;обнаружили труп постового, который погиб от&nbsp;так называемой &#132;мясорубки&#147;. Но&nbsp;мы&nbsp;нашли AK74, часы, очки и&nbsp;спец. оборудования того психа, который убежал в&nbsp;один из&nbsp;коридоров. Самое странное не&nbsp;было следов крови. Если этого ученого убили, то&nbsp;должна&nbsp;же быть капля хоть крови.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 17:31</b></p>
+<p>Мы,&nbsp;мы&nbsp;попали в&nbsp;засаду и&nbsp;среди этих зомби был этот ученый. Их&nbsp;всех убили только я,&nbsp;Данилов и&nbsp;Заставной остались в&nbsp;живых&#133;.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 18:05</b></p>
+<p>Они везде они нашли и&nbsp;напали на&nbsp;нас. Их&nbsp;сотни мне пришлось бежать в&nbsp;<nobr>какое-то</nobr> помещение <nobr>что-то</nobr> вроде раздевалки. Выстрелы слышались больше 20&nbsp;минут, а&nbsp;потом затихли, по&nbsp;всей вероятности их&nbsp;убили, а&nbsp;я&nbsp;остался один. </p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 18:49</b></p>
+<p>Я&nbsp;не&nbsp;смог так долго ждать&#133;Когда я&nbsp;вышел я&nbsp;увидел кучу мертвых зомби, отстреленные гильзы и&nbsp;пустые обоймы, но&nbsp;ни&nbsp;Данилова ни&nbsp;Заставного не&nbsp;было.</p>
+<p class="copyr"><b>2010г. 11&nbsp;июня 20:12&nbsp;</b></p>
+<p>Я&nbsp;спустился вниз на&nbsp;5&nbsp;этаж и&nbsp;понял&#133;..</p>
+<p>После этого в&nbsp;дневнике пошел корявый и&nbsp;быстро написанный почерк. </p>
+<p>&#133;..в&nbsp;дверь <nobr>кто-то</nobr> ломиться, если <nobr>кто-нибудь</nobr> найдет мой дневник, убирайтесь с&nbsp;этого проклятого места&#133;&#133;Я,&nbsp;я&nbsp;понял, ОНА ЖИВА&#133;&#133;&#133; </p>
+<p>На&nbsp;этой странице дневник обрывается. Увидев, что дневник и&nbsp;его страницы пропитаны кровью, Сталкеру становится понятна судьба ученого&#133;</p>
+<p>После этого он&nbsp;закрывает дневник и&nbsp;говорит торговцу: откуда этот дневник у&nbsp;тебя? </p>
+<p>А&nbsp;разве тебя интересует кусок бумаги с&nbsp;<nobr>чьими-то</nobr> каракулями?</p>
+<p>Ты&nbsp;не&nbsp;понял мне нужно знать, чтобы отправиться в&nbsp;саркофаг.</p>
+<p>Нет, это ты&nbsp;не&nbsp;понял ты,&nbsp;там найдешь смерть и&nbsp;нечего кроме нее!!</p>
+<p>Ладно, ты&nbsp;тупой торговец раз ты&nbsp;не&nbsp;хочешь мне помогать, я&nbsp;сам все выясню!!!</p>
+<p>Сталкер забрал амуницию и&nbsp;припасы и&nbsp;отправился в&nbsp;сторону саркофага.</p>
+<p>Торговец шепотом сказал: да&nbsp;Данилов еще один новичок отправился в&nbsp;поиски своей смерти&#133;.. </p>
+<p>Больше никто не&nbsp;видел, ни&nbsp;Сталкера, ни&nbsp;дневника<br />
+</p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="36.82" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.26 (31)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/ggvgiv_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

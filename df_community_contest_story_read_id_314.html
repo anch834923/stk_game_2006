@@ -1,0 +1,278 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Сталкер - Михаил Кирилин aka v3n0mX</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_314.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Сталкер</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Михаил Кирилин aka v3n0mX</b><br>Дата: <b>24/05/2004</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>758</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>2</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td>
+</B><P>Шел дождь. Вода стекала ручьями по стальным каркасам заржавевших машин, она лилась со свинцово-тяжелого  неба сплошным потоком, накрывая будто завесой все вокруг.</P>
+<P>Сталкер шел по Зоне, прихрамывая на правую ногу. Он тихо насвистывал какой-то простенький мотив, но часто чертыхался - не мог вспомнить, как петь или досвистывать припев. Дорога была разведана с утра, плешей и другой гадости быть здесь просто не могло, поэтому сталкер шел довольно бодро. Он уже знал что ждет его на сегодня - пойдет сначала в ларек к Петру, вывалит весь хабар из рюкзака, и скажет, довольно: "Давай зелененькие, демон хренов!" А после двинется в логово сталкеров из Центрального братства, отмечать удачный поход. Сегодня сталкер добыл больше двадцати пустышек и целую гору расплющеных "чертовых банок". Гулянка будет на славу...</P>
+<P>Выйдя с заброшенной автосвалки, он хотел было свернуть на правую тропу, но тут же припал на колено и зажмурился от боли. "Чертово давление. - думал он.- И угораздило попасть тогда в мясорубку... Каждый выброс, как внутри меня... Мать твою, да что сегодня за погода? Нога ноет и ноет, ей богу, отстрелю ее когда-нибудь.."</P>
+<P>Отряхнувшись, он расправился, встал и увидел перед собой фигуру в черном защитном костюме.</P>
+<P>- Э, ты чего, заблудился тут?  - спросил сталкер, а сам подумал "приехали. вот дерьмо так дерьмо..."</P>
+<P>Человек в черном откинул плащ, и перед сталкером предстала воистину жуткая морда, иначе и не сказать - лицо было опалено ("жгучий пух", подумал сталкер),</P>
+<P>один глаз был выбит, у второго зрачок был расширен настолько, что казалось будто у глаза нет белка. Незнакомец широко улыбнулся, если это можно было назвать улыбкой - скорее, звериный оскал, и произнес настолько обыденно и спокойно фразу, что оба чуть не зевнули:</P>
+<P>- Давай сюда хабар, дядя. Это территория Легиона Тьмы.</P>
+<P>- Иди ка ты к чертям, гоблин. Совсем оборзели - хабар не таскаете, а по всей зоне ловите других? - сталкер достал из-под полы плаща ружье-обрез.</P>
+<P>- Эй, ты поаккуратней. Просто поделись со мной по-хорошему, может я тогда пощажу тебя... Хоть раз в жизни сделай что-нибудь умное - темный опять оскалился.</P>
+<P>- Может, поцелуешь меня в зад сначала? Ваш род - это род сволочей, грязная кровь. И я ничего не обязан тебе делать кроме вот этого - сталкер снял пушку с предохранителя.</P>
+<P>- Как знаешь... Ты сам правитель своей судьбы. - Незнакомец шумно выдохнул, и резко дернулся в сторону сталкера. В рукаве блеснуло лезвие. </P>
+<P>В эту же секунду прогремел выстрел. Где - то вдалеке вскричали птицы, воздух загудел. Оба, и сталкер, и незнакомец, повалились на грязную землю. </P>
+<P>- Сука... - прохрипел темный - я тебя в аду достану...</P>
+<P>- Сталкеров.. в рай... без очереди... - захлебываясь кровью попытался выкрикнуть сталкер, загоняя последний патрон в ствол залитой кровью пушки - не быть тебе там, стервятник...</P>
+<P>Грохнул второй выстрел, и в воздухе повисла тишина.</P>
+<P>Дождь ослаб, лишь редкие капли, прерывая тишину, взрывали лужи пуская круги. Небо было все таким же темным, но ветер стих. Погода начала налаживаться.</P>
+<P>      * * *</P>
+<P>Очередь у ларька с затертой и непонятной на первый взгляд табличкой "Прием ..." никак не желала уменьшаться. Подходили все новые и новые люди в рваной старой одежде с рюкзаками, мешками и сумками. Все вываливали по очереди в окно пустые бутылки и сплющенные железные банки из-под колы и пива. Спустя полчаса настала очередь подойти к окну и Ивану. </P>
+<P>- Здорово, Петр! - сказал он - ну как дела, я вот тебе товару еще принес!</P>
+<P>- Давай, давай! - смеялся лысый Петр, сгружая бутылки без разбору в ящик - а куда это подевался  Хромой? Не видно его уже неделю, а он обещал принести два мешка.</P>
+<P>- Ууу, а ты еще не знаешь? - затянул Иван - как раз неделю назад и было... попал он в переделку...</P>
+<P>- Ну рассказывай! Вот тебе сверху на курево, а то и впрямь интересно. - отсчитал Петр купюры</P>
+<P>- Хых... - Иван жадно сгреб все деньги в карман продранного до дыр ватника - Да ниче и не было, нарвался он на чужой территории на Саню Чернуху... Бутылки отдавать не захотел, придурок. А тот сидевший же, и пописал беднягу... Нашли их в канаве, на обочине Зонального переулка, у Хромого перо из ребра, а Чернуха... лучше и не видеть было, башки нет, дыра, и мозги по всей улице... откуда это у Хромого обрез был, но нашли, это факт.</P>
+<P>- Мда, ничего погуляли... ну хоть одним придурком меньше стало, чтобы вы все передохли, бродяги хреновы... - расхохотался Петр - следующий, тащи хабар свой бомжовский!</P>
+<P>Иван сплюнул, закинул на спину рюкзак, и двинулся в сторону третьей теплотрассы. Наступала ночь, и надо было найти ночлег.</P>
+
+</td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.71" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.53 (32)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/Kirilin_1.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>

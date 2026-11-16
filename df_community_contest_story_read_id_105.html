@@ -1,0 +1,373 @@
+<script language="JavaScript" src="js/submit.js" type="text/javascript"></script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>S.T.A.L.K.E.R.: Shadow of Chernobyl - Конкурс - Операция Кукловод - Некрасов Игорь aka SaINt</title></title>
+</head>
+
+<body rightmargin="15" leftmargin="15" marginheight="15" marginwidth="15" topmargin="15">
+<!--Vote-->
+<script language="JavaScript">
+var button = new Image ();
+button.src="images/_contest/confirm.gif";
+
+  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+
+function findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function setTextOfLayer(objName,x,newText) { 
+  if ((obj=findObj(objName))!=null) with (obj)
+    if (document.layers) {document.write(unescape(newText)); document.close();}
+    else innerHTML = unescape(newText);
+}
+
+
+function onImg(ref,img,conf){
+		if (document.images) {
+	  
+var r_01_on = new Image ();
+r_01_on.src="images/_contest/01_on.gif";
+
+var r_01 = new Image ();
+r_01.src="images/_contest/01.gif";
+
+
+var r_02_on = new Image ();
+r_02_on.src="images/_contest/02_on.gif";
+
+var r_02 = new Image ();
+r_02.src="images/_contest/02.gif";
+
+
+var r_03_on = new Image ();
+r_03_on.src="images/_contest/03_on.gif";
+
+var r_03 = new Image ();
+r_03.src="images/_contest/03.gif";
+
+
+var r_04_on = new Image ();
+r_04_on.src="images/_contest/04_on.gif";
+
+var r_04 = new Image ();
+r_04.src="images/_contest/04.gif";
+
+
+var r_05_on = new Image ();
+r_05_on.src="images/_contest/05_on.gif";
+
+var r_05 = new Image ();
+r_05.src="images/_contest/05.gif";
+
+
+var r_06_on = new Image ();
+r_06_on.src="images/_contest/06_on.gif";
+
+var r_06 = new Image ();
+r_06.src="images/_contest/06.gif";
+
+
+var r_07_on = new Image ();
+r_07_on.src="images/_contest/07_on.gif";
+
+var r_07 = new Image ();
+r_07.src="images/_contest/07.gif";
+
+
+var r_08_on = new Image ();
+r_08_on.src="images/_contest/08_on.gif";
+
+var r_08 = new Image ();
+r_08.src="images/_contest/08.gif";
+
+
+var r_09_on = new Image ();
+r_09_on.src="images/_contest/09_on.gif";
+
+var r_09 = new Image ();
+r_09.src="images/_contest/09.gif";
+
+
+var r_10_on = new Image ();
+r_10_on.src="images/_contest/10_on.gif";
+
+var r_10 = new Image ();
+r_10.src="images/_contest/10.gif";
+
+   for(var i=1;i<=10;i++){
+   		var im
+		if(i<10) im="0"+i;
+		else im=i;
+		var ref1="r_"+im;
+		eval ('document.images[ref1].src = r_' + im + '.src;');
+		
+   }
+   
+   eval ('document.images[ref].src = ' + img + '.src;')
+	var new_text="<input type='hidden' name='rate' value='"+conf+"'><a href=\"javascript:submit ('df_community_contest_story_read_id_105.html','confirm_story_ratyng')\"><img src='images/_contest/confirm.gif' width='109' height='24' border='0'></a>"
+	setTextOfLayer('confirm','',new_text);
+		}
+}
+</script>
+
+<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
+<tr><td><b class="myH4">Rate this story</b></td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="5" border="0"></td></tr>
+</table>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td width="210"><a href="javascript:onImg('r_01', 'r_01_on', 1)"><img src="images/_contest/01.gif" alt="" width="19" height="26" border="0" name="r_01"></a><a href="javascript:onImg('r_02', 'r_02_on', 2)"><img src="images/_contest/02.gif" alt="" width="19" height="26" border="0" name="r_02"></a><a href="javascript:onImg('r_03', 'r_03_on', 3)"><img src="images/_contest/03.gif" alt="" width="19" height="26" border="0" name="r_03"></a><a href="javascript:onImg('r_04', 'r_04_on', 4)"><img src="images/_contest/04.gif" alt="" width="19" height="26" border="0" name="r_04"></a><a href="javascript:onImg('r_05', 'r_05_on', 5)"><img src="images/_contest/05.gif" alt="" width="19" height="26" border="0" name="r_05"></a><a href="javascript:onImg('r_06', 'r_06_on', 6)"><img src="images/_contest/06.gif" alt="" width="19" height="26" border="0" name="r_06"></a><a href="javascript:onImg('r_07', 'r_07_on', 7)"><img src="images/_contest/07.gif" alt="" width="19" height="26" border="0" name="r_07"></a><a href="javascript:onImg('r_08', 'r_08_on', 8)"><img src="images/_contest/08.gif" alt="" width="19" height="26" border="0" name="r_08"></a><a href="javascript:onImg('r_09', 'r_09_on', 9)"><img src="images/_contest/09.gif" alt="" width="19" height="26" border="0" name="r_09"></a><a href="javascript:onImg('r_10', 'r_10_on', 10)"><img src="images/_contest/10.gif" alt="" width="19" height="26" border="0" name="r_10"></a></td>
+<td align="left" valign="bottom"><div id="confirm">Click on square to rate this story.</div></td></tr>
+</table>
+-->
+
+<!--End Vote-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
+<tr><td class="myH3">Операция Кукловод</td></tr>
+<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+</table>
+<table width="490" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><font color="#6D6D6D">Автор: <b>Некрасов Игорь aka SaINt</b><br>Дата: <b>08/04/2003</b></font></td><td width="100" align="right" valign="bottom"><font color="#6D6D6D">Просмотров:</font>&nbsp;<font color="#9DC0FB"><b>938</b></font></td><td width="115" align="right" valign="bottom" color="6D6D6D">&nbsp;&nbsp;<font color="#6D6D6D">Комментариев:</font>&nbsp;<font color="#9DC0FB"><b>22</b></font></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><p align="right"><i>Война состоит из&nbsp;непредусмотренных событий. <br>
+Наполеон.</i></p>
+
+<p class="copyr"><b>13.43<br>
+Четверг. Сектор С5.</b></p>
+<p>Я&nbsp;нервозно зарядил последний рожок в&nbsp;уже довольно сильно нагретый после непрерывной стрельбы автомат.</p>
+
+<p>&#151; Стрелять только наверняка&nbsp;&#151; отдал я&nbsp;приказ своей команде, состоящей из&nbsp;трех человек, включая и&nbsp;меня&nbsp;&#151; экономьте патроны!</p>
+
+<p>&#151; Командир, патронов почти нет! Нам здесь долго не&nbsp;продержаться! Надо отступать!&nbsp;&#151; прокричал мне боец, лежащий в&nbsp;нескольких метрах от&nbsp;меня.</p>
+
+<p>Я&nbsp;осознавал, что он&nbsp;прав: патроны заканчивались, а&nbsp;вертолет поддержки, запрос о&nbsp;котором я&nbsp;дал полчаса назад, так и&nbsp;не&nbsp;появился.</p>
+
+<p>&#151; Второй, срочно свяжись с&nbsp;постом! Какого черта, где вертолет!&nbsp;&#151; я&nbsp;старался сдерживать себя и&nbsp;не&nbsp;показывать волнения, но&nbsp;с&nbsp;каждой минутой это становилось все сложнее.</p>
+
+<p>На&nbsp;нас направлялось несколько десятков зомби. Еще несколько десятков лежали неподвижно на&nbsp;земле, напичканные свинцом наших автоматов. Эти существа обладают невероятной живучестью и&nbsp;силой, и&nbsp;умирают только после двух&nbsp;&#151; трех попаданий в&nbsp;голову. Простым математическим подсчетом несложно было определить наши шансы, но&nbsp;отступление означало провал нашего задания, и&nbsp;не&nbsp;оставляло нам даже 50%&nbsp;шансов&nbsp;&#151; до&nbsp;базы день пути через густой лес, а&nbsp;без амуниции это почти самоубийство. И&nbsp;в&nbsp;такой ситуации мне только оставалось рассчитывать на&nbsp;подкрепление, которое все не&nbsp;пребывало.</p>
+
+<p>&#151; Командир&nbsp;&#151; прокричал Второй&nbsp;&#151; вертолета не&nbsp;будет! В&nbsp;нашем направлении прямо через базу движется Туман, и&nbsp;они не&nbsp;собираются рисковать еще одной машиной!</p>
+
+<p>&#151; Черт, но&nbsp;почему они не&nbsp;сообщили это раньше?</p>
+
+<p>&#151; Говорят, что не&nbsp;могли с&nbsp;нами связаться! Наверно это из&nbsp;за&nbsp;тумана, но&nbsp;тогда я&nbsp;не&nbsp;понимаю, почему мы&nbsp;смогли связаться с&nbsp;ними. Командир, нужно уходить, у&nbsp;меня осталось только три пистолетных обоймы, да&nbsp;и&nbsp;у&nbsp;вас дела обстоят не&nbsp;лучшим образом. Здесь у&nbsp;нас нет шансов!</p>
+
+<p>В&nbsp;этом я&nbsp;не&nbsp;мог с&nbsp;ним поспорить&nbsp;&#151; либо через пару минут нас разорвут зомби, либо сгнием в&nbsp;этом чертовом тумане, появление которого здесь ничего не&nbsp;предвещало. Лучше уж&nbsp;рискнуть и&nbsp;уйти в&nbsp;лес.</p>
+
+<p>&#151; Первый, Второй, прекратить огонь! Стрелять случаях крайней необходимости! Наша миссия здесь окончена, отступаем через лес. </p>
+
+<p>И&nbsp;наша команда со&nbsp;всех ног ринулась подальше от&nbsp;этого чертового городишки. Убегая, я&nbsp;обернулся назад&nbsp;&#151; город весь кишел зомби, а&nbsp;вдали над лесом небо стало желтоватого цвета, и&nbsp;это желтое пятно прямо на&nbsp;глазах разрасталось&#133;</p>
+<p>&#133; Разведка ошиблась. И&nbsp;это уже не&nbsp;в&nbsp;первый раз. Похоже, здешние монстры становятся все умнее, и,&nbsp;что самое страшное, их&nbsp;все больше.</p>
+
+<p>Черт! Операция закончилась провалом, наша цель все еще жива, и&nbsp;мы&nbsp;вынуждены отступать. Как такое могло произойти? Мой отряд имеет снаряжение, которого достаточно для недельного пребывания в&nbsp;Зоне, и&nbsp;этой амуниции нам хватило всего на&nbsp;каких&nbsp;&#151; то&nbsp;полчаса.</p>
+
+<p>Целью операции являлось уничтожение контролера, появившегося на&nbsp;нашей территории вчера. По&nbsp;пути к&nbsp;нам он&nbsp;уничтожил целый блокпост сотрудничающей с&nbsp;нами группы &#171;Свобода&#187;. Такое раньше не&nbsp;удавалось ни&nbsp;одному контролеру, а&nbsp;присутствие нескольких контролеров сразу исключено&nbsp;&#151; эти создания одиночки, и&nbsp;по&nbsp;этому на&nbsp;задание отправили мой спецотряд группы &#171;Долг&#187;. Разведчик сообщил что контроллер прибыл к&nbsp;нам один, и&nbsp;похоже, не&nbsp;собирался оставаться здесь надолго. Перед нами стояла простая задача&nbsp;&#151; высадиться на&nbsp;вертолете рядом с&nbsp;городом, войти в&nbsp;него и&nbsp;уничтожить контроллера, но&nbsp;сразу после нашей высадки стали происходить странные события. Вертолет, высадив нас, должен был вести патрулирование с&nbsp;воздуха, но&nbsp;взлетев над городом, он&nbsp;камнем упал в&nbsp;лес. На&nbsp;нас вдруг отовсюду повалили толпы зомби. Кто мог управлять таким количеством зомби? Это не&nbsp;по&nbsp;силам ни&nbsp;одному контроллеру&#133;</p>
+
+<p class="copyr"><b>14.27<br>
+Четверг. Сектор С5.</b></p>
+
+<p>&#151; И&nbsp;что теперь?&nbsp;&#151; обратился ко&nbsp;мне с&nbsp;вопросом Первый&nbsp;&#151; с&nbsp;таким запасом патронов мы&nbsp;едва&nbsp;ли протянем здесь даже день.</p>
+
+<p>&#151; Без паники, надежда есть&nbsp;&#151; ответил я,&nbsp;переведя дыхание. На&nbsp;базу вернуться мы&nbsp;не&nbsp;сможем&nbsp;&#151; между нами и&nbsp;базой Туман&nbsp;&#151; поэтому продвигаемся к&nbsp;ближайшему блокпосту армейских частей. До&nbsp;него несколько километров&nbsp;&#151; это полтора дня пути, так что двигаться будем без остановок через лес&nbsp;&#151; так безопасней. Но&nbsp;сначала разберемся с&nbsp;амуницией.</p>
+
+<p>&#151; У&nbsp;меня еще несколько автоматных патронов и&nbsp;три обоймы к&nbsp;пистолету&nbsp;&#151; отрапортовал Первый.</p>
+
+<p>&#151; У&nbsp;меня только две пистолетных обоймы, автомат пуст&nbsp;&#151; доложил Второй.</p>
+
+<p>Да.&nbsp;Действительно не&nbsp;густо. Итого вместе с&nbsp;моими у&nbsp;нас осталось 7&nbsp;автоматных патронов и&nbsp;7&nbsp;обойм от&nbsp;пистолета.</p>
+
+<p>&#151; Второй, что у&nbsp;нас со&nbsp;связью? Мы&nbsp;можем связаться с&nbsp;блокпостом? </p>
+
+<p>&#151; Рация отключилась сразу&nbsp;же после приема последнего сообщения с&nbsp;базы. Мы&nbsp;глухи.</p>
+
+<p>Поделив амуницию, мы&nbsp;стали продвигаться вдоль леса, в&nbsp;надежде выбраться из&nbsp;этой невероятной ситуации.</p>
+
+<p><b>21.00<br>
+Четверг. Сектор С5.</b></p>
+
+<p>Уже сильно стемнело. Ночь для нас будет самым страшным периодом&nbsp;&#151; ни&nbsp;у&nbsp;кого из&nbsp;нас нет прибора ночного видения, ведь операция не&nbsp;была рассчитана на&nbsp;столь длинный период, а&nbsp;с&nbsp;тактическими фонариками не&nbsp;будет видно ничего дальше полутора метров. </p>
+
+<p>Странно, но&nbsp;нам еще не&nbsp;встретилась ни&nbsp;одна из&nbsp;здешних тварей, а&nbsp;ведь обычно леса просто кишат крысами. Но&nbsp;идти вдоль леса еще более небезопасно, а&nbsp;нам пока что везет.</p>
+
+<p class="copyr"><b>01.23<br>
+Пятница. Сектор С5</b></p>
+
+<p>&#151; Всем лечь! Приготовиться к&nbsp;бою!&nbsp;&#151; скомандовал я&nbsp;после того, как лесную тишину нарушил громкий оглушительный хлопок. Через несколько секунд все стихло.</p>
+<p>Через несколько минут.</p>
+<p>&#151; Первый, Второй, доложить о&nbsp;состоянии.</p>
+
+<p>&#151; Это Первый. Кажется все в&nbsp;порядке.</p>
+
+<p>Ответа второго я&nbsp;так и&nbsp;не&nbsp;услышал.</p>
+
+<p>&#151; Второй. Где ты?&nbsp;Докладывай.</p>
+
+<p>Ответ снова не&nbsp;прозвучал. Я&nbsp;стал осторожно красться в&nbsp;том направлении, где в&nbsp;последний раз видел силуэт второго. Я&nbsp;вдруг стал осознавать, что уже раньше слышал подобные хлопки, и&nbsp;знал, отчего они происходят.</p>
+
+<p>&#151; Черт! Черт! Черт! Первый! Второй погиб. Здесь была Мясорубка.</p>
+
+<p>На&nbsp;деревьях свисали куски плоти, кровь тонкими струйками сливалась по&nbsp;коре, под ногами повсюду валялись кости. Я&nbsp;и&nbsp;раньше видел подобное, но&nbsp;не&nbsp;настолько близко, и&nbsp;это все смотрелось просто тошнотворно. В&nbsp;этот момент ко&nbsp;мне подбежал Первый. Первый был не&nbsp;таким опытным бойцом, как я,&nbsp;он&nbsp;еще не&nbsp;все повидал в&nbsp;зоне, и&nbsp;после уведенного его сразу стошнило.</p>
+
+<p>&#151; Ты&nbsp;как?&nbsp;&#151; поинтересовался я&nbsp;у&nbsp;него через несколько минут.</p>
+
+<p>&#151; Нормально. Я&nbsp;раньше видел это только на&nbsp;фотографиях. Никогда&nbsp;бы не&nbsp;подумал, что столкнусь с&nbsp;этим так близко. Почему детектор ничего не&nbsp;показал?</p>
+
+<p>&#151; Я&nbsp;не&nbsp;знаю&nbsp;&#151; сказав это, я&nbsp;протянул ему боеприпасы, которые удалось собрать с&nbsp;останков второго&nbsp;&#151; но&nbsp;я&nbsp;точно знаю, что мы&nbsp;должны идти.</p>
+
+<p>&#151; Разве мы&nbsp;его не&nbsp;похороним?</p>
+
+<p>&#151; Там нечего хоронить. Пойдем.</p>
+
+<p class="copyr"><b>9.35<br>
+Пятница. Сектор D1.</b></p>
+
+<p>Черт. Ну&nbsp;и&nbsp;ночка. Второй был нашим радистом. Он&nbsp;был опытным бойцом, ума не&nbsp;приложу, как он&nbsp;не&nbsp;заметил ловушку. И&nbsp;почему наши приборы ее&nbsp;не&nbsp;зафиксировали. Первый после этой ночи выглядит совсем уж&nbsp;подавленным. Он&nbsp;еще новичок в&nbsp;зоне, хоть уже и&nbsp;состоит в&nbsp;спецотряде группы &#171;Долг&#187;. Чертово задание. Идти нам осталось еще не&nbsp;много, и&nbsp;мы&nbsp;должны дойти. </p>
+
+<p class="copyr"><b>15.20<br>
+Пятница. Сектор D1.</b></p>
+
+<p>Мы&nbsp;сделали это. Вот он&nbsp;&#151; блокпост армейских частей. Останемся у&nbsp;них на&nbsp;несколько дней, пока не&nbsp;исчезнет Туман, потом свяжемся со&nbsp;своими и&nbsp;вернемся на&nbsp;базу. Странно здесь, слишком уж&nbsp;тихо. Но&nbsp;мы&nbsp;слишком устали и&nbsp;потеряли бдительность.</p>
+
+<p class="copyr"><b>15.34<br>
+Пятница. Сектор D1.</b></p>
+
+<p>Вот мы&nbsp;и&nbsp;пересекли центральные ворота поста. Подозрительно, что нам открыли ворота, даже не&nbsp;проверив наши личности. Что&nbsp;&#151; то&nbsp;здесь не&nbsp;так. Все солдаты вдруг резко обернулись в&nbsp;нашем направлении и&nbsp;подняли автоматы.</p>
+
+<p>&#151; Ловушка!&nbsp;&#151; крикнул я.</p>
+
+<p>Тут&nbsp;же раздалось несколько автоматных очередей, и&nbsp;Первый свалился на&nbsp;землю, истекая кровью.</p>
+
+<p>&#151; Положите оружие перед собой и&nbsp;отойдите назад&nbsp;&#151; скомандовал один из&nbsp;солдат.</p>
+
+<p>&#151; Что вы&nbsp;наделали! Я&nbsp;из&nbsp;союзной группы! Свяжитесь со&nbsp;штабом группы &#171;Долг&#187;, вам подтвердят это! Зачем вы&nbsp;убили моего бойца!?&nbsp;&#151; я&nbsp;никак не&nbsp;ожидал такого поворота событий. У&nbsp;моих ног лежал уже мертвый Первый, а&nbsp;на&nbsp;меня направлено десяток стволов.</p>
+
+<p>&#151; Положите оружие перед собой и&nbsp;отойдите назад&nbsp;&#151; повторил солдат.</p>
+
+<p>Вопреки своей воле я&nbsp;положил все свое оружие на&nbsp;землю, но&nbsp;это был не&nbsp;я.&nbsp;Я&nbsp;осознавал все происходящее, но&nbsp;не&nbsp;контролировал свое тело. Я&nbsp;стал куклой и&nbsp;в&nbsp;один миг осознал все происходящее здесь.</p>
+
+<p>Мне навстречу мне вышло какое&nbsp;&#151; то&nbsp;создание, похожее на&nbsp;человека, но&nbsp;оно не&nbsp;было им.&nbsp;Это существо было контроллером. Выглядело оно весьма жутко, особенно когда в&nbsp;своих руках не&nbsp;ощущаешь верного автомата, да&nbsp;что там автомата, вообще не&nbsp;ощущаешь рук.</p>
+
+<p>&#151; Слушай меня внимательно, человек&nbsp;&#151; каким&nbsp;&#151; то&nbsp;странным, но&nbsp;весьма разборчивым голосом сказало существо. Вы&nbsp;сильно недооценили нас. Ваша база сейчас захвачена моими сородичами. Мы&nbsp;теперь накопили достаточно сил, чтобы выгнать вас с&nbsp;наших земель. Теперь уже почти вся Зона находится под нашим контролем. Мы&nbsp;не&nbsp;хотим войны с&nbsp;вами, но&nbsp;любой человек, вошедший в&nbsp;Зону, начиная с&nbsp;этого дня, умрет страшной смертью. Ты&nbsp;сильный, человек, и&nbsp;я&nbsp;уважаю это. Теперь иди, и&nbsp;сообщи всем вне Зоны эту весть. </p>
+
+<p>Своей костлявой рукой он&nbsp;указал мне на&nbsp;машину, стоящую возле противоположных ворот. Ко&nbsp;мне снова вернулся контроль над моим телом, и&nbsp;я&nbsp;пошел. Я&nbsp;не&nbsp;мог прийти в&nbsp;себя после случившегося, в&nbsp;голове была только одна мысль&nbsp;&#151; я&nbsp;должен убраться отсюда.</p>
+<p>До&nbsp;границы Зоны на&nbsp;машине отсюда всего три часа езды. Только выехав с&nbsp;блокпоста я&nbsp;осознал все случившееся. Эти существа действительно более могущественны, чем мы&nbsp;предполагали. В&nbsp;голове у&nbsp;меня сейчас вертелось множество мыслей. Я&nbsp;осознал, что не&nbsp;было никакой связи с&nbsp;нашей базой после нашей высадки, а&nbsp;этот Туман. Господи, неужели эти существа научились контролировать аномалии!</p>
+
+<p>По&nbsp;узкой горной дороге в&nbsp;полном одиночестве и&nbsp;тишине уезжала машина с&nbsp;одним из&nbsp;немногих выживших в&nbsp;этот день людей. Он&nbsp;еще не&nbsp;знал, что в&nbsp;этот самый момент уже вся Зона принадлежала ее&nbsp;детям. </p></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="7" border="0"></td></tr>
+	<tr><td><img src="images/delimiter.gif" alt="" width="494" height="4" border="0"></td></tr>
+	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="38.64" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b> 5.52 (144)</b></font></td><td align="right"><font color="#6D6D6D"><a href="download/contest/SaINt_01.zip"  target="_blank">скачать</a></font></td></tr>
+	</table>
+
+</td></tr>
+</table>
+<p class="myH4">Голосование закрыто.</p>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+  "allowScriptAccess": "always",
+  "autoplay": "on",
+  "unmuteOverlay": "visible",
+  "contextMenu": true,
+  "showSwfDownload": false,
+  "wmode": "opaque",
+  "letterbox": "off",
+  "warnOnUnsupportedContent": false
+};
+</script>
+<script>window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = { allowScriptAccess: "always", polyfills: { "externalInterface": true, "networkingAccess": true } };</script>
+<script src="js/ruffle.js"></script>
+<script src="js/sidebar_random.js"></script>
+</body>
+</html>
