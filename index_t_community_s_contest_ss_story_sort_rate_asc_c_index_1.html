@@ -14,68 +14,6 @@ end sub
 -->
 </script>
 
-<script language=javascript>
-//if(!top.contents){
-//top.
-parent.document.title='S.T.A.L.K.E.R. - Community: Конкурсы';
-//}
-
-/*------------------For Flash Menu----------------------*/
-var id=3;
-var id_sound=2-1;
-var brNav,brIE = false;
-if (navigator.appName.indexOf("Microsoft") != -1) {
-	brIE = true;
-	} else {
-	brNav = true;
-}
-
-function menu_DoFSCommand(command, args) {
-	if ( command == "init" ) {
-    	if (document.menu != null ) {
-	    	document.menu.GotoFrame(id);
-    	}
-	}
-}
-
-function dSend() {
-	if (brIE) {document.menu.GotoFrame(id);}
-	if(brIE ? parent.frames.music : parent.frames[0]){
-		document.lighting.GotoFrame(id_sound+1);
-		if (brIE) {
-			parent.frames.music.music.GotoFrame(id_sound+2);
-		} else {
-			parent.frames[0].document.music.GotoFrame(id_sound+2);
-		}
-	} else {
-		document.lighting.GotoFrame(1);
-	}
-}
-/*______________________________________________________*/
-
-var time=1794818920*1000;
-   
-function lighting_DoFSCommand(comm, arg){
-if(parent.music){
-	if (comm == "no_sound"){
-		document.cookie = "sound=1;"
-		if (brIE) {
-			parent.frames.music.music.GotoFrame(2);
-		} else {
-			parent.frames[0].document.music.GotoFrame(2);
-		}
-	}
-	if (comm == "sound"){
-		document.cookie = "sound=2;"
-		if (brIE) {
-			parent.frames.music.music.GotoFrame(3);
-		} else {
-			parent.frames[0].document.music.GotoFrame(3);
-		}
-	}
-}
-}
-</script>
 <script language="JavaScript">
 <!--
 function rnd_win(){
@@ -87,7 +25,6 @@ function rnd_win(){
    return randscript;
 }
 
-
 function screen_view (url)
 {
 var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
@@ -95,21 +32,20 @@ var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,heig
 
 function screen_view_big (url)
 {
- var  v_screens=  rnd_win(); 
+ var  v_screens=  rnd_win();
  var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
 }
-
 
 function wallpaper_view (url, res)
 {
 	if (res) { var x_res = res;	} else { var x_res = 800; }
-	 var  v_screens=  rnd_win(); 
+	 var  v_screens=  rnd_win();
 	var y_res = x_res*0.75;
     window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
 }
 -->
 </script></head>
-<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
 <table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
 <tr>
     <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
@@ -197,15 +133,6 @@ WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
 <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
 WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
 
-<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
-<param name="allowScriptAccess" value="always">
-<param name="wmode" value="opaque">
-
-	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
-	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
-	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
--->
     <td>
 
 <table cellspacing="0" cellpadding="0" border="0">
@@ -243,12 +170,7 @@ WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-f
     <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
     <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
 <tr><td><!--Main Text-->
-<!--<span class="newsT"><b>Support | Feedback Form</b></span>
 
-<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_contest.gif" width="503" height="39" border="0" alt=""></p>
-<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
-<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
--->
 <script language="JavaScript">
 <!--
  var howMany =6;
@@ -298,11 +220,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Солдаты молча поднялись. Один из них залил костер, и быстрым шагом они пошли прочь. Никто не задавал вопросов...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(5)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_279.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_279.html">комментарии</a> | <a href="download/contest/Puas_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -324,11 +246,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Но вдруг до его слуха, донесся звук работающего двигателя, приблизительно это был УАЗ. Человек достал из-под плаща "коротыш" и снял его с предохранителя...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_56.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_56.html">комментарии</a> | <a href="download/contest/snezkov_02.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -350,11 +272,11 @@ Cod =Cod +"</table>";
 	<tr><td>...через мгновение я уже стрелял из пулемета по этим странным людям нечувствовавшим боли, которые как роботы... останавливальсь после того как разорвёшь всё его тело на куски...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_55.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_55.html">комментарии</a> | <a href="download/contest/Ivanov_01.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -376,11 +298,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Уже третий час сталкеры лежали на холмике в высокой траве. Спуститься они не могли никак. На площадке перед ними собиралось "население" Зоны...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(5)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_54.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_54.html">комментарии</a> | <a href="download/contest/Khador_01.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -402,11 +324,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Нож описал в воздухе короткую петлю, срезая закрывающую дорогу ветвь поваленного дерева, срубив толстый сук как соломинку. Вдалеке раздались выстрелы, Волк ускорил шаг, перепрыгивая через мокрый, скользкий ствол дерева...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_51.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_51.html">комментарии</a> | <a href="download/contest/Jaggerlin_01.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -428,11 +350,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Но волевым усилием Длинный все же приподнялся на кровати и, свесив ноги, окинул взглядом свои хоромы. Зрелище, нужно сказать, не для слабонервных: серые потрескавшиеся стены старого подвала, с торчащими то тут, то там клочьями плесени и грибков, со следами подтеков от дождя...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_53.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_53.html">комментарии</a> | <a href="download/contest/hoknamahn_02.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -454,11 +376,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Жуки склонились над парнем и рвали его на части. Его лицо было полно радости, наконец-то этот кошмар для него закончился. Дожевав парня, жуки продолжили наступление...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(8)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_289.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_289.html">комментарии</a> | <a href="download/contest/gaj-egor_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -480,11 +402,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Солнце на западе опускалось, как большой утопленик. Рыжим светом залилась камера. Слабый ветер проникал через решетку и словно ощутив, что он здесь лишний спешил скорей на волю...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_57.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_57.html">комментарии</a> | <a href="download/contest/shurikgrek_01.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -506,11 +428,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Я набрал камней в карман, за место гаек и пошёл. Шёл я и думал о зоне, о её происхождении. С начало был Чернобыль, через двадцать с лишним лет вспышка и Чернобыль стал зоной. Гипотезы ходили всякие насчет возникновения зоны...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(8)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_294.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_294.html">комментарии</a> | <a href="download/contest/Tolik_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -532,11 +454,11 @@ Cod =Cod +"</table>";
 	<tr><td>.... Иногда я сижу с кем-нибудь в городском парке и пытаюсь объяснить человеку, какое это счастье  - вот так спокойно сидеть. Конечно, человек соглашается, но только на словах. Когда я вижу их в их квартирах, работах их мир неудержимо влечет меня, мне хочется быть с ними и забыть навсегда о Зоне, но в то же время этот мир меня отталкивает и кажется мне таким тесным...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_187.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_187.html">комментарии</a> | <a href="download/contest/Medvedev.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -558,11 +480,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Ночь была тихой и лунной, что позволяло шагать выщербленными дорогами, не опасаясь малоприятного удовольствия забодать асфальт. Я шел тихим размеренным шагом и не успел спрятаться от проезжающего мимо патруля. Притворившись вдрызг пьяным я "упал" лицом вниз...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_188.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_188.html">комментарии</a> | <a href="download/contest/Voron_02.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -584,11 +506,11 @@ Cod =Cod +"</table>";
 	<tr><td>...НО уже было поздно, отход был перекрыт страшной, темно-коричневой кашей крыс. Они были кругом: ползали со стен, лезли из углов, падали сверху...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(8)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_300.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_300.html">комментарии</a> | <a href="download/contest/Leshiy_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -610,11 +532,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Все знают крысы бегут с корабля, вот и я побежал, но поздно, да и бессмысленно. Почти всё командование прибыло посмотреть на эксперимент и было уничтожено вместе с бункером. Я уже был в двадцати километрах от предполагаемого эпицентра...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(7)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_291.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_291.html">комментарии</a> | <a href="download/contest/Ptychka_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -636,11 +558,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Год 2006 от рождества Христова. Планета Земля содрогнулась от очередной катастрофы. В который раз человечество страдает за свою глупость, жадность и неосмотрительность...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><font color="#6D6D6D">&nbsp;недостаточно&nbsp;голосов</font><font color="#9DC0FB"><b>&nbsp;(0)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_52.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_52.html">комментарии</a> | <a href="download/contest/AlexTraun_01.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -662,11 +584,11 @@ Cod =Cod +"</table>";
 	<tr><td>...По небу пархали птицы, которые смотрели на меня своими краснымиглазами. Сегодня удача повернулась мне .....</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="15.4" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;2.2&nbsp;(10)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_287.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_287.html">комментарии</a> | <a href="download/contest/VitalSE_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -685,16 +607,16 @@ Cod =Cod +"</table>";
 	</table>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="13" border="0"></td></tr>
-	<tr><td>...после этого он подумал, откуда тогда появились мутанты, и звери, и он решил сходить с 
-этими вопросом ко многим знакомым учёным, он спросил их, могут ли люди стать очень не 
+	<tr><td>...после этого он подумал, откуда тогда появились мутанты, и звери, и он решил сходить с
+этими вопросом ко многим знакомым учёным, он спросил их, могут ли люди стать очень не
 красивыми или даже я бы сказал похожими ...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="17.5" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;2.5&nbsp;(24)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_269.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_269.html">комментарии</a> | <a href="download/contest/Dolzi_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -716,11 +638,11 @@ Cod =Cod +"</table>";
 	<tr><td>...После сообщения на место нападения были отправлены все ближайшие сталкеры. Прибывши, первый сталкер не увидел ни чего кроме горящих и окровавленных тел своих собратьев...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="20.86" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;2.98&nbsp;(66)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_110.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_110.html">комментарии</a> | <a href="download/contest/holodov_02.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -742,11 +664,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Быстро придя в себя, сталкер побежал к небольшому окну, прямо напротив лестницы. Рядом с ним проходила водосточная труба. Когда он уже начал вылезать из окна, по лестнице снова кто-то поднялся и, увидев стакера его, открыл огонь из пистолета...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="21.56" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;3.08&nbsp;(50)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_264.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_264.html">комментарии</a> | <a href="download/contest/VictoZ_1.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -768,11 +690,11 @@ Cod =Cod +"</table>";
 	<tr><td>...Мы были на задании как и все нужно жить ,хотя жизнью это не назовешь, это скорее выживание -выживание потому что, многие стакеры пробывшие здесь более 5 лет не могут отсюда уехать. Правду говорят что зона живая она тебя сначала притягивает а потом хватает и не отпускает ты становишься пленником...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="22.26" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;3.18&nbsp;(11)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_201.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_201.html">комментарии</a> | <a href="download/contest/SHTULZ.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="15" border="0"></td></tr>
 	<tr><td><img src="images/_contest/dev.gif" alt="" width="490" height="5" border="0"></td></tr>
@@ -794,22 +716,20 @@ Cod =Cod +"</table>";
 	<tr><td>...В церкви была своя, особая аура. Полумрак сочетался с говором старушек, и прихожане ставили свечи. В воздухе, в пропитанном ладаном воздухе, витала светлая печаль. Александр последний раз перекрестился перед иконой Богородицы и пошёл писать записки...</td></tr>
 	<tr><td><img src="images/_dot.gif" alt="" width="1" height="12" border="0"></td></tr>
 	</table>
-	
+
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr><td width="10"><font color="#6D6D6D">Рейтинг:&nbsp;</font></td><td width="70"><img src="images/_contest/rait.jpg" alt="" width="22.82" height="6" border="0"></td><td width="70">&nbsp;<font color="#9DC0FB"><b>&nbsp;3.26&nbsp;(19)</b></font></td><td align="right"><font color="#6D6D6D"><a href="df_community_contest_story_read_id_130.html" target="_blank">читать</a> | <a href="index_t_community_s_contest_ss_rating_id_130.html">комментарии</a> | <a href="download/contest/visser_01.zip" target="_blank">скачать</a></font></td></tr>
 	</table>
-	
+
 	</td></tr>
 </table>
 					</td>
-  
+
   <tr><td><img src="images/_dot.gif" alt="" width="1" height="10" border="0"></td></tr>
   <tr>
   	<td> 1  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_2.html" class="nw_link">2</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_3.html" class="nw_link">3</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_4.html" class="nw_link">4</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_5.html" class="nw_link">5</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_6.html" class="nw_link">6</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_7.html" class="nw_link">7</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_8.html" class="nw_link">8</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_9.html" class="nw_link">9</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_10.html" class="nw_link">10</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_11.html" class="nw_link">11</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_12.html" class="nw_link">12</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_13.html" class="nw_link">13</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_14.html" class="nw_link">14</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_15.html" class="nw_link">15</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_16.html" class="nw_link">16</a>  |  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_17.html" class="nw_link">17</a> | <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_2.html" class="nw_link">20 cледующих  историй &raquo;</a> &nbsp;&nbsp;| <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_all.html" class="nw_link">Все истории</a><br>&nbsp;</td>
 
-
-<!--  	<td>	  <a href="index_t_community_s_contest_ss_story_sort_rate_asc_c_index_2.html" class="nw_link">20 c��������  ������� &raquo;</a><br>&nbsp;</td>
--->  </tr>
+  </tr>
 
 </tr>
 </table>
@@ -821,7 +741,7 @@ Cod =Cod +"</table>";
   <area shape="poly" coords="0,27,15,8,91,8,75,27" href="index_t_community_s_contest_ss_story_sort_rate_desc.html">
   <area shape="poly" coords="79,28,96,9,161,9,161,28" href="index_t_community_s_contest_ss_story_sort_date_desc.html">
 </map>
- <!--End Main Text <table></table>--></td></tr>
+ </td></tr>
 <tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
 </table></td><td width="100" valign="top">
 
@@ -842,9 +762,7 @@ Cod =Cod +"</table>";
 	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
 </tr>
 <tr>
-	<td height="45" class="copyr" align="center"><a href="../&s=contest&ss=story.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | Community | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
-src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
-�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+	<td height="45" class="copyr" align="center"><a href="../&s=contest&ss=story.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | Community | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | <a href="index_t_downloads.html" class="bottomMenu">Файлы</a> | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
 Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
 Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">23&nbsp;&nbsp;256</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
 </tr>
@@ -882,4 +800,3 @@ window.RufflePlayer.config = {
 <script src="js/sidebar_random.js"></script>
 </body>
 </html>
-

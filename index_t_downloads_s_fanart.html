@@ -14,68 +14,6 @@ end sub
 -->
 </script>
 
-<script language=javascript>
-//if(!top.contents){
-//top.
-parent.document.title='S.T.A.L.K.E.R. - Файлы: Обои';
-//}
-
-/*------------------For Flash Menu----------------------*/
-var id=5;
-var id_sound=2-1;
-var brNav,brIE = false;
-if (navigator.appName.indexOf("Microsoft") != -1) {
-	brIE = true;
-	} else {
-	brNav = true;
-}
-
-function menu_DoFSCommand(command, args) {
-	if ( command == "init" ) {
-    	if (document.menu != null ) {
-	    	document.menu.GotoFrame(id);
-    	}
-	}
-}
-
-function dSend() {
-	if (brIE) {document.menu.GotoFrame(id);}
-	if(brIE ? parent.frames.music : parent.frames[0]){
-		document.lighting.GotoFrame(id_sound+1);
-		if (brIE) {
-			parent.frames.music.music.GotoFrame(id_sound+2);
-		} else {
-			parent.frames[0].document.music.GotoFrame(id_sound+2);
-		}
-	} else {
-		document.lighting.GotoFrame(1);
-	}
-}
-/*______________________________________________________*/
-
-var time=1794819076*1000;
-   
-function lighting_DoFSCommand(comm, arg){
-if(parent.music){
-	if (comm == "no_sound"){
-		document.cookie = "sound=1;"
-		if (brIE) {
-			parent.frames.music.music.GotoFrame(2);
-		} else {
-			parent.frames[0].document.music.GotoFrame(2);
-		}
-	}
-	if (comm == "sound"){
-		document.cookie = "sound=2;"
-		if (brIE) {
-			parent.frames.music.music.GotoFrame(3);
-		} else {
-			parent.frames[0].document.music.GotoFrame(3);
-		}
-	}
-}
-}
-</script>
 <script language="JavaScript">
 <!--
 function rnd_win(){
@@ -87,7 +25,6 @@ function rnd_win(){
    return randscript;
 }
 
-
 function screen_view (url)
 {
 var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
@@ -95,21 +32,20 @@ var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,heig
 
 function screen_view_big (url)
 {
- var  v_screens=  rnd_win(); 
+ var  v_screens=  rnd_win();
  var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
 }
-
 
 function wallpaper_view (url, res)
 {
 	if (res) { var x_res = res;	} else { var x_res = 800; }
-	 var  v_screens=  rnd_win(); 
+	 var  v_screens=  rnd_win();
 	var y_res = x_res*0.75;
     window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
 }
 -->
 </script></head>
-<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" onLoad="dSend()">
+<body  bgcolor="#000000" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
 <table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
 <tr>
     <td valign="top"><table width="100%" height="99" cellspacing="0" cellpadding="0" border="0" background="images/menu_back.jpg"><tr><td><img src="images/_dot.gif" width="1" height="1" border="0"></td></tr></table></td>
@@ -197,15 +133,6 @@ WIDTH="282" HEIGHT="80" id="elements" ALIGN="">
 <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#000000> <EMBED src="swf/elements.swf" menu=false quality=high bgcolor=#000000
 WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT></td>
 
-<!--    <td><img src="images/_dot.gif" width="22" height="1" border="0"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-	 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="260" HEIGHT="80" id="elements" ALIGN="">
-<param name="allowScriptAccess" value="always">
-<param name="wmode" value="opaque">
-
-	 <PARAM NAME=movie VALUE="swf/elements.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=menu VALUE=false> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="swf/elements.swf"
-	 quality=high bgcolor=#FFFFFF  WIDTH="260" HEIGHT="80" NAME="elements" ALIGN=""
-	 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always" wmode="opaque"></EMBED></OBJECT><img src="images/__header_all.jpg" width="438" height="80" border="0"></td>
--->
     <td>
 
 <table cellspacing="0" cellpadding="0" border="0">
@@ -243,12 +170,7 @@ WIDTH="282" HEIGHT="80" NAME="elements" ALIGN="" TYPE="application/x-shockwave-f
     <td width="22"><img src="images/_dot.gif" width="39" height="1" border="0"></td>
     <td width="503" valign="top"><table width="100%" cellspacing="0" border="0" cellpadding="0">
 <tr><td><!--Main Text-->
-<!--<span class="newsT"><b>Support | Feedback Form</b></span>
 
-<p><img src="images/_dot.gif" width="1" height="10" border="0" alt=""><br><img src="images/h_fanart.gif" width="503" height="39" border="0" alt=""></p>
-<table width=\"503\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><tr><td><img src=\"images/_dot.gif\" width=\"1\" height=\"10\" border=\"0\"></td></tr>
-<tr><td background=\"images/h_" + ImgH + ".gif\" width=\"503\" height=\"39\">jhhghjg</td></tr></table>
--->
 <script language="JavaScript">
 <!--
  var howMany =6;
@@ -285,7 +207,6 @@ function rnd_win(){
    return randscript;
 }
 
-
 function screen_view (url)
 {
 var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,height=654,directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
@@ -293,20 +214,19 @@ var  v_screens=  rnd_win(); window.open(url,v_screens,"toolbar=no,width=804,heig
 
 function screen_view_big (url)
 {
- var  v_screens=  rnd_win(); 
+ var  v_screens=  rnd_win();
  var   height=768+54; window.open(url,v_screens,"toolbar=no,width=1028,height="+height+",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
 }
-
 
 function wallpaper_view (url, res)
 {
 	if (res) { var x_res = res;	} else { var x_res = 800; }
-	 var  v_screens=  rnd_win(); 
+	 var  v_screens=  rnd_win();
 	var y_res = x_res*0.75;
     window.open(url,v_screens,"toolbar=no,width=" + (x_res + 4) + ",height=" + (y_res + 54) + ",directories=no,status=no,scrollbars=no,resize=no,resizeable=no,menubar=no,screenX=0,screenY=0");
 }
 -->
-</script><!--End Main Text <table></table>--></td></tr>
+</script></td></tr>
 <tr><td><img src="images/_dot.gif" width="1" height="18" border="0"></td></tr>
 </table></td><td width="100" valign="top">
 
@@ -327,9 +247,7 @@ function wallpaper_view (url, res)
 	<td height="32"><img src="images/bottom_line.jpg" width="720" height="32" border="0"></td>
 </tr>
 <tr>
-	<td height="45" class="copyr" align="center"><a href="../&s=fanart.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | <a href="index_t_community.html" class="bottomMenu">Community</a> | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | Файлы | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a><!-- <img src="images/_dot.gif" width="20" height="1" border="0" alt=""><img src="images/_xray_hosting.gif" height="25" border="0" alt=""><img src="images/_dot.gif" width="10" height="1" border="0" alt=""><a href=http://agava.ru/hosting target="_blank"><img
-src="images/logo/agava.gif" border="0" width="71" height="25" alt="��� ������� --
-�����!"></a> --></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
+	<td height="45" class="copyr" align="center"><a href="../&s=fanart.html" class="bottomMenu"></a> | <a href="index_t_news.html" class="bottomMenu">Новости</a> | <a href="index_t_game.html" class="bottomMenu">Об Игре</a> | <a href="index_t_community.html" class="bottomMenu">Community</a> | <a href="index_t_gallery.html" class="bottomMenu">Галерея</a> | Файлы | <a href="index_t_press.html" class="bottomMenu">Пресса</a> | <a href="index_t_support.html" class="bottomMenu">Техподдержка</a> | <a href="index_t_engine.html" class="bottomMenu">X-Ray Engine</a> | <br><br><table width="100%" cellspacing="0" cellpadding="0" height="25"><tr><td background="images/_xray_parthner_back.jpg" align="center" height="25"><img src="images/_xray_parthner.jpg" height="31" border="0" alt=""><img src="images/_dot.gif" width="10" height="25" border="0" alt=""><a target="_blank" href="http://www.nvidia.com/"><img src="images/logo/nvidia.gif" width="93" height="31" border="0" alt="nVidia Home Page"></a>&nbsp;&nbsp;&nbsp;<a href="http://www.amd.com" target="_blank"><img src="images/logo/amd_logo.gif" width="31" height="31" border="0" alt="AMD Home Site"></a></td></tr></table><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td colspan="3"><img src="images/_dot.gif" width="10" height="10" border="0" alt=""></td></tr><tr align="center"><td width="95" align="right"><a href="http://www.gsc-game.com/" target="_blank"><img src="images/logo/small_gsc_logo.gif" alt="GSC Game World Home Site" width="47" height="28" border="0"></a></td><td class="copyr">
 Copyright &copy; 2006 <a href="http://www.gsc-game.com/" class="myLink">GSC Game World</a>. Все права защищены.<br>
 Этот сайт лучше всего просматривать в Internet Explorer 4.xx и выше, с поддержкой Javascript. <a href="mailto:webmaster@gsc-game.com" class="myLink">Вебмастер</a>.<br><font color="#000000">268&nbsp;&nbsp;37062</font></td><td width="115" align="left"><a href="http://www.thq.com/" target="_blank"><img src="images/logo/thq.gif" alt="THQ Home Site" width="78" height="28" border="0"></a></td></tr></table></td>
 </tr>
@@ -367,4 +285,3 @@ window.RufflePlayer.config = {
 <script src="js/sidebar_random.js"></script>
 </body>
 </html>
-
