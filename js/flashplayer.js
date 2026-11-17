@@ -1639,4 +1639,17 @@
   window.FlashPlayer = { scan: scan, Player: Player };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", function () { scan(); });
   else scan();
+  // Movies inserted later by other scripts (e.g. sidebar_random.js) are
+  // picked up too, as Ruffle did.
+  new MutationObserver(function (muts) {
+    for (var i = 0; i < muts.length; i++) {
+      var added = muts[i].addedNodes;
+      for (var j = 0; j < added.length; j++) {
+        var n = added[j];
+        if (n.nodeType !== 1 || n.tagName === "FLASH-PLAYER") continue;
+        if (n.tagName === "EMBED" || n.tagName === "OBJECT") scan(n.parentNode);
+        else if (n.querySelector("embed, object")) scan(n);
+      }
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true });
 })();
