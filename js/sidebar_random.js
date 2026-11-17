@@ -283,12 +283,12 @@ function showNewsBannerBlock(container, bannerType) {
     // Flash research_right_rus.swf
     html += '<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="156" height="124" id="research_right" align="middle" allowScriptAccess="always" wmode="opaque">';
     html += '<param name="allowScriptAccess" value="always" />';
-    html += '<param name="movie" value="swf/research_right_rus.json" />';
+    html += '<param name="movie" value="swf/research_right_rus.swf" />';
     html += '<param name="menu" value="false" />';
     html += '<param name="quality" value="high" />';
     html += '<param name="bgcolor" value="#000000" />';
     html += '<param name="wmode" value="opaque" />';
-    html += '<embed src="swf/research_right_rus.json" menu="false" quality="high" bgcolor="#000000" width="156" height="124" name="research_right" align="middle" allowScriptAccess="always" wmode="opaque" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />';
+    html += '<embed src="swf/research_right_rus.swf" menu="false" quality="high" bgcolor="#000000" width="156" height="124" name="research_right" align="middle" allowScriptAccess="always" wmode="opaque" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />';
     html += '</object>';
   } else {
     // Mobile ad
