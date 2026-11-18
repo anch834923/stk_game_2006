@@ -1068,7 +1068,7 @@
 
   Player.prototype.start = function () {
     var self = this, interval = 1000 / (this.movie.data.rate || 12), next = performance.now();
-    this.avm = new AVM1(this);
+    this.avm = this.avm || new AVM1(this);
     this.tick();
     next += interval;
     if (config.manual) return; // test harness drives tick() itself
@@ -1553,14 +1553,63 @@
   var FLASH_TYPE = "application/x-shockwave-flash";
   var cache = {};
 
+  // url is the movie's .swf.json file (or a legacy .swf URL, whose converted
+  // .json sits next to it). Movie.url stays the .swf URL so relative loads
+  // (loadVariables) resolve exactly as they did for the original movie.
   function loadMovie(url) {
-    if (!cache[url]) {
-      cache[url] = fetch(url + ".json").then(function (r) {
-        if (!r.ok) throw new Error("flashplayer: cannot load " + url);
+    var json = /\.json$/i.test(url) ? url : url + ".json";
+    var swf = json.replace(/\.json$/i, "");
+    if (!cache[json]) {
+      cache[json] = fetch(json).then(function (r) {
+        if (!r.ok) throw new Error("flashplayer: cannot load " + json);
         return r.json();
-      }).then(function (data) { return new Movie(data, url).load(); });
+      }).then(function (data) { return new Movie(data, swf).load(); });
     }
-    return cache[url];
+    return cache[json];
+  }
+
+  // The Flash Player scripting methods pages used to call on the movie element
+  // (document.menu.GotoFrame(3) and so on). Frame numbers are 0-based here.
+  function addScriptingApi(host, player) {
+    var root = function () { return player.root; };
+    host.GotoFrame = function (n) { root().gotoFrame((n | 0) + 1, true); };
+    host.Play = function () { root().playing = true; };
+    host.StopPlay = function () { root().playing = false; };
+    host.Rewind = function () { root().gotoFrame(1, true); };
+    host.IsPlaying = function () { return !!root().playing; };
+    host.CurrentFrame = function () { return root().currentFrame - 1; };
+    host.TotalFrames = function () { return root().totalFrames; };
+    host.PercentLoaded = function () { return 100; };
+    host.SetVariable = function (name, value) { player.avm.setVariable({ target: root() }, String(name), String(value)); };
+    host.GetVariable = function (name) {
+      var v = player.avm.getVariable({ target: root() }, String(name));
+      return v === undefined ? null : player.avm.toStr(v);
+    };
+  }
+
+  // Shared start-up for both the static <flash-player> markup and legacy
+  // <embed>/<object> tags.
+  function startPlayer(host, url, bg, id) {
+    loadMovie(url).then(function (movie) {
+      var player = new Player(host, movie, { bgcolor: bg, id: id });
+      host.flashPlayer = player;
+      player.avm = new AVM1(player);
+      addScriptingApi(host, player);
+      player.start();
+    }).catch(function (e) { if (window.console) console.error(e); });
+  }
+
+  // <flash-player src="movie.swf.json" width height bgcolor name> inside an
+  // optional <flash-object id> wrapper. The markup already carries its final
+  // layout styles, so nothing moves when the player starts.
+  function initStatic(host) {
+    if (host.__flashReplaced) return;
+    var src = host.getAttribute("src");
+    if (!src) return;
+    host.__flashReplaced = true;
+    var wrap = host.parentElement && host.parentElement.tagName === "FLASH-OBJECT" ? host.parentElement : null;
+    var id = (wrap && wrap.id) || host.getAttribute("name") || host.id || null;
+    startPlayer(host, new URL(src, document.baseURI).href, parseColor(host.getAttribute("bgcolor")), id);
   }
 
   function parseColor(s) {
@@ -1595,6 +1644,7 @@
     var src = el.tagName === "EMBED" ? el.getAttribute("src") : (params.movie || params.src || el.getAttribute("data"));
     if (!src) return;
     var host = document.createElement("flash-player");
+    host.__flashReplaced = true;
     for (var i = 0; i < el.attributes.length; i++) {
       var at = el.attributes[i];
       try { host.setAttribute(at.name, at.value); } catch (e) { }
@@ -1614,15 +1664,15 @@
     var url = new URL(src, document.baseURI).href;
     var bg = parseColor(params.bgcolor || outerParams.bgcolor);
     var id = (outer && outer.id) || el.getAttribute("name") || el.id || null;
-    loadMovie(url).then(function (movie) {
-      var player = new Player(host, movie, { bgcolor: bg, id: id });
-      host.flashPlayer = player;
-      player.start();
-    }).catch(function (e) { if (window.console) console.error(e); });
+    startPlayer(host, url, bg, id);
   }
 
   function scan(root) {
-    (root || document).querySelectorAll("embed, object").forEach(function (el) {
+    root = root || document;
+    if (root.tagName === "FLASH-PLAYER") initStatic(root);
+    root.querySelectorAll("flash-player[src]").forEach(initStatic);
+    // Legacy Flash markup, converted on the fly.
+    root.querySelectorAll("embed, object").forEach(function (el) {
       var type = (el.getAttribute("type") || "").toLowerCase();
       var src = el.getAttribute("src") || el.getAttribute("data") || "";
       if (el.tagName === "EMBED") {
@@ -1646,9 +1696,9 @@
       var added = muts[i].addedNodes;
       for (var j = 0; j < added.length; j++) {
         var n = added[j];
-        if (n.nodeType !== 1 || n.tagName === "FLASH-PLAYER") continue;
+        if (n.nodeType !== 1) continue;
         if (n.tagName === "EMBED" || n.tagName === "OBJECT") scan(n.parentNode);
-        else if (n.querySelector("embed, object")) scan(n);
+        else if (n.tagName === "FLASH-PLAYER" || n.querySelector("flash-player, embed, object")) scan(n);
       }
     }
   }).observe(document.documentElement, { childList: true, subtree: true });
