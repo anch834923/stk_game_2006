@@ -66,9 +66,9 @@ var sidebarScreens = [
 ];
 
 var sidebarNews = [
-  {id: "S.T.A.L.K.E.R. - ут", text: "S.T.A.L.K.E.R. - утверждена дата выхода.", url: "index_t_news.html#0"},
-  {id: "Директор ЧА", text: "Директор ЧАЭС играет в S.T.A.L.K.E.R.", url: "index_t_news.html#1"},
-  {id: "169", text: "Голосуй как бороться с читерством", url: "index_t_news_id_169_s_news_page_0.html"},
+  {id: "173", text: "Мультфильм по мотивам-2", url: "index_t_news_id_173_s_news_page_0.html"},
+  {id: "172", text: "Stalker.Ovl.ru = Nuclear.ee", url: "index_t_news_id_172_s_news_page_0.html"},
+  {id: "171", text: "S.T.A.L.K.E.R. - утверждена дата выхода.", url: "index_t_news.html#0"},
 ];
 
 var sidebarChrono = [
